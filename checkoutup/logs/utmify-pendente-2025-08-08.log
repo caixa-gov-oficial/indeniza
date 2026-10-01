@@ -1,0 +1,581 @@
+[2025-08-08 03:00:17] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"dff786e9-1531-4863-8b42-03115ea081f7\",\"platform\":\"MinhaPlataforma\",\"paymentMethod\":\"pix\",\"status\":\"waiting_payment\",\"createdAt\":\"2025-08-08 00:00:17\",\"approvedDate\":null,\"refundedAt\":null,\"customer\":{\"name\":\"Felipe Silva Barbosa\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":\"07723955006\",\"country\":\"BR\",\"ip\":\"155.2.219.244\"},\"products\":[{\"id\":\"PROD_689568415c633\",\"name\":\"Produto Front\",\"planId\":null,\"planName\":null,\"quantity\":1,\"priceInCents\":2370,\"agendamento\":null}],\"trackingParameters\":[],\"commission\":{\"totalPriceInCents\":2370,\"gatewayFeeInCents\":0,\"userCommissionInCents\":2370},\"isTest\":false}"
+}
+----------------------------------------
+[2025-08-08 03:00:17] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "dff786e9-1531-4863-8b42-03115ea081f7",
+    "platform": "MinhaPlataforma",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-08-08 00:00:17",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Felipe Silva Barbosa",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "07723955006",
+        "country": "BR",
+        "ip": "155.2.219.244"
+    },
+    "products": [
+        {
+            "id": "PROD_689568415c633",
+            "name": "Produto Front",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 2370,
+            "agendamento": null
+        }
+    ],
+    "trackingParameters": [],
+    "commission": {
+        "totalPriceInCents": 2370,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 2370
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-08-08 03:00:17] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "dff786e9-1531-4863-8b42-03115ea081f7",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-08-08 03:00:17",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Felipe Silva Barbosa",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "07723955006",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_689568415c633",
+            "name": "Produto Front",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 2370
+        }
+    ],
+    "trackingParameters": {
+        "src": null,
+        "sck": null,
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null,
+        "utm_content": null,
+        "utm_term": null,
+        "xcod": null,
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": 2370,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 2370
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-08-08 03:00:17] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-08-08 03:00:17] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 404,
+    "response": {
+        "OK": false,
+        "data": {
+            "type": "API_CREDENTIAL"
+        },
+        "result": "ERROR",
+        "statusCode": 404,
+        "message": "API_CREDENTIAL_NOT_FOUND"
+    }
+}
+----------------------------------------
+[2025-08-08 03:00:17] ❌ Erro
+Dados: {
+    "message": "Erro na API Utmify. HTTP Code: 404"
+}
+----------------------------------------
+[2025-08-08 03:00:52] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"58d4a461-299d-4e82-b726-e24a51533176\",\"platform\":\"MinhaPlataforma\",\"paymentMethod\":\"pix\",\"status\":\"waiting_payment\",\"createdAt\":\"2025-08-08 00:00:52\",\"approvedDate\":null,\"refundedAt\":null,\"customer\":{\"name\":\"Daniel Costa Alves\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":\"15381299494\",\"country\":\"BR\",\"ip\":\"155.2.219.244\"},\"products\":[{\"id\":\"PROD_689568640dd31\",\"name\":\"Produto Front\",\"planId\":null,\"planName\":null,\"quantity\":1,\"priceInCents\":2490,\"agendamento\":null}],\"trackingParameters\":[],\"commission\":{\"totalPriceInCents\":2490,\"gatewayFeeInCents\":0,\"userCommissionInCents\":2490},\"isTest\":false}"
+}
+----------------------------------------
+[2025-08-08 03:00:52] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "58d4a461-299d-4e82-b726-e24a51533176",
+    "platform": "MinhaPlataforma",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-08-08 00:00:52",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Daniel Costa Alves",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "15381299494",
+        "country": "BR",
+        "ip": "155.2.219.244"
+    },
+    "products": [
+        {
+            "id": "PROD_689568640dd31",
+            "name": "Produto Front",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 2490,
+            "agendamento": null
+        }
+    ],
+    "trackingParameters": [],
+    "commission": {
+        "totalPriceInCents": 2490,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 2490
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-08-08 03:00:52] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "58d4a461-299d-4e82-b726-e24a51533176",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-08-08 03:00:52",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Daniel Costa Alves",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "15381299494",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_689568640dd31",
+            "name": "Produto Front",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 2490
+        }
+    ],
+    "trackingParameters": {
+        "src": null,
+        "sck": null,
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null,
+        "utm_content": null,
+        "utm_term": null,
+        "xcod": null,
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": 2490,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 2490
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-08-08 03:00:52] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-08-08 03:00:52] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 404,
+    "response": {
+        "OK": false,
+        "data": {
+            "type": "API_CREDENTIAL"
+        },
+        "result": "ERROR",
+        "statusCode": 404,
+        "message": "API_CREDENTIAL_NOT_FOUND"
+    }
+}
+----------------------------------------
+[2025-08-08 03:00:52] ❌ Erro
+Dados: {
+    "message": "Erro na API Utmify. HTTP Code: 404"
+}
+----------------------------------------
+[2025-08-08 03:01:27] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"28ef2ab5-1db7-4fd7-9f9b-4bc282342a25\",\"platform\":\"MinhaPlataforma\",\"paymentMethod\":\"pix\",\"status\":\"waiting_payment\",\"createdAt\":\"2025-08-08 00:01:27\",\"approvedDate\":null,\"refundedAt\":null,\"customer\":{\"name\":\"Carlos Souza Ferreira\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":\"91239601590\",\"country\":\"BR\",\"ip\":\"155.2.219.244\"},\"products\":[{\"id\":\"PROD_68956887c0de1\",\"name\":\"Produto Front\",\"planId\":null,\"planName\":null,\"quantity\":1,\"priceInCents\":4237,\"agendamento\":null}],\"trackingParameters\":[],\"commission\":{\"totalPriceInCents\":4237,\"gatewayFeeInCents\":0,\"userCommissionInCents\":4237},\"isTest\":false}"
+}
+----------------------------------------
+[2025-08-08 03:01:27] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "28ef2ab5-1db7-4fd7-9f9b-4bc282342a25",
+    "platform": "MinhaPlataforma",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-08-08 00:01:27",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Carlos Souza Ferreira",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "91239601590",
+        "country": "BR",
+        "ip": "155.2.219.244"
+    },
+    "products": [
+        {
+            "id": "PROD_68956887c0de1",
+            "name": "Produto Front",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 4237,
+            "agendamento": null
+        }
+    ],
+    "trackingParameters": [],
+    "commission": {
+        "totalPriceInCents": 4237,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 4237
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-08-08 03:01:27] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "28ef2ab5-1db7-4fd7-9f9b-4bc282342a25",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-08-08 03:01:27",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Carlos Souza Ferreira",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "91239601590",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_68956887c0de1",
+            "name": "Produto Front",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 4237
+        }
+    ],
+    "trackingParameters": {
+        "src": null,
+        "sck": null,
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null,
+        "utm_content": null,
+        "utm_term": null,
+        "xcod": null,
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": 4237,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 4237
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-08-08 03:01:27] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-08-08 03:01:27] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 404,
+    "response": {
+        "OK": false,
+        "data": {
+            "type": "API_CREDENTIAL"
+        },
+        "result": "ERROR",
+        "statusCode": 404,
+        "message": "API_CREDENTIAL_NOT_FOUND"
+    }
+}
+----------------------------------------
+[2025-08-08 03:01:27] ❌ Erro
+Dados: {
+    "message": "Erro na API Utmify. HTTP Code: 404"
+}
+----------------------------------------
+[2025-08-08 03:02:15] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"ba4018d4-5067-4c88-b86f-a76c4ffb80fb\",\"platform\":\"MinhaPlataforma\",\"paymentMethod\":\"pix\",\"status\":\"waiting_payment\",\"createdAt\":\"2025-08-08 00:02:15\",\"approvedDate\":null,\"refundedAt\":null,\"customer\":{\"name\":\"Helena Lopes Martins\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":\"96826525534\",\"country\":\"BR\",\"ip\":\"155.2.219.244\"},\"products\":[{\"id\":\"PROD_689568b706b5f\",\"name\":\"Produto Front\",\"planId\":null,\"planName\":null,\"quantity\":1,\"priceInCents\":2790,\"agendamento\":null}],\"trackingParameters\":[],\"commission\":{\"totalPriceInCents\":2790,\"gatewayFeeInCents\":0,\"userCommissionInCents\":2790},\"isTest\":false}"
+}
+----------------------------------------
+[2025-08-08 03:02:15] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "ba4018d4-5067-4c88-b86f-a76c4ffb80fb",
+    "platform": "MinhaPlataforma",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-08-08 00:02:15",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Helena Lopes Martins",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "96826525534",
+        "country": "BR",
+        "ip": "155.2.219.244"
+    },
+    "products": [
+        {
+            "id": "PROD_689568b706b5f",
+            "name": "Produto Front",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 2790,
+            "agendamento": null
+        }
+    ],
+    "trackingParameters": [],
+    "commission": {
+        "totalPriceInCents": 2790,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 2790
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-08-08 03:02:15] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "ba4018d4-5067-4c88-b86f-a76c4ffb80fb",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-08-08 03:02:15",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Helena Lopes Martins",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "96826525534",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_689568b706b5f",
+            "name": "Produto Front",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 2790
+        }
+    ],
+    "trackingParameters": {
+        "src": null,
+        "sck": null,
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null,
+        "utm_content": null,
+        "utm_term": null,
+        "xcod": null,
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": 2790,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 2790
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-08-08 03:02:15] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-08-08 03:02:15] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 404,
+    "response": {
+        "OK": false,
+        "data": {
+            "type": "API_CREDENTIAL"
+        },
+        "result": "ERROR",
+        "statusCode": 404,
+        "message": "API_CREDENTIAL_NOT_FOUND"
+    }
+}
+----------------------------------------
+[2025-08-08 03:02:15] ❌ Erro
+Dados: {
+    "message": "Erro na API Utmify. HTTP Code: 404"
+}
+----------------------------------------
+[2025-08-08 03:15:56] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"299a3cd8-b208-4916-919e-19829c677bdf\",\"platform\":\"MinhaPlataforma\",\"paymentMethod\":\"pix\",\"status\":\"waiting_payment\",\"createdAt\":\"2025-08-08 00:15:56\",\"approvedDate\":null,\"refundedAt\":null,\"customer\":{\"name\":\"Bernardo Vieira Lopes\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":\"53587929106\",\"country\":\"BR\",\"ip\":\"155.2.219.244\"},\"products\":[{\"id\":\"PROD_68956becb9723\",\"name\":\"Produto Front\",\"planId\":null,\"planName\":null,\"quantity\":1,\"priceInCents\":2574,\"agendamento\":null}],\"trackingParameters\":[],\"commission\":{\"totalPriceInCents\":2574,\"gatewayFeeInCents\":0,\"userCommissionInCents\":2574},\"isTest\":false}"
+}
+----------------------------------------
+[2025-08-08 03:15:56] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "299a3cd8-b208-4916-919e-19829c677bdf",
+    "platform": "MinhaPlataforma",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-08-08 00:15:56",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Bernardo Vieira Lopes",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "53587929106",
+        "country": "BR",
+        "ip": "155.2.219.244"
+    },
+    "products": [
+        {
+            "id": "PROD_68956becb9723",
+            "name": "Produto Front",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 2574,
+            "agendamento": null
+        }
+    ],
+    "trackingParameters": [],
+    "commission": {
+        "totalPriceInCents": 2574,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 2574
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-08-08 03:15:56] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "299a3cd8-b208-4916-919e-19829c677bdf",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-08-08 03:15:56",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Bernardo Vieira Lopes",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "53587929106",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_68956becb9723",
+            "name": "Produto Front",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 2574
+        }
+    ],
+    "trackingParameters": {
+        "src": null,
+        "sck": null,
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null,
+        "utm_content": null,
+        "utm_term": null,
+        "xcod": null,
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": 2574,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 2574
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-08-08 03:15:56] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-08-08 03:15:56] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------

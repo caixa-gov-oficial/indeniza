@@ -1,0 +1,54 @@
+@font-face {
+  font-family: 'fsso';
+  src: url('../fonts/fsso.eot');
+  src: url('../fonts/fsso.eot#iefix') format('embedded-opentype'),
+       url('../fonts/fsso.woff2') format('woff2'),
+       url('../fonts/fsso.woff') format('woff'),
+       url('../fonts/fsso.ttf') format('truetype'),
+       url('../images/fsso.svg#sso') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FuturaBold';
+  src: url('../fonts/futuraBold.eot');
+  src: url('../fonts/futuraBold.eot#iefix') format('embedded-opentype'),
+       url('../fonts/futuraBold.woff') format('woff'),
+       url('../fonts/futuraBold.ttf') format('truetype'),
+       url('../fonts/futuraBold.svg#futuraBold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+
+[class^="fsso-"]:before, [class*=" fsso-"]:before {
+  font-family: "fsso";
+  font-style: normal;
+  font-weight: normal;
+  display: inline-block;
+  text-decoration: inherit;
+  height: 1em;
+  text-align: center;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+ 
+.fsso-user:before { content: '\0100'; }
+.fsso-key:before { content: '\0101'; }
+.fsso-lock:before { content: '\0102'; }
+.fsso-phone:before { content: '\0103'; }
+.fsso-search-plus:before { content: '\0104'; }
+.fsso-address-card:before { content: '\0105'; }
+.fsso-caret-right:before { content: '\0106'; }
+.fsso-times:before { content: '\0107'; }
+.fsso-eye:before { content: '\0108'; }
+.fsso-eye-slash:before { content: '\0109'; }
+
+/* Classes para usar a fonte */
+.fsso-bold {
+  font-family: 'FuturaBold', Arial, sans-serif;
+  font-weight: bold;
+}

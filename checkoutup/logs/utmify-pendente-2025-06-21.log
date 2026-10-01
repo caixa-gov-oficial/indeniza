@@ -1,0 +1,456 @@
+[2025-06-21 19:41:21] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"21678f46-87a2-4c07-b86b-1526a5734e00\",\"platform\":\"MinhaPlataforma\",\"paymentMethod\":\"pix\",\"status\":\"waiting_payment\",\"createdAt\":\"2025-06-21 16:41:21\",\"approvedDate\":null,\"refundedAt\":null,\"customer\":{\"name\":\"Ana Gomes Costa\",\"email\":\"ana.gomes.costa@email.com\",\"phone\":null,\"document\":\"58726999803\",\"country\":\"BR\",\"ip\":\"187.90.211.230\"},\"products\":[{\"id\":\"PROD_68570ae1a9447\",\"name\":\"Produto 35\",\"planId\":null,\"planName\":null,\"quantity\":1,\"priceInCents\":3500}],\"trackingParameters\":{\"utm_source\":\"FBjLj68570851a47b929fcefb5189\",\"utm_medium\":\"CX|120226827273760470\",\"utm_campaign\":\"21-06 14 MEIODIA DARK 2.0 \\u2014 C\\u00f3pia|120226827273940470\",\"utm_content\":\"AD14|120226827273670470\",\"utm_term\":\"Facebook_Mobile_Feed\",\"xcod\":\"FBjLj68570851a47b929fcefb5189hQwK21wXxR21-06 14 MEIODIA DARK 2.0 \\u2014 C\\u00f3pia|120226827273940470hQwK21wXxRCX|120226827273760470hQwK21wXxRAD14|120226827273670470hQwK21wXxRFacebook_Mobile_Feed\",\"sck\":\"FBjLj68570851a47b929fcefb5189hQwK21wXxR21-06 14 MEIODIA DARK 2.0 \\u2014 C\\u00f3pia|120226827273940470hQwK21wXxRCX|120226827273760470hQwK21wXxRAD14|120226827273670470hQwK21wXxRFacebook_Mobile_Feed\"},\"commission\":{\"totalPriceInCents\":3500,\"gatewayFeeInCents\":0,\"userCommissionInCents\":3500},\"isTest\":false}"
+}
+----------------------------------------
+[2025-06-21 19:41:21] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "21678f46-87a2-4c07-b86b-1526a5734e00",
+    "platform": "MinhaPlataforma",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-21 16:41:21",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Ana Gomes Costa",
+        "email": "ana.gomes.costa@email.com",
+        "phone": null,
+        "document": "58726999803",
+        "country": "BR",
+        "ip": "187.90.211.230"
+    },
+    "products": [
+        {
+            "id": "PROD_68570ae1a9447",
+            "name": "Produto 35",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 3500
+        }
+    ],
+    "trackingParameters": {
+        "utm_source": "FBjLj68570851a47b929fcefb5189",
+        "utm_medium": "CX|120226827273760470",
+        "utm_campaign": "21-06 14 MEIODIA DARK 2.0 \u2014 C\u00f3pia|120226827273940470",
+        "utm_content": "AD14|120226827273670470",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": "FBjLj68570851a47b929fcefb5189hQwK21wXxR21-06 14 MEIODIA DARK 2.0 \u2014 C\u00f3pia|120226827273940470hQwK21wXxRCX|120226827273760470hQwK21wXxRAD14|120226827273670470hQwK21wXxRFacebook_Mobile_Feed",
+        "sck": "FBjLj68570851a47b929fcefb5189hQwK21wXxR21-06 14 MEIODIA DARK 2.0 \u2014 C\u00f3pia|120226827273940470hQwK21wXxRCX|120226827273760470hQwK21wXxRAD14|120226827273670470hQwK21wXxRFacebook_Mobile_Feed"
+    },
+    "commission": {
+        "totalPriceInCents": 3500,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 3500
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-21 19:41:21] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "21678f46-87a2-4c07-b86b-1526a5734e00",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-21 19:41:21",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Ana Gomes Costa",
+        "email": "ana.gomes.costa@email.com",
+        "phone": null,
+        "document": "58726999803",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_68570ae1a9447",
+            "name": "Produto 35",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 3500
+        }
+    ],
+    "trackingParameters": {
+        "src": null,
+        "sck": "FBjLj68570851a47b929fcefb5189hQwK21wXxR21-06 14 MEIODIA DARK 2.0 \u2014 C\u00f3pia|120226827273940470hQwK21wXxRCX|120226827273760470hQwK21wXxRAD14|120226827273670470hQwK21wXxRFacebook_Mobile_Feed",
+        "utm_source": "FBjLj68570851a47b929fcefb5189",
+        "utm_campaign": "21-06 14 MEIODIA DARK 2.0 \u2014 C\u00f3pia|120226827273940470",
+        "utm_medium": "CX|120226827273760470",
+        "utm_content": "AD14|120226827273670470",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": "FBjLj68570851a47b929fcefb5189hQwK21wXxR21-06 14 MEIODIA DARK 2.0 \u2014 C\u00f3pia|120226827273940470hQwK21wXxRCX|120226827273760470hQwK21wXxRAD14|120226827273670470hQwK21wXxRFacebook_Mobile_Feed",
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": 3500,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 3500
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-21 19:41:21] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-06-21 19:41:21] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-06-21 19:44:09] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"c7d64ae4-7b61-4455-9c8c-d89a39638ae9\",\"platform\":\"MinhaPlataforma\",\"paymentMethod\":\"pix\",\"status\":\"waiting_payment\",\"createdAt\":\"2025-06-21 16:44:09\",\"approvedDate\":null,\"refundedAt\":null,\"customer\":{\"name\":\"Valentina Costa Soares\",\"email\":\"valentina.costa.soares@email.com\",\"phone\":null,\"document\":\"26306862307\",\"country\":\"BR\",\"ip\":\"45.162.189.10\"},\"products\":[{\"id\":\"PROD_68570b8923bfb\",\"name\":\"Produto 35\",\"planId\":null,\"planName\":null,\"quantity\":1,\"priceInCents\":3500}],\"trackingParameters\":{\"utm_source\":\"FBjLj6857079aec6f2807f4261a3f\",\"utm_medium\":\"CX|120226827273760470\",\"utm_campaign\":\"21-06 14 MEIODIA DARK 2.0 \\u2014 C\\u00f3pia|120226827273940470\",\"utm_content\":\"AD14|120226827273670470\",\"utm_term\":\"Facebook_Mobile_Feed\",\"xcod\":\"FBjLj6857079aec6f2807f4261a3fhQwK21wXxR21-06 14 MEIODIA DARK 2.0 \\u2014 C\\u00f3pia|120226827273940470hQwK21wXxRCX|120226827273760470hQwK21wXxRAD14|120226827273670470hQwK21wXxRFacebook_Mobile_Feed\",\"sck\":\"FBjLj6857079aec6f2807f4261a3fhQwK21wXxR21-06 14 MEIODIA DARK 2.0 \\u2014 C\\u00f3pia|120226827273940470hQwK21wXxRCX|120226827273760470hQwK21wXxRAD14|120226827273670470hQwK21wXxRFacebook_Mobile_Feed\"},\"commission\":{\"totalPriceInCents\":3500,\"gatewayFeeInCents\":0,\"userCommissionInCents\":3500},\"isTest\":false}"
+}
+----------------------------------------
+[2025-06-21 19:44:09] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "c7d64ae4-7b61-4455-9c8c-d89a39638ae9",
+    "platform": "MinhaPlataforma",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-21 16:44:09",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Valentina Costa Soares",
+        "email": "valentina.costa.soares@email.com",
+        "phone": null,
+        "document": "26306862307",
+        "country": "BR",
+        "ip": "45.162.189.10"
+    },
+    "products": [
+        {
+            "id": "PROD_68570b8923bfb",
+            "name": "Produto 35",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 3500
+        }
+    ],
+    "trackingParameters": {
+        "utm_source": "FBjLj6857079aec6f2807f4261a3f",
+        "utm_medium": "CX|120226827273760470",
+        "utm_campaign": "21-06 14 MEIODIA DARK 2.0 \u2014 C\u00f3pia|120226827273940470",
+        "utm_content": "AD14|120226827273670470",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": "FBjLj6857079aec6f2807f4261a3fhQwK21wXxR21-06 14 MEIODIA DARK 2.0 \u2014 C\u00f3pia|120226827273940470hQwK21wXxRCX|120226827273760470hQwK21wXxRAD14|120226827273670470hQwK21wXxRFacebook_Mobile_Feed",
+        "sck": "FBjLj6857079aec6f2807f4261a3fhQwK21wXxR21-06 14 MEIODIA DARK 2.0 \u2014 C\u00f3pia|120226827273940470hQwK21wXxRCX|120226827273760470hQwK21wXxRAD14|120226827273670470hQwK21wXxRFacebook_Mobile_Feed"
+    },
+    "commission": {
+        "totalPriceInCents": 3500,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 3500
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-21 19:44:09] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "c7d64ae4-7b61-4455-9c8c-d89a39638ae9",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-21 19:44:09",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Valentina Costa Soares",
+        "email": "valentina.costa.soares@email.com",
+        "phone": null,
+        "document": "26306862307",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_68570b8923bfb",
+            "name": "Produto 35",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 3500
+        }
+    ],
+    "trackingParameters": {
+        "src": null,
+        "sck": "FBjLj6857079aec6f2807f4261a3fhQwK21wXxR21-06 14 MEIODIA DARK 2.0 \u2014 C\u00f3pia|120226827273940470hQwK21wXxRCX|120226827273760470hQwK21wXxRAD14|120226827273670470hQwK21wXxRFacebook_Mobile_Feed",
+        "utm_source": "FBjLj6857079aec6f2807f4261a3f",
+        "utm_campaign": "21-06 14 MEIODIA DARK 2.0 \u2014 C\u00f3pia|120226827273940470",
+        "utm_medium": "CX|120226827273760470",
+        "utm_content": "AD14|120226827273670470",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": "FBjLj6857079aec6f2807f4261a3fhQwK21wXxR21-06 14 MEIODIA DARK 2.0 \u2014 C\u00f3pia|120226827273940470hQwK21wXxRCX|120226827273760470hQwK21wXxRAD14|120226827273670470hQwK21wXxRFacebook_Mobile_Feed",
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": 3500,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 3500
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-21 19:44:09] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-06-21 19:44:09] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-06-21 19:52:21] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"d59e2813-712d-401d-941b-0ff9e071a27a\",\"platform\":\"MinhaPlataforma\",\"paymentMethod\":\"pix\",\"status\":\"waiting_payment\",\"createdAt\":\"2025-06-21 16:52:21\",\"approvedDate\":null,\"refundedAt\":null,\"customer\":{\"name\":\"Helena Almeida Barbosa\",\"email\":\"helena.almeida.barbosa@email.com\",\"phone\":null,\"document\":\"74582099769\",\"country\":\"BR\",\"ip\":\"186.226.222.251\"},\"products\":[{\"id\":\"PROD_68570d75d8b2d\",\"name\":\"Produto 35\",\"planId\":null,\"planName\":null,\"quantity\":1,\"priceInCents\":3500}],\"trackingParameters\":[],\"commission\":{\"totalPriceInCents\":3500,\"gatewayFeeInCents\":0,\"userCommissionInCents\":3500},\"isTest\":false}"
+}
+----------------------------------------
+[2025-06-21 19:52:21] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "d59e2813-712d-401d-941b-0ff9e071a27a",
+    "platform": "MinhaPlataforma",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-21 16:52:21",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Helena Almeida Barbosa",
+        "email": "helena.almeida.barbosa@email.com",
+        "phone": null,
+        "document": "74582099769",
+        "country": "BR",
+        "ip": "186.226.222.251"
+    },
+    "products": [
+        {
+            "id": "PROD_68570d75d8b2d",
+            "name": "Produto 35",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 3500
+        }
+    ],
+    "trackingParameters": [],
+    "commission": {
+        "totalPriceInCents": 3500,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 3500
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-21 19:52:21] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "d59e2813-712d-401d-941b-0ff9e071a27a",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-21 19:52:21",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Helena Almeida Barbosa",
+        "email": "helena.almeida.barbosa@email.com",
+        "phone": null,
+        "document": "74582099769",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_68570d75d8b2d",
+            "name": "Produto 35",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 3500
+        }
+    ],
+    "trackingParameters": {
+        "src": null,
+        "sck": null,
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null,
+        "utm_content": null,
+        "utm_term": null,
+        "xcod": null,
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": 3500,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 3500
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-21 19:52:21] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-06-21 19:52:21] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-06-21 20:04:55] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"8340e9b9-b618-4a33-aaf8-2205cb309a1e\",\"platform\":\"MinhaPlataforma\",\"paymentMethod\":\"pix\",\"status\":\"waiting_payment\",\"createdAt\":\"2025-06-21 17:04:55\",\"approvedDate\":null,\"refundedAt\":null,\"customer\":{\"name\":\"Miguel Lima Ferreira\",\"email\":\"miguel.lima.ferreira@email.com\",\"phone\":null,\"document\":\"90227376838\",\"country\":\"BR\",\"ip\":\"177.185.66.13\"},\"products\":[{\"id\":\"PROD_68571067e9b91\",\"name\":\"Produto 35\",\"planId\":null,\"planName\":null,\"quantity\":1,\"priceInCents\":3500}],\"trackingParameters\":{\"utm_source\":\"FBjLj6857072fa47b929fcefad41c\",\"utm_medium\":\"CX|120226827273700470\",\"utm_campaign\":\"21-06 14 MEIODIA DARK 2.0 \\u2014 C\\u00f3pia|120226827273500470\",\"utm_content\":\"AD14|120226827273820470\",\"utm_term\":\"Facebook_Mobile_Feed\",\"xcod\":\"FBjLj6857072fa47b929fcefad41chQwK21wXxR21-06 14 MEIODIA DARK 2.0 \\u2014 C\\u00f3pia|120226827273500470hQwK21wXxRCX|120226827273700470hQwK21wXxRAD14|120226827273820470hQwK21wXxRFacebook_Mobile_Feed\",\"sck\":\"FBjLj6857072fa47b929fcefad41chQwK21wXxR21-06 14 MEIODIA DARK 2.0 \\u2014 C\\u00f3pia|120226827273500470hQwK21wXxRCX|120226827273700470hQwK21wXxRAD14|120226827273820470hQwK21wXxRFacebook_Mobile_Feed\"},\"commission\":{\"totalPriceInCents\":3500,\"gatewayFeeInCents\":0,\"userCommissionInCents\":3500},\"isTest\":false}"
+}
+----------------------------------------
+[2025-06-21 20:04:55] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "8340e9b9-b618-4a33-aaf8-2205cb309a1e",
+    "platform": "MinhaPlataforma",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-21 17:04:55",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Miguel Lima Ferreira",
+        "email": "miguel.lima.ferreira@email.com",
+        "phone": null,
+        "document": "90227376838",
+        "country": "BR",
+        "ip": "177.185.66.13"
+    },
+    "products": [
+        {
+            "id": "PROD_68571067e9b91",
+            "name": "Produto 35",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 3500
+        }
+    ],
+    "trackingParameters": {
+        "utm_source": "FBjLj6857072fa47b929fcefad41c",
+        "utm_medium": "CX|120226827273700470",
+        "utm_campaign": "21-06 14 MEIODIA DARK 2.0 \u2014 C\u00f3pia|120226827273500470",
+        "utm_content": "AD14|120226827273820470",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": "FBjLj6857072fa47b929fcefad41chQwK21wXxR21-06 14 MEIODIA DARK 2.0 \u2014 C\u00f3pia|120226827273500470hQwK21wXxRCX|120226827273700470hQwK21wXxRAD14|120226827273820470hQwK21wXxRFacebook_Mobile_Feed",
+        "sck": "FBjLj6857072fa47b929fcefad41chQwK21wXxR21-06 14 MEIODIA DARK 2.0 \u2014 C\u00f3pia|120226827273500470hQwK21wXxRCX|120226827273700470hQwK21wXxRAD14|120226827273820470hQwK21wXxRFacebook_Mobile_Feed"
+    },
+    "commission": {
+        "totalPriceInCents": 3500,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 3500
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-21 20:04:55] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "8340e9b9-b618-4a33-aaf8-2205cb309a1e",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-21 20:04:55",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Miguel Lima Ferreira",
+        "email": "miguel.lima.ferreira@email.com",
+        "phone": null,
+        "document": "90227376838",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_68571067e9b91",
+            "name": "Produto 35",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 3500
+        }
+    ],
+    "trackingParameters": {
+        "src": null,
+        "sck": "FBjLj6857072fa47b929fcefad41chQwK21wXxR21-06 14 MEIODIA DARK 2.0 \u2014 C\u00f3pia|120226827273500470hQwK21wXxRCX|120226827273700470hQwK21wXxRAD14|120226827273820470hQwK21wXxRFacebook_Mobile_Feed",
+        "utm_source": "FBjLj6857072fa47b929fcefad41c",
+        "utm_campaign": "21-06 14 MEIODIA DARK 2.0 \u2014 C\u00f3pia|120226827273500470",
+        "utm_medium": "CX|120226827273700470",
+        "utm_content": "AD14|120226827273820470",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": "FBjLj6857072fa47b929fcefad41chQwK21wXxR21-06 14 MEIODIA DARK 2.0 \u2014 C\u00f3pia|120226827273500470hQwK21wXxRCX|120226827273700470hQwK21wXxRAD14|120226827273820470hQwK21wXxRFacebook_Mobile_Feed",
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": 3500,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 3500
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-21 20:04:55] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-06-21 20:04:56] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------

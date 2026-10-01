@@ -1,0 +1,3949 @@
+[2025-06-09 06:29:33] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"b06e6e38-0dd1-4eb9-bf53-b348090335ee\",\"platform\":\"PayHubr\",\"paymentMethod\":\"pix\",\"status\":\"paid\",\"createdAt\":\"2025-06-09T06:27:09-03:00\",\"approvedDate\":\"2025-06-09 06:29:33\",\"paidAt\":\"2025-06-09 06:29:33\",\"refundedAt\":null,\"customer\":{\"name\":\"Valentina Rodrigues Carvalho\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":{\"number\":\"21361485914\",\"type\":\"CPF\"},\"country\":\"BR\",\"ip\":\"64.23.135.43\"},\"items\":[{\"id\":\"PROD_6846a97da285f\",\"title\":\"Produto 55.73\",\"quantity\":1,\"unitPrice\":\"5573\"}],\"amount\":\"5573\",\"fee\":{\"fixedAmount\":0,\"netAmount\":\"5573\"},\"trackingParameters\":{\"src\":\"FBjLj6846a5433a2f5b0f9ce11ebc\",\"utm_source\":\"FBjLj6846a5433a2f5b0f9ce11ebc\",\"utm_campaign\":\"09\\\/06 ESCALA CTV 17 VALIDADO \\u2014 C\\u00f3pia|120225784281020470\",\"utm_medium\":\"PDIDDY|120225784281550470\",\"utm_content\":\"017|120225784280530470\",\"utm_term\":\"Facebook_Stories\"},\"isTest\":false}"
+}
+----------------------------------------
+[2025-06-09 06:29:33] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "b06e6e38-0dd1-4eb9-bf53-b348090335ee",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "paid",
+    "createdAt": "2025-06-09T06:27:09-03:00",
+    "approvedDate": "2025-06-09 06:29:33",
+    "paidAt": "2025-06-09 06:29:33",
+    "refundedAt": null,
+    "customer": {
+        "name": "Valentina Rodrigues Carvalho",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": {
+            "number": "21361485914",
+            "type": "CPF"
+        },
+        "country": "BR",
+        "ip": "64.23.135.43"
+    },
+    "items": [
+        {
+            "id": "PROD_6846a97da285f",
+            "title": "Produto 55.73",
+            "quantity": 1,
+            "unitPrice": "5573"
+        }
+    ],
+    "amount": "5573",
+    "fee": {
+        "fixedAmount": 0,
+        "netAmount": "5573"
+    },
+    "trackingParameters": {
+        "src": "FBjLj6846a5433a2f5b0f9ce11ebc",
+        "utm_source": "FBjLj6846a5433a2f5b0f9ce11ebc",
+        "utm_campaign": "09\/06 ESCALA CTV 17 VALIDADO \u2014 C\u00f3pia|120225784281020470",
+        "utm_medium": "PDIDDY|120225784281550470",
+        "utm_content": "017|120225784280530470",
+        "utm_term": "Facebook_Stories"
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-09 06:29:33] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "b06e6e38-0dd1-4eb9-bf53-b348090335ee",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "paid",
+    "createdAt": "2025-06-09 09:27:09",
+    "approvedDate": "2025-06-09 09:29:33",
+    "refundedAt": null,
+    "customer": {
+        "name": "Valentina Rodrigues Carvalho",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "21361485914",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_6846a97da285f",
+            "name": "Produto 55.73",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": "5573"
+        }
+    ],
+    "trackingParameters": {
+        "src": "FBjLj6846a5433a2f5b0f9ce11ebc",
+        "sck": null,
+        "utm_source": "FBjLj6846a5433a2f5b0f9ce11ebc",
+        "utm_campaign": "09\/06 ESCALA CTV 17 VALIDADO \u2014 C\u00f3pia|120225784281020470",
+        "utm_medium": "PDIDDY|120225784281550470",
+        "utm_content": "017|120225784280530470",
+        "utm_term": "Facebook_Stories",
+        "xcod": null,
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": "5573",
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": "5573"
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-09 06:29:33] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-06-09 06:29:33] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-06-09 06:30:35] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"456843f5-8e5f-45b1-b3be-9fe652016ad2\",\"platform\":\"PayHubr\",\"paymentMethod\":\"pix\",\"status\":\"paid\",\"createdAt\":\"2025-06-09T06:27:21-03:00\",\"approvedDate\":\"2025-06-09 06:30:35\",\"paidAt\":\"2025-06-09 06:30:35\",\"refundedAt\":null,\"customer\":{\"name\":\"Sophia Soares Souza\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":{\"number\":\"73326451229\",\"type\":\"CPF\"},\"country\":\"BR\",\"ip\":\"64.23.135.43\"},\"items\":[{\"id\":\"PROD_6846a9bba0a0c\",\"title\":\"Produto 55.73\",\"quantity\":1,\"unitPrice\":\"5573\"}],\"amount\":\"5573\",\"fee\":{\"fixedAmount\":0,\"netAmount\":\"5573\"},\"trackingParameters\":[],\"isTest\":false}"
+}
+----------------------------------------
+[2025-06-09 06:30:35] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "456843f5-8e5f-45b1-b3be-9fe652016ad2",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "paid",
+    "createdAt": "2025-06-09T06:27:21-03:00",
+    "approvedDate": "2025-06-09 06:30:35",
+    "paidAt": "2025-06-09 06:30:35",
+    "refundedAt": null,
+    "customer": {
+        "name": "Sophia Soares Souza",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": {
+            "number": "73326451229",
+            "type": "CPF"
+        },
+        "country": "BR",
+        "ip": "64.23.135.43"
+    },
+    "items": [
+        {
+            "id": "PROD_6846a9bba0a0c",
+            "title": "Produto 55.73",
+            "quantity": 1,
+            "unitPrice": "5573"
+        }
+    ],
+    "amount": "5573",
+    "fee": {
+        "fixedAmount": 0,
+        "netAmount": "5573"
+    },
+    "trackingParameters": [],
+    "isTest": false
+}
+----------------------------------------
+[2025-06-09 06:30:35] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "456843f5-8e5f-45b1-b3be-9fe652016ad2",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "paid",
+    "createdAt": "2025-06-09 09:27:21",
+    "approvedDate": "2025-06-09 09:30:35",
+    "refundedAt": null,
+    "customer": {
+        "name": "Sophia Soares Souza",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "73326451229",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_6846a9bba0a0c",
+            "name": "Produto 55.73",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": "5573"
+        }
+    ],
+    "trackingParameters": {
+        "src": null,
+        "sck": null,
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null,
+        "utm_content": null,
+        "utm_term": null,
+        "xcod": null,
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": "5573",
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": "5573"
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-09 06:30:35] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-06-09 06:30:35] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-06-09 06:33:31] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"8b4c82b9-fc6b-45c4-9641-db2cccd74ee1\",\"platform\":\"PayHubr\",\"paymentMethod\":\"pix\",\"status\":\"paid\",\"createdAt\":\"2025-06-09T06:31:35-03:00\",\"approvedDate\":\"2025-06-09 06:33:31\",\"paidAt\":\"2025-06-09 06:33:31\",\"refundedAt\":null,\"customer\":{\"name\":\"Miguel Oliveira Ribeiro\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":{\"number\":\"26186264785\",\"type\":\"CPF\"},\"country\":\"BR\",\"ip\":\"64.23.135.43\"},\"items\":[{\"id\":\"PROD_6846aa6b518cf\",\"title\":\"Produto 55.73\",\"quantity\":1,\"unitPrice\":\"5573\"}],\"amount\":\"5573\",\"fee\":{\"fixedAmount\":0,\"netAmount\":\"5573\"},\"trackingParameters\":[],\"isTest\":false}"
+}
+----------------------------------------
+[2025-06-09 06:33:31] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "8b4c82b9-fc6b-45c4-9641-db2cccd74ee1",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "paid",
+    "createdAt": "2025-06-09T06:31:35-03:00",
+    "approvedDate": "2025-06-09 06:33:31",
+    "paidAt": "2025-06-09 06:33:31",
+    "refundedAt": null,
+    "customer": {
+        "name": "Miguel Oliveira Ribeiro",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": {
+            "number": "26186264785",
+            "type": "CPF"
+        },
+        "country": "BR",
+        "ip": "64.23.135.43"
+    },
+    "items": [
+        {
+            "id": "PROD_6846aa6b518cf",
+            "title": "Produto 55.73",
+            "quantity": 1,
+            "unitPrice": "5573"
+        }
+    ],
+    "amount": "5573",
+    "fee": {
+        "fixedAmount": 0,
+        "netAmount": "5573"
+    },
+    "trackingParameters": [],
+    "isTest": false
+}
+----------------------------------------
+[2025-06-09 06:33:31] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "8b4c82b9-fc6b-45c4-9641-db2cccd74ee1",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "paid",
+    "createdAt": "2025-06-09 09:31:35",
+    "approvedDate": "2025-06-09 09:33:31",
+    "refundedAt": null,
+    "customer": {
+        "name": "Miguel Oliveira Ribeiro",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "26186264785",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_6846aa6b518cf",
+            "name": "Produto 55.73",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": "5573"
+        }
+    ],
+    "trackingParameters": {
+        "src": null,
+        "sck": null,
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null,
+        "utm_content": null,
+        "utm_term": null,
+        "xcod": null,
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": "5573",
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": "5573"
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-09 06:33:31] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-06-09 06:33:31] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-06-09 06:39:29] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"5516a855-b82d-44ff-a623-2f2d680d35f2\",\"platform\":\"PayHubr\",\"paymentMethod\":\"pix\",\"status\":\"paid\",\"createdAt\":\"2025-06-09T06:35:44-03:00\",\"approvedDate\":\"2025-06-09 06:39:29\",\"paidAt\":\"2025-06-09 06:39:29\",\"refundedAt\":null,\"customer\":{\"name\":\"Alice Almeida Silva\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":{\"number\":\"36163225538\",\"type\":\"CPF\"},\"country\":\"BR\",\"ip\":\"64.23.135.43\"},\"items\":[{\"id\":\"PROD_6846abd13df62\",\"title\":\"Produto 55.73\",\"quantity\":1,\"unitPrice\":\"5573\"}],\"amount\":\"5573\",\"fee\":{\"fixedAmount\":0,\"netAmount\":\"5573\"},\"trackingParameters\":{\"src\":\"FBjLj6846a7fb3575d8401c2b3286\",\"utm_source\":\"FBjLj6846a7fb3575d8401c2b3286\",\"utm_campaign\":\"09\\\/06 ESCALA CTV 17 VALIDADO \\u2014 C\\u00f3pia|120225784280380470\",\"utm_medium\":\"PDIDDY|120225784280800470\",\"utm_content\":\"017|120225784281310470\",\"utm_term\":\"Facebook_Stories\"},\"isTest\":false}"
+}
+----------------------------------------
+[2025-06-09 06:39:29] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "5516a855-b82d-44ff-a623-2f2d680d35f2",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "paid",
+    "createdAt": "2025-06-09T06:35:44-03:00",
+    "approvedDate": "2025-06-09 06:39:29",
+    "paidAt": "2025-06-09 06:39:29",
+    "refundedAt": null,
+    "customer": {
+        "name": "Alice Almeida Silva",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": {
+            "number": "36163225538",
+            "type": "CPF"
+        },
+        "country": "BR",
+        "ip": "64.23.135.43"
+    },
+    "items": [
+        {
+            "id": "PROD_6846abd13df62",
+            "title": "Produto 55.73",
+            "quantity": 1,
+            "unitPrice": "5573"
+        }
+    ],
+    "amount": "5573",
+    "fee": {
+        "fixedAmount": 0,
+        "netAmount": "5573"
+    },
+    "trackingParameters": {
+        "src": "FBjLj6846a7fb3575d8401c2b3286",
+        "utm_source": "FBjLj6846a7fb3575d8401c2b3286",
+        "utm_campaign": "09\/06 ESCALA CTV 17 VALIDADO \u2014 C\u00f3pia|120225784280380470",
+        "utm_medium": "PDIDDY|120225784280800470",
+        "utm_content": "017|120225784281310470",
+        "utm_term": "Facebook_Stories"
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-09 06:39:29] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "5516a855-b82d-44ff-a623-2f2d680d35f2",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "paid",
+    "createdAt": "2025-06-09 09:35:44",
+    "approvedDate": "2025-06-09 09:39:29",
+    "refundedAt": null,
+    "customer": {
+        "name": "Alice Almeida Silva",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "36163225538",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_6846abd13df62",
+            "name": "Produto 55.73",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": "5573"
+        }
+    ],
+    "trackingParameters": {
+        "src": "FBjLj6846a7fb3575d8401c2b3286",
+        "sck": null,
+        "utm_source": "FBjLj6846a7fb3575d8401c2b3286",
+        "utm_campaign": "09\/06 ESCALA CTV 17 VALIDADO \u2014 C\u00f3pia|120225784280380470",
+        "utm_medium": "PDIDDY|120225784280800470",
+        "utm_content": "017|120225784281310470",
+        "utm_term": "Facebook_Stories",
+        "xcod": null,
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": "5573",
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": "5573"
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-09 06:39:29] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-06-09 06:39:29] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-06-09 06:47:19] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"c8636fb4-caa8-4799-866a-a9d0063ca35c\",\"platform\":\"PayHubr\",\"paymentMethod\":\"pix\",\"status\":\"paid\",\"createdAt\":\"2025-06-09T06:43:19-03:00\",\"approvedDate\":\"2025-06-09 06:47:19\",\"paidAt\":\"2025-06-09 06:47:19\",\"refundedAt\":null,\"customer\":{\"name\":\"Mariana Costa Martins\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":{\"number\":\"26229540185\",\"type\":\"CPF\"},\"country\":\"BR\",\"ip\":\"64.23.135.43\"},\"items\":[{\"id\":\"PROD_6846ada72d87d\",\"title\":\"Produto 55.73\",\"quantity\":1,\"unitPrice\":\"5573\"}],\"amount\":\"5573\",\"fee\":{\"fixedAmount\":0,\"netAmount\":\"5573\"},\"trackingParameters\":{\"src\":\"FBjLj68448b561b06d175fc45f6be\",\"utm_source\":\"FBjLj68448b561b06d175fc45f6be\",\"utm_campaign\":\"09\\\/06 TESTE CTV 14|120226873351820081\",\"utm_medium\":\"PDDIDY E INOCENTE|120226873351810081\",\"utm_content\":\"014|120226873351830081\",\"utm_term\":\"Facebook_Mobile_Feed\"},\"isTest\":false}"
+}
+----------------------------------------
+[2025-06-09 06:47:19] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "c8636fb4-caa8-4799-866a-a9d0063ca35c",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "paid",
+    "createdAt": "2025-06-09T06:43:19-03:00",
+    "approvedDate": "2025-06-09 06:47:19",
+    "paidAt": "2025-06-09 06:47:19",
+    "refundedAt": null,
+    "customer": {
+        "name": "Mariana Costa Martins",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": {
+            "number": "26229540185",
+            "type": "CPF"
+        },
+        "country": "BR",
+        "ip": "64.23.135.43"
+    },
+    "items": [
+        {
+            "id": "PROD_6846ada72d87d",
+            "title": "Produto 55.73",
+            "quantity": 1,
+            "unitPrice": "5573"
+        }
+    ],
+    "amount": "5573",
+    "fee": {
+        "fixedAmount": 0,
+        "netAmount": "5573"
+    },
+    "trackingParameters": {
+        "src": "FBjLj68448b561b06d175fc45f6be",
+        "utm_source": "FBjLj68448b561b06d175fc45f6be",
+        "utm_campaign": "09\/06 TESTE CTV 14|120226873351820081",
+        "utm_medium": "PDDIDY E INOCENTE|120226873351810081",
+        "utm_content": "014|120226873351830081",
+        "utm_term": "Facebook_Mobile_Feed"
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-09 06:47:19] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "c8636fb4-caa8-4799-866a-a9d0063ca35c",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "paid",
+    "createdAt": "2025-06-09 09:43:19",
+    "approvedDate": "2025-06-09 09:47:19",
+    "refundedAt": null,
+    "customer": {
+        "name": "Mariana Costa Martins",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "26229540185",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_6846ada72d87d",
+            "name": "Produto 55.73",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": "5573"
+        }
+    ],
+    "trackingParameters": {
+        "src": "FBjLj68448b561b06d175fc45f6be",
+        "sck": null,
+        "utm_source": "FBjLj68448b561b06d175fc45f6be",
+        "utm_campaign": "09\/06 TESTE CTV 14|120226873351820081",
+        "utm_medium": "PDDIDY E INOCENTE|120226873351810081",
+        "utm_content": "014|120226873351830081",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": null,
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": "5573",
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": "5573"
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-09 06:47:19] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-06-09 06:47:19] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-06-09 06:50:15] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"4d7acbb3-4cdc-4022-9f97-e1c594f8459f\",\"platform\":\"PayHubr\",\"paymentMethod\":\"pix\",\"status\":\"paid\",\"createdAt\":\"2025-06-09T06:47:25-03:00\",\"approvedDate\":\"2025-06-09 06:50:15\",\"paidAt\":\"2025-06-09 06:50:15\",\"refundedAt\":null,\"customer\":{\"name\":\"Bernardo Fernandes Lima\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":{\"number\":\"54785911905\",\"type\":\"CPF\"},\"country\":\"BR\",\"ip\":\"64.23.135.43\"},\"items\":[{\"id\":\"PROD_6846ae57b0726\",\"title\":\"Produto 55.73\",\"quantity\":1,\"unitPrice\":\"5573\"}],\"amount\":\"5573\",\"fee\":{\"fixedAmount\":0,\"netAmount\":\"5573\"},\"trackingParameters\":{\"src\":\"FBjLj6846ab3478a3acf99218b7d5\",\"utm_source\":\"FBjLj6846ab3478a3acf99218b7d5\",\"utm_campaign\":\"09\\\/06 ESCALA CTV 17 VALIDADO \\u2014 C\\u00f3pia|120225784281070470\",\"utm_medium\":\"PDIDDY|120225784281760470\",\"utm_content\":\"017|120225784280580470\",\"utm_term\":\"Facebook_Mobile_Feed\"},\"isTest\":false}"
+}
+----------------------------------------
+[2025-06-09 06:50:15] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "4d7acbb3-4cdc-4022-9f97-e1c594f8459f",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "paid",
+    "createdAt": "2025-06-09T06:47:25-03:00",
+    "approvedDate": "2025-06-09 06:50:15",
+    "paidAt": "2025-06-09 06:50:15",
+    "refundedAt": null,
+    "customer": {
+        "name": "Bernardo Fernandes Lima",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": {
+            "number": "54785911905",
+            "type": "CPF"
+        },
+        "country": "BR",
+        "ip": "64.23.135.43"
+    },
+    "items": [
+        {
+            "id": "PROD_6846ae57b0726",
+            "title": "Produto 55.73",
+            "quantity": 1,
+            "unitPrice": "5573"
+        }
+    ],
+    "amount": "5573",
+    "fee": {
+        "fixedAmount": 0,
+        "netAmount": "5573"
+    },
+    "trackingParameters": {
+        "src": "FBjLj6846ab3478a3acf99218b7d5",
+        "utm_source": "FBjLj6846ab3478a3acf99218b7d5",
+        "utm_campaign": "09\/06 ESCALA CTV 17 VALIDADO \u2014 C\u00f3pia|120225784281070470",
+        "utm_medium": "PDIDDY|120225784281760470",
+        "utm_content": "017|120225784280580470",
+        "utm_term": "Facebook_Mobile_Feed"
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-09 06:50:15] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "4d7acbb3-4cdc-4022-9f97-e1c594f8459f",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "paid",
+    "createdAt": "2025-06-09 09:47:25",
+    "approvedDate": "2025-06-09 09:50:15",
+    "refundedAt": null,
+    "customer": {
+        "name": "Bernardo Fernandes Lima",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "54785911905",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_6846ae57b0726",
+            "name": "Produto 55.73",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": "5573"
+        }
+    ],
+    "trackingParameters": {
+        "src": "FBjLj6846ab3478a3acf99218b7d5",
+        "sck": null,
+        "utm_source": "FBjLj6846ab3478a3acf99218b7d5",
+        "utm_campaign": "09\/06 ESCALA CTV 17 VALIDADO \u2014 C\u00f3pia|120225784281070470",
+        "utm_medium": "PDIDDY|120225784281760470",
+        "utm_content": "017|120225784280580470",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": null,
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": "5573",
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": "5573"
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-09 06:50:15] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-06-09 06:50:15] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-06-09 06:57:54] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"20587dc7-c18b-4878-a4fc-b308f1a5a7d8\",\"platform\":\"PayHubr\",\"paymentMethod\":\"pix\",\"status\":\"paid\",\"createdAt\":\"2025-06-09T06:55:11-03:00\",\"approvedDate\":\"2025-06-09 06:57:54\",\"paidAt\":\"2025-06-09 06:57:54\",\"refundedAt\":null,\"customer\":{\"name\":\"Maria Fernandes Ferreira\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":{\"number\":\"92662667010\",\"type\":\"CPF\"},\"country\":\"BR\",\"ip\":\"64.23.135.43\"},\"items\":[{\"id\":\"PROD_6846b0226a8cc\",\"title\":\"Produto 55.73\",\"quantity\":1,\"unitPrice\":\"5573\"}],\"amount\":\"5573\",\"fee\":{\"fixedAmount\":0,\"netAmount\":\"5573\"},\"trackingParameters\":{\"src\":\"FBjLj6846acb5fbd7d120bb97b0c0\",\"utm_source\":\"FBjLj6846acb5fbd7d120bb97b0c0\",\"utm_campaign\":\"09\\\/06 TESTE CTV 20|120226873467140081\",\"utm_medium\":\"PDDIDY E INOCENTE|120226873467130081\",\"utm_content\":\"020|120226873467150081\",\"utm_term\":\"Instagram_Reels\"},\"isTest\":false}"
+}
+----------------------------------------
+[2025-06-09 06:57:54] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "20587dc7-c18b-4878-a4fc-b308f1a5a7d8",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "paid",
+    "createdAt": "2025-06-09T06:55:11-03:00",
+    "approvedDate": "2025-06-09 06:57:54",
+    "paidAt": "2025-06-09 06:57:54",
+    "refundedAt": null,
+    "customer": {
+        "name": "Maria Fernandes Ferreira",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": {
+            "number": "92662667010",
+            "type": "CPF"
+        },
+        "country": "BR",
+        "ip": "64.23.135.43"
+    },
+    "items": [
+        {
+            "id": "PROD_6846b0226a8cc",
+            "title": "Produto 55.73",
+            "quantity": 1,
+            "unitPrice": "5573"
+        }
+    ],
+    "amount": "5573",
+    "fee": {
+        "fixedAmount": 0,
+        "netAmount": "5573"
+    },
+    "trackingParameters": {
+        "src": "FBjLj6846acb5fbd7d120bb97b0c0",
+        "utm_source": "FBjLj6846acb5fbd7d120bb97b0c0",
+        "utm_campaign": "09\/06 TESTE CTV 20|120226873467140081",
+        "utm_medium": "PDDIDY E INOCENTE|120226873467130081",
+        "utm_content": "020|120226873467150081",
+        "utm_term": "Instagram_Reels"
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-09 06:57:54] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "20587dc7-c18b-4878-a4fc-b308f1a5a7d8",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "paid",
+    "createdAt": "2025-06-09 09:55:11",
+    "approvedDate": "2025-06-09 09:57:54",
+    "refundedAt": null,
+    "customer": {
+        "name": "Maria Fernandes Ferreira",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "92662667010",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_6846b0226a8cc",
+            "name": "Produto 55.73",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": "5573"
+        }
+    ],
+    "trackingParameters": {
+        "src": "FBjLj6846acb5fbd7d120bb97b0c0",
+        "sck": null,
+        "utm_source": "FBjLj6846acb5fbd7d120bb97b0c0",
+        "utm_campaign": "09\/06 TESTE CTV 20|120226873467140081",
+        "utm_medium": "PDDIDY E INOCENTE|120226873467130081",
+        "utm_content": "020|120226873467150081",
+        "utm_term": "Instagram_Reels",
+        "xcod": null,
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": "5573",
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": "5573"
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-09 06:57:54] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-06-09 06:57:54] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-06-09 07:03:15] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"541af5df-dbbe-41c8-a442-7fe461d08965\",\"platform\":\"PayHubr\",\"paymentMethod\":\"pix\",\"status\":\"paid\",\"createdAt\":\"2025-06-09T07:00:30-03:00\",\"approvedDate\":\"2025-06-09 07:03:15\",\"paidAt\":\"2025-06-09 07:03:15\",\"refundedAt\":null,\"customer\":{\"name\":\"Clara Gomes Gomes\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":{\"number\":\"75993233761\",\"type\":\"CPF\"},\"country\":\"BR\",\"ip\":\"64.23.135.43\"},\"items\":[{\"id\":\"PROD_6846b163b002c\",\"title\":\"Produto 55.73\",\"quantity\":1,\"unitPrice\":\"5573\"}],\"amount\":\"5573\",\"fee\":{\"fixedAmount\":0,\"netAmount\":\"5573\"},\"trackingParameters\":{\"src\":\"FBjLj684594c0b4f07ff2340a7766\",\"utm_source\":\"FBjLj684594c0b4f07ff2340a7766\",\"utm_campaign\":\"09\\\/06 ESCALA CTV 17 VALIDADO COMPENSACAO \\u2014 C\\u00f3pia|120225785043020470\",\"utm_medium\":\"PDIDDY|120225785043180470\",\"utm_content\":\"017|120225785043570470\",\"utm_term\":\"Facebook_Mobile_Feed\"},\"isTest\":false}"
+}
+----------------------------------------
+[2025-06-09 07:03:15] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "541af5df-dbbe-41c8-a442-7fe461d08965",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "paid",
+    "createdAt": "2025-06-09T07:00:30-03:00",
+    "approvedDate": "2025-06-09 07:03:15",
+    "paidAt": "2025-06-09 07:03:15",
+    "refundedAt": null,
+    "customer": {
+        "name": "Clara Gomes Gomes",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": {
+            "number": "75993233761",
+            "type": "CPF"
+        },
+        "country": "BR",
+        "ip": "64.23.135.43"
+    },
+    "items": [
+        {
+            "id": "PROD_6846b163b002c",
+            "title": "Produto 55.73",
+            "quantity": 1,
+            "unitPrice": "5573"
+        }
+    ],
+    "amount": "5573",
+    "fee": {
+        "fixedAmount": 0,
+        "netAmount": "5573"
+    },
+    "trackingParameters": {
+        "src": "FBjLj684594c0b4f07ff2340a7766",
+        "utm_source": "FBjLj684594c0b4f07ff2340a7766",
+        "utm_campaign": "09\/06 ESCALA CTV 17 VALIDADO COMPENSACAO \u2014 C\u00f3pia|120225785043020470",
+        "utm_medium": "PDIDDY|120225785043180470",
+        "utm_content": "017|120225785043570470",
+        "utm_term": "Facebook_Mobile_Feed"
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-09 07:03:15] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "541af5df-dbbe-41c8-a442-7fe461d08965",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "paid",
+    "createdAt": "2025-06-09 10:00:30",
+    "approvedDate": "2025-06-09 10:03:15",
+    "refundedAt": null,
+    "customer": {
+        "name": "Clara Gomes Gomes",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "75993233761",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_6846b163b002c",
+            "name": "Produto 55.73",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": "5573"
+        }
+    ],
+    "trackingParameters": {
+        "src": "FBjLj684594c0b4f07ff2340a7766",
+        "sck": null,
+        "utm_source": "FBjLj684594c0b4f07ff2340a7766",
+        "utm_campaign": "09\/06 ESCALA CTV 17 VALIDADO COMPENSACAO \u2014 C\u00f3pia|120225785043020470",
+        "utm_medium": "PDIDDY|120225785043180470",
+        "utm_content": "017|120225785043570470",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": null,
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": "5573",
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": "5573"
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-09 07:03:15] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-06-09 07:03:15] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-06-09 07:06:39] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"947160eb-63e7-4f3d-a151-228e7071a500\",\"platform\":\"PayHubr\",\"paymentMethod\":\"pix\",\"status\":\"paid\",\"createdAt\":\"2025-06-09T07:02:30-03:00\",\"approvedDate\":\"2025-06-09 07:06:39\",\"paidAt\":\"2025-06-09 07:06:39\",\"refundedAt\":null,\"customer\":{\"name\":\"Clara Lopes Carvalho\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":{\"number\":\"39307416605\",\"type\":\"CPF\"},\"country\":\"BR\",\"ip\":\"64.23.135.43\"},\"items\":[{\"id\":\"PROD_6846b22f7b8ae\",\"title\":\"Produto 55.73\",\"quantity\":1,\"unitPrice\":\"5573\"}],\"amount\":\"5573\",\"fee\":{\"fixedAmount\":0,\"netAmount\":\"5573\"},\"trackingParameters\":{\"src\":\"FBjLj6846aeeac2fcfa62dba0ad70\",\"utm_source\":\"FBjLj6846aeeac2fcfa62dba0ad70\",\"utm_campaign\":\"09\\\/06 TESTE CTV 11|120226873316480081\",\"utm_medium\":\"PDDIDY E INOCENTE|120226873316490081\",\"utm_content\":\"011|120226873316500081\",\"utm_term\":\"Instagram_Feed\"},\"isTest\":false}"
+}
+----------------------------------------
+[2025-06-09 07:06:39] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "947160eb-63e7-4f3d-a151-228e7071a500",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "paid",
+    "createdAt": "2025-06-09T07:02:30-03:00",
+    "approvedDate": "2025-06-09 07:06:39",
+    "paidAt": "2025-06-09 07:06:39",
+    "refundedAt": null,
+    "customer": {
+        "name": "Clara Lopes Carvalho",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": {
+            "number": "39307416605",
+            "type": "CPF"
+        },
+        "country": "BR",
+        "ip": "64.23.135.43"
+    },
+    "items": [
+        {
+            "id": "PROD_6846b22f7b8ae",
+            "title": "Produto 55.73",
+            "quantity": 1,
+            "unitPrice": "5573"
+        }
+    ],
+    "amount": "5573",
+    "fee": {
+        "fixedAmount": 0,
+        "netAmount": "5573"
+    },
+    "trackingParameters": {
+        "src": "FBjLj6846aeeac2fcfa62dba0ad70",
+        "utm_source": "FBjLj6846aeeac2fcfa62dba0ad70",
+        "utm_campaign": "09\/06 TESTE CTV 11|120226873316480081",
+        "utm_medium": "PDDIDY E INOCENTE|120226873316490081",
+        "utm_content": "011|120226873316500081",
+        "utm_term": "Instagram_Feed"
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-09 07:06:39] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "947160eb-63e7-4f3d-a151-228e7071a500",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "paid",
+    "createdAt": "2025-06-09 10:02:30",
+    "approvedDate": "2025-06-09 10:06:39",
+    "refundedAt": null,
+    "customer": {
+        "name": "Clara Lopes Carvalho",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "39307416605",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_6846b22f7b8ae",
+            "name": "Produto 55.73",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": "5573"
+        }
+    ],
+    "trackingParameters": {
+        "src": "FBjLj6846aeeac2fcfa62dba0ad70",
+        "sck": null,
+        "utm_source": "FBjLj6846aeeac2fcfa62dba0ad70",
+        "utm_campaign": "09\/06 TESTE CTV 11|120226873316480081",
+        "utm_medium": "PDDIDY E INOCENTE|120226873316490081",
+        "utm_content": "011|120226873316500081",
+        "utm_term": "Instagram_Feed",
+        "xcod": null,
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": "5573",
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": "5573"
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-09 07:06:39] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-06-09 07:06:39] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-06-09 07:07:41] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"93192cc3-98ed-4b51-be13-acb49da80450\",\"platform\":\"PayHubr\",\"paymentMethod\":\"pix\",\"status\":\"paid\",\"createdAt\":\"2025-06-09T07:05:14-03:00\",\"approvedDate\":\"2025-06-09 07:07:41\",\"paidAt\":\"2025-06-09 07:07:41\",\"refundedAt\":null,\"customer\":{\"name\":\"Manuela Almeida Barbosa\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":{\"number\":\"44454940118\",\"type\":\"CPF\"},\"country\":\"BR\",\"ip\":\"64.23.135.43\"},\"items\":[{\"id\":\"PROD_6846b26dbac52\",\"title\":\"Produto 55.73\",\"quantity\":1,\"unitPrice\":\"5573\"}],\"amount\":\"5573\",\"fee\":{\"fixedAmount\":0,\"netAmount\":\"5573\"},\"trackingParameters\":{\"src\":\"FBjLj6846afa90f98c19b4129e729\",\"utm_source\":\"FBjLj6846afa90f98c19b4129e729\",\"utm_campaign\":\"09\\\/06 TESTE CTV 8|120226873284360081\",\"utm_medium\":\"PDDIDY E INOCENTE|120226873284350081\",\"utm_content\":\"008|120226873284370081\",\"utm_term\":\"Instagram_Feed\"},\"isTest\":false}"
+}
+----------------------------------------
+[2025-06-09 07:07:41] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "93192cc3-98ed-4b51-be13-acb49da80450",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "paid",
+    "createdAt": "2025-06-09T07:05:14-03:00",
+    "approvedDate": "2025-06-09 07:07:41",
+    "paidAt": "2025-06-09 07:07:41",
+    "refundedAt": null,
+    "customer": {
+        "name": "Manuela Almeida Barbosa",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": {
+            "number": "44454940118",
+            "type": "CPF"
+        },
+        "country": "BR",
+        "ip": "64.23.135.43"
+    },
+    "items": [
+        {
+            "id": "PROD_6846b26dbac52",
+            "title": "Produto 55.73",
+            "quantity": 1,
+            "unitPrice": "5573"
+        }
+    ],
+    "amount": "5573",
+    "fee": {
+        "fixedAmount": 0,
+        "netAmount": "5573"
+    },
+    "trackingParameters": {
+        "src": "FBjLj6846afa90f98c19b4129e729",
+        "utm_source": "FBjLj6846afa90f98c19b4129e729",
+        "utm_campaign": "09\/06 TESTE CTV 8|120226873284360081",
+        "utm_medium": "PDDIDY E INOCENTE|120226873284350081",
+        "utm_content": "008|120226873284370081",
+        "utm_term": "Instagram_Feed"
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-09 07:07:41] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "93192cc3-98ed-4b51-be13-acb49da80450",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "paid",
+    "createdAt": "2025-06-09 10:05:14",
+    "approvedDate": "2025-06-09 10:07:41",
+    "refundedAt": null,
+    "customer": {
+        "name": "Manuela Almeida Barbosa",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "44454940118",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_6846b26dbac52",
+            "name": "Produto 55.73",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": "5573"
+        }
+    ],
+    "trackingParameters": {
+        "src": "FBjLj6846afa90f98c19b4129e729",
+        "sck": null,
+        "utm_source": "FBjLj6846afa90f98c19b4129e729",
+        "utm_campaign": "09\/06 TESTE CTV 8|120226873284360081",
+        "utm_medium": "PDDIDY E INOCENTE|120226873284350081",
+        "utm_content": "008|120226873284370081",
+        "utm_term": "Instagram_Feed",
+        "xcod": null,
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": "5573",
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": "5573"
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-09 07:07:41] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-06-09 07:07:41] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-06-09 07:16:29] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"9885b539-896b-4ced-b596-c21f9a87975d\",\"platform\":\"PayHubr\",\"paymentMethod\":\"pix\",\"status\":\"paid\",\"createdAt\":\"2025-06-09T07:15:10-03:00\",\"approvedDate\":\"2025-06-09 07:16:29\",\"paidAt\":\"2025-06-09 07:16:29\",\"refundedAt\":null,\"customer\":{\"name\":\"Sofia Barbosa Gomes\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":{\"number\":\"78799438976\",\"type\":\"CPF\"},\"country\":\"BR\",\"ip\":\"64.23.135.43\"},\"items\":[{\"id\":\"PROD_6846b47d9b1a7\",\"title\":\"Produto 55.73\",\"quantity\":1,\"unitPrice\":\"5573\"}],\"amount\":\"5573\",\"fee\":{\"fixedAmount\":0,\"netAmount\":\"5573\"},\"trackingParameters\":{\"src\":\"FBjLj6846b18e9fa31a842082c22d\",\"utm_source\":\"FBjLj6846b18e9fa31a842082c22d\",\"utm_campaign\":\"09\\\/06 ESCALA CTV 17 VALIDADO COMPENSACAO \\u2014 C\\u00f3pia|120225785043550470\",\"utm_medium\":\"PDIDDY|120225785043400470\",\"utm_content\":\"017|120225785043160470\",\"utm_term\":\"Facebook_Mobile_Feed\"},\"isTest\":false}"
+}
+----------------------------------------
+[2025-06-09 07:16:29] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "9885b539-896b-4ced-b596-c21f9a87975d",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "paid",
+    "createdAt": "2025-06-09T07:15:10-03:00",
+    "approvedDate": "2025-06-09 07:16:29",
+    "paidAt": "2025-06-09 07:16:29",
+    "refundedAt": null,
+    "customer": {
+        "name": "Sofia Barbosa Gomes",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": {
+            "number": "78799438976",
+            "type": "CPF"
+        },
+        "country": "BR",
+        "ip": "64.23.135.43"
+    },
+    "items": [
+        {
+            "id": "PROD_6846b47d9b1a7",
+            "title": "Produto 55.73",
+            "quantity": 1,
+            "unitPrice": "5573"
+        }
+    ],
+    "amount": "5573",
+    "fee": {
+        "fixedAmount": 0,
+        "netAmount": "5573"
+    },
+    "trackingParameters": {
+        "src": "FBjLj6846b18e9fa31a842082c22d",
+        "utm_source": "FBjLj6846b18e9fa31a842082c22d",
+        "utm_campaign": "09\/06 ESCALA CTV 17 VALIDADO COMPENSACAO \u2014 C\u00f3pia|120225785043550470",
+        "utm_medium": "PDIDDY|120225785043400470",
+        "utm_content": "017|120225785043160470",
+        "utm_term": "Facebook_Mobile_Feed"
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-09 07:16:29] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "9885b539-896b-4ced-b596-c21f9a87975d",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "paid",
+    "createdAt": "2025-06-09 10:15:10",
+    "approvedDate": "2025-06-09 10:16:29",
+    "refundedAt": null,
+    "customer": {
+        "name": "Sofia Barbosa Gomes",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "78799438976",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_6846b47d9b1a7",
+            "name": "Produto 55.73",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": "5573"
+        }
+    ],
+    "trackingParameters": {
+        "src": "FBjLj6846b18e9fa31a842082c22d",
+        "sck": null,
+        "utm_source": "FBjLj6846b18e9fa31a842082c22d",
+        "utm_campaign": "09\/06 ESCALA CTV 17 VALIDADO COMPENSACAO \u2014 C\u00f3pia|120225785043550470",
+        "utm_medium": "PDIDDY|120225785043400470",
+        "utm_content": "017|120225785043160470",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": null,
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": "5573",
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": "5573"
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-09 07:16:29] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-06-09 07:16:29] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-06-09 07:18:17] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"02d6e4ae-6443-4a0c-a0dc-fefdda048bd8\",\"platform\":\"PayHubr\",\"paymentMethod\":\"pix\",\"status\":\"paid\",\"createdAt\":\"2025-06-09T07:16:44-03:00\",\"approvedDate\":\"2025-06-09 07:18:17\",\"paidAt\":\"2025-06-09 07:18:17\",\"refundedAt\":null,\"customer\":{\"name\":\"Gabriel Santos Pereira\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":{\"number\":\"02103742508\",\"type\":\"CPF\"},\"country\":\"BR\",\"ip\":\"64.23.135.43\"},\"items\":[{\"id\":\"PROD_6846b4e9499e8\",\"title\":\"Produto 55.73\",\"quantity\":1,\"unitPrice\":\"5573\"}],\"amount\":\"5573\",\"fee\":{\"fixedAmount\":0,\"netAmount\":\"5573\"},\"trackingParameters\":{\"src\":\"FBjLj6846b16252d8ad469c0c032d\",\"utm_source\":\"FBjLj6846b16252d8ad469c0c032d\",\"utm_campaign\":\"09\\\/06 ESCALA CTV 17 VALIDADO \\u2014 C\\u00f3pia|120225784280410470\",\"utm_medium\":\"PDIDDY|120225784280750470\",\"utm_content\":\"017|120225784281260470\",\"utm_term\":\"Facebook_Mobile_Feed\"},\"isTest\":false}"
+}
+----------------------------------------
+[2025-06-09 07:18:17] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "02d6e4ae-6443-4a0c-a0dc-fefdda048bd8",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "paid",
+    "createdAt": "2025-06-09T07:16:44-03:00",
+    "approvedDate": "2025-06-09 07:18:17",
+    "paidAt": "2025-06-09 07:18:17",
+    "refundedAt": null,
+    "customer": {
+        "name": "Gabriel Santos Pereira",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": {
+            "number": "02103742508",
+            "type": "CPF"
+        },
+        "country": "BR",
+        "ip": "64.23.135.43"
+    },
+    "items": [
+        {
+            "id": "PROD_6846b4e9499e8",
+            "title": "Produto 55.73",
+            "quantity": 1,
+            "unitPrice": "5573"
+        }
+    ],
+    "amount": "5573",
+    "fee": {
+        "fixedAmount": 0,
+        "netAmount": "5573"
+    },
+    "trackingParameters": {
+        "src": "FBjLj6846b16252d8ad469c0c032d",
+        "utm_source": "FBjLj6846b16252d8ad469c0c032d",
+        "utm_campaign": "09\/06 ESCALA CTV 17 VALIDADO \u2014 C\u00f3pia|120225784280410470",
+        "utm_medium": "PDIDDY|120225784280750470",
+        "utm_content": "017|120225784281260470",
+        "utm_term": "Facebook_Mobile_Feed"
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-09 07:18:17] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "02d6e4ae-6443-4a0c-a0dc-fefdda048bd8",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "paid",
+    "createdAt": "2025-06-09 10:16:44",
+    "approvedDate": "2025-06-09 10:18:17",
+    "refundedAt": null,
+    "customer": {
+        "name": "Gabriel Santos Pereira",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "02103742508",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_6846b4e9499e8",
+            "name": "Produto 55.73",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": "5573"
+        }
+    ],
+    "trackingParameters": {
+        "src": "FBjLj6846b16252d8ad469c0c032d",
+        "sck": null,
+        "utm_source": "FBjLj6846b16252d8ad469c0c032d",
+        "utm_campaign": "09\/06 ESCALA CTV 17 VALIDADO \u2014 C\u00f3pia|120225784280410470",
+        "utm_medium": "PDIDDY|120225784280750470",
+        "utm_content": "017|120225784281260470",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": null,
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": "5573",
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": "5573"
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-09 07:18:17] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-06-09 07:18:17] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-06-09 07:27:10] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"b8ca554b-4945-48f7-ad26-61c69bc6d81d\",\"platform\":\"PayHubr\",\"paymentMethod\":\"pix\",\"status\":\"paid\",\"createdAt\":\"2025-06-09T07:23:42-03:00\",\"approvedDate\":\"2025-06-09 07:27:10\",\"paidAt\":\"2025-06-09 07:27:10\",\"refundedAt\":null,\"customer\":{\"name\":\"Daniel Vieira Carvalho\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":{\"number\":\"90737701811\",\"type\":\"CPF\"},\"country\":\"BR\",\"ip\":\"64.23.135.43\"},\"items\":[{\"id\":\"PROD_6846b6fed7342\",\"title\":\"Produto 55.73\",\"quantity\":1,\"unitPrice\":\"5573\"}],\"amount\":\"5573\",\"fee\":{\"fixedAmount\":0,\"netAmount\":\"5573\"},\"trackingParameters\":{\"src\":\"FBjLj6846b24484988d57eb90f4bd\",\"utm_source\":\"FBjLj6846b24484988d57eb90f4bd\",\"utm_campaign\":\"09\\\/06 TESTE CTV 16|120226873396640081\",\"utm_medium\":\"PDDIDY E INOCENTE|120226873396630081\",\"utm_content\":\"016|120226873396650081\",\"utm_term\":\"Instagram_Feed\"},\"isTest\":false}"
+}
+----------------------------------------
+[2025-06-09 07:27:10] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "b8ca554b-4945-48f7-ad26-61c69bc6d81d",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "paid",
+    "createdAt": "2025-06-09T07:23:42-03:00",
+    "approvedDate": "2025-06-09 07:27:10",
+    "paidAt": "2025-06-09 07:27:10",
+    "refundedAt": null,
+    "customer": {
+        "name": "Daniel Vieira Carvalho",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": {
+            "number": "90737701811",
+            "type": "CPF"
+        },
+        "country": "BR",
+        "ip": "64.23.135.43"
+    },
+    "items": [
+        {
+            "id": "PROD_6846b6fed7342",
+            "title": "Produto 55.73",
+            "quantity": 1,
+            "unitPrice": "5573"
+        }
+    ],
+    "amount": "5573",
+    "fee": {
+        "fixedAmount": 0,
+        "netAmount": "5573"
+    },
+    "trackingParameters": {
+        "src": "FBjLj6846b24484988d57eb90f4bd",
+        "utm_source": "FBjLj6846b24484988d57eb90f4bd",
+        "utm_campaign": "09\/06 TESTE CTV 16|120226873396640081",
+        "utm_medium": "PDDIDY E INOCENTE|120226873396630081",
+        "utm_content": "016|120226873396650081",
+        "utm_term": "Instagram_Feed"
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-09 07:27:10] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "b8ca554b-4945-48f7-ad26-61c69bc6d81d",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "paid",
+    "createdAt": "2025-06-09 10:23:42",
+    "approvedDate": "2025-06-09 10:27:10",
+    "refundedAt": null,
+    "customer": {
+        "name": "Daniel Vieira Carvalho",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "90737701811",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_6846b6fed7342",
+            "name": "Produto 55.73",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": "5573"
+        }
+    ],
+    "trackingParameters": {
+        "src": "FBjLj6846b24484988d57eb90f4bd",
+        "sck": null,
+        "utm_source": "FBjLj6846b24484988d57eb90f4bd",
+        "utm_campaign": "09\/06 TESTE CTV 16|120226873396640081",
+        "utm_medium": "PDDIDY E INOCENTE|120226873396630081",
+        "utm_content": "016|120226873396650081",
+        "utm_term": "Instagram_Feed",
+        "xcod": null,
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": "5573",
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": "5573"
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-09 07:27:10] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-06-09 07:27:10] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-06-09 07:30:30] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"1600bcf1-75b0-41cf-ba6e-a95205b70f4c\",\"platform\":\"PayHubr\",\"paymentMethod\":\"pix\",\"status\":\"paid\",\"createdAt\":\"2025-06-09T07:28:54-03:00\",\"approvedDate\":\"2025-06-09 07:30:30\",\"paidAt\":\"2025-06-09 07:30:30\",\"refundedAt\":null,\"customer\":{\"name\":\"Carlos Ferreira Alves\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":{\"number\":\"76512989007\",\"type\":\"CPF\"},\"country\":\"BR\",\"ip\":\"64.23.135.43\"},\"items\":[{\"id\":\"PROD_6846b7c656bb2\",\"title\":\"Produto 55.73\",\"quantity\":1,\"unitPrice\":\"5573\"}],\"amount\":\"5573\",\"fee\":{\"fixedAmount\":0,\"netAmount\":\"5573\"},\"trackingParameters\":{\"src\":\"FBjLj6846b51a0f98c19b412c6a6d\",\"utm_source\":\"FBjLj6846b51a0f98c19b412c6a6d\",\"utm_campaign\":\"09\\\/06 ESCALA CTV 17 VALIDADO COMPENSACAO \\u2014 C\\u00f3pia|120225785043030470\",\"utm_medium\":\"PDIDDY|120225785043200470\",\"utm_content\":\"017|120225785043420470\",\"utm_term\":\"Facebook_Mobile_Reels\"},\"isTest\":false}"
+}
+----------------------------------------
+[2025-06-09 07:30:30] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "1600bcf1-75b0-41cf-ba6e-a95205b70f4c",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "paid",
+    "createdAt": "2025-06-09T07:28:54-03:00",
+    "approvedDate": "2025-06-09 07:30:30",
+    "paidAt": "2025-06-09 07:30:30",
+    "refundedAt": null,
+    "customer": {
+        "name": "Carlos Ferreira Alves",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": {
+            "number": "76512989007",
+            "type": "CPF"
+        },
+        "country": "BR",
+        "ip": "64.23.135.43"
+    },
+    "items": [
+        {
+            "id": "PROD_6846b7c656bb2",
+            "title": "Produto 55.73",
+            "quantity": 1,
+            "unitPrice": "5573"
+        }
+    ],
+    "amount": "5573",
+    "fee": {
+        "fixedAmount": 0,
+        "netAmount": "5573"
+    },
+    "trackingParameters": {
+        "src": "FBjLj6846b51a0f98c19b412c6a6d",
+        "utm_source": "FBjLj6846b51a0f98c19b412c6a6d",
+        "utm_campaign": "09\/06 ESCALA CTV 17 VALIDADO COMPENSACAO \u2014 C\u00f3pia|120225785043030470",
+        "utm_medium": "PDIDDY|120225785043200470",
+        "utm_content": "017|120225785043420470",
+        "utm_term": "Facebook_Mobile_Reels"
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-09 07:30:30] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "1600bcf1-75b0-41cf-ba6e-a95205b70f4c",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "paid",
+    "createdAt": "2025-06-09 10:28:54",
+    "approvedDate": "2025-06-09 10:30:30",
+    "refundedAt": null,
+    "customer": {
+        "name": "Carlos Ferreira Alves",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "76512989007",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_6846b7c656bb2",
+            "name": "Produto 55.73",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": "5573"
+        }
+    ],
+    "trackingParameters": {
+        "src": "FBjLj6846b51a0f98c19b412c6a6d",
+        "sck": null,
+        "utm_source": "FBjLj6846b51a0f98c19b412c6a6d",
+        "utm_campaign": "09\/06 ESCALA CTV 17 VALIDADO COMPENSACAO \u2014 C\u00f3pia|120225785043030470",
+        "utm_medium": "PDIDDY|120225785043200470",
+        "utm_content": "017|120225785043420470",
+        "utm_term": "Facebook_Mobile_Reels",
+        "xcod": null,
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": "5573",
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": "5573"
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-09 07:30:30] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-06-09 07:30:30] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-06-09 07:33:29] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"d378ddd8-2152-4013-9695-42ac22d01d97\",\"platform\":\"PayHubr\",\"paymentMethod\":\"pix\",\"status\":\"paid\",\"createdAt\":\"2025-06-09T07:32:03-03:00\",\"approvedDate\":\"2025-06-09 07:33:29\",\"paidAt\":\"2025-06-09 07:33:29\",\"refundedAt\":null,\"customer\":{\"name\":\"Bernardo Carvalho Pereira\",\"email\":\"bernardo.carvalho.pereira@email.com\",\"phone\":null,\"document\":{\"number\":\"22012513719\",\"type\":\"CPF\"},\"country\":\"BR\",\"ip\":\"64.23.135.43\"},\"items\":[{\"id\":\"PROD_6846b8799e1de\",\"title\":\"Produto 35\",\"quantity\":1,\"unitPrice\":\"3500\"}],\"amount\":\"3500\",\"fee\":{\"fixedAmount\":0,\"netAmount\":\"3500\"},\"trackingParameters\":{\"src\":\"FBjLj6846b51a0f98c19b412c6a6d\",\"utm_source\":\"FBjLj6846b51a0f98c19b412c6a6d\",\"utm_campaign\":\"09\\\/06 ESCALA CTV 17 VALIDADO COMPENSACAO \\u2014 C\\u00f3pia|120225785043030470\",\"utm_medium\":\"PDIDDY|120225785043200470\",\"utm_content\":\"017|120225785043420470\",\"utm_term\":\"Facebook_Mobile_Reels\"},\"isTest\":false}"
+}
+----------------------------------------
+[2025-06-09 07:33:29] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "d378ddd8-2152-4013-9695-42ac22d01d97",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "paid",
+    "createdAt": "2025-06-09T07:32:03-03:00",
+    "approvedDate": "2025-06-09 07:33:29",
+    "paidAt": "2025-06-09 07:33:29",
+    "refundedAt": null,
+    "customer": {
+        "name": "Bernardo Carvalho Pereira",
+        "email": "bernardo.carvalho.pereira@email.com",
+        "phone": null,
+        "document": {
+            "number": "22012513719",
+            "type": "CPF"
+        },
+        "country": "BR",
+        "ip": "64.23.135.43"
+    },
+    "items": [
+        {
+            "id": "PROD_6846b8799e1de",
+            "title": "Produto 35",
+            "quantity": 1,
+            "unitPrice": "3500"
+        }
+    ],
+    "amount": "3500",
+    "fee": {
+        "fixedAmount": 0,
+        "netAmount": "3500"
+    },
+    "trackingParameters": {
+        "src": "FBjLj6846b51a0f98c19b412c6a6d",
+        "utm_source": "FBjLj6846b51a0f98c19b412c6a6d",
+        "utm_campaign": "09\/06 ESCALA CTV 17 VALIDADO COMPENSACAO \u2014 C\u00f3pia|120225785043030470",
+        "utm_medium": "PDIDDY|120225785043200470",
+        "utm_content": "017|120225785043420470",
+        "utm_term": "Facebook_Mobile_Reels"
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-09 07:33:29] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "d378ddd8-2152-4013-9695-42ac22d01d97",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "paid",
+    "createdAt": "2025-06-09 10:32:03",
+    "approvedDate": "2025-06-09 10:33:29",
+    "refundedAt": null,
+    "customer": {
+        "name": "Bernardo Carvalho Pereira",
+        "email": "bernardo.carvalho.pereira@email.com",
+        "phone": null,
+        "document": "22012513719",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_6846b8799e1de",
+            "name": "Produto 35",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": "3500"
+        }
+    ],
+    "trackingParameters": {
+        "src": "FBjLj6846b51a0f98c19b412c6a6d",
+        "sck": null,
+        "utm_source": "FBjLj6846b51a0f98c19b412c6a6d",
+        "utm_campaign": "09\/06 ESCALA CTV 17 VALIDADO COMPENSACAO \u2014 C\u00f3pia|120225785043030470",
+        "utm_medium": "PDIDDY|120225785043200470",
+        "utm_content": "017|120225785043420470",
+        "utm_term": "Facebook_Mobile_Reels",
+        "xcod": null,
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": "3500",
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": "3500"
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-09 07:33:29] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-06-09 07:33:29] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-06-09 07:33:59] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"871ed8b9-4eec-44e4-8651-807479b39361\",\"platform\":\"PayHubr\",\"paymentMethod\":\"pix\",\"status\":\"paid\",\"createdAt\":\"2025-06-09T07:30:35-03:00\",\"approvedDate\":\"2025-06-09 07:33:59\",\"paidAt\":\"2025-06-09 07:33:59\",\"refundedAt\":null,\"customer\":{\"name\":\"Bernardo Santos Silva\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":{\"number\":\"73772880517\",\"type\":\"CPF\"},\"country\":\"BR\",\"ip\":\"64.23.135.43\"},\"items\":[{\"id\":\"PROD_6846b897911be\",\"title\":\"Produto 55.73\",\"quantity\":1,\"unitPrice\":\"5573\"}],\"amount\":\"5573\",\"fee\":{\"fixedAmount\":0,\"netAmount\":\"5573\"},\"trackingParameters\":{\"src\":\"FBjLj6846b4a2180f77342618f43b\",\"utm_source\":\"FBjLj6846b4a2180f77342618f43b\",\"utm_campaign\":\"09\\\/06 ESCALA CTV 17 VALIDADO \\u2014 C\\u00f3pia|120225784280350470\",\"utm_medium\":\"PDIDDY|120225784280820470\",\"utm_content\":\"017|120225784281330470\",\"utm_term\":\"Facebook_Stories\"},\"isTest\":false}"
+}
+----------------------------------------
+[2025-06-09 07:33:59] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "871ed8b9-4eec-44e4-8651-807479b39361",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "paid",
+    "createdAt": "2025-06-09T07:30:35-03:00",
+    "approvedDate": "2025-06-09 07:33:59",
+    "paidAt": "2025-06-09 07:33:59",
+    "refundedAt": null,
+    "customer": {
+        "name": "Bernardo Santos Silva",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": {
+            "number": "73772880517",
+            "type": "CPF"
+        },
+        "country": "BR",
+        "ip": "64.23.135.43"
+    },
+    "items": [
+        {
+            "id": "PROD_6846b897911be",
+            "title": "Produto 55.73",
+            "quantity": 1,
+            "unitPrice": "5573"
+        }
+    ],
+    "amount": "5573",
+    "fee": {
+        "fixedAmount": 0,
+        "netAmount": "5573"
+    },
+    "trackingParameters": {
+        "src": "FBjLj6846b4a2180f77342618f43b",
+        "utm_source": "FBjLj6846b4a2180f77342618f43b",
+        "utm_campaign": "09\/06 ESCALA CTV 17 VALIDADO \u2014 C\u00f3pia|120225784280350470",
+        "utm_medium": "PDIDDY|120225784280820470",
+        "utm_content": "017|120225784281330470",
+        "utm_term": "Facebook_Stories"
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-09 07:33:59] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "871ed8b9-4eec-44e4-8651-807479b39361",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "paid",
+    "createdAt": "2025-06-09 10:30:35",
+    "approvedDate": "2025-06-09 10:33:59",
+    "refundedAt": null,
+    "customer": {
+        "name": "Bernardo Santos Silva",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "73772880517",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_6846b897911be",
+            "name": "Produto 55.73",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": "5573"
+        }
+    ],
+    "trackingParameters": {
+        "src": "FBjLj6846b4a2180f77342618f43b",
+        "sck": null,
+        "utm_source": "FBjLj6846b4a2180f77342618f43b",
+        "utm_campaign": "09\/06 ESCALA CTV 17 VALIDADO \u2014 C\u00f3pia|120225784280350470",
+        "utm_medium": "PDIDDY|120225784280820470",
+        "utm_content": "017|120225784281330470",
+        "utm_term": "Facebook_Stories",
+        "xcod": null,
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": "5573",
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": "5573"
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-09 07:33:59] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-06-09 07:33:59] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-06-09 07:34:57] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"ba4807cc-7b28-40bb-a2db-716a6d0349b3\",\"platform\":\"PayHubr\",\"paymentMethod\":\"pix\",\"status\":\"paid\",\"createdAt\":\"2025-06-09T07:30:54-03:00\",\"approvedDate\":\"2025-06-09 07:34:57\",\"paidAt\":\"2025-06-09 07:34:57\",\"refundedAt\":null,\"customer\":{\"name\":\"Lucas Silva Alves\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":{\"number\":\"69256403315\",\"type\":\"CPF\"},\"country\":\"BR\",\"ip\":\"64.23.135.43\"},\"items\":[{\"id\":\"PROD_6846b8d1b755e\",\"title\":\"Produto 55.73\",\"quantity\":1,\"unitPrice\":\"5573\"}],\"amount\":\"5573\",\"fee\":{\"fixedAmount\":0,\"netAmount\":\"5573\"},\"trackingParameters\":{\"src\":\"FBjLj6846b5120ba592714db1fdd4\",\"utm_source\":\"FBjLj6846b5120ba592714db1fdd4\",\"utm_campaign\":\"09\\\/06 ESCALA CTV 17 VALIDADO \\u2014 C\\u00f3pia|120225784280410470\",\"utm_medium\":\"PDIDDY|120225784280750470\",\"utm_content\":\"017|120225784281260470\",\"utm_term\":\"Facebook_Stories\"},\"isTest\":false}"
+}
+----------------------------------------
+[2025-06-09 07:34:57] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "ba4807cc-7b28-40bb-a2db-716a6d0349b3",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "paid",
+    "createdAt": "2025-06-09T07:30:54-03:00",
+    "approvedDate": "2025-06-09 07:34:57",
+    "paidAt": "2025-06-09 07:34:57",
+    "refundedAt": null,
+    "customer": {
+        "name": "Lucas Silva Alves",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": {
+            "number": "69256403315",
+            "type": "CPF"
+        },
+        "country": "BR",
+        "ip": "64.23.135.43"
+    },
+    "items": [
+        {
+            "id": "PROD_6846b8d1b755e",
+            "title": "Produto 55.73",
+            "quantity": 1,
+            "unitPrice": "5573"
+        }
+    ],
+    "amount": "5573",
+    "fee": {
+        "fixedAmount": 0,
+        "netAmount": "5573"
+    },
+    "trackingParameters": {
+        "src": "FBjLj6846b5120ba592714db1fdd4",
+        "utm_source": "FBjLj6846b5120ba592714db1fdd4",
+        "utm_campaign": "09\/06 ESCALA CTV 17 VALIDADO \u2014 C\u00f3pia|120225784280410470",
+        "utm_medium": "PDIDDY|120225784280750470",
+        "utm_content": "017|120225784281260470",
+        "utm_term": "Facebook_Stories"
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-09 07:34:57] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "ba4807cc-7b28-40bb-a2db-716a6d0349b3",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "paid",
+    "createdAt": "2025-06-09 10:30:54",
+    "approvedDate": "2025-06-09 10:34:57",
+    "refundedAt": null,
+    "customer": {
+        "name": "Lucas Silva Alves",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "69256403315",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_6846b8d1b755e",
+            "name": "Produto 55.73",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": "5573"
+        }
+    ],
+    "trackingParameters": {
+        "src": "FBjLj6846b5120ba592714db1fdd4",
+        "sck": null,
+        "utm_source": "FBjLj6846b5120ba592714db1fdd4",
+        "utm_campaign": "09\/06 ESCALA CTV 17 VALIDADO \u2014 C\u00f3pia|120225784280410470",
+        "utm_medium": "PDIDDY|120225784280750470",
+        "utm_content": "017|120225784281260470",
+        "utm_term": "Facebook_Stories",
+        "xcod": null,
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": "5573",
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": "5573"
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-09 07:34:57] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-06-09 07:34:57] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-06-09 07:34:58] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"e0669e21-3589-4d72-a76e-8939b910d4d0\",\"platform\":\"PayHubr\",\"paymentMethod\":\"pix\",\"status\":\"paid\",\"createdAt\":\"2025-06-09T07:32:55-03:00\",\"approvedDate\":\"2025-06-09 07:34:58\",\"paidAt\":\"2025-06-09 07:34:58\",\"refundedAt\":null,\"customer\":{\"name\":\"Lucas Martins Soares\",\"email\":\"lucas.martins.soares@email.com\",\"phone\":null,\"document\":{\"number\":\"65701215881\",\"type\":\"CPF\"},\"country\":\"BR\",\"ip\":\"64.23.135.43\"},\"items\":[{\"id\":\"PROD_6846b8d2aac2d\",\"title\":\"Produto 35\",\"quantity\":1,\"unitPrice\":\"3500\"}],\"amount\":\"3500\",\"fee\":{\"fixedAmount\":0,\"netAmount\":\"3500\"},\"trackingParameters\":{\"src\":\"FBjLj6846b24484988d57eb90f4bd\",\"utm_source\":\"FBjLj6846b24484988d57eb90f4bd\",\"utm_campaign\":\"09\\\/06 TESTE CTV 16|120226873396640081\",\"utm_medium\":\"PDDIDY E INOCENTE|120226873396630081\",\"utm_content\":\"016|120226873396650081\",\"utm_term\":\"Instagram_Feed\"},\"isTest\":false}"
+}
+----------------------------------------
+[2025-06-09 07:34:58] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "e0669e21-3589-4d72-a76e-8939b910d4d0",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "paid",
+    "createdAt": "2025-06-09T07:32:55-03:00",
+    "approvedDate": "2025-06-09 07:34:58",
+    "paidAt": "2025-06-09 07:34:58",
+    "refundedAt": null,
+    "customer": {
+        "name": "Lucas Martins Soares",
+        "email": "lucas.martins.soares@email.com",
+        "phone": null,
+        "document": {
+            "number": "65701215881",
+            "type": "CPF"
+        },
+        "country": "BR",
+        "ip": "64.23.135.43"
+    },
+    "items": [
+        {
+            "id": "PROD_6846b8d2aac2d",
+            "title": "Produto 35",
+            "quantity": 1,
+            "unitPrice": "3500"
+        }
+    ],
+    "amount": "3500",
+    "fee": {
+        "fixedAmount": 0,
+        "netAmount": "3500"
+    },
+    "trackingParameters": {
+        "src": "FBjLj6846b24484988d57eb90f4bd",
+        "utm_source": "FBjLj6846b24484988d57eb90f4bd",
+        "utm_campaign": "09\/06 TESTE CTV 16|120226873396640081",
+        "utm_medium": "PDDIDY E INOCENTE|120226873396630081",
+        "utm_content": "016|120226873396650081",
+        "utm_term": "Instagram_Feed"
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-09 07:34:58] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "e0669e21-3589-4d72-a76e-8939b910d4d0",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "paid",
+    "createdAt": "2025-06-09 10:32:55",
+    "approvedDate": "2025-06-09 10:34:58",
+    "refundedAt": null,
+    "customer": {
+        "name": "Lucas Martins Soares",
+        "email": "lucas.martins.soares@email.com",
+        "phone": null,
+        "document": "65701215881",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_6846b8d2aac2d",
+            "name": "Produto 35",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": "3500"
+        }
+    ],
+    "trackingParameters": {
+        "src": "FBjLj6846b24484988d57eb90f4bd",
+        "sck": null,
+        "utm_source": "FBjLj6846b24484988d57eb90f4bd",
+        "utm_campaign": "09\/06 TESTE CTV 16|120226873396640081",
+        "utm_medium": "PDDIDY E INOCENTE|120226873396630081",
+        "utm_content": "016|120226873396650081",
+        "utm_term": "Instagram_Feed",
+        "xcod": null,
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": "3500",
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": "3500"
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-09 07:34:58] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-06-09 07:34:58] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-06-09 07:35:19] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"ae2d8b06-753f-4c78-bb03-8343e9d2c393\",\"platform\":\"PayHubr\",\"paymentMethod\":\"pix\",\"status\":\"paid\",\"createdAt\":\"2025-06-09T07:34:13-03:00\",\"approvedDate\":\"2025-06-09 07:35:19\",\"paidAt\":\"2025-06-09 07:35:19\",\"refundedAt\":null,\"customer\":{\"name\":\"Carlos Barbosa Costa\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":{\"number\":\"27883128060\",\"type\":\"CPF\"},\"country\":\"BR\",\"ip\":\"64.23.135.43\"},\"items\":[{\"id\":\"PROD_6846b8e753ec5\",\"title\":\"Produto 55.73\",\"quantity\":1,\"unitPrice\":\"5573\"}],\"amount\":\"5573\",\"fee\":{\"fixedAmount\":0,\"netAmount\":\"5573\"},\"trackingParameters\":{\"src\":\"FBjLj6846b63eadce2541dd062b5b\",\"utm_source\":\"FBjLj6846b63eadce2541dd062b5b\",\"utm_campaign\":\"09\\\/06 ESCALA CTV 17 VALIDADO COMPENSACAO \\u2014 C\\u00f3pia|120225785043510470\",\"utm_medium\":\"PDIDDY|120225785043370470\",\"utm_content\":\"017|120225785043130470\",\"utm_term\":\"Facebook_Mobile_Feed\"},\"isTest\":false}"
+}
+----------------------------------------
+[2025-06-09 07:35:19] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "ae2d8b06-753f-4c78-bb03-8343e9d2c393",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "paid",
+    "createdAt": "2025-06-09T07:34:13-03:00",
+    "approvedDate": "2025-06-09 07:35:19",
+    "paidAt": "2025-06-09 07:35:19",
+    "refundedAt": null,
+    "customer": {
+        "name": "Carlos Barbosa Costa",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": {
+            "number": "27883128060",
+            "type": "CPF"
+        },
+        "country": "BR",
+        "ip": "64.23.135.43"
+    },
+    "items": [
+        {
+            "id": "PROD_6846b8e753ec5",
+            "title": "Produto 55.73",
+            "quantity": 1,
+            "unitPrice": "5573"
+        }
+    ],
+    "amount": "5573",
+    "fee": {
+        "fixedAmount": 0,
+        "netAmount": "5573"
+    },
+    "trackingParameters": {
+        "src": "FBjLj6846b63eadce2541dd062b5b",
+        "utm_source": "FBjLj6846b63eadce2541dd062b5b",
+        "utm_campaign": "09\/06 ESCALA CTV 17 VALIDADO COMPENSACAO \u2014 C\u00f3pia|120225785043510470",
+        "utm_medium": "PDIDDY|120225785043370470",
+        "utm_content": "017|120225785043130470",
+        "utm_term": "Facebook_Mobile_Feed"
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-09 07:35:19] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "ae2d8b06-753f-4c78-bb03-8343e9d2c393",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "paid",
+    "createdAt": "2025-06-09 10:34:13",
+    "approvedDate": "2025-06-09 10:35:19",
+    "refundedAt": null,
+    "customer": {
+        "name": "Carlos Barbosa Costa",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "27883128060",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_6846b8e753ec5",
+            "name": "Produto 55.73",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": "5573"
+        }
+    ],
+    "trackingParameters": {
+        "src": "FBjLj6846b63eadce2541dd062b5b",
+        "sck": null,
+        "utm_source": "FBjLj6846b63eadce2541dd062b5b",
+        "utm_campaign": "09\/06 ESCALA CTV 17 VALIDADO COMPENSACAO \u2014 C\u00f3pia|120225785043510470",
+        "utm_medium": "PDIDDY|120225785043370470",
+        "utm_content": "017|120225785043130470",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": null,
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": "5573",
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": "5573"
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-09 07:35:19] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-06-09 07:35:19] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-06-09 07:39:08] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"7986e979-9ccb-4695-bf5f-3785489e01fe\",\"platform\":\"PayHubr\",\"paymentMethod\":\"pix\",\"status\":\"paid\",\"createdAt\":\"2025-06-09T07:37:30-03:00\",\"approvedDate\":\"2025-06-09 07:39:08\",\"paidAt\":\"2025-06-09 07:39:08\",\"refundedAt\":null,\"customer\":{\"name\":\"Miguel Barbosa Ribeiro\",\"email\":\"miguel.barbosa.ribeiro@email.com\",\"phone\":null,\"document\":{\"number\":\"75153337669\",\"type\":\"CPF\"},\"country\":\"BR\",\"ip\":\"64.23.135.43\"},\"items\":[{\"id\":\"PROD_6846b9cc8e2cf\",\"title\":\"Upsell 4\",\"quantity\":1,\"unitPrice\":\"2490\"}],\"amount\":\"2490\",\"fee\":{\"fixedAmount\":0,\"netAmount\":\"2490\"},\"trackingParameters\":{\"src\":\"FBjLj6846b24484988d57eb90f4bd\",\"utm_source\":\"FBjLj6846b24484988d57eb90f4bd\",\"utm_campaign\":\"09\\\/06 TESTE CTV 16|120226873396640081\",\"utm_medium\":\"PDDIDY E INOCENTE|120226873396630081\",\"utm_content\":\"016|120226873396650081\",\"utm_term\":\"Instagram_Feed\"},\"isTest\":false}"
+}
+----------------------------------------
+[2025-06-09 07:39:08] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "7986e979-9ccb-4695-bf5f-3785489e01fe",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "paid",
+    "createdAt": "2025-06-09T07:37:30-03:00",
+    "approvedDate": "2025-06-09 07:39:08",
+    "paidAt": "2025-06-09 07:39:08",
+    "refundedAt": null,
+    "customer": {
+        "name": "Miguel Barbosa Ribeiro",
+        "email": "miguel.barbosa.ribeiro@email.com",
+        "phone": null,
+        "document": {
+            "number": "75153337669",
+            "type": "CPF"
+        },
+        "country": "BR",
+        "ip": "64.23.135.43"
+    },
+    "items": [
+        {
+            "id": "PROD_6846b9cc8e2cf",
+            "title": "Upsell 4",
+            "quantity": 1,
+            "unitPrice": "2490"
+        }
+    ],
+    "amount": "2490",
+    "fee": {
+        "fixedAmount": 0,
+        "netAmount": "2490"
+    },
+    "trackingParameters": {
+        "src": "FBjLj6846b24484988d57eb90f4bd",
+        "utm_source": "FBjLj6846b24484988d57eb90f4bd",
+        "utm_campaign": "09\/06 TESTE CTV 16|120226873396640081",
+        "utm_medium": "PDDIDY E INOCENTE|120226873396630081",
+        "utm_content": "016|120226873396650081",
+        "utm_term": "Instagram_Feed"
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-09 07:39:08] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "7986e979-9ccb-4695-bf5f-3785489e01fe",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "paid",
+    "createdAt": "2025-06-09 10:37:30",
+    "approvedDate": "2025-06-09 10:39:08",
+    "refundedAt": null,
+    "customer": {
+        "name": "Miguel Barbosa Ribeiro",
+        "email": "miguel.barbosa.ribeiro@email.com",
+        "phone": null,
+        "document": "75153337669",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_6846b9cc8e2cf",
+            "name": "Upsell 4",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": "2490"
+        }
+    ],
+    "trackingParameters": {
+        "src": "FBjLj6846b24484988d57eb90f4bd",
+        "sck": null,
+        "utm_source": "FBjLj6846b24484988d57eb90f4bd",
+        "utm_campaign": "09\/06 TESTE CTV 16|120226873396640081",
+        "utm_medium": "PDDIDY E INOCENTE|120226873396630081",
+        "utm_content": "016|120226873396650081",
+        "utm_term": "Instagram_Feed",
+        "xcod": null,
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": "2490",
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": "2490"
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-09 07:39:08] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-06-09 07:39:08] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-06-09 07:46:24] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"70442a21-98d3-4e5f-8a66-a3505f8acd57\",\"platform\":\"PayHubr\",\"paymentMethod\":\"pix\",\"status\":\"paid\",\"createdAt\":\"2025-06-09T07:43:21-03:00\",\"approvedDate\":\"2025-06-09 07:46:24\",\"paidAt\":\"2025-06-09 07:46:24\",\"refundedAt\":null,\"customer\":{\"name\":\"Arthur Costa Alves\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":{\"number\":\"08670530465\",\"type\":\"CPF\"},\"country\":\"BR\",\"ip\":\"64.23.135.43\"},\"items\":[{\"id\":\"PROD_6846bb80d2813\",\"title\":\"Produto 55.73\",\"quantity\":1,\"unitPrice\":\"5573\"}],\"amount\":\"5573\",\"fee\":{\"fixedAmount\":0,\"netAmount\":\"5573\"},\"trackingParameters\":{\"src\":\"FBjLj6846b81c84988d57eb93a1f0\",\"utm_source\":\"FBjLj6846b81c84988d57eb93a1f0\",\"utm_campaign\":\"09\\\/06 ESCALA CTV 17 VALIDADO \\u2014 C\\u00f3pia|120225784280970470\",\"utm_medium\":\"PDIDDY|120225784281510470\",\"utm_content\":\"017|120225784280470470\",\"utm_term\":\"Facebook_Mobile_Feed\"},\"isTest\":false}"
+}
+----------------------------------------
+[2025-06-09 07:46:24] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "70442a21-98d3-4e5f-8a66-a3505f8acd57",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "paid",
+    "createdAt": "2025-06-09T07:43:21-03:00",
+    "approvedDate": "2025-06-09 07:46:24",
+    "paidAt": "2025-06-09 07:46:24",
+    "refundedAt": null,
+    "customer": {
+        "name": "Arthur Costa Alves",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": {
+            "number": "08670530465",
+            "type": "CPF"
+        },
+        "country": "BR",
+        "ip": "64.23.135.43"
+    },
+    "items": [
+        {
+            "id": "PROD_6846bb80d2813",
+            "title": "Produto 55.73",
+            "quantity": 1,
+            "unitPrice": "5573"
+        }
+    ],
+    "amount": "5573",
+    "fee": {
+        "fixedAmount": 0,
+        "netAmount": "5573"
+    },
+    "trackingParameters": {
+        "src": "FBjLj6846b81c84988d57eb93a1f0",
+        "utm_source": "FBjLj6846b81c84988d57eb93a1f0",
+        "utm_campaign": "09\/06 ESCALA CTV 17 VALIDADO \u2014 C\u00f3pia|120225784280970470",
+        "utm_medium": "PDIDDY|120225784281510470",
+        "utm_content": "017|120225784280470470",
+        "utm_term": "Facebook_Mobile_Feed"
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-09 07:46:24] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "70442a21-98d3-4e5f-8a66-a3505f8acd57",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "paid",
+    "createdAt": "2025-06-09 10:43:21",
+    "approvedDate": "2025-06-09 10:46:24",
+    "refundedAt": null,
+    "customer": {
+        "name": "Arthur Costa Alves",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "08670530465",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_6846bb80d2813",
+            "name": "Produto 55.73",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": "5573"
+        }
+    ],
+    "trackingParameters": {
+        "src": "FBjLj6846b81c84988d57eb93a1f0",
+        "sck": null,
+        "utm_source": "FBjLj6846b81c84988d57eb93a1f0",
+        "utm_campaign": "09\/06 ESCALA CTV 17 VALIDADO \u2014 C\u00f3pia|120225784280970470",
+        "utm_medium": "PDIDDY|120225784281510470",
+        "utm_content": "017|120225784280470470",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": null,
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": "5573",
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": "5573"
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-09 07:46:24] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-06-09 07:46:24] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-06-09 07:49:28] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"038e2b6e-56a8-4586-9e03-48095e90fc29\",\"platform\":\"PayHubr\",\"paymentMethod\":\"pix\",\"status\":\"paid\",\"createdAt\":\"2025-06-09T07:42:13-03:00\",\"approvedDate\":\"2025-06-09 07:49:28\",\"paidAt\":\"2025-06-09 07:49:28\",\"refundedAt\":null,\"customer\":{\"name\":\"Carlos Souza Carvalho\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":{\"number\":\"14283327409\",\"type\":\"CPF\"},\"country\":\"BR\",\"ip\":\"64.23.135.43\"},\"items\":[{\"id\":\"PROD_6846bc388020b\",\"title\":\"Produto 55.73\",\"quantity\":1,\"unitPrice\":\"5573\"}],\"amount\":\"5573\",\"fee\":{\"fixedAmount\":0,\"netAmount\":\"5573\"},\"trackingParameters\":[],\"isTest\":false}"
+}
+----------------------------------------
+[2025-06-09 07:49:28] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "038e2b6e-56a8-4586-9e03-48095e90fc29",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "paid",
+    "createdAt": "2025-06-09T07:42:13-03:00",
+    "approvedDate": "2025-06-09 07:49:28",
+    "paidAt": "2025-06-09 07:49:28",
+    "refundedAt": null,
+    "customer": {
+        "name": "Carlos Souza Carvalho",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": {
+            "number": "14283327409",
+            "type": "CPF"
+        },
+        "country": "BR",
+        "ip": "64.23.135.43"
+    },
+    "items": [
+        {
+            "id": "PROD_6846bc388020b",
+            "title": "Produto 55.73",
+            "quantity": 1,
+            "unitPrice": "5573"
+        }
+    ],
+    "amount": "5573",
+    "fee": {
+        "fixedAmount": 0,
+        "netAmount": "5573"
+    },
+    "trackingParameters": [],
+    "isTest": false
+}
+----------------------------------------
+[2025-06-09 07:49:28] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "038e2b6e-56a8-4586-9e03-48095e90fc29",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "paid",
+    "createdAt": "2025-06-09 10:42:13",
+    "approvedDate": "2025-06-09 10:49:28",
+    "refundedAt": null,
+    "customer": {
+        "name": "Carlos Souza Carvalho",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "14283327409",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_6846bc388020b",
+            "name": "Produto 55.73",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": "5573"
+        }
+    ],
+    "trackingParameters": {
+        "src": null,
+        "sck": null,
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null,
+        "utm_content": null,
+        "utm_term": null,
+        "xcod": null,
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": "5573",
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": "5573"
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-09 07:49:28] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-06-09 07:49:28] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-06-09 07:52:15] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"0d0cd3d2-d004-48dd-8316-dee31093eb47\",\"platform\":\"PayHubr\",\"paymentMethod\":\"pix\",\"status\":\"paid\",\"createdAt\":\"2025-06-09T07:47:15-03:00\",\"approvedDate\":\"2025-06-09 07:52:15\",\"paidAt\":\"2025-06-09 07:52:15\",\"refundedAt\":null,\"customer\":{\"name\":\"Sophia Santos Carvalho\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":{\"number\":\"28917397107\",\"type\":\"CPF\"},\"country\":\"BR\",\"ip\":\"64.23.135.43\"},\"items\":[{\"id\":\"PROD_6846bcdfb16ad\",\"title\":\"Produto 55.73\",\"quantity\":1,\"unitPrice\":\"5573\"}],\"amount\":\"5573\",\"fee\":{\"fixedAmount\":0,\"netAmount\":\"5573\"},\"trackingParameters\":{\"src\":\"FBjLj6846b946a809bec9d11c4d20\",\"utm_source\":\"FBjLj6846b946a809bec9d11c4d20\",\"utm_campaign\":\"09\\\/06 ESCALA CTV 17 VALIDADO \\u2014 C\\u00f3pia|120225784281020470\",\"utm_medium\":\"PDIDDY|120225784281550470\",\"utm_content\":\"017|120225784280530470\",\"utm_term\":\"Facebook_Mobile_Reels\"},\"isTest\":false}"
+}
+----------------------------------------
+[2025-06-09 07:52:15] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "0d0cd3d2-d004-48dd-8316-dee31093eb47",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "paid",
+    "createdAt": "2025-06-09T07:47:15-03:00",
+    "approvedDate": "2025-06-09 07:52:15",
+    "paidAt": "2025-06-09 07:52:15",
+    "refundedAt": null,
+    "customer": {
+        "name": "Sophia Santos Carvalho",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": {
+            "number": "28917397107",
+            "type": "CPF"
+        },
+        "country": "BR",
+        "ip": "64.23.135.43"
+    },
+    "items": [
+        {
+            "id": "PROD_6846bcdfb16ad",
+            "title": "Produto 55.73",
+            "quantity": 1,
+            "unitPrice": "5573"
+        }
+    ],
+    "amount": "5573",
+    "fee": {
+        "fixedAmount": 0,
+        "netAmount": "5573"
+    },
+    "trackingParameters": {
+        "src": "FBjLj6846b946a809bec9d11c4d20",
+        "utm_source": "FBjLj6846b946a809bec9d11c4d20",
+        "utm_campaign": "09\/06 ESCALA CTV 17 VALIDADO \u2014 C\u00f3pia|120225784281020470",
+        "utm_medium": "PDIDDY|120225784281550470",
+        "utm_content": "017|120225784280530470",
+        "utm_term": "Facebook_Mobile_Reels"
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-09 07:52:15] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "0d0cd3d2-d004-48dd-8316-dee31093eb47",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "paid",
+    "createdAt": "2025-06-09 10:47:15",
+    "approvedDate": "2025-06-09 10:52:15",
+    "refundedAt": null,
+    "customer": {
+        "name": "Sophia Santos Carvalho",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "28917397107",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_6846bcdfb16ad",
+            "name": "Produto 55.73",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": "5573"
+        }
+    ],
+    "trackingParameters": {
+        "src": "FBjLj6846b946a809bec9d11c4d20",
+        "sck": null,
+        "utm_source": "FBjLj6846b946a809bec9d11c4d20",
+        "utm_campaign": "09\/06 ESCALA CTV 17 VALIDADO \u2014 C\u00f3pia|120225784281020470",
+        "utm_medium": "PDIDDY|120225784281550470",
+        "utm_content": "017|120225784280530470",
+        "utm_term": "Facebook_Mobile_Reels",
+        "xcod": null,
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": "5573",
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": "5573"
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-09 07:52:15] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-06-09 07:52:15] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-06-09 07:58:33] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"539882ac-a7f4-42dd-85b1-a8cf309a20f9\",\"platform\":\"PayHubr\",\"paymentMethod\":\"pix\",\"status\":\"paid\",\"createdAt\":\"2025-06-09T07:55:31-03:00\",\"approvedDate\":\"2025-06-09 07:58:33\",\"paidAt\":\"2025-06-09 07:58:33\",\"refundedAt\":null,\"customer\":{\"name\":\"Beatriz Oliveira Gomes\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":{\"number\":\"65937223160\",\"type\":\"CPF\"},\"country\":\"BR\",\"ip\":\"64.23.135.43\"},\"items\":[{\"id\":\"PROD_6846be59e7686\",\"title\":\"Produto 55.73\",\"quantity\":1,\"unitPrice\":\"5573\"}],\"amount\":\"5573\",\"fee\":{\"fixedAmount\":0,\"netAmount\":\"5573\"},\"trackingParameters\":{\"src\":\"FBjLj6846ba74180f7734261bb7aa\",\"utm_source\":\"FBjLj6846ba74180f7734261bb7aa\",\"utm_campaign\":\"09\\\/06 ESCALA CTV 17 VALIDADO \\u2014 C\\u00f3pia|120225784281070470\",\"utm_medium\":\"PDIDDY|120225784281760470\",\"utm_content\":\"017|120225784280580470\",\"utm_term\":\"Facebook_Mobile_Feed\"},\"isTest\":false}"
+}
+----------------------------------------
+[2025-06-09 07:58:33] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "539882ac-a7f4-42dd-85b1-a8cf309a20f9",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "paid",
+    "createdAt": "2025-06-09T07:55:31-03:00",
+    "approvedDate": "2025-06-09 07:58:33",
+    "paidAt": "2025-06-09 07:58:33",
+    "refundedAt": null,
+    "customer": {
+        "name": "Beatriz Oliveira Gomes",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": {
+            "number": "65937223160",
+            "type": "CPF"
+        },
+        "country": "BR",
+        "ip": "64.23.135.43"
+    },
+    "items": [
+        {
+            "id": "PROD_6846be59e7686",
+            "title": "Produto 55.73",
+            "quantity": 1,
+            "unitPrice": "5573"
+        }
+    ],
+    "amount": "5573",
+    "fee": {
+        "fixedAmount": 0,
+        "netAmount": "5573"
+    },
+    "trackingParameters": {
+        "src": "FBjLj6846ba74180f7734261bb7aa",
+        "utm_source": "FBjLj6846ba74180f7734261bb7aa",
+        "utm_campaign": "09\/06 ESCALA CTV 17 VALIDADO \u2014 C\u00f3pia|120225784281070470",
+        "utm_medium": "PDIDDY|120225784281760470",
+        "utm_content": "017|120225784280580470",
+        "utm_term": "Facebook_Mobile_Feed"
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-09 07:58:33] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "539882ac-a7f4-42dd-85b1-a8cf309a20f9",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "paid",
+    "createdAt": "2025-06-09 10:55:31",
+    "approvedDate": "2025-06-09 10:58:33",
+    "refundedAt": null,
+    "customer": {
+        "name": "Beatriz Oliveira Gomes",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "65937223160",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_6846be59e7686",
+            "name": "Produto 55.73",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": "5573"
+        }
+    ],
+    "trackingParameters": {
+        "src": "FBjLj6846ba74180f7734261bb7aa",
+        "sck": null,
+        "utm_source": "FBjLj6846ba74180f7734261bb7aa",
+        "utm_campaign": "09\/06 ESCALA CTV 17 VALIDADO \u2014 C\u00f3pia|120225784281070470",
+        "utm_medium": "PDIDDY|120225784281760470",
+        "utm_content": "017|120225784280580470",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": null,
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": "5573",
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": "5573"
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-09 07:58:33] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-06-09 07:58:34] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-06-09 07:58:52] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"67ecfa9a-13b3-4050-acb3-c816bd998d10\",\"platform\":\"PayHubr\",\"paymentMethod\":\"pix\",\"status\":\"paid\",\"createdAt\":\"2025-06-09T07:57:33-03:00\",\"approvedDate\":\"2025-06-09 07:58:52\",\"paidAt\":\"2025-06-09 07:58:52\",\"refundedAt\":null,\"customer\":{\"name\":\"Alice Martins Fernandes\",\"email\":\"alice.martins.fernandes@email.com\",\"phone\":null,\"document\":{\"number\":\"59513720110\",\"type\":\"CPF\"},\"country\":\"BR\",\"ip\":\"64.23.135.43\"},\"items\":[{\"id\":\"PROD_6846be6c7bf95\",\"title\":\"Produto 35\",\"quantity\":1,\"unitPrice\":\"3500\"}],\"amount\":\"3500\",\"fee\":{\"fixedAmount\":0,\"netAmount\":\"3500\"},\"trackingParameters\":{\"src\":\"FBjLj6846b946a809bec9d11c4d20\",\"utm_source\":\"FBjLj6846b946a809bec9d11c4d20\",\"utm_campaign\":\"09\\\/06 ESCALA CTV 17 VALIDADO \\u2014 C\\u00f3pia|120225784281020470\",\"utm_medium\":\"PDIDDY|120225784281550470\",\"utm_content\":\"017|120225784280530470\",\"utm_term\":\"Facebook_Mobile_Reels\"},\"isTest\":false}"
+}
+----------------------------------------
+[2025-06-09 07:58:52] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "67ecfa9a-13b3-4050-acb3-c816bd998d10",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "paid",
+    "createdAt": "2025-06-09T07:57:33-03:00",
+    "approvedDate": "2025-06-09 07:58:52",
+    "paidAt": "2025-06-09 07:58:52",
+    "refundedAt": null,
+    "customer": {
+        "name": "Alice Martins Fernandes",
+        "email": "alice.martins.fernandes@email.com",
+        "phone": null,
+        "document": {
+            "number": "59513720110",
+            "type": "CPF"
+        },
+        "country": "BR",
+        "ip": "64.23.135.43"
+    },
+    "items": [
+        {
+            "id": "PROD_6846be6c7bf95",
+            "title": "Produto 35",
+            "quantity": 1,
+            "unitPrice": "3500"
+        }
+    ],
+    "amount": "3500",
+    "fee": {
+        "fixedAmount": 0,
+        "netAmount": "3500"
+    },
+    "trackingParameters": {
+        "src": "FBjLj6846b946a809bec9d11c4d20",
+        "utm_source": "FBjLj6846b946a809bec9d11c4d20",
+        "utm_campaign": "09\/06 ESCALA CTV 17 VALIDADO \u2014 C\u00f3pia|120225784281020470",
+        "utm_medium": "PDIDDY|120225784281550470",
+        "utm_content": "017|120225784280530470",
+        "utm_term": "Facebook_Mobile_Reels"
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-09 07:58:52] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "67ecfa9a-13b3-4050-acb3-c816bd998d10",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "paid",
+    "createdAt": "2025-06-09 10:57:33",
+    "approvedDate": "2025-06-09 10:58:52",
+    "refundedAt": null,
+    "customer": {
+        "name": "Alice Martins Fernandes",
+        "email": "alice.martins.fernandes@email.com",
+        "phone": null,
+        "document": "59513720110",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_6846be6c7bf95",
+            "name": "Produto 35",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": "3500"
+        }
+    ],
+    "trackingParameters": {
+        "src": "FBjLj6846b946a809bec9d11c4d20",
+        "sck": null,
+        "utm_source": "FBjLj6846b946a809bec9d11c4d20",
+        "utm_campaign": "09\/06 ESCALA CTV 17 VALIDADO \u2014 C\u00f3pia|120225784281020470",
+        "utm_medium": "PDIDDY|120225784281550470",
+        "utm_content": "017|120225784280530470",
+        "utm_term": "Facebook_Mobile_Reels",
+        "xcod": null,
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": "3500",
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": "3500"
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-09 07:58:52] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-06-09 07:58:52] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-06-09 07:59:35] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"37d70256-95ab-4c6d-b4fc-9ad37872a4cf\",\"platform\":\"PayHubr\",\"paymentMethod\":\"pix\",\"status\":\"paid\",\"createdAt\":\"2025-06-09T07:56:41-03:00\",\"approvedDate\":\"2025-06-09 07:59:35\",\"paidAt\":\"2025-06-09 07:59:35\",\"refundedAt\":null,\"customer\":{\"name\":\"Manuela Santos Ribeiro\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":{\"number\":\"55369370494\",\"type\":\"CPF\"},\"country\":\"BR\",\"ip\":\"64.23.135.43\"},\"items\":[{\"id\":\"PROD_6846be9750e26\",\"title\":\"Produto 55.73\",\"quantity\":1,\"unitPrice\":\"5573\"}],\"amount\":\"5573\",\"fee\":{\"fixedAmount\":0,\"netAmount\":\"5573\"},\"trackingParameters\":{\"src\":\"FBjLj6846babc6b1abc4987c4b0bb\",\"utm_source\":\"FBjLj6846babc6b1abc4987c4b0bb\",\"utm_campaign\":\"09\\\/06 ESCALA CTV 17 VALIDADO COMPENSACAO \\u2014 C\\u00f3pia|120225785043430470\",\"utm_medium\":\"PDIDDY|120225785043290470\",\"utm_content\":\"017|120225785043670470\",\"utm_term\":\"Facebook_Mobile_Feed\"},\"isTest\":false}"
+}
+----------------------------------------
+[2025-06-09 07:59:35] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "37d70256-95ab-4c6d-b4fc-9ad37872a4cf",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "paid",
+    "createdAt": "2025-06-09T07:56:41-03:00",
+    "approvedDate": "2025-06-09 07:59:35",
+    "paidAt": "2025-06-09 07:59:35",
+    "refundedAt": null,
+    "customer": {
+        "name": "Manuela Santos Ribeiro",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": {
+            "number": "55369370494",
+            "type": "CPF"
+        },
+        "country": "BR",
+        "ip": "64.23.135.43"
+    },
+    "items": [
+        {
+            "id": "PROD_6846be9750e26",
+            "title": "Produto 55.73",
+            "quantity": 1,
+            "unitPrice": "5573"
+        }
+    ],
+    "amount": "5573",
+    "fee": {
+        "fixedAmount": 0,
+        "netAmount": "5573"
+    },
+    "trackingParameters": {
+        "src": "FBjLj6846babc6b1abc4987c4b0bb",
+        "utm_source": "FBjLj6846babc6b1abc4987c4b0bb",
+        "utm_campaign": "09\/06 ESCALA CTV 17 VALIDADO COMPENSACAO \u2014 C\u00f3pia|120225785043430470",
+        "utm_medium": "PDIDDY|120225785043290470",
+        "utm_content": "017|120225785043670470",
+        "utm_term": "Facebook_Mobile_Feed"
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-09 07:59:35] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "37d70256-95ab-4c6d-b4fc-9ad37872a4cf",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "paid",
+    "createdAt": "2025-06-09 10:56:41",
+    "approvedDate": "2025-06-09 10:59:35",
+    "refundedAt": null,
+    "customer": {
+        "name": "Manuela Santos Ribeiro",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "55369370494",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_6846be9750e26",
+            "name": "Produto 55.73",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": "5573"
+        }
+    ],
+    "trackingParameters": {
+        "src": "FBjLj6846babc6b1abc4987c4b0bb",
+        "sck": null,
+        "utm_source": "FBjLj6846babc6b1abc4987c4b0bb",
+        "utm_campaign": "09\/06 ESCALA CTV 17 VALIDADO COMPENSACAO \u2014 C\u00f3pia|120225785043430470",
+        "utm_medium": "PDIDDY|120225785043290470",
+        "utm_content": "017|120225785043670470",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": null,
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": "5573",
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": "5573"
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-09 07:59:35] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-06-09 07:59:35] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-06-09 08:00:47] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"6322af1d-f55e-49c0-a94d-354e312a005b\",\"platform\":\"PayHubr\",\"paymentMethod\":\"pix\",\"status\":\"paid\",\"createdAt\":\"2025-06-09T07:57:21-03:00\",\"approvedDate\":\"2025-06-09 08:00:47\",\"paidAt\":\"2025-06-09 08:00:47\",\"refundedAt\":null,\"customer\":{\"name\":\"Daniel Barbosa Rodrigues\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":{\"number\":\"97209641114\",\"type\":\"CPF\"},\"country\":\"BR\",\"ip\":\"64.23.135.43\"},\"items\":[{\"id\":\"PROD_6846bedf3f71b\",\"title\":\"Produto 55.73\",\"quantity\":1,\"unitPrice\":\"5573\"}],\"amount\":\"5573\",\"fee\":{\"fixedAmount\":0,\"netAmount\":\"5573\"},\"trackingParameters\":{\"src\":\"FBjLj6846ba9299b319849b96f5d1\",\"utm_source\":\"FBjLj6846ba9299b319849b96f5d1\",\"utm_campaign\":\"09\\\/06 ESCALA CTV 17 VALIDADO \\u2014 C\\u00f3pia|120225784280380470\",\"utm_medium\":\"PDIDDY|120225784280800470\",\"utm_content\":\"017|120225784281310470\",\"utm_term\":\"Facebook_Mobile_Feed\"},\"isTest\":false}"
+}
+----------------------------------------
+[2025-06-09 08:00:47] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "6322af1d-f55e-49c0-a94d-354e312a005b",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "paid",
+    "createdAt": "2025-06-09T07:57:21-03:00",
+    "approvedDate": "2025-06-09 08:00:47",
+    "paidAt": "2025-06-09 08:00:47",
+    "refundedAt": null,
+    "customer": {
+        "name": "Daniel Barbosa Rodrigues",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": {
+            "number": "97209641114",
+            "type": "CPF"
+        },
+        "country": "BR",
+        "ip": "64.23.135.43"
+    },
+    "items": [
+        {
+            "id": "PROD_6846bedf3f71b",
+            "title": "Produto 55.73",
+            "quantity": 1,
+            "unitPrice": "5573"
+        }
+    ],
+    "amount": "5573",
+    "fee": {
+        "fixedAmount": 0,
+        "netAmount": "5573"
+    },
+    "trackingParameters": {
+        "src": "FBjLj6846ba9299b319849b96f5d1",
+        "utm_source": "FBjLj6846ba9299b319849b96f5d1",
+        "utm_campaign": "09\/06 ESCALA CTV 17 VALIDADO \u2014 C\u00f3pia|120225784280380470",
+        "utm_medium": "PDIDDY|120225784280800470",
+        "utm_content": "017|120225784281310470",
+        "utm_term": "Facebook_Mobile_Feed"
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-09 08:00:47] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "6322af1d-f55e-49c0-a94d-354e312a005b",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "paid",
+    "createdAt": "2025-06-09 10:57:21",
+    "approvedDate": "2025-06-09 11:00:47",
+    "refundedAt": null,
+    "customer": {
+        "name": "Daniel Barbosa Rodrigues",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "97209641114",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_6846bedf3f71b",
+            "name": "Produto 55.73",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": "5573"
+        }
+    ],
+    "trackingParameters": {
+        "src": "FBjLj6846ba9299b319849b96f5d1",
+        "sck": null,
+        "utm_source": "FBjLj6846ba9299b319849b96f5d1",
+        "utm_campaign": "09\/06 ESCALA CTV 17 VALIDADO \u2014 C\u00f3pia|120225784280380470",
+        "utm_medium": "PDIDDY|120225784280800470",
+        "utm_content": "017|120225784281310470",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": null,
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": "5573",
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": "5573"
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-09 08:00:47] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-06-09 08:00:47] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-06-09 08:01:23] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"d2a54aba-4e6e-46db-9699-249e92cef2d8\",\"platform\":\"PayHubr\",\"paymentMethod\":\"pix\",\"status\":\"paid\",\"createdAt\":\"2025-06-09T08:00:24-03:00\",\"approvedDate\":\"2025-06-09 08:01:23\",\"paidAt\":\"2025-06-09 08:01:23\",\"refundedAt\":null,\"customer\":{\"name\":\"Sofia Carvalho Santos\",\"email\":\"sofia.carvalho.santos@email.com\",\"phone\":null,\"document\":{\"number\":\"82438562340\",\"type\":\"CPF\"},\"country\":\"BR\",\"ip\":\"64.23.135.43\"},\"items\":[{\"id\":\"PROD_6846bf03850af\",\"title\":\"Produto 35\",\"quantity\":1,\"unitPrice\":\"3500\"}],\"amount\":\"3500\",\"fee\":{\"fixedAmount\":0,\"netAmount\":\"3500\"},\"trackingParameters\":{\"src\":\"FBjLj6846babc6b1abc4987c4b0bb\",\"utm_source\":\"FBjLj6846babc6b1abc4987c4b0bb\",\"utm_campaign\":\"09\\\/06 ESCALA CTV 17 VALIDADO COMPENSACAO \\u2014 C\\u00f3pia|120225785043430470\",\"utm_medium\":\"PDIDDY|120225785043290470\",\"utm_content\":\"017|120225785043670470\",\"utm_term\":\"Facebook_Mobile_Feed\"},\"isTest\":false}"
+}
+----------------------------------------
+[2025-06-09 08:01:23] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "d2a54aba-4e6e-46db-9699-249e92cef2d8",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "paid",
+    "createdAt": "2025-06-09T08:00:24-03:00",
+    "approvedDate": "2025-06-09 08:01:23",
+    "paidAt": "2025-06-09 08:01:23",
+    "refundedAt": null,
+    "customer": {
+        "name": "Sofia Carvalho Santos",
+        "email": "sofia.carvalho.santos@email.com",
+        "phone": null,
+        "document": {
+            "number": "82438562340",
+            "type": "CPF"
+        },
+        "country": "BR",
+        "ip": "64.23.135.43"
+    },
+    "items": [
+        {
+            "id": "PROD_6846bf03850af",
+            "title": "Produto 35",
+            "quantity": 1,
+            "unitPrice": "3500"
+        }
+    ],
+    "amount": "3500",
+    "fee": {
+        "fixedAmount": 0,
+        "netAmount": "3500"
+    },
+    "trackingParameters": {
+        "src": "FBjLj6846babc6b1abc4987c4b0bb",
+        "utm_source": "FBjLj6846babc6b1abc4987c4b0bb",
+        "utm_campaign": "09\/06 ESCALA CTV 17 VALIDADO COMPENSACAO \u2014 C\u00f3pia|120225785043430470",
+        "utm_medium": "PDIDDY|120225785043290470",
+        "utm_content": "017|120225785043670470",
+        "utm_term": "Facebook_Mobile_Feed"
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-09 08:01:23] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "d2a54aba-4e6e-46db-9699-249e92cef2d8",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "paid",
+    "createdAt": "2025-06-09 11:00:24",
+    "approvedDate": "2025-06-09 11:01:23",
+    "refundedAt": null,
+    "customer": {
+        "name": "Sofia Carvalho Santos",
+        "email": "sofia.carvalho.santos@email.com",
+        "phone": null,
+        "document": "82438562340",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_6846bf03850af",
+            "name": "Produto 35",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": "3500"
+        }
+    ],
+    "trackingParameters": {
+        "src": "FBjLj6846babc6b1abc4987c4b0bb",
+        "sck": null,
+        "utm_source": "FBjLj6846babc6b1abc4987c4b0bb",
+        "utm_campaign": "09\/06 ESCALA CTV 17 VALIDADO COMPENSACAO \u2014 C\u00f3pia|120225785043430470",
+        "utm_medium": "PDIDDY|120225785043290470",
+        "utm_content": "017|120225785043670470",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": null,
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": "3500",
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": "3500"
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-09 08:01:23] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-06-09 08:01:23] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-06-09 08:02:29] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"1175c840-1383-40bb-a88c-1e41fcbaaa89\",\"platform\":\"PayHubr\",\"paymentMethod\":\"pix\",\"status\":\"paid\",\"createdAt\":\"2025-06-09T07:59:58-03:00\",\"approvedDate\":\"2025-06-09 08:02:29\",\"paidAt\":\"2025-06-09 08:02:29\",\"refundedAt\":null,\"customer\":{\"name\":\"Sophia Fernandes Costa\",\"email\":\"sophia.fernandes.costa@email.com\",\"phone\":null,\"document\":{\"number\":\"76882369836\",\"type\":\"CPF\"},\"country\":\"BR\",\"ip\":\"64.23.135.43\"},\"items\":[{\"id\":\"PROD_6846bf453be19\",\"title\":\"Produto 35\",\"quantity\":1,\"unitPrice\":\"3500\"}],\"amount\":\"3500\",\"fee\":{\"fixedAmount\":0,\"netAmount\":\"3500\"},\"trackingParameters\":{\"src\":\"FBjLj6846ba74180f7734261bb7aa\",\"utm_source\":\"FBjLj6846ba74180f7734261bb7aa\",\"utm_campaign\":\"09\\\/06 ESCALA CTV 17 VALIDADO \\u2014 C\\u00f3pia|120225784281070470\",\"utm_medium\":\"PDIDDY|120225784281760470\",\"utm_content\":\"017|120225784280580470\",\"utm_term\":\"Facebook_Mobile_Feed\"},\"isTest\":false}"
+}
+----------------------------------------
+[2025-06-09 08:02:29] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "1175c840-1383-40bb-a88c-1e41fcbaaa89",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "paid",
+    "createdAt": "2025-06-09T07:59:58-03:00",
+    "approvedDate": "2025-06-09 08:02:29",
+    "paidAt": "2025-06-09 08:02:29",
+    "refundedAt": null,
+    "customer": {
+        "name": "Sophia Fernandes Costa",
+        "email": "sophia.fernandes.costa@email.com",
+        "phone": null,
+        "document": {
+            "number": "76882369836",
+            "type": "CPF"
+        },
+        "country": "BR",
+        "ip": "64.23.135.43"
+    },
+    "items": [
+        {
+            "id": "PROD_6846bf453be19",
+            "title": "Produto 35",
+            "quantity": 1,
+            "unitPrice": "3500"
+        }
+    ],
+    "amount": "3500",
+    "fee": {
+        "fixedAmount": 0,
+        "netAmount": "3500"
+    },
+    "trackingParameters": {
+        "src": "FBjLj6846ba74180f7734261bb7aa",
+        "utm_source": "FBjLj6846ba74180f7734261bb7aa",
+        "utm_campaign": "09\/06 ESCALA CTV 17 VALIDADO \u2014 C\u00f3pia|120225784281070470",
+        "utm_medium": "PDIDDY|120225784281760470",
+        "utm_content": "017|120225784280580470",
+        "utm_term": "Facebook_Mobile_Feed"
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-09 08:02:29] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "1175c840-1383-40bb-a88c-1e41fcbaaa89",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "paid",
+    "createdAt": "2025-06-09 10:59:58",
+    "approvedDate": "2025-06-09 11:02:29",
+    "refundedAt": null,
+    "customer": {
+        "name": "Sophia Fernandes Costa",
+        "email": "sophia.fernandes.costa@email.com",
+        "phone": null,
+        "document": "76882369836",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_6846bf453be19",
+            "name": "Produto 35",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": "3500"
+        }
+    ],
+    "trackingParameters": {
+        "src": "FBjLj6846ba74180f7734261bb7aa",
+        "sck": null,
+        "utm_source": "FBjLj6846ba74180f7734261bb7aa",
+        "utm_campaign": "09\/06 ESCALA CTV 17 VALIDADO \u2014 C\u00f3pia|120225784281070470",
+        "utm_medium": "PDIDDY|120225784281760470",
+        "utm_content": "017|120225784280580470",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": null,
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": "3500",
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": "3500"
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-09 08:02:29] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-06-09 08:02:29] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-06-09 08:03:25] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"7d1988a7-0c3f-4639-b2c0-dea23452fb0f\",\"platform\":\"PayHubr\",\"paymentMethod\":\"pix\",\"status\":\"paid\",\"createdAt\":\"2025-06-09T08:02:43-03:00\",\"approvedDate\":\"2025-06-09 08:03:25\",\"paidAt\":\"2025-06-09 08:03:25\",\"refundedAt\":null,\"customer\":{\"name\":\"Valentina Lima Ferreira\",\"email\":\"valentina.lima.ferreira@email.com\",\"phone\":null,\"document\":{\"number\":\"02052387773\",\"type\":\"CPF\"},\"country\":\"BR\",\"ip\":\"64.23.135.43\"},\"items\":[{\"id\":\"PROD_6846bf7dad763\",\"title\":\"Upsell 4\",\"quantity\":1,\"unitPrice\":\"2490\"}],\"amount\":\"2490\",\"fee\":{\"fixedAmount\":0,\"netAmount\":\"2490\"},\"trackingParameters\":{\"src\":\"FBjLj6846babc6b1abc4987c4b0bb\",\"utm_source\":\"FBjLj6846babc6b1abc4987c4b0bb\",\"utm_campaign\":\"09\\\/06 ESCALA CTV 17 VALIDADO COMPENSACAO \\u2014 C\\u00f3pia|120225785043430470\",\"utm_medium\":\"PDIDDY|120225785043290470\",\"utm_content\":\"017|120225785043670470\",\"utm_term\":\"Facebook_Mobile_Feed\"},\"isTest\":false}"
+}
+----------------------------------------
+[2025-06-09 08:03:25] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "7d1988a7-0c3f-4639-b2c0-dea23452fb0f",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "paid",
+    "createdAt": "2025-06-09T08:02:43-03:00",
+    "approvedDate": "2025-06-09 08:03:25",
+    "paidAt": "2025-06-09 08:03:25",
+    "refundedAt": null,
+    "customer": {
+        "name": "Valentina Lima Ferreira",
+        "email": "valentina.lima.ferreira@email.com",
+        "phone": null,
+        "document": {
+            "number": "02052387773",
+            "type": "CPF"
+        },
+        "country": "BR",
+        "ip": "64.23.135.43"
+    },
+    "items": [
+        {
+            "id": "PROD_6846bf7dad763",
+            "title": "Upsell 4",
+            "quantity": 1,
+            "unitPrice": "2490"
+        }
+    ],
+    "amount": "2490",
+    "fee": {
+        "fixedAmount": 0,
+        "netAmount": "2490"
+    },
+    "trackingParameters": {
+        "src": "FBjLj6846babc6b1abc4987c4b0bb",
+        "utm_source": "FBjLj6846babc6b1abc4987c4b0bb",
+        "utm_campaign": "09\/06 ESCALA CTV 17 VALIDADO COMPENSACAO \u2014 C\u00f3pia|120225785043430470",
+        "utm_medium": "PDIDDY|120225785043290470",
+        "utm_content": "017|120225785043670470",
+        "utm_term": "Facebook_Mobile_Feed"
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-09 08:03:25] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "7d1988a7-0c3f-4639-b2c0-dea23452fb0f",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "paid",
+    "createdAt": "2025-06-09 11:02:43",
+    "approvedDate": "2025-06-09 11:03:25",
+    "refundedAt": null,
+    "customer": {
+        "name": "Valentina Lima Ferreira",
+        "email": "valentina.lima.ferreira@email.com",
+        "phone": null,
+        "document": "02052387773",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_6846bf7dad763",
+            "name": "Upsell 4",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": "2490"
+        }
+    ],
+    "trackingParameters": {
+        "src": "FBjLj6846babc6b1abc4987c4b0bb",
+        "sck": null,
+        "utm_source": "FBjLj6846babc6b1abc4987c4b0bb",
+        "utm_campaign": "09\/06 ESCALA CTV 17 VALIDADO COMPENSACAO \u2014 C\u00f3pia|120225785043430470",
+        "utm_medium": "PDIDDY|120225785043290470",
+        "utm_content": "017|120225785043670470",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": null,
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": "2490",
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": "2490"
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-09 08:03:25] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-06-09 08:03:25] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-06-09 08:05:31] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"bf1e5487-9dad-462a-921f-8db32c6fe1a6\",\"platform\":\"PayHubr\",\"paymentMethod\":\"pix\",\"status\":\"paid\",\"createdAt\":\"2025-06-09T08:04:57-03:00\",\"approvedDate\":\"2025-06-09 08:05:31\",\"paidAt\":\"2025-06-09 08:05:31\",\"refundedAt\":null,\"customer\":{\"name\":\"Felipe Ferreira Costa\",\"email\":\"felipe.ferreira.costa@email.com\",\"phone\":null,\"document\":{\"number\":\"45130529880\",\"type\":\"CPF\"},\"country\":\"BR\",\"ip\":\"64.23.135.43\"},\"items\":[{\"id\":\"PROD_6846bffbd954c\",\"title\":\"Produto 19.9\",\"quantity\":1,\"unitPrice\":\"1990\"}],\"amount\":\"1990\",\"fee\":{\"fixedAmount\":0,\"netAmount\":\"1990\"},\"trackingParameters\":{\"utm_campaign\":\"09\\\/06 ESCALA CTV 17 VALIDADO COMPENSACAO \\u2014 C\\u00f3pia|120225785043430470\",\"utm_medium\":\"PDIDDY|120225785043290470\",\"utm_content\":\"017|120225785043670470\",\"utm_term\":\"Facebook_Mobile_Feed\"},\"isTest\":false}"
+}
+----------------------------------------
+[2025-06-09 08:05:31] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "bf1e5487-9dad-462a-921f-8db32c6fe1a6",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "paid",
+    "createdAt": "2025-06-09T08:04:57-03:00",
+    "approvedDate": "2025-06-09 08:05:31",
+    "paidAt": "2025-06-09 08:05:31",
+    "refundedAt": null,
+    "customer": {
+        "name": "Felipe Ferreira Costa",
+        "email": "felipe.ferreira.costa@email.com",
+        "phone": null,
+        "document": {
+            "number": "45130529880",
+            "type": "CPF"
+        },
+        "country": "BR",
+        "ip": "64.23.135.43"
+    },
+    "items": [
+        {
+            "id": "PROD_6846bffbd954c",
+            "title": "Produto 19.9",
+            "quantity": 1,
+            "unitPrice": "1990"
+        }
+    ],
+    "amount": "1990",
+    "fee": {
+        "fixedAmount": 0,
+        "netAmount": "1990"
+    },
+    "trackingParameters": {
+        "utm_campaign": "09\/06 ESCALA CTV 17 VALIDADO COMPENSACAO \u2014 C\u00f3pia|120225785043430470",
+        "utm_medium": "PDIDDY|120225785043290470",
+        "utm_content": "017|120225785043670470",
+        "utm_term": "Facebook_Mobile_Feed"
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-09 08:05:31] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "bf1e5487-9dad-462a-921f-8db32c6fe1a6",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "paid",
+    "createdAt": "2025-06-09 11:04:57",
+    "approvedDate": "2025-06-09 11:05:31",
+    "refundedAt": null,
+    "customer": {
+        "name": "Felipe Ferreira Costa",
+        "email": "felipe.ferreira.costa@email.com",
+        "phone": null,
+        "document": "45130529880",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_6846bffbd954c",
+            "name": "Produto 19.9",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": "1990"
+        }
+    ],
+    "trackingParameters": {
+        "src": null,
+        "sck": null,
+        "utm_source": null,
+        "utm_campaign": "09\/06 ESCALA CTV 17 VALIDADO COMPENSACAO \u2014 C\u00f3pia|120225785043430470",
+        "utm_medium": "PDIDDY|120225785043290470",
+        "utm_content": "017|120225785043670470",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": null,
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": "1990",
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": "1990"
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-09 08:05:31] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-06-09 08:05:31] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-06-09 08:07:32] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"49cc2430-f8d0-4236-9316-02e2b031b2e5\",\"platform\":\"PayHubr\",\"paymentMethod\":\"pix\",\"status\":\"paid\",\"createdAt\":\"2025-06-09T08:06:50-03:00\",\"approvedDate\":\"2025-06-09 08:07:32\",\"paidAt\":\"2025-06-09 08:07:32\",\"refundedAt\":null,\"customer\":{\"name\":\"Helena Ferreira Silva\",\"email\":\"helena.ferreira.silva@email.com\",\"phone\":null,\"document\":{\"number\":\"22943730653\",\"type\":\"CPF\"},\"country\":\"BR\",\"ip\":\"64.23.135.43\"},\"items\":[{\"id\":\"PROD_6846c0748b05d\",\"title\":\"Upsell 3\",\"quantity\":1,\"unitPrice\":\"1790\"}],\"amount\":\"1790\",\"fee\":{\"fixedAmount\":0,\"netAmount\":\"1790\"},\"trackingParameters\":{\"utm_campaign\":\"09\\\/06 ESCALA CTV 17 VALIDADO COMPENSACAO \\u2014 C\\u00f3pia|120225785043430470\",\"utm_medium\":\"PDIDDY|120225785043290470\",\"utm_content\":\"017|120225785043670470\",\"utm_term\":\"Facebook_Mobile_Feed\"},\"isTest\":false}"
+}
+----------------------------------------
+[2025-06-09 08:07:32] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "49cc2430-f8d0-4236-9316-02e2b031b2e5",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "paid",
+    "createdAt": "2025-06-09T08:06:50-03:00",
+    "approvedDate": "2025-06-09 08:07:32",
+    "paidAt": "2025-06-09 08:07:32",
+    "refundedAt": null,
+    "customer": {
+        "name": "Helena Ferreira Silva",
+        "email": "helena.ferreira.silva@email.com",
+        "phone": null,
+        "document": {
+            "number": "22943730653",
+            "type": "CPF"
+        },
+        "country": "BR",
+        "ip": "64.23.135.43"
+    },
+    "items": [
+        {
+            "id": "PROD_6846c0748b05d",
+            "title": "Upsell 3",
+            "quantity": 1,
+            "unitPrice": "1790"
+        }
+    ],
+    "amount": "1790",
+    "fee": {
+        "fixedAmount": 0,
+        "netAmount": "1790"
+    },
+    "trackingParameters": {
+        "utm_campaign": "09\/06 ESCALA CTV 17 VALIDADO COMPENSACAO \u2014 C\u00f3pia|120225785043430470",
+        "utm_medium": "PDIDDY|120225785043290470",
+        "utm_content": "017|120225785043670470",
+        "utm_term": "Facebook_Mobile_Feed"
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-09 08:07:32] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "49cc2430-f8d0-4236-9316-02e2b031b2e5",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "paid",
+    "createdAt": "2025-06-09 11:06:50",
+    "approvedDate": "2025-06-09 11:07:32",
+    "refundedAt": null,
+    "customer": {
+        "name": "Helena Ferreira Silva",
+        "email": "helena.ferreira.silva@email.com",
+        "phone": null,
+        "document": "22943730653",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_6846c0748b05d",
+            "name": "Upsell 3",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": "1790"
+        }
+    ],
+    "trackingParameters": {
+        "src": null,
+        "sck": null,
+        "utm_source": null,
+        "utm_campaign": "09\/06 ESCALA CTV 17 VALIDADO COMPENSACAO \u2014 C\u00f3pia|120225785043430470",
+        "utm_medium": "PDIDDY|120225785043290470",
+        "utm_content": "017|120225785043670470",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": null,
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": "1790",
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": "1790"
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-09 08:07:32] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-06-09 08:07:32] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-06-09 08:09:37] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"7b6e2bd0-6e6e-49cf-97b0-f320135b0fe5\",\"platform\":\"PayHubr\",\"paymentMethod\":\"pix\",\"status\":\"paid\",\"createdAt\":\"2025-06-09T08:08:58-03:00\",\"approvedDate\":\"2025-06-09 08:09:37\",\"paidAt\":\"2025-06-09 08:09:37\",\"refundedAt\":null,\"customer\":{\"name\":\"Carlos Soares Costa\",\"email\":\"carlos.soares.costa@email.com\",\"phone\":null,\"document\":{\"number\":\"31215930054\",\"type\":\"CPF\"},\"country\":\"BR\",\"ip\":\"64.23.135.43\"},\"items\":[{\"id\":\"PROD_6846c0f13dd40\",\"title\":\"Upsell 4\",\"quantity\":1,\"unitPrice\":\"2490\"}],\"amount\":\"2490\",\"fee\":{\"fixedAmount\":0,\"netAmount\":\"2490\"},\"trackingParameters\":{\"utm_campaign\":\"09\\\/06 ESCALA CTV 17 VALIDADO COMPENSACAO \\u2014 C\\u00f3pia|120225785043430470\",\"utm_medium\":\"PDIDDY|120225785043290470\",\"utm_content\":\"017|120225785043670470\",\"utm_term\":\"Facebook_Mobile_Feed\"},\"isTest\":false}"
+}
+----------------------------------------
+[2025-06-09 08:09:37] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "7b6e2bd0-6e6e-49cf-97b0-f320135b0fe5",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "paid",
+    "createdAt": "2025-06-09T08:08:58-03:00",
+    "approvedDate": "2025-06-09 08:09:37",
+    "paidAt": "2025-06-09 08:09:37",
+    "refundedAt": null,
+    "customer": {
+        "name": "Carlos Soares Costa",
+        "email": "carlos.soares.costa@email.com",
+        "phone": null,
+        "document": {
+            "number": "31215930054",
+            "type": "CPF"
+        },
+        "country": "BR",
+        "ip": "64.23.135.43"
+    },
+    "items": [
+        {
+            "id": "PROD_6846c0f13dd40",
+            "title": "Upsell 4",
+            "quantity": 1,
+            "unitPrice": "2490"
+        }
+    ],
+    "amount": "2490",
+    "fee": {
+        "fixedAmount": 0,
+        "netAmount": "2490"
+    },
+    "trackingParameters": {
+        "utm_campaign": "09\/06 ESCALA CTV 17 VALIDADO COMPENSACAO \u2014 C\u00f3pia|120225785043430470",
+        "utm_medium": "PDIDDY|120225785043290470",
+        "utm_content": "017|120225785043670470",
+        "utm_term": "Facebook_Mobile_Feed"
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-09 08:09:37] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "7b6e2bd0-6e6e-49cf-97b0-f320135b0fe5",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "paid",
+    "createdAt": "2025-06-09 11:08:58",
+    "approvedDate": "2025-06-09 11:09:37",
+    "refundedAt": null,
+    "customer": {
+        "name": "Carlos Soares Costa",
+        "email": "carlos.soares.costa@email.com",
+        "phone": null,
+        "document": "31215930054",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_6846c0f13dd40",
+            "name": "Upsell 4",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": "2490"
+        }
+    ],
+    "trackingParameters": {
+        "src": null,
+        "sck": null,
+        "utm_source": null,
+        "utm_campaign": "09\/06 ESCALA CTV 17 VALIDADO COMPENSACAO \u2014 C\u00f3pia|120225785043430470",
+        "utm_medium": "PDIDDY|120225785043290470",
+        "utm_content": "017|120225785043670470",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": null,
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": "2490",
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": "2490"
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-09 08:09:37] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-06-09 08:09:37] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-06-09 08:10:58] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"34bb4ce9-ef8d-4ce2-9613-37fcfc3db4f9\",\"platform\":\"PayHubr\",\"paymentMethod\":\"pix\",\"status\":\"paid\",\"createdAt\":\"2025-06-09T08:10:27-03:00\",\"approvedDate\":\"2025-06-09 08:10:58\",\"paidAt\":\"2025-06-09 08:10:58\",\"refundedAt\":null,\"customer\":{\"name\":\"Manuela Oliveira Alves\",\"email\":\"manuela.oliveira.alves@email.com\",\"phone\":null,\"document\":{\"number\":\"65826320354\",\"type\":\"CPF\"},\"country\":\"BR\",\"ip\":\"64.23.135.43\"},\"items\":[{\"id\":\"PROD_6846c1428b7ef\",\"title\":\"Upsell 5\",\"quantity\":1,\"unitPrice\":\"3980\"}],\"amount\":\"3980\",\"fee\":{\"fixedAmount\":0,\"netAmount\":\"3980\"},\"trackingParameters\":{\"utm_campaign\":\"09\\\/06 ESCALA CTV 17 VALIDADO COMPENSACAO \\u2014 C\\u00f3pia|120225785043430470\",\"utm_medium\":\"PDIDDY|120225785043290470\",\"utm_content\":\"017|120225785043670470\",\"utm_term\":\"Facebook_Mobile_Feed\"},\"isTest\":false}"
+}
+----------------------------------------
+[2025-06-09 08:10:58] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "34bb4ce9-ef8d-4ce2-9613-37fcfc3db4f9",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "paid",
+    "createdAt": "2025-06-09T08:10:27-03:00",
+    "approvedDate": "2025-06-09 08:10:58",
+    "paidAt": "2025-06-09 08:10:58",
+    "refundedAt": null,
+    "customer": {
+        "name": "Manuela Oliveira Alves",
+        "email": "manuela.oliveira.alves@email.com",
+        "phone": null,
+        "document": {
+            "number": "65826320354",
+            "type": "CPF"
+        },
+        "country": "BR",
+        "ip": "64.23.135.43"
+    },
+    "items": [
+        {
+            "id": "PROD_6846c1428b7ef",
+            "title": "Upsell 5",
+            "quantity": 1,
+            "unitPrice": "3980"
+        }
+    ],
+    "amount": "3980",
+    "fee": {
+        "fixedAmount": 0,
+        "netAmount": "3980"
+    },
+    "trackingParameters": {
+        "utm_campaign": "09\/06 ESCALA CTV 17 VALIDADO COMPENSACAO \u2014 C\u00f3pia|120225785043430470",
+        "utm_medium": "PDIDDY|120225785043290470",
+        "utm_content": "017|120225785043670470",
+        "utm_term": "Facebook_Mobile_Feed"
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-09 08:10:58] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "34bb4ce9-ef8d-4ce2-9613-37fcfc3db4f9",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "paid",
+    "createdAt": "2025-06-09 11:10:27",
+    "approvedDate": "2025-06-09 11:10:58",
+    "refundedAt": null,
+    "customer": {
+        "name": "Manuela Oliveira Alves",
+        "email": "manuela.oliveira.alves@email.com",
+        "phone": null,
+        "document": "65826320354",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_6846c1428b7ef",
+            "name": "Upsell 5",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": "3980"
+        }
+    ],
+    "trackingParameters": {
+        "src": null,
+        "sck": null,
+        "utm_source": null,
+        "utm_campaign": "09\/06 ESCALA CTV 17 VALIDADO COMPENSACAO \u2014 C\u00f3pia|120225785043430470",
+        "utm_medium": "PDIDDY|120225785043290470",
+        "utm_content": "017|120225785043670470",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": null,
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": "3980",
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": "3980"
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-09 08:10:58] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-06-09 08:10:58] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------

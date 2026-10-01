@@ -1,0 +1,1 @@
+meusite.com/comprovante/autenticidade.html?name={{nome}}&cpf={{cpf}}&birthDate={{nasc}}&motherName={{mae}}&state={{cidade}}&birthDate={{nasc}}&motherName={{mae}}&state={{cidade}}

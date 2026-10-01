@@ -1,0 +1,120 @@
+[2025-07-30 14:49:53] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"177d7cb2-cc6f-498a-8ff7-d09efe5d2943\",\"platform\":\"MinhaPlataforma\",\"paymentMethod\":\"pix\",\"status\":\"waiting_payment\",\"createdAt\":\"2025-07-30 11:49:53\",\"approvedDate\":null,\"refundedAt\":null,\"customer\":{\"name\":\"Pedro Ferreira Rodrigues\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":\"65349517031\",\"country\":\"BR\",\"ip\":\"191.37.36.188\"},\"products\":[{\"id\":\"PROD_688a3111520e0\",\"name\":\"Doa\\u00e7\\u00e3o\",\"planId\":null,\"planName\":null,\"quantity\":1,\"priceInCents\":3723}],\"trackingParameters\":{\"utm_source\":\"FB\",\"utm_campaign\":\"09-07\"},\"commission\":{\"totalPriceInCents\":3723,\"gatewayFeeInCents\":0,\"userCommissionInCents\":3723},\"isTest\":false}"
+}
+----------------------------------------
+[2025-07-30 14:49:53] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "177d7cb2-cc6f-498a-8ff7-d09efe5d2943",
+    "platform": "MinhaPlataforma",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-07-30 11:49:53",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Pedro Ferreira Rodrigues",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "65349517031",
+        "country": "BR",
+        "ip": "191.37.36.188"
+    },
+    "products": [
+        {
+            "id": "PROD_688a3111520e0",
+            "name": "Doa\u00e7\u00e3o",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 3723
+        }
+    ],
+    "trackingParameters": {
+        "utm_source": "FB",
+        "utm_campaign": "09-07"
+    },
+    "commission": {
+        "totalPriceInCents": 3723,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 3723
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-07-30 14:49:53] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "177d7cb2-cc6f-498a-8ff7-d09efe5d2943",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-07-30 14:49:53",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Pedro Ferreira Rodrigues",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "65349517031",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_688a3111520e0",
+            "name": "Doa\u00e7\u00e3o",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 3723
+        }
+    ],
+    "trackingParameters": {
+        "src": null,
+        "sck": null,
+        "utm_source": "FB",
+        "utm_campaign": "09-07",
+        "utm_medium": null,
+        "utm_content": null,
+        "utm_term": null,
+        "xcod": null,
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": 3723,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 3723
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-07-30 14:49:53] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-07-30 14:49:53] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 404,
+    "response": {
+        "OK": false,
+        "data": {
+            "type": "API_CREDENTIAL"
+        },
+        "result": "ERROR",
+        "statusCode": 404,
+        "message": "API_CREDENTIAL_NOT_FOUND"
+    }
+}
+----------------------------------------
+[2025-07-30 14:49:53] ❌ Erro
+Dados: {
+    "message": "Erro na API Utmify. HTTP Code: 404"
+}
+----------------------------------------

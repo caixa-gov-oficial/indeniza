@@ -1,0 +1,216 @@
+[2025-05-26 18:06:59] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"22344d65-0975-4313-9c2d-e4a2d5b283fa\",\"platform\":\"MinhaPlataforma\",\"paymentMethod\":\"pix\",\"status\":\"waiting_payment\",\"createdAt\":\"2025-05-26 20:06:59\",\"approvedDate\":null,\"refundedAt\":null,\"customer\":{\"name\":\"Rafael Lopes Gomes\",\"email\":\"rafael.lopes.gomes@email.com\",\"phone\":null,\"document\":\"62710208873\",\"country\":\"BR\",\"ip\":\"::1\"},\"products\":[{\"id\":\"PROD_6834adc37da3a\",\"name\":\"Taxa de Verifica\\u00e7\\u00e3o\",\"planId\":null,\"planName\":null,\"quantity\":1,\"priceInCents\":2790}],\"trackingParameters\":[],\"commission\":{\"totalPriceInCents\":2790,\"gatewayFeeInCents\":0,\"userCommissionInCents\":2790},\"isTest\":false}"
+}
+----------------------------------------
+[2025-05-26 18:06:59] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "22344d65-0975-4313-9c2d-e4a2d5b283fa",
+    "platform": "MinhaPlataforma",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-05-26 20:06:59",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Rafael Lopes Gomes",
+        "email": "rafael.lopes.gomes@email.com",
+        "phone": null,
+        "document": "62710208873",
+        "country": "BR",
+        "ip": "::1"
+    },
+    "products": [
+        {
+            "id": "PROD_6834adc37da3a",
+            "name": "Taxa de Verifica\u00e7\u00e3o",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 2790
+        }
+    ],
+    "trackingParameters": [],
+    "commission": {
+        "totalPriceInCents": 2790,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 2790
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-05-26 18:06:59] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "22344d65-0975-4313-9c2d-e4a2d5b283fa",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-05-26 18:06:59",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Rafael Lopes Gomes",
+        "email": "rafael.lopes.gomes@email.com",
+        "phone": null,
+        "document": "62710208873",
+        "country": "BR",
+        "ip": "::1"
+    },
+    "products": [
+        {
+            "id": "PROD_6834adc37da3a",
+            "name": "Taxa de Verifica\u00e7\u00e3o",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 2790
+        }
+    ],
+    "trackingParameters": {
+        "src": null,
+        "sck": null,
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null,
+        "utm_content": null,
+        "utm_term": null,
+        "xcod": null,
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": 2790,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 2790
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-05-26 18:06:59] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-05-26 18:06:59] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-05-26 18:07:33] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"93361813-8008-48f5-82bf-678900043b39\",\"platform\":\"MinhaPlataforma\",\"paymentMethod\":\"pix\",\"status\":\"waiting_payment\",\"createdAt\":\"2025-05-26 20:07:33\",\"approvedDate\":null,\"refundedAt\":null,\"customer\":{\"name\":\"Beatriz Ribeiro Rodrigues\",\"email\":\"beatriz.ribeiro.rodrigues@email.com\",\"phone\":null,\"document\":\"86805648858\",\"country\":\"BR\",\"ip\":\"::1\"},\"products\":[{\"id\":\"PROD_6834ade572a54\",\"name\":\"Taxa de Verifica\\u00e7\\u00e3o\",\"planId\":null,\"planName\":null,\"quantity\":1,\"priceInCents\":2790}],\"trackingParameters\":[],\"commission\":{\"totalPriceInCents\":2790,\"gatewayFeeInCents\":0,\"userCommissionInCents\":2790},\"isTest\":false}"
+}
+----------------------------------------
+[2025-05-26 18:07:33] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "93361813-8008-48f5-82bf-678900043b39",
+    "platform": "MinhaPlataforma",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-05-26 20:07:33",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Beatriz Ribeiro Rodrigues",
+        "email": "beatriz.ribeiro.rodrigues@email.com",
+        "phone": null,
+        "document": "86805648858",
+        "country": "BR",
+        "ip": "::1"
+    },
+    "products": [
+        {
+            "id": "PROD_6834ade572a54",
+            "name": "Taxa de Verifica\u00e7\u00e3o",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 2790
+        }
+    ],
+    "trackingParameters": [],
+    "commission": {
+        "totalPriceInCents": 2790,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 2790
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-05-26 18:07:33] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "93361813-8008-48f5-82bf-678900043b39",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-05-26 18:07:33",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Beatriz Ribeiro Rodrigues",
+        "email": "beatriz.ribeiro.rodrigues@email.com",
+        "phone": null,
+        "document": "86805648858",
+        "country": "BR",
+        "ip": "::1"
+    },
+    "products": [
+        {
+            "id": "PROD_6834ade572a54",
+            "name": "Taxa de Verifica\u00e7\u00e3o",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 2790
+        }
+    ],
+    "trackingParameters": {
+        "src": null,
+        "sck": null,
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null,
+        "utm_content": null,
+        "utm_term": null,
+        "xcod": null,
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": 2790,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 2790
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-05-26 18:07:33] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-05-26 18:07:33] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------

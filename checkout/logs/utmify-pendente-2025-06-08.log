@@ -1,0 +1,4668 @@
+[2025-06-08 18:55:11] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"3f3a8f51-4706-44ad-af0f-46beeaa82659\",\"platform\":\"MinhaPlataforma\",\"paymentMethod\":\"pix\",\"status\":\"waiting_payment\",\"createdAt\":\"2025-06-08 15:55:11\",\"approvedDate\":null,\"refundedAt\":null,\"customer\":{\"name\":\"Matheus Lima Santos\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":\"76385196712\",\"country\":\"BR\",\"ip\":\"177.191.114.15\"},\"products\":[{\"id\":\"PROD_6845dc8faa97c\",\"name\":\"Doa\\u00e7\\u00e3o\",\"planId\":null,\"planName\":null,\"quantity\":1,\"priceInCents\":5573}],\"trackingParameters\":{\"utm_source\":\"FBjLj6845d70c4dc110d0d90f4a71\",\"utm_medium\":\"PDIDDY|120225766061620470\",\"utm_campaign\":\"08\\\/06 ESCALA CTV 17 VALIDADO MEIODIA \\u2014 C\\u00f3pia|120225766062280470\",\"utm_content\":\"017|120225766061140470\",\"utm_term\":\"Facebook_Mobile_Feed\"},\"commission\":{\"totalPriceInCents\":5573,\"gatewayFeeInCents\":0,\"userCommissionInCents\":5573},\"isTest\":false}"
+}
+----------------------------------------
+[2025-06-08 18:55:11] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "3f3a8f51-4706-44ad-af0f-46beeaa82659",
+    "platform": "MinhaPlataforma",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-08 15:55:11",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Matheus Lima Santos",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "76385196712",
+        "country": "BR",
+        "ip": "177.191.114.15"
+    },
+    "products": [
+        {
+            "id": "PROD_6845dc8faa97c",
+            "name": "Doa\u00e7\u00e3o",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 5573
+        }
+    ],
+    "trackingParameters": {
+        "utm_source": "FBjLj6845d70c4dc110d0d90f4a71",
+        "utm_medium": "PDIDDY|120225766061620470",
+        "utm_campaign": "08\/06 ESCALA CTV 17 VALIDADO MEIODIA \u2014 C\u00f3pia|120225766062280470",
+        "utm_content": "017|120225766061140470",
+        "utm_term": "Facebook_Mobile_Feed"
+    },
+    "commission": {
+        "totalPriceInCents": 5573,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 5573
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-08 18:55:11] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "3f3a8f51-4706-44ad-af0f-46beeaa82659",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-08 18:55:11",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Matheus Lima Santos",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "76385196712",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_6845dc8faa97c",
+            "name": "Doa\u00e7\u00e3o",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 5573
+        }
+    ],
+    "trackingParameters": {
+        "src": null,
+        "sck": null,
+        "utm_source": "FBjLj6845d70c4dc110d0d90f4a71",
+        "utm_campaign": "08\/06 ESCALA CTV 17 VALIDADO MEIODIA \u2014 C\u00f3pia|120225766062280470",
+        "utm_medium": "PDIDDY|120225766061620470",
+        "utm_content": "017|120225766061140470",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": null,
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": 5573,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 5573
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-08 18:55:11] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-06-08 18:55:11] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-06-08 18:55:19] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"eac8a4b3-dfb2-4df6-80be-ac4a6300d6eb\",\"platform\":\"MinhaPlataforma\",\"paymentMethod\":\"pix\",\"status\":\"waiting_payment\",\"createdAt\":\"2025-06-08 15:55:19\",\"approvedDate\":null,\"refundedAt\":null,\"customer\":{\"name\":\"Ana Soares Barbosa\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":\"66442664015\",\"country\":\"BR\",\"ip\":\"187.23.193.127\"},\"products\":[{\"id\":\"PROD_6845dc97606c1\",\"name\":\"Doa\\u00e7\\u00e3o\",\"planId\":null,\"planName\":null,\"quantity\":1,\"priceInCents\":5573}],\"trackingParameters\":{\"utm_source\":\"FBjLj6845d71f741fdc90c57af6aa\",\"utm_medium\":\"PDIDDY|120225766060950470\",\"utm_campaign\":\"08\\\/06 ESCALA CTV 17 VALIDADO MEIODIA \\u2014 C\\u00f3pia|120225766061310470\",\"utm_content\":\"017|120225766061800470\",\"utm_term\":\"Facebook_Stories\"},\"commission\":{\"totalPriceInCents\":5573,\"gatewayFeeInCents\":0,\"userCommissionInCents\":5573},\"isTest\":false}"
+}
+----------------------------------------
+[2025-06-08 18:55:19] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "eac8a4b3-dfb2-4df6-80be-ac4a6300d6eb",
+    "platform": "MinhaPlataforma",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-08 15:55:19",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Ana Soares Barbosa",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "66442664015",
+        "country": "BR",
+        "ip": "187.23.193.127"
+    },
+    "products": [
+        {
+            "id": "PROD_6845dc97606c1",
+            "name": "Doa\u00e7\u00e3o",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 5573
+        }
+    ],
+    "trackingParameters": {
+        "utm_source": "FBjLj6845d71f741fdc90c57af6aa",
+        "utm_medium": "PDIDDY|120225766060950470",
+        "utm_campaign": "08\/06 ESCALA CTV 17 VALIDADO MEIODIA \u2014 C\u00f3pia|120225766061310470",
+        "utm_content": "017|120225766061800470",
+        "utm_term": "Facebook_Stories"
+    },
+    "commission": {
+        "totalPriceInCents": 5573,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 5573
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-08 18:55:19] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "eac8a4b3-dfb2-4df6-80be-ac4a6300d6eb",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-08 18:55:19",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Ana Soares Barbosa",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "66442664015",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_6845dc97606c1",
+            "name": "Doa\u00e7\u00e3o",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 5573
+        }
+    ],
+    "trackingParameters": {
+        "src": null,
+        "sck": null,
+        "utm_source": "FBjLj6845d71f741fdc90c57af6aa",
+        "utm_campaign": "08\/06 ESCALA CTV 17 VALIDADO MEIODIA \u2014 C\u00f3pia|120225766061310470",
+        "utm_medium": "PDIDDY|120225766060950470",
+        "utm_content": "017|120225766061800470",
+        "utm_term": "Facebook_Stories",
+        "xcod": null,
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": 5573,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 5573
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-08 18:55:19] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-06-08 18:55:19] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-06-08 18:55:33] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"c4b4790e-f3ae-4c17-9255-e5c96fdbbdb3\",\"platform\":\"MinhaPlataforma\",\"paymentMethod\":\"pix\",\"status\":\"waiting_payment\",\"createdAt\":\"2025-06-08 15:55:33\",\"approvedDate\":null,\"refundedAt\":null,\"customer\":{\"name\":\"Thiago Rodrigues Souza\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":\"23964487902\",\"country\":\"BR\",\"ip\":\"187.19.225.244\"},\"products\":[{\"id\":\"PROD_6845dca5f27bc\",\"name\":\"Doa\\u00e7\\u00e3o\",\"planId\":null,\"planName\":null,\"quantity\":1,\"priceInCents\":5573}],\"trackingParameters\":[],\"commission\":{\"totalPriceInCents\":5573,\"gatewayFeeInCents\":0,\"userCommissionInCents\":5573},\"isTest\":false}"
+}
+----------------------------------------
+[2025-06-08 18:55:34] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "c4b4790e-f3ae-4c17-9255-e5c96fdbbdb3",
+    "platform": "MinhaPlataforma",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-08 15:55:33",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Thiago Rodrigues Souza",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "23964487902",
+        "country": "BR",
+        "ip": "187.19.225.244"
+    },
+    "products": [
+        {
+            "id": "PROD_6845dca5f27bc",
+            "name": "Doa\u00e7\u00e3o",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 5573
+        }
+    ],
+    "trackingParameters": [],
+    "commission": {
+        "totalPriceInCents": 5573,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 5573
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-08 18:55:34] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "c4b4790e-f3ae-4c17-9255-e5c96fdbbdb3",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-08 18:55:34",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Thiago Rodrigues Souza",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "23964487902",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_6845dca5f27bc",
+            "name": "Doa\u00e7\u00e3o",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 5573
+        }
+    ],
+    "trackingParameters": {
+        "src": null,
+        "sck": null,
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null,
+        "utm_content": null,
+        "utm_term": null,
+        "xcod": null,
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": 5573,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 5573
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-08 18:55:34] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-06-08 18:55:34] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-06-08 18:57:47] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"c5432d4f-f9b8-428b-9477-2b9e4ecce753\",\"platform\":\"MinhaPlataforma\",\"paymentMethod\":\"pix\",\"status\":\"waiting_payment\",\"createdAt\":\"2025-06-08 15:57:47\",\"approvedDate\":null,\"refundedAt\":null,\"customer\":{\"name\":\"Matheus Martins Rodrigues\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":\"14059230405\",\"country\":\"BR\",\"ip\":\"45.233.173.51\"},\"products\":[{\"id\":\"PROD_6845dd2bdc550\",\"name\":\"Doa\\u00e7\\u00e3o\",\"planId\":null,\"planName\":null,\"quantity\":1,\"priceInCents\":5573}],\"trackingParameters\":{\"utm_source\":\"FBjLj6845da59723fcf7d98aeb0cb\",\"utm_medium\":\"PDIDDY|120225766061980470\",\"utm_campaign\":\"08\\\/06 ESCALA CTV 17 VALIDADO MEIODIA \\u2014 C\\u00f3pia|120225766062080470\",\"utm_content\":\"017|120225766061490470\",\"utm_term\":\"Facebook_Mobile_Feed\"},\"commission\":{\"totalPriceInCents\":5573,\"gatewayFeeInCents\":0,\"userCommissionInCents\":5573},\"isTest\":false}"
+}
+----------------------------------------
+[2025-06-08 18:57:47] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "c5432d4f-f9b8-428b-9477-2b9e4ecce753",
+    "platform": "MinhaPlataforma",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-08 15:57:47",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Matheus Martins Rodrigues",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "14059230405",
+        "country": "BR",
+        "ip": "45.233.173.51"
+    },
+    "products": [
+        {
+            "id": "PROD_6845dd2bdc550",
+            "name": "Doa\u00e7\u00e3o",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 5573
+        }
+    ],
+    "trackingParameters": {
+        "utm_source": "FBjLj6845da59723fcf7d98aeb0cb",
+        "utm_medium": "PDIDDY|120225766061980470",
+        "utm_campaign": "08\/06 ESCALA CTV 17 VALIDADO MEIODIA \u2014 C\u00f3pia|120225766062080470",
+        "utm_content": "017|120225766061490470",
+        "utm_term": "Facebook_Mobile_Feed"
+    },
+    "commission": {
+        "totalPriceInCents": 5573,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 5573
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-08 18:57:47] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "c5432d4f-f9b8-428b-9477-2b9e4ecce753",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-08 18:57:47",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Matheus Martins Rodrigues",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "14059230405",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_6845dd2bdc550",
+            "name": "Doa\u00e7\u00e3o",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 5573
+        }
+    ],
+    "trackingParameters": {
+        "src": null,
+        "sck": null,
+        "utm_source": "FBjLj6845da59723fcf7d98aeb0cb",
+        "utm_campaign": "08\/06 ESCALA CTV 17 VALIDADO MEIODIA \u2014 C\u00f3pia|120225766062080470",
+        "utm_medium": "PDIDDY|120225766061980470",
+        "utm_content": "017|120225766061490470",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": null,
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": 5573,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 5573
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-08 18:57:47] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-06-08 18:57:47] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-06-08 19:00:45] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"941eb367-3622-47ee-99b9-3976488037c1\",\"platform\":\"MinhaPlataforma\",\"paymentMethod\":\"pix\",\"status\":\"waiting_payment\",\"createdAt\":\"2025-06-08 16:00:45\",\"approvedDate\":null,\"refundedAt\":null,\"customer\":{\"name\":\"Lucas Lopes Santos\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":\"23716872512\",\"country\":\"BR\",\"ip\":\"177.37.241.193\"},\"products\":[{\"id\":\"PROD_6845ddddde0f5\",\"name\":\"Doa\\u00e7\\u00e3o\",\"planId\":null,\"planName\":null,\"quantity\":1,\"priceInCents\":5573}],\"trackingParameters\":{\"utm_source\":\"FBjLj6845da74c149db76c4b9a387\",\"utm_medium\":\"PDIDDY|120225766060880470\",\"utm_campaign\":\"08\\\/06 ESCALA CTV 17 VALIDADO MEIODIA \\u2014 C\\u00f3pia|120225766061250470\",\"utm_content\":\"017|120225766061870470\",\"utm_term\":\"Facebook_Mobile_Feed\"},\"commission\":{\"totalPriceInCents\":5573,\"gatewayFeeInCents\":0,\"userCommissionInCents\":5573},\"isTest\":false}"
+}
+----------------------------------------
+[2025-06-08 19:00:45] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "941eb367-3622-47ee-99b9-3976488037c1",
+    "platform": "MinhaPlataforma",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-08 16:00:45",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Lucas Lopes Santos",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "23716872512",
+        "country": "BR",
+        "ip": "177.37.241.193"
+    },
+    "products": [
+        {
+            "id": "PROD_6845ddddde0f5",
+            "name": "Doa\u00e7\u00e3o",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 5573
+        }
+    ],
+    "trackingParameters": {
+        "utm_source": "FBjLj6845da74c149db76c4b9a387",
+        "utm_medium": "PDIDDY|120225766060880470",
+        "utm_campaign": "08\/06 ESCALA CTV 17 VALIDADO MEIODIA \u2014 C\u00f3pia|120225766061250470",
+        "utm_content": "017|120225766061870470",
+        "utm_term": "Facebook_Mobile_Feed"
+    },
+    "commission": {
+        "totalPriceInCents": 5573,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 5573
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-08 19:00:45] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "941eb367-3622-47ee-99b9-3976488037c1",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-08 19:00:45",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Lucas Lopes Santos",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "23716872512",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_6845ddddde0f5",
+            "name": "Doa\u00e7\u00e3o",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 5573
+        }
+    ],
+    "trackingParameters": {
+        "src": null,
+        "sck": null,
+        "utm_source": "FBjLj6845da74c149db76c4b9a387",
+        "utm_campaign": "08\/06 ESCALA CTV 17 VALIDADO MEIODIA \u2014 C\u00f3pia|120225766061250470",
+        "utm_medium": "PDIDDY|120225766060880470",
+        "utm_content": "017|120225766061870470",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": null,
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": 5573,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 5573
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-08 19:00:45] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-06-08 19:00:45] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-06-08 19:01:23] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"b6090c3d-1bfb-40cc-9d03-3ec2203db5a1\",\"platform\":\"MinhaPlataforma\",\"paymentMethod\":\"pix\",\"status\":\"waiting_payment\",\"createdAt\":\"2025-06-08 16:01:23\",\"approvedDate\":null,\"refundedAt\":null,\"customer\":{\"name\":\"Bernardo Santos Pereira\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":\"52609424183\",\"country\":\"BR\",\"ip\":\"177.131.21.23\"},\"products\":[{\"id\":\"PROD_6845de03018db\",\"name\":\"Doa\\u00e7\\u00e3o\",\"planId\":null,\"planName\":null,\"quantity\":1,\"priceInCents\":5573}],\"trackingParameters\":{\"utm_source\":\"FBjLj6845d75402aa183b43192c3d\",\"utm_medium\":\"PDIDDY|120225766061610470\",\"utm_campaign\":\"08\\\/06 ESCALA CTV 17 VALIDADO MEIODIA \\u2014 C\\u00f3pia|120225766062300470\",\"utm_content\":\"017|120225766061120470\",\"utm_term\":\"Facebook_Mobile_Feed\"},\"commission\":{\"totalPriceInCents\":5573,\"gatewayFeeInCents\":0,\"userCommissionInCents\":5573},\"isTest\":false}"
+}
+----------------------------------------
+[2025-06-08 19:01:23] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "b6090c3d-1bfb-40cc-9d03-3ec2203db5a1",
+    "platform": "MinhaPlataforma",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-08 16:01:23",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Bernardo Santos Pereira",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "52609424183",
+        "country": "BR",
+        "ip": "177.131.21.23"
+    },
+    "products": [
+        {
+            "id": "PROD_6845de03018db",
+            "name": "Doa\u00e7\u00e3o",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 5573
+        }
+    ],
+    "trackingParameters": {
+        "utm_source": "FBjLj6845d75402aa183b43192c3d",
+        "utm_medium": "PDIDDY|120225766061610470",
+        "utm_campaign": "08\/06 ESCALA CTV 17 VALIDADO MEIODIA \u2014 C\u00f3pia|120225766062300470",
+        "utm_content": "017|120225766061120470",
+        "utm_term": "Facebook_Mobile_Feed"
+    },
+    "commission": {
+        "totalPriceInCents": 5573,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 5573
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-08 19:01:23] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "b6090c3d-1bfb-40cc-9d03-3ec2203db5a1",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-08 19:01:23",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Bernardo Santos Pereira",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "52609424183",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_6845de03018db",
+            "name": "Doa\u00e7\u00e3o",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 5573
+        }
+    ],
+    "trackingParameters": {
+        "src": null,
+        "sck": null,
+        "utm_source": "FBjLj6845d75402aa183b43192c3d",
+        "utm_campaign": "08\/06 ESCALA CTV 17 VALIDADO MEIODIA \u2014 C\u00f3pia|120225766062300470",
+        "utm_medium": "PDIDDY|120225766061610470",
+        "utm_content": "017|120225766061120470",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": null,
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": 5573,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 5573
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-08 19:01:23] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-06-08 19:01:23] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-06-08 19:10:15] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"d46920b9-eeda-4387-ad0c-6ff2e7a67543\",\"platform\":\"MinhaPlataforma\",\"paymentMethod\":\"pix\",\"status\":\"waiting_payment\",\"createdAt\":\"2025-06-08 16:10:15\",\"approvedDate\":null,\"refundedAt\":null,\"customer\":{\"name\":\"Bruno Lopes Alves\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":\"00377211354\",\"country\":\"BR\",\"ip\":\"168.205.227.156\"},\"products\":[{\"id\":\"PROD_6845e017428e6\",\"name\":\"Doa\\u00e7\\u00e3o\",\"planId\":null,\"planName\":null,\"quantity\":1,\"priceInCents\":5573}],\"trackingParameters\":{\"utm_source\":\"FBjLj6845dc8011df55cf6f69dd8d\",\"utm_medium\":\"PDIDDY|120225766061980470\",\"utm_campaign\":\"08\\\/06 ESCALA CTV 17 VALIDADO MEIODIA \\u2014 C\\u00f3pia|120225766062080470\",\"utm_content\":\"017|120225766061490470\",\"utm_term\":\"Facebook_Mobile_Feed\"},\"commission\":{\"totalPriceInCents\":5573,\"gatewayFeeInCents\":0,\"userCommissionInCents\":5573},\"isTest\":false}"
+}
+----------------------------------------
+[2025-06-08 19:10:15] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "d46920b9-eeda-4387-ad0c-6ff2e7a67543",
+    "platform": "MinhaPlataforma",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-08 16:10:15",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Bruno Lopes Alves",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "00377211354",
+        "country": "BR",
+        "ip": "168.205.227.156"
+    },
+    "products": [
+        {
+            "id": "PROD_6845e017428e6",
+            "name": "Doa\u00e7\u00e3o",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 5573
+        }
+    ],
+    "trackingParameters": {
+        "utm_source": "FBjLj6845dc8011df55cf6f69dd8d",
+        "utm_medium": "PDIDDY|120225766061980470",
+        "utm_campaign": "08\/06 ESCALA CTV 17 VALIDADO MEIODIA \u2014 C\u00f3pia|120225766062080470",
+        "utm_content": "017|120225766061490470",
+        "utm_term": "Facebook_Mobile_Feed"
+    },
+    "commission": {
+        "totalPriceInCents": 5573,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 5573
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-08 19:10:15] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "d46920b9-eeda-4387-ad0c-6ff2e7a67543",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-08 19:10:15",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Bruno Lopes Alves",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "00377211354",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_6845e017428e6",
+            "name": "Doa\u00e7\u00e3o",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 5573
+        }
+    ],
+    "trackingParameters": {
+        "src": null,
+        "sck": null,
+        "utm_source": "FBjLj6845dc8011df55cf6f69dd8d",
+        "utm_campaign": "08\/06 ESCALA CTV 17 VALIDADO MEIODIA \u2014 C\u00f3pia|120225766062080470",
+        "utm_medium": "PDIDDY|120225766061980470",
+        "utm_content": "017|120225766061490470",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": null,
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": 5573,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 5573
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-08 19:10:15] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-06-08 19:10:15] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-06-08 19:11:11] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"3a4a3acd-f302-40fb-973c-c39d06bc43cd\",\"platform\":\"MinhaPlataforma\",\"paymentMethod\":\"pix\",\"status\":\"waiting_payment\",\"createdAt\":\"2025-06-08 16:11:11\",\"approvedDate\":null,\"refundedAt\":null,\"customer\":{\"name\":\"Jo\\u00e3o Rodrigues Martins\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":\"52111185531\",\"country\":\"BR\",\"ip\":\"191.221.126.136\"},\"products\":[{\"id\":\"PROD_6845e04f63c92\",\"name\":\"Doa\\u00e7\\u00e3o\",\"planId\":null,\"planName\":null,\"quantity\":1,\"priceInCents\":5573}],\"trackingParameters\":{\"utm_source\":\"FBjLj6845de7e07806c135b0f6a07\",\"utm_medium\":\"PDIDDY|120225766061980470\",\"utm_campaign\":\"08\\\/06 ESCALA CTV 17 VALIDADO MEIODIA \\u2014 C\\u00f3pia|120225766062080470\",\"utm_content\":\"017|120225766061490470\",\"utm_term\":\"Facebook_Mobile_Feed\"},\"commission\":{\"totalPriceInCents\":5573,\"gatewayFeeInCents\":0,\"userCommissionInCents\":5573},\"isTest\":false}"
+}
+----------------------------------------
+[2025-06-08 19:11:11] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "3a4a3acd-f302-40fb-973c-c39d06bc43cd",
+    "platform": "MinhaPlataforma",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-08 16:11:11",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Jo\u00e3o Rodrigues Martins",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "52111185531",
+        "country": "BR",
+        "ip": "191.221.126.136"
+    },
+    "products": [
+        {
+            "id": "PROD_6845e04f63c92",
+            "name": "Doa\u00e7\u00e3o",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 5573
+        }
+    ],
+    "trackingParameters": {
+        "utm_source": "FBjLj6845de7e07806c135b0f6a07",
+        "utm_medium": "PDIDDY|120225766061980470",
+        "utm_campaign": "08\/06 ESCALA CTV 17 VALIDADO MEIODIA \u2014 C\u00f3pia|120225766062080470",
+        "utm_content": "017|120225766061490470",
+        "utm_term": "Facebook_Mobile_Feed"
+    },
+    "commission": {
+        "totalPriceInCents": 5573,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 5573
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-08 19:11:11] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "3a4a3acd-f302-40fb-973c-c39d06bc43cd",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-08 19:11:11",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Jo\u00e3o Rodrigues Martins",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "52111185531",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_6845e04f63c92",
+            "name": "Doa\u00e7\u00e3o",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 5573
+        }
+    ],
+    "trackingParameters": {
+        "src": null,
+        "sck": null,
+        "utm_source": "FBjLj6845de7e07806c135b0f6a07",
+        "utm_campaign": "08\/06 ESCALA CTV 17 VALIDADO MEIODIA \u2014 C\u00f3pia|120225766062080470",
+        "utm_medium": "PDIDDY|120225766061980470",
+        "utm_content": "017|120225766061490470",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": null,
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": 5573,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 5573
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-08 19:11:11] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-06-08 19:11:11] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-06-08 19:11:14] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"bb375484-17c7-45c9-9ac5-17155fbec39d\",\"platform\":\"MinhaPlataforma\",\"paymentMethod\":\"pix\",\"status\":\"waiting_payment\",\"createdAt\":\"2025-06-08 16:11:14\",\"approvedDate\":null,\"refundedAt\":null,\"customer\":{\"name\":\"Bruno Rodrigues Lopes\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":\"65840659100\",\"country\":\"BR\",\"ip\":\"45.226.118.219\"},\"products\":[{\"id\":\"PROD_6845e052f19f4\",\"name\":\"Doa\\u00e7\\u00e3o\",\"planId\":null,\"planName\":null,\"quantity\":1,\"priceInCents\":5573}],\"trackingParameters\":{\"utm_source\":\"FBjLj6845dc80f6eaf008dc8b16ea\",\"utm_medium\":\"PDIDDY|120225766061610470\",\"utm_campaign\":\"08\\\/06 ESCALA CTV 17 VALIDADO MEIODIA \\u2014 C\\u00f3pia|120225766062300470\",\"utm_content\":\"017|120225766061120470\",\"utm_term\":\"Facebook_Mobile_Feed\"},\"commission\":{\"totalPriceInCents\":5573,\"gatewayFeeInCents\":0,\"userCommissionInCents\":5573},\"isTest\":false}"
+}
+----------------------------------------
+[2025-06-08 19:11:14] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "bb375484-17c7-45c9-9ac5-17155fbec39d",
+    "platform": "MinhaPlataforma",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-08 16:11:14",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Bruno Rodrigues Lopes",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "65840659100",
+        "country": "BR",
+        "ip": "45.226.118.219"
+    },
+    "products": [
+        {
+            "id": "PROD_6845e052f19f4",
+            "name": "Doa\u00e7\u00e3o",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 5573
+        }
+    ],
+    "trackingParameters": {
+        "utm_source": "FBjLj6845dc80f6eaf008dc8b16ea",
+        "utm_medium": "PDIDDY|120225766061610470",
+        "utm_campaign": "08\/06 ESCALA CTV 17 VALIDADO MEIODIA \u2014 C\u00f3pia|120225766062300470",
+        "utm_content": "017|120225766061120470",
+        "utm_term": "Facebook_Mobile_Feed"
+    },
+    "commission": {
+        "totalPriceInCents": 5573,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 5573
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-08 19:11:14] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "bb375484-17c7-45c9-9ac5-17155fbec39d",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-08 19:11:14",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Bruno Rodrigues Lopes",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "65840659100",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_6845e052f19f4",
+            "name": "Doa\u00e7\u00e3o",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 5573
+        }
+    ],
+    "trackingParameters": {
+        "src": null,
+        "sck": null,
+        "utm_source": "FBjLj6845dc80f6eaf008dc8b16ea",
+        "utm_campaign": "08\/06 ESCALA CTV 17 VALIDADO MEIODIA \u2014 C\u00f3pia|120225766062300470",
+        "utm_medium": "PDIDDY|120225766061610470",
+        "utm_content": "017|120225766061120470",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": null,
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": 5573,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 5573
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-08 19:11:14] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-06-08 19:11:15] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-06-08 19:17:58] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"1784c437-8763-4238-9dbf-93832326bfa9\",\"platform\":\"MinhaPlataforma\",\"paymentMethod\":\"pix\",\"status\":\"waiting_payment\",\"createdAt\":\"2025-06-08 16:17:58\",\"approvedDate\":null,\"refundedAt\":null,\"customer\":{\"name\":\"Clara Costa Soares\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":\"90707337810\",\"country\":\"BR\",\"ip\":\"187.90.184.215\"},\"products\":[{\"id\":\"PROD_6845e1e60b233\",\"name\":\"Doa\\u00e7\\u00e3o\",\"planId\":null,\"planName\":null,\"quantity\":1,\"priceInCents\":5573}],\"trackingParameters\":{\"utm_source\":\"FBjLj6845dfe139326a7d29efdc6d\",\"utm_medium\":\"PDIDDY|120225766061980470\",\"utm_campaign\":\"08\\\/06 ESCALA CTV 17 VALIDADO MEIODIA \\u2014 C\\u00f3pia|120225766062080470\",\"utm_content\":\"017|120225766061490470\",\"utm_term\":\"Facebook_Mobile_Feed\"},\"commission\":{\"totalPriceInCents\":5573,\"gatewayFeeInCents\":0,\"userCommissionInCents\":5573},\"isTest\":false}"
+}
+----------------------------------------
+[2025-06-08 19:17:58] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "1784c437-8763-4238-9dbf-93832326bfa9",
+    "platform": "MinhaPlataforma",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-08 16:17:58",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Clara Costa Soares",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "90707337810",
+        "country": "BR",
+        "ip": "187.90.184.215"
+    },
+    "products": [
+        {
+            "id": "PROD_6845e1e60b233",
+            "name": "Doa\u00e7\u00e3o",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 5573
+        }
+    ],
+    "trackingParameters": {
+        "utm_source": "FBjLj6845dfe139326a7d29efdc6d",
+        "utm_medium": "PDIDDY|120225766061980470",
+        "utm_campaign": "08\/06 ESCALA CTV 17 VALIDADO MEIODIA \u2014 C\u00f3pia|120225766062080470",
+        "utm_content": "017|120225766061490470",
+        "utm_term": "Facebook_Mobile_Feed"
+    },
+    "commission": {
+        "totalPriceInCents": 5573,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 5573
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-08 19:17:58] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "1784c437-8763-4238-9dbf-93832326bfa9",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-08 19:17:58",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Clara Costa Soares",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "90707337810",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_6845e1e60b233",
+            "name": "Doa\u00e7\u00e3o",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 5573
+        }
+    ],
+    "trackingParameters": {
+        "src": null,
+        "sck": null,
+        "utm_source": "FBjLj6845dfe139326a7d29efdc6d",
+        "utm_campaign": "08\/06 ESCALA CTV 17 VALIDADO MEIODIA \u2014 C\u00f3pia|120225766062080470",
+        "utm_medium": "PDIDDY|120225766061980470",
+        "utm_content": "017|120225766061490470",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": null,
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": 5573,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 5573
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-08 19:17:58] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-06-08 19:17:58] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-06-08 19:32:14] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"240a1622-8dfa-425e-ba7f-86f8e6a4d3a0\",\"platform\":\"MinhaPlataforma\",\"paymentMethod\":\"pix\",\"status\":\"waiting_payment\",\"createdAt\":\"2025-06-08 16:32:14\",\"approvedDate\":null,\"refundedAt\":null,\"customer\":{\"name\":\"Manuela Ferreira Oliveira\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":\"02716953589\",\"country\":\"BR\",\"ip\":\"179.90.227.92\"},\"products\":[{\"id\":\"PROD_6845e53ee6679\",\"name\":\"Doa\\u00e7\\u00e3o\",\"planId\":null,\"planName\":null,\"quantity\":1,\"priceInCents\":5573}],\"trackingParameters\":{\"utm_source\":\"FBjLj6845e17d2d85ceea2bef2722\",\"utm_medium\":\"PDIDDY|120225766060950470\",\"utm_campaign\":\"08\\\/06 ESCALA CTV 17 VALIDADO MEIODIA \\u2014 C\\u00f3pia|120225766061310470\",\"utm_content\":\"017|120225766061800470\",\"utm_term\":\"Facebook_Mobile_Feed\"},\"commission\":{\"totalPriceInCents\":5573,\"gatewayFeeInCents\":0,\"userCommissionInCents\":5573},\"isTest\":false}"
+}
+----------------------------------------
+[2025-06-08 19:32:14] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "240a1622-8dfa-425e-ba7f-86f8e6a4d3a0",
+    "platform": "MinhaPlataforma",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-08 16:32:14",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Manuela Ferreira Oliveira",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "02716953589",
+        "country": "BR",
+        "ip": "179.90.227.92"
+    },
+    "products": [
+        {
+            "id": "PROD_6845e53ee6679",
+            "name": "Doa\u00e7\u00e3o",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 5573
+        }
+    ],
+    "trackingParameters": {
+        "utm_source": "FBjLj6845e17d2d85ceea2bef2722",
+        "utm_medium": "PDIDDY|120225766060950470",
+        "utm_campaign": "08\/06 ESCALA CTV 17 VALIDADO MEIODIA \u2014 C\u00f3pia|120225766061310470",
+        "utm_content": "017|120225766061800470",
+        "utm_term": "Facebook_Mobile_Feed"
+    },
+    "commission": {
+        "totalPriceInCents": 5573,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 5573
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-08 19:32:14] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "240a1622-8dfa-425e-ba7f-86f8e6a4d3a0",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-08 19:32:14",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Manuela Ferreira Oliveira",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "02716953589",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_6845e53ee6679",
+            "name": "Doa\u00e7\u00e3o",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 5573
+        }
+    ],
+    "trackingParameters": {
+        "src": null,
+        "sck": null,
+        "utm_source": "FBjLj6845e17d2d85ceea2bef2722",
+        "utm_campaign": "08\/06 ESCALA CTV 17 VALIDADO MEIODIA \u2014 C\u00f3pia|120225766061310470",
+        "utm_medium": "PDIDDY|120225766060950470",
+        "utm_content": "017|120225766061800470",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": null,
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": 5573,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 5573
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-08 19:32:14] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-06-08 19:32:15] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-06-08 19:33:25] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"9644247d-54db-4718-80ae-da36cb95f30f\",\"platform\":\"MinhaPlataforma\",\"paymentMethod\":\"pix\",\"status\":\"waiting_payment\",\"createdAt\":\"2025-06-08 16:33:25\",\"approvedDate\":null,\"refundedAt\":null,\"customer\":{\"name\":\"Rafael Souza Ferreira\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":\"73608047360\",\"country\":\"BR\",\"ip\":\"189.84.58.172\"},\"products\":[{\"id\":\"PROD_6845e5851821f\",\"name\":\"Doa\\u00e7\\u00e3o\",\"planId\":null,\"planName\":null,\"quantity\":1,\"priceInCents\":5573}],\"trackingParameters\":{\"utm_source\":\"FBjLj6845e35b90b907f613ecf3ee\",\"utm_medium\":\"PDIDDY|120225766061580470\",\"utm_campaign\":\"08\\\/06 ESCALA CTV 17 VALIDADO MEIODIA \\u2014 C\\u00f3pia|120225766062330470\",\"utm_content\":\"017|120225766061090470\",\"utm_term\":\"Facebook_Mobile_Feed\"},\"commission\":{\"totalPriceInCents\":5573,\"gatewayFeeInCents\":0,\"userCommissionInCents\":5573},\"isTest\":false}"
+}
+----------------------------------------
+[2025-06-08 19:33:25] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "9644247d-54db-4718-80ae-da36cb95f30f",
+    "platform": "MinhaPlataforma",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-08 16:33:25",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Rafael Souza Ferreira",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "73608047360",
+        "country": "BR",
+        "ip": "189.84.58.172"
+    },
+    "products": [
+        {
+            "id": "PROD_6845e5851821f",
+            "name": "Doa\u00e7\u00e3o",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 5573
+        }
+    ],
+    "trackingParameters": {
+        "utm_source": "FBjLj6845e35b90b907f613ecf3ee",
+        "utm_medium": "PDIDDY|120225766061580470",
+        "utm_campaign": "08\/06 ESCALA CTV 17 VALIDADO MEIODIA \u2014 C\u00f3pia|120225766062330470",
+        "utm_content": "017|120225766061090470",
+        "utm_term": "Facebook_Mobile_Feed"
+    },
+    "commission": {
+        "totalPriceInCents": 5573,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 5573
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-08 19:33:25] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "9644247d-54db-4718-80ae-da36cb95f30f",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-08 19:33:25",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Rafael Souza Ferreira",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "73608047360",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_6845e5851821f",
+            "name": "Doa\u00e7\u00e3o",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 5573
+        }
+    ],
+    "trackingParameters": {
+        "src": null,
+        "sck": null,
+        "utm_source": "FBjLj6845e35b90b907f613ecf3ee",
+        "utm_campaign": "08\/06 ESCALA CTV 17 VALIDADO MEIODIA \u2014 C\u00f3pia|120225766062330470",
+        "utm_medium": "PDIDDY|120225766061580470",
+        "utm_content": "017|120225766061090470",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": null,
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": 5573,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 5573
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-08 19:33:25] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-06-08 19:33:25] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-06-08 19:36:24] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"a33b018e-12a8-443a-afb7-10f5853f27da\",\"platform\":\"MinhaPlataforma\",\"paymentMethod\":\"pix\",\"status\":\"waiting_payment\",\"createdAt\":\"2025-06-08 16:36:24\",\"approvedDate\":null,\"refundedAt\":null,\"customer\":{\"name\":\"Sofia Soares Pereira\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":\"51430914386\",\"country\":\"BR\",\"ip\":\"189.84.58.172\"},\"products\":[{\"id\":\"PROD_6845e63829266\",\"name\":\"Doa\\u00e7\\u00e3o\",\"planId\":null,\"planName\":null,\"quantity\":1,\"priceInCents\":5573}],\"trackingParameters\":{\"utm_source\":\"FBjLj6845e35b90b907f613ecf3ee\",\"utm_medium\":\"PDIDDY|120225766061580470\",\"utm_campaign\":\"08\\\/06 ESCALA CTV 17 VALIDADO MEIODIA \\u2014 C\\u00f3pia|120225766062330470\",\"utm_content\":\"017|120225766061090470\",\"utm_term\":\"Facebook_Mobile_Feed\"},\"commission\":{\"totalPriceInCents\":5573,\"gatewayFeeInCents\":0,\"userCommissionInCents\":5573},\"isTest\":false}"
+}
+----------------------------------------
+[2025-06-08 19:36:24] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "a33b018e-12a8-443a-afb7-10f5853f27da",
+    "platform": "MinhaPlataforma",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-08 16:36:24",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Sofia Soares Pereira",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "51430914386",
+        "country": "BR",
+        "ip": "189.84.58.172"
+    },
+    "products": [
+        {
+            "id": "PROD_6845e63829266",
+            "name": "Doa\u00e7\u00e3o",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 5573
+        }
+    ],
+    "trackingParameters": {
+        "utm_source": "FBjLj6845e35b90b907f613ecf3ee",
+        "utm_medium": "PDIDDY|120225766061580470",
+        "utm_campaign": "08\/06 ESCALA CTV 17 VALIDADO MEIODIA \u2014 C\u00f3pia|120225766062330470",
+        "utm_content": "017|120225766061090470",
+        "utm_term": "Facebook_Mobile_Feed"
+    },
+    "commission": {
+        "totalPriceInCents": 5573,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 5573
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-08 19:36:24] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "a33b018e-12a8-443a-afb7-10f5853f27da",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-08 19:36:24",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Sofia Soares Pereira",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "51430914386",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_6845e63829266",
+            "name": "Doa\u00e7\u00e3o",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 5573
+        }
+    ],
+    "trackingParameters": {
+        "src": null,
+        "sck": null,
+        "utm_source": "FBjLj6845e35b90b907f613ecf3ee",
+        "utm_campaign": "08\/06 ESCALA CTV 17 VALIDADO MEIODIA \u2014 C\u00f3pia|120225766062330470",
+        "utm_medium": "PDIDDY|120225766061580470",
+        "utm_content": "017|120225766061090470",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": null,
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": 5573,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 5573
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-08 19:36:24] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-06-08 19:36:24] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-06-08 19:39:19] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"69e2d3ab-97cd-4e39-9d80-aea903901088\",\"platform\":\"MinhaPlataforma\",\"paymentMethod\":\"pix\",\"status\":\"waiting_payment\",\"createdAt\":\"2025-06-08 16:39:19\",\"approvedDate\":null,\"refundedAt\":null,\"customer\":{\"name\":\"Felipe Rodrigues Lima\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":\"47224022560\",\"country\":\"BR\",\"ip\":\"189.40.74.37\"},\"products\":[{\"id\":\"PROD_6845e6e7d93be\",\"name\":\"Doa\\u00e7\\u00e3o\",\"planId\":null,\"planName\":null,\"quantity\":1,\"priceInCents\":5573}],\"trackingParameters\":{\"utm_source\":\"FBjLj6845de50f3254d39ab728841\",\"utm_medium\":\"PDIDDY|120225766061620470\",\"utm_campaign\":\"08\\\/06 ESCALA CTV 17 VALIDADO MEIODIA \\u2014 C\\u00f3pia|120225766062280470\",\"utm_content\":\"017|120225766061140470\",\"utm_term\":\"Facebook_Mobile_Reels\"},\"commission\":{\"totalPriceInCents\":5573,\"gatewayFeeInCents\":0,\"userCommissionInCents\":5573},\"isTest\":false}"
+}
+----------------------------------------
+[2025-06-08 19:39:19] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "69e2d3ab-97cd-4e39-9d80-aea903901088",
+    "platform": "MinhaPlataforma",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-08 16:39:19",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Felipe Rodrigues Lima",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "47224022560",
+        "country": "BR",
+        "ip": "189.40.74.37"
+    },
+    "products": [
+        {
+            "id": "PROD_6845e6e7d93be",
+            "name": "Doa\u00e7\u00e3o",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 5573
+        }
+    ],
+    "trackingParameters": {
+        "utm_source": "FBjLj6845de50f3254d39ab728841",
+        "utm_medium": "PDIDDY|120225766061620470",
+        "utm_campaign": "08\/06 ESCALA CTV 17 VALIDADO MEIODIA \u2014 C\u00f3pia|120225766062280470",
+        "utm_content": "017|120225766061140470",
+        "utm_term": "Facebook_Mobile_Reels"
+    },
+    "commission": {
+        "totalPriceInCents": 5573,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 5573
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-08 19:39:19] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "69e2d3ab-97cd-4e39-9d80-aea903901088",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-08 19:39:19",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Felipe Rodrigues Lima",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "47224022560",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_6845e6e7d93be",
+            "name": "Doa\u00e7\u00e3o",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 5573
+        }
+    ],
+    "trackingParameters": {
+        "src": null,
+        "sck": null,
+        "utm_source": "FBjLj6845de50f3254d39ab728841",
+        "utm_campaign": "08\/06 ESCALA CTV 17 VALIDADO MEIODIA \u2014 C\u00f3pia|120225766062280470",
+        "utm_medium": "PDIDDY|120225766061620470",
+        "utm_content": "017|120225766061140470",
+        "utm_term": "Facebook_Mobile_Reels",
+        "xcod": null,
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": 5573,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 5573
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-08 19:39:19] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-06-08 19:39:20] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-06-08 19:39:22] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"03733874-6c1e-4d58-9f66-e04bf4ef0655\",\"platform\":\"MinhaPlataforma\",\"paymentMethod\":\"pix\",\"status\":\"waiting_payment\",\"createdAt\":\"2025-06-08 16:39:22\",\"approvedDate\":null,\"refundedAt\":null,\"customer\":{\"name\":\"Mariana Souza Oliveira\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":\"70670711519\",\"country\":\"BR\",\"ip\":\"187.180.212.246\"},\"products\":[{\"id\":\"PROD_6845e6ea863bc\",\"name\":\"Doa\\u00e7\\u00e3o\",\"planId\":null,\"planName\":null,\"quantity\":1,\"priceInCents\":5573}],\"trackingParameters\":{\"utm_source\":\"FBjLj6845e3b92d85ceea2bf01f6a\",\"utm_medium\":\"PDIDDY|120225766061910470\",\"utm_campaign\":\"08\\\/06 ESCALA CTV 17 VALIDADO MEIODIA \\u2014 C\\u00f3pia|120225766062140470\",\"utm_content\":\"017|120225766061430470\",\"utm_term\":\"Facebook_Mobile_Feed\"},\"commission\":{\"totalPriceInCents\":5573,\"gatewayFeeInCents\":0,\"userCommissionInCents\":5573},\"isTest\":false}"
+}
+----------------------------------------
+[2025-06-08 19:39:22] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "03733874-6c1e-4d58-9f66-e04bf4ef0655",
+    "platform": "MinhaPlataforma",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-08 16:39:22",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Mariana Souza Oliveira",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "70670711519",
+        "country": "BR",
+        "ip": "187.180.212.246"
+    },
+    "products": [
+        {
+            "id": "PROD_6845e6ea863bc",
+            "name": "Doa\u00e7\u00e3o",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 5573
+        }
+    ],
+    "trackingParameters": {
+        "utm_source": "FBjLj6845e3b92d85ceea2bf01f6a",
+        "utm_medium": "PDIDDY|120225766061910470",
+        "utm_campaign": "08\/06 ESCALA CTV 17 VALIDADO MEIODIA \u2014 C\u00f3pia|120225766062140470",
+        "utm_content": "017|120225766061430470",
+        "utm_term": "Facebook_Mobile_Feed"
+    },
+    "commission": {
+        "totalPriceInCents": 5573,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 5573
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-08 19:39:22] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "03733874-6c1e-4d58-9f66-e04bf4ef0655",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-08 19:39:22",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Mariana Souza Oliveira",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "70670711519",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_6845e6ea863bc",
+            "name": "Doa\u00e7\u00e3o",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 5573
+        }
+    ],
+    "trackingParameters": {
+        "src": null,
+        "sck": null,
+        "utm_source": "FBjLj6845e3b92d85ceea2bf01f6a",
+        "utm_campaign": "08\/06 ESCALA CTV 17 VALIDADO MEIODIA \u2014 C\u00f3pia|120225766062140470",
+        "utm_medium": "PDIDDY|120225766061910470",
+        "utm_content": "017|120225766061430470",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": null,
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": 5573,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 5573
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-08 19:39:22] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-06-08 19:39:22] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-06-08 19:40:13] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"0d5568b8-1223-429b-8e2f-8aa5a205a659\",\"platform\":\"MinhaPlataforma\",\"paymentMethod\":\"pix\",\"status\":\"waiting_payment\",\"createdAt\":\"2025-06-08 16:40:13\",\"approvedDate\":null,\"refundedAt\":null,\"customer\":{\"name\":\"Sophia Carvalho Costa\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":\"96853622464\",\"country\":\"BR\",\"ip\":\"177.174.232.105\"},\"products\":[{\"id\":\"PROD_6845e71da44ad\",\"name\":\"Doa\\u00e7\\u00e3o\",\"planId\":null,\"planName\":null,\"quantity\":1,\"priceInCents\":5573}],\"trackingParameters\":{\"utm_source\":\"FBjLj6845e16c39326a7d29f081b1\",\"utm_medium\":\"PDIDDY|120225766061610470\",\"utm_campaign\":\"08\\\/06 ESCALA CTV 17 VALIDADO MEIODIA \\u2014 C\\u00f3pia|120225766062300470\",\"utm_content\":\"017|120225766061120470\",\"utm_term\":\"Facebook_Mobile_Feed\"},\"commission\":{\"totalPriceInCents\":5573,\"gatewayFeeInCents\":0,\"userCommissionInCents\":5573},\"isTest\":false}"
+}
+----------------------------------------
+[2025-06-08 19:40:13] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "0d5568b8-1223-429b-8e2f-8aa5a205a659",
+    "platform": "MinhaPlataforma",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-08 16:40:13",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Sophia Carvalho Costa",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "96853622464",
+        "country": "BR",
+        "ip": "177.174.232.105"
+    },
+    "products": [
+        {
+            "id": "PROD_6845e71da44ad",
+            "name": "Doa\u00e7\u00e3o",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 5573
+        }
+    ],
+    "trackingParameters": {
+        "utm_source": "FBjLj6845e16c39326a7d29f081b1",
+        "utm_medium": "PDIDDY|120225766061610470",
+        "utm_campaign": "08\/06 ESCALA CTV 17 VALIDADO MEIODIA \u2014 C\u00f3pia|120225766062300470",
+        "utm_content": "017|120225766061120470",
+        "utm_term": "Facebook_Mobile_Feed"
+    },
+    "commission": {
+        "totalPriceInCents": 5573,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 5573
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-08 19:40:13] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "0d5568b8-1223-429b-8e2f-8aa5a205a659",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-08 19:40:13",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Sophia Carvalho Costa",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "96853622464",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_6845e71da44ad",
+            "name": "Doa\u00e7\u00e3o",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 5573
+        }
+    ],
+    "trackingParameters": {
+        "src": null,
+        "sck": null,
+        "utm_source": "FBjLj6845e16c39326a7d29f081b1",
+        "utm_campaign": "08\/06 ESCALA CTV 17 VALIDADO MEIODIA \u2014 C\u00f3pia|120225766062300470",
+        "utm_medium": "PDIDDY|120225766061610470",
+        "utm_content": "017|120225766061120470",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": null,
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": 5573,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 5573
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-08 19:40:13] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-06-08 19:40:13] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-06-08 19:44:58] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"b90773da-e65f-4346-9b76-e97e39e889be\",\"platform\":\"MinhaPlataforma\",\"paymentMethod\":\"pix\",\"status\":\"waiting_payment\",\"createdAt\":\"2025-06-08 16:44:58\",\"approvedDate\":null,\"refundedAt\":null,\"customer\":{\"name\":\"Manuela Carvalho Santos\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":\"03260720120\",\"country\":\"BR\",\"ip\":\"45.234.18.43\"},\"products\":[{\"id\":\"PROD_6845e83a7f9ae\",\"name\":\"Doa\\u00e7\\u00e3o\",\"planId\":null,\"planName\":null,\"quantity\":1,\"priceInCents\":5573}],\"trackingParameters\":{\"utm_source\":\"FBjLj6845e57cf3254d39ab75ada2\",\"utm_medium\":\"PDIDDY|120225766060940470\",\"utm_campaign\":\"08\\\/06 ESCALA CTV 17 VALIDADO MEIODIA \\u2014 C\\u00f3pia|120225766061330470\",\"utm_content\":\"017|120225766061820470\",\"utm_term\":\"Facebook_Mobile_Feed\"},\"commission\":{\"totalPriceInCents\":5573,\"gatewayFeeInCents\":0,\"userCommissionInCents\":5573},\"isTest\":false}"
+}
+----------------------------------------
+[2025-06-08 19:44:58] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "b90773da-e65f-4346-9b76-e97e39e889be",
+    "platform": "MinhaPlataforma",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-08 16:44:58",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Manuela Carvalho Santos",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "03260720120",
+        "country": "BR",
+        "ip": "45.234.18.43"
+    },
+    "products": [
+        {
+            "id": "PROD_6845e83a7f9ae",
+            "name": "Doa\u00e7\u00e3o",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 5573
+        }
+    ],
+    "trackingParameters": {
+        "utm_source": "FBjLj6845e57cf3254d39ab75ada2",
+        "utm_medium": "PDIDDY|120225766060940470",
+        "utm_campaign": "08\/06 ESCALA CTV 17 VALIDADO MEIODIA \u2014 C\u00f3pia|120225766061330470",
+        "utm_content": "017|120225766061820470",
+        "utm_term": "Facebook_Mobile_Feed"
+    },
+    "commission": {
+        "totalPriceInCents": 5573,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 5573
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-08 19:44:58] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "b90773da-e65f-4346-9b76-e97e39e889be",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-08 19:44:58",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Manuela Carvalho Santos",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "03260720120",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_6845e83a7f9ae",
+            "name": "Doa\u00e7\u00e3o",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 5573
+        }
+    ],
+    "trackingParameters": {
+        "src": null,
+        "sck": null,
+        "utm_source": "FBjLj6845e57cf3254d39ab75ada2",
+        "utm_campaign": "08\/06 ESCALA CTV 17 VALIDADO MEIODIA \u2014 C\u00f3pia|120225766061330470",
+        "utm_medium": "PDIDDY|120225766060940470",
+        "utm_content": "017|120225766061820470",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": null,
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": 5573,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 5573
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-08 19:44:58] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-06-08 19:44:59] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-06-08 19:48:58] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"e464bb05-88af-4ba6-97a7-9e686e4ebf93\",\"platform\":\"MinhaPlataforma\",\"paymentMethod\":\"pix\",\"status\":\"waiting_payment\",\"createdAt\":\"2025-06-08 16:48:58\",\"approvedDate\":null,\"refundedAt\":null,\"customer\":{\"name\":\"Pedro Carvalho Oliveira\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":\"14729381947\",\"country\":\"BR\",\"ip\":\"187.19.241.14\"},\"products\":[{\"id\":\"PROD_6845e92a024e9\",\"name\":\"Doa\\u00e7\\u00e3o\",\"planId\":null,\"planName\":null,\"quantity\":1,\"priceInCents\":5573}],\"trackingParameters\":{\"utm_source\":\"FBjLj6845e64e976b4bdfbeb130fd\",\"utm_medium\":\"PDIDDY|120225766061980470\",\"utm_campaign\":\"08\\\/06 ESCALA CTV 17 VALIDADO MEIODIA \\u2014 C\\u00f3pia|120225766062080470\",\"utm_content\":\"017|120225766061490470\",\"utm_term\":\"Facebook_Mobile_Feed\"},\"commission\":{\"totalPriceInCents\":5573,\"gatewayFeeInCents\":0,\"userCommissionInCents\":5573},\"isTest\":false}"
+}
+----------------------------------------
+[2025-06-08 19:48:58] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "e464bb05-88af-4ba6-97a7-9e686e4ebf93",
+    "platform": "MinhaPlataforma",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-08 16:48:58",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Pedro Carvalho Oliveira",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "14729381947",
+        "country": "BR",
+        "ip": "187.19.241.14"
+    },
+    "products": [
+        {
+            "id": "PROD_6845e92a024e9",
+            "name": "Doa\u00e7\u00e3o",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 5573
+        }
+    ],
+    "trackingParameters": {
+        "utm_source": "FBjLj6845e64e976b4bdfbeb130fd",
+        "utm_medium": "PDIDDY|120225766061980470",
+        "utm_campaign": "08\/06 ESCALA CTV 17 VALIDADO MEIODIA \u2014 C\u00f3pia|120225766062080470",
+        "utm_content": "017|120225766061490470",
+        "utm_term": "Facebook_Mobile_Feed"
+    },
+    "commission": {
+        "totalPriceInCents": 5573,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 5573
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-08 19:48:58] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "e464bb05-88af-4ba6-97a7-9e686e4ebf93",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-08 19:48:58",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Pedro Carvalho Oliveira",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "14729381947",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_6845e92a024e9",
+            "name": "Doa\u00e7\u00e3o",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 5573
+        }
+    ],
+    "trackingParameters": {
+        "src": null,
+        "sck": null,
+        "utm_source": "FBjLj6845e64e976b4bdfbeb130fd",
+        "utm_campaign": "08\/06 ESCALA CTV 17 VALIDADO MEIODIA \u2014 C\u00f3pia|120225766062080470",
+        "utm_medium": "PDIDDY|120225766061980470",
+        "utm_content": "017|120225766061490470",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": null,
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": 5573,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 5573
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-08 19:48:58] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-06-08 19:48:58] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-06-08 19:56:02] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"becf8ddd-1a18-48b3-8421-2da03c050b95\",\"platform\":\"MinhaPlataforma\",\"paymentMethod\":\"pix\",\"status\":\"waiting_payment\",\"createdAt\":\"2025-06-08 16:56:02\",\"approvedDate\":null,\"refundedAt\":null,\"customer\":{\"name\":\"Sofia Lopes Silva\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":\"73220560784\",\"country\":\"BR\",\"ip\":\"191.190.78.162\"},\"products\":[{\"id\":\"PROD_6845ead2c732a\",\"name\":\"Doa\\u00e7\\u00e3o\",\"planId\":null,\"planName\":null,\"quantity\":1,\"priceInCents\":5573}],\"trackingParameters\":{\"utm_source\":\"FBjLj6845e4ea36d9d13201cb641b\",\"utm_medium\":\"PDIDDY|120225735596110470\",\"utm_campaign\":\"08\\\/06 ESCALA CTV 17 VALIDADO \\u2014 C\\u00f3pia \\u2014 C\\u00f3pia|120225735596280470\",\"utm_content\":\"017|120225735595910470\",\"utm_term\":\"Facebook_Mobile_Feed\"},\"commission\":{\"totalPriceInCents\":5573,\"gatewayFeeInCents\":0,\"userCommissionInCents\":5573},\"isTest\":false}"
+}
+----------------------------------------
+[2025-06-08 19:56:02] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "becf8ddd-1a18-48b3-8421-2da03c050b95",
+    "platform": "MinhaPlataforma",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-08 16:56:02",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Sofia Lopes Silva",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "73220560784",
+        "country": "BR",
+        "ip": "191.190.78.162"
+    },
+    "products": [
+        {
+            "id": "PROD_6845ead2c732a",
+            "name": "Doa\u00e7\u00e3o",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 5573
+        }
+    ],
+    "trackingParameters": {
+        "utm_source": "FBjLj6845e4ea36d9d13201cb641b",
+        "utm_medium": "PDIDDY|120225735596110470",
+        "utm_campaign": "08\/06 ESCALA CTV 17 VALIDADO \u2014 C\u00f3pia \u2014 C\u00f3pia|120225735596280470",
+        "utm_content": "017|120225735595910470",
+        "utm_term": "Facebook_Mobile_Feed"
+    },
+    "commission": {
+        "totalPriceInCents": 5573,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 5573
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-08 19:56:02] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "becf8ddd-1a18-48b3-8421-2da03c050b95",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-08 19:56:02",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Sofia Lopes Silva",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "73220560784",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_6845ead2c732a",
+            "name": "Doa\u00e7\u00e3o",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 5573
+        }
+    ],
+    "trackingParameters": {
+        "src": null,
+        "sck": null,
+        "utm_source": "FBjLj6845e4ea36d9d13201cb641b",
+        "utm_campaign": "08\/06 ESCALA CTV 17 VALIDADO \u2014 C\u00f3pia \u2014 C\u00f3pia|120225735596280470",
+        "utm_medium": "PDIDDY|120225735596110470",
+        "utm_content": "017|120225735595910470",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": null,
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": 5573,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 5573
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-08 19:56:02] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-06-08 19:56:02] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-06-08 20:01:11] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"848ce090-df29-40df-aa88-c70e3f6712a5\",\"platform\":\"MinhaPlataforma\",\"paymentMethod\":\"pix\",\"status\":\"waiting_payment\",\"createdAt\":\"2025-06-08 17:01:11\",\"approvedDate\":null,\"refundedAt\":null,\"customer\":{\"name\":\"Gabriel Oliveira Almeida\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":\"52662011505\",\"country\":\"BR\",\"ip\":\"161.22.56.179\"},\"products\":[{\"id\":\"PROD_6845ec07895e4\",\"name\":\"Doa\\u00e7\\u00e3o\",\"planId\":null,\"planName\":null,\"quantity\":1,\"priceInCents\":5573}],\"trackingParameters\":{\"utm_source\":\"FBjLj6845ea5bd1e8ce86cb93c27b\",\"utm_medium\":\"PDIDDY|120225766061710470\",\"utm_campaign\":\"08\\\/06 ESCALA CTV 17 VALIDADO MEIODIA \\u2014 C\\u00f3pia|120225766062200470\",\"utm_content\":\"017|120225766061220470\",\"utm_term\":\"Facebook_Mobile_Feed\"},\"commission\":{\"totalPriceInCents\":5573,\"gatewayFeeInCents\":0,\"userCommissionInCents\":5573},\"isTest\":false}"
+}
+----------------------------------------
+[2025-06-08 20:01:11] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "848ce090-df29-40df-aa88-c70e3f6712a5",
+    "platform": "MinhaPlataforma",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-08 17:01:11",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Gabriel Oliveira Almeida",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "52662011505",
+        "country": "BR",
+        "ip": "161.22.56.179"
+    },
+    "products": [
+        {
+            "id": "PROD_6845ec07895e4",
+            "name": "Doa\u00e7\u00e3o",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 5573
+        }
+    ],
+    "trackingParameters": {
+        "utm_source": "FBjLj6845ea5bd1e8ce86cb93c27b",
+        "utm_medium": "PDIDDY|120225766061710470",
+        "utm_campaign": "08\/06 ESCALA CTV 17 VALIDADO MEIODIA \u2014 C\u00f3pia|120225766062200470",
+        "utm_content": "017|120225766061220470",
+        "utm_term": "Facebook_Mobile_Feed"
+    },
+    "commission": {
+        "totalPriceInCents": 5573,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 5573
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-08 20:01:11] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "848ce090-df29-40df-aa88-c70e3f6712a5",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-08 20:01:11",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Gabriel Oliveira Almeida",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "52662011505",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_6845ec07895e4",
+            "name": "Doa\u00e7\u00e3o",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 5573
+        }
+    ],
+    "trackingParameters": {
+        "src": null,
+        "sck": null,
+        "utm_source": "FBjLj6845ea5bd1e8ce86cb93c27b",
+        "utm_campaign": "08\/06 ESCALA CTV 17 VALIDADO MEIODIA \u2014 C\u00f3pia|120225766062200470",
+        "utm_medium": "PDIDDY|120225766061710470",
+        "utm_content": "017|120225766061220470",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": null,
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": 5573,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 5573
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-08 20:01:11] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-06-08 20:01:11] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-06-08 20:01:31] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"b9459376-3237-4159-9ee8-1b57513539d6\",\"platform\":\"MinhaPlataforma\",\"paymentMethod\":\"pix\",\"status\":\"waiting_payment\",\"createdAt\":\"2025-06-08 17:01:31\",\"approvedDate\":null,\"refundedAt\":null,\"customer\":{\"name\":\"Matheus Vieira Fernandes\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":\"02564190197\",\"country\":\"BR\",\"ip\":\"66.102.8.39\"},\"products\":[{\"id\":\"PROD_6845ec1b5fa0f\",\"name\":\"Doa\\u00e7\\u00e3o\",\"planId\":null,\"planName\":null,\"quantity\":1,\"priceInCents\":5573}],\"trackingParameters\":{\"utm_source\":\"FBjLj6845e57cf3254d39ab75ada2\",\"utm_medium\":\"PDIDDY|120225766060940470\",\"utm_campaign\":\"08\\\/06 ESCALA CTV 17 VALIDADO MEIODIA \\u2014 C\\u00f3pia|120225766061330470\",\"utm_content\":\"017|120225766061820470\",\"utm_term\":\"Facebook_Mobile_Feed\"},\"commission\":{\"totalPriceInCents\":5573,\"gatewayFeeInCents\":0,\"userCommissionInCents\":5573},\"isTest\":false}"
+}
+----------------------------------------
+[2025-06-08 20:01:31] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "b9459376-3237-4159-9ee8-1b57513539d6",
+    "platform": "MinhaPlataforma",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-08 17:01:31",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Matheus Vieira Fernandes",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "02564190197",
+        "country": "BR",
+        "ip": "66.102.8.39"
+    },
+    "products": [
+        {
+            "id": "PROD_6845ec1b5fa0f",
+            "name": "Doa\u00e7\u00e3o",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 5573
+        }
+    ],
+    "trackingParameters": {
+        "utm_source": "FBjLj6845e57cf3254d39ab75ada2",
+        "utm_medium": "PDIDDY|120225766060940470",
+        "utm_campaign": "08\/06 ESCALA CTV 17 VALIDADO MEIODIA \u2014 C\u00f3pia|120225766061330470",
+        "utm_content": "017|120225766061820470",
+        "utm_term": "Facebook_Mobile_Feed"
+    },
+    "commission": {
+        "totalPriceInCents": 5573,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 5573
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-08 20:01:31] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "b9459376-3237-4159-9ee8-1b57513539d6",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-08 20:01:31",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Matheus Vieira Fernandes",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "02564190197",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_6845ec1b5fa0f",
+            "name": "Doa\u00e7\u00e3o",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 5573
+        }
+    ],
+    "trackingParameters": {
+        "src": null,
+        "sck": null,
+        "utm_source": "FBjLj6845e57cf3254d39ab75ada2",
+        "utm_campaign": "08\/06 ESCALA CTV 17 VALIDADO MEIODIA \u2014 C\u00f3pia|120225766061330470",
+        "utm_medium": "PDIDDY|120225766060940470",
+        "utm_content": "017|120225766061820470",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": null,
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": 5573,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 5573
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-08 20:01:31] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-06-08 20:01:32] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-06-08 20:01:49] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"30db2bea-e6b7-488c-8eb6-b660d6b9e55b\",\"platform\":\"MinhaPlataforma\",\"paymentMethod\":\"pix\",\"status\":\"waiting_payment\",\"createdAt\":\"2025-06-08 17:01:49\",\"approvedDate\":null,\"refundedAt\":null,\"customer\":{\"name\":\"Jo\\u00e3o Martins Silva\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":\"00048445991\",\"country\":\"BR\",\"ip\":\"161.22.56.179\"},\"products\":[{\"id\":\"PROD_6845ec2da525c\",\"name\":\"Doa\\u00e7\\u00e3o\",\"planId\":null,\"planName\":null,\"quantity\":1,\"priceInCents\":5573}],\"trackingParameters\":{\"utm_source\":\"FBjLj6845ea5bd1e8ce86cb93c27b\",\"utm_medium\":\"PDIDDY|120225766061710470\",\"utm_campaign\":\"08\\\/06 ESCALA CTV 17 VALIDADO MEIODIA \\u2014 C\\u00f3pia|120225766062200470\",\"utm_content\":\"017|120225766061220470\",\"utm_term\":\"Facebook_Mobile_Feed\"},\"commission\":{\"totalPriceInCents\":5573,\"gatewayFeeInCents\":0,\"userCommissionInCents\":5573},\"isTest\":false}"
+}
+----------------------------------------
+[2025-06-08 20:01:49] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "30db2bea-e6b7-488c-8eb6-b660d6b9e55b",
+    "platform": "MinhaPlataforma",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-08 17:01:49",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Jo\u00e3o Martins Silva",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "00048445991",
+        "country": "BR",
+        "ip": "161.22.56.179"
+    },
+    "products": [
+        {
+            "id": "PROD_6845ec2da525c",
+            "name": "Doa\u00e7\u00e3o",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 5573
+        }
+    ],
+    "trackingParameters": {
+        "utm_source": "FBjLj6845ea5bd1e8ce86cb93c27b",
+        "utm_medium": "PDIDDY|120225766061710470",
+        "utm_campaign": "08\/06 ESCALA CTV 17 VALIDADO MEIODIA \u2014 C\u00f3pia|120225766062200470",
+        "utm_content": "017|120225766061220470",
+        "utm_term": "Facebook_Mobile_Feed"
+    },
+    "commission": {
+        "totalPriceInCents": 5573,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 5573
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-08 20:01:49] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "30db2bea-e6b7-488c-8eb6-b660d6b9e55b",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-08 20:01:49",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Jo\u00e3o Martins Silva",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "00048445991",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_6845ec2da525c",
+            "name": "Doa\u00e7\u00e3o",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 5573
+        }
+    ],
+    "trackingParameters": {
+        "src": null,
+        "sck": null,
+        "utm_source": "FBjLj6845ea5bd1e8ce86cb93c27b",
+        "utm_campaign": "08\/06 ESCALA CTV 17 VALIDADO MEIODIA \u2014 C\u00f3pia|120225766062200470",
+        "utm_medium": "PDIDDY|120225766061710470",
+        "utm_content": "017|120225766061220470",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": null,
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": 5573,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 5573
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-08 20:01:49] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-06-08 20:01:49] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-06-08 20:02:49] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"efb27eb7-2fdb-4c01-931f-9e2ccf8445de\",\"platform\":\"MinhaPlataforma\",\"paymentMethod\":\"pix\",\"status\":\"waiting_payment\",\"createdAt\":\"2025-06-08 17:02:49\",\"approvedDate\":null,\"refundedAt\":null,\"customer\":{\"name\":\"Matheus Oliveira Ferreira\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":\"90388378956\",\"country\":\"BR\",\"ip\":\"187.73.199.1\"},\"products\":[{\"id\":\"PROD_6845ec6956d32\",\"name\":\"Doa\\u00e7\\u00e3o\",\"planId\":null,\"planName\":null,\"quantity\":1,\"priceInCents\":5573}],\"trackingParameters\":{\"utm_source\":\"FBjLj6845e9a8d1e8ce86cb936ce2\",\"utm_medium\":\"PDIDDY|120225766061740470\",\"utm_campaign\":\"08\\\/06 ESCALA CTV 17 VALIDADO MEIODIA \\u2014 C\\u00f3pia|120225766061260470\",\"utm_content\":\"017|120225766061380470\",\"utm_term\":\"Facebook_Mobile_Feed\"},\"commission\":{\"totalPriceInCents\":5573,\"gatewayFeeInCents\":0,\"userCommissionInCents\":5573},\"isTest\":false}"
+}
+----------------------------------------
+[2025-06-08 20:02:49] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "efb27eb7-2fdb-4c01-931f-9e2ccf8445de",
+    "platform": "MinhaPlataforma",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-08 17:02:49",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Matheus Oliveira Ferreira",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "90388378956",
+        "country": "BR",
+        "ip": "187.73.199.1"
+    },
+    "products": [
+        {
+            "id": "PROD_6845ec6956d32",
+            "name": "Doa\u00e7\u00e3o",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 5573
+        }
+    ],
+    "trackingParameters": {
+        "utm_source": "FBjLj6845e9a8d1e8ce86cb936ce2",
+        "utm_medium": "PDIDDY|120225766061740470",
+        "utm_campaign": "08\/06 ESCALA CTV 17 VALIDADO MEIODIA \u2014 C\u00f3pia|120225766061260470",
+        "utm_content": "017|120225766061380470",
+        "utm_term": "Facebook_Mobile_Feed"
+    },
+    "commission": {
+        "totalPriceInCents": 5573,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 5573
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-08 20:02:49] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "efb27eb7-2fdb-4c01-931f-9e2ccf8445de",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-08 20:02:49",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Matheus Oliveira Ferreira",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "90388378956",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_6845ec6956d32",
+            "name": "Doa\u00e7\u00e3o",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 5573
+        }
+    ],
+    "trackingParameters": {
+        "src": null,
+        "sck": null,
+        "utm_source": "FBjLj6845e9a8d1e8ce86cb936ce2",
+        "utm_campaign": "08\/06 ESCALA CTV 17 VALIDADO MEIODIA \u2014 C\u00f3pia|120225766061260470",
+        "utm_medium": "PDIDDY|120225766061740470",
+        "utm_content": "017|120225766061380470",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": null,
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": 5573,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 5573
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-08 20:02:49] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-06-08 20:02:49] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-06-08 20:35:40] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"249b4e1b-02bf-40e5-97c6-1eb263f2bfd0\",\"platform\":\"MinhaPlataforma\",\"paymentMethod\":\"pix\",\"status\":\"waiting_payment\",\"createdAt\":\"2025-06-08 17:35:40\",\"approvedDate\":null,\"refundedAt\":null,\"customer\":{\"name\":\"Maria Lima Costa\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":\"86986712251\",\"country\":\"BR\",\"ip\":\"132.255.186.26\"},\"products\":[{\"id\":\"PROD_6845f41c07a3f\",\"name\":\"Doa\\u00e7\\u00e3o\",\"planId\":null,\"planName\":null,\"quantity\":1,\"priceInCents\":5573}],\"trackingParameters\":{\"utm_source\":\"FBjLj6845f0ec9c5778be73d6c652\",\"utm_medium\":\"PDIDDY|120225766060950470\",\"utm_campaign\":\"08\\\/06 ESCALA CTV 17 VALIDADO MEIODIA \\u2014 C\\u00f3pia|120225766061310470\",\"utm_content\":\"017|120225766061800470\",\"utm_term\":\"Facebook_Mobile_Feed\"},\"commission\":{\"totalPriceInCents\":5573,\"gatewayFeeInCents\":0,\"userCommissionInCents\":5573},\"isTest\":false}"
+}
+----------------------------------------
+[2025-06-08 20:35:40] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "249b4e1b-02bf-40e5-97c6-1eb263f2bfd0",
+    "platform": "MinhaPlataforma",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-08 17:35:40",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Maria Lima Costa",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "86986712251",
+        "country": "BR",
+        "ip": "132.255.186.26"
+    },
+    "products": [
+        {
+            "id": "PROD_6845f41c07a3f",
+            "name": "Doa\u00e7\u00e3o",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 5573
+        }
+    ],
+    "trackingParameters": {
+        "utm_source": "FBjLj6845f0ec9c5778be73d6c652",
+        "utm_medium": "PDIDDY|120225766060950470",
+        "utm_campaign": "08\/06 ESCALA CTV 17 VALIDADO MEIODIA \u2014 C\u00f3pia|120225766061310470",
+        "utm_content": "017|120225766061800470",
+        "utm_term": "Facebook_Mobile_Feed"
+    },
+    "commission": {
+        "totalPriceInCents": 5573,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 5573
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-08 20:35:40] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "249b4e1b-02bf-40e5-97c6-1eb263f2bfd0",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-08 20:35:40",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Maria Lima Costa",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "86986712251",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_6845f41c07a3f",
+            "name": "Doa\u00e7\u00e3o",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 5573
+        }
+    ],
+    "trackingParameters": {
+        "src": null,
+        "sck": null,
+        "utm_source": "FBjLj6845f0ec9c5778be73d6c652",
+        "utm_campaign": "08\/06 ESCALA CTV 17 VALIDADO MEIODIA \u2014 C\u00f3pia|120225766061310470",
+        "utm_medium": "PDIDDY|120225766060950470",
+        "utm_content": "017|120225766061800470",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": null,
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": 5573,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 5573
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-08 20:35:40] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-06-08 20:35:40] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-06-08 20:39:37] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"98679011-9bb3-42a1-ae96-a049a29fa6b3\",\"platform\":\"MinhaPlataforma\",\"paymentMethod\":\"pix\",\"status\":\"waiting_payment\",\"createdAt\":\"2025-06-08 17:39:37\",\"approvedDate\":null,\"refundedAt\":null,\"customer\":{\"name\":\"Felipe Ribeiro Rodrigues\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":\"12101274582\",\"country\":\"BR\",\"ip\":\"45.227.215.45\"},\"products\":[{\"id\":\"PROD_6845f5090a26c\",\"name\":\"Doa\\u00e7\\u00e3o\",\"planId\":null,\"planName\":null,\"quantity\":1,\"priceInCents\":5573}],\"trackingParameters\":{\"utm_source\":\"FBjLj6845f13e20ddfd2b6c945391\",\"utm_medium\":\"PDIDDY|120225735253630470\",\"utm_campaign\":\"08\\\/06 ESCALA CTV 17 VALIDADO \\u2014 C\\u00f3pia|120225735253470470\",\"utm_content\":\"017|120225735254280470\",\"utm_term\":\"Facebook_Mobile_Feed\"},\"commission\":{\"totalPriceInCents\":5573,\"gatewayFeeInCents\":0,\"userCommissionInCents\":5573},\"isTest\":false}"
+}
+----------------------------------------
+[2025-06-08 20:39:37] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "98679011-9bb3-42a1-ae96-a049a29fa6b3",
+    "platform": "MinhaPlataforma",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-08 17:39:37",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Felipe Ribeiro Rodrigues",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "12101274582",
+        "country": "BR",
+        "ip": "45.227.215.45"
+    },
+    "products": [
+        {
+            "id": "PROD_6845f5090a26c",
+            "name": "Doa\u00e7\u00e3o",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 5573
+        }
+    ],
+    "trackingParameters": {
+        "utm_source": "FBjLj6845f13e20ddfd2b6c945391",
+        "utm_medium": "PDIDDY|120225735253630470",
+        "utm_campaign": "08\/06 ESCALA CTV 17 VALIDADO \u2014 C\u00f3pia|120225735253470470",
+        "utm_content": "017|120225735254280470",
+        "utm_term": "Facebook_Mobile_Feed"
+    },
+    "commission": {
+        "totalPriceInCents": 5573,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 5573
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-08 20:39:37] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "98679011-9bb3-42a1-ae96-a049a29fa6b3",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-08 20:39:37",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Felipe Ribeiro Rodrigues",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "12101274582",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_6845f5090a26c",
+            "name": "Doa\u00e7\u00e3o",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 5573
+        }
+    ],
+    "trackingParameters": {
+        "src": null,
+        "sck": null,
+        "utm_source": "FBjLj6845f13e20ddfd2b6c945391",
+        "utm_campaign": "08\/06 ESCALA CTV 17 VALIDADO \u2014 C\u00f3pia|120225735253470470",
+        "utm_medium": "PDIDDY|120225735253630470",
+        "utm_content": "017|120225735254280470",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": null,
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": 5573,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 5573
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-08 20:39:37] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-06-08 20:39:37] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-06-08 20:44:12] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"249af76d-09e3-4fb6-902c-cbfba7142a31\",\"platform\":\"MinhaPlataforma\",\"paymentMethod\":\"pix\",\"status\":\"waiting_payment\",\"createdAt\":\"2025-06-08 17:44:12\",\"approvedDate\":null,\"refundedAt\":null,\"customer\":{\"name\":\"Laura Barbosa Souza\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":\"63176414986\",\"country\":\"BR\",\"ip\":\"45.232.58.65\"},\"products\":[{\"id\":\"PROD_6845f61cb47fe\",\"name\":\"Doa\\u00e7\\u00e3o\",\"planId\":null,\"planName\":null,\"quantity\":1,\"priceInCents\":5573}],\"trackingParameters\":{\"utm_source\":\"FBjLj6845f18d4251836d8aeb3231\",\"utm_medium\":\"PDIDDY|120225766061910470\",\"utm_campaign\":\"08\\\/06 ESCALA CTV 17 VALIDADO MEIODIA \\u2014 C\\u00f3pia|120225766062140470\",\"utm_content\":\"017|120225766061430470\",\"utm_term\":\"Facebook_Mobile_Feed\"},\"commission\":{\"totalPriceInCents\":5573,\"gatewayFeeInCents\":0,\"userCommissionInCents\":5573},\"isTest\":false}"
+}
+----------------------------------------
+[2025-06-08 20:44:12] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "249af76d-09e3-4fb6-902c-cbfba7142a31",
+    "platform": "MinhaPlataforma",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-08 17:44:12",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Laura Barbosa Souza",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "63176414986",
+        "country": "BR",
+        "ip": "45.232.58.65"
+    },
+    "products": [
+        {
+            "id": "PROD_6845f61cb47fe",
+            "name": "Doa\u00e7\u00e3o",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 5573
+        }
+    ],
+    "trackingParameters": {
+        "utm_source": "FBjLj6845f18d4251836d8aeb3231",
+        "utm_medium": "PDIDDY|120225766061910470",
+        "utm_campaign": "08\/06 ESCALA CTV 17 VALIDADO MEIODIA \u2014 C\u00f3pia|120225766062140470",
+        "utm_content": "017|120225766061430470",
+        "utm_term": "Facebook_Mobile_Feed"
+    },
+    "commission": {
+        "totalPriceInCents": 5573,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 5573
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-08 20:44:12] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "249af76d-09e3-4fb6-902c-cbfba7142a31",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-08 20:44:12",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Laura Barbosa Souza",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "63176414986",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_6845f61cb47fe",
+            "name": "Doa\u00e7\u00e3o",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 5573
+        }
+    ],
+    "trackingParameters": {
+        "src": null,
+        "sck": null,
+        "utm_source": "FBjLj6845f18d4251836d8aeb3231",
+        "utm_campaign": "08\/06 ESCALA CTV 17 VALIDADO MEIODIA \u2014 C\u00f3pia|120225766062140470",
+        "utm_medium": "PDIDDY|120225766061910470",
+        "utm_content": "017|120225766061430470",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": null,
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": 5573,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 5573
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-08 20:44:12] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-06-08 20:44:13] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-06-08 20:58:05] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"0d4f5afa-2522-42f1-8ab4-05b0d788ec50\",\"platform\":\"MinhaPlataforma\",\"paymentMethod\":\"pix\",\"status\":\"waiting_payment\",\"createdAt\":\"2025-06-08 17:58:05\",\"approvedDate\":null,\"refundedAt\":null,\"customer\":{\"name\":\"Gabriel Soares Costa\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":\"45862366202\",\"country\":\"BR\",\"ip\":\"45.232.58.65\"},\"products\":[{\"id\":\"PROD_6845f95dd2326\",\"name\":\"Doa\\u00e7\\u00e3o\",\"planId\":null,\"planName\":null,\"quantity\":1,\"priceInCents\":5573}],\"trackingParameters\":{\"utm_source\":\"FBjLj6845f18d4251836d8aeb3231\",\"utm_medium\":\"PDIDDY|120225766061910470\",\"utm_campaign\":\"08\\\/06 ESCALA CTV 17 VALIDADO MEIODIA \\u2014 C\\u00f3pia|120225766062140470\",\"utm_content\":\"017|120225766061430470\",\"utm_term\":\"Facebook_Mobile_Feed\"},\"commission\":{\"totalPriceInCents\":5573,\"gatewayFeeInCents\":0,\"userCommissionInCents\":5573},\"isTest\":false}"
+}
+----------------------------------------
+[2025-06-08 20:58:05] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "0d4f5afa-2522-42f1-8ab4-05b0d788ec50",
+    "platform": "MinhaPlataforma",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-08 17:58:05",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Gabriel Soares Costa",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "45862366202",
+        "country": "BR",
+        "ip": "45.232.58.65"
+    },
+    "products": [
+        {
+            "id": "PROD_6845f95dd2326",
+            "name": "Doa\u00e7\u00e3o",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 5573
+        }
+    ],
+    "trackingParameters": {
+        "utm_source": "FBjLj6845f18d4251836d8aeb3231",
+        "utm_medium": "PDIDDY|120225766061910470",
+        "utm_campaign": "08\/06 ESCALA CTV 17 VALIDADO MEIODIA \u2014 C\u00f3pia|120225766062140470",
+        "utm_content": "017|120225766061430470",
+        "utm_term": "Facebook_Mobile_Feed"
+    },
+    "commission": {
+        "totalPriceInCents": 5573,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 5573
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-08 20:58:05] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "0d4f5afa-2522-42f1-8ab4-05b0d788ec50",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-08 20:58:05",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Gabriel Soares Costa",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "45862366202",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_6845f95dd2326",
+            "name": "Doa\u00e7\u00e3o",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 5573
+        }
+    ],
+    "trackingParameters": {
+        "src": null,
+        "sck": null,
+        "utm_source": "FBjLj6845f18d4251836d8aeb3231",
+        "utm_campaign": "08\/06 ESCALA CTV 17 VALIDADO MEIODIA \u2014 C\u00f3pia|120225766062140470",
+        "utm_medium": "PDIDDY|120225766061910470",
+        "utm_content": "017|120225766061430470",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": null,
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": 5573,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 5573
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-08 20:58:05] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-06-08 20:58:06] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-06-08 21:07:37] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"9d5afa89-6232-44c6-a911-e46ae81eddc1\",\"platform\":\"MinhaPlataforma\",\"paymentMethod\":\"pix\",\"status\":\"waiting_payment\",\"createdAt\":\"2025-06-08 18:07:37\",\"approvedDate\":null,\"refundedAt\":null,\"customer\":{\"name\":\"Isabella Santos Ribeiro\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":\"63462440608\",\"country\":\"BR\",\"ip\":\"45.232.58.65\"},\"products\":[{\"id\":\"PROD_6845fb99b9735\",\"name\":\"Doa\\u00e7\\u00e3o\",\"planId\":null,\"planName\":null,\"quantity\":1,\"priceInCents\":5573}],\"trackingParameters\":{\"utm_source\":\"FBjLj6845f18d4251836d8aeb3231\",\"utm_medium\":\"PDIDDY|120225766061910470\",\"utm_campaign\":\"08\\\/06 ESCALA CTV 17 VALIDADO MEIODIA \\u2014 C\\u00f3pia|120225766062140470\",\"utm_content\":\"017|120225766061430470\",\"utm_term\":\"Facebook_Mobile_Feed\"},\"commission\":{\"totalPriceInCents\":5573,\"gatewayFeeInCents\":0,\"userCommissionInCents\":5573},\"isTest\":false}"
+}
+----------------------------------------
+[2025-06-08 21:07:37] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "9d5afa89-6232-44c6-a911-e46ae81eddc1",
+    "platform": "MinhaPlataforma",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-08 18:07:37",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Isabella Santos Ribeiro",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "63462440608",
+        "country": "BR",
+        "ip": "45.232.58.65"
+    },
+    "products": [
+        {
+            "id": "PROD_6845fb99b9735",
+            "name": "Doa\u00e7\u00e3o",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 5573
+        }
+    ],
+    "trackingParameters": {
+        "utm_source": "FBjLj6845f18d4251836d8aeb3231",
+        "utm_medium": "PDIDDY|120225766061910470",
+        "utm_campaign": "08\/06 ESCALA CTV 17 VALIDADO MEIODIA \u2014 C\u00f3pia|120225766062140470",
+        "utm_content": "017|120225766061430470",
+        "utm_term": "Facebook_Mobile_Feed"
+    },
+    "commission": {
+        "totalPriceInCents": 5573,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 5573
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-08 21:07:37] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "9d5afa89-6232-44c6-a911-e46ae81eddc1",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-08 21:07:37",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Isabella Santos Ribeiro",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "63462440608",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_6845fb99b9735",
+            "name": "Doa\u00e7\u00e3o",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 5573
+        }
+    ],
+    "trackingParameters": {
+        "src": null,
+        "sck": null,
+        "utm_source": "FBjLj6845f18d4251836d8aeb3231",
+        "utm_campaign": "08\/06 ESCALA CTV 17 VALIDADO MEIODIA \u2014 C\u00f3pia|120225766062140470",
+        "utm_medium": "PDIDDY|120225766061910470",
+        "utm_content": "017|120225766061430470",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": null,
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": 5573,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 5573
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-08 21:07:37] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-06-08 21:07:37] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-06-08 21:08:56] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"85ac4cd1-3893-4b5e-85df-c53200ffccd6\",\"platform\":\"MinhaPlataforma\",\"paymentMethod\":\"pix\",\"status\":\"waiting_payment\",\"createdAt\":\"2025-06-08 18:08:56\",\"approvedDate\":null,\"refundedAt\":null,\"customer\":{\"name\":\"Valentina Fernandes Vieira\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":\"36921987361\",\"country\":\"BR\",\"ip\":\"177.142.218.142\"},\"products\":[{\"id\":\"PROD_6845fbe81802b\",\"name\":\"Doa\\u00e7\\u00e3o\",\"planId\":null,\"planName\":null,\"quantity\":1,\"priceInCents\":5573}],\"trackingParameters\":{\"utm_source\":\"FBjLj6845f9493be1650d412170e9\",\"utm_medium\":\"PDDIDY E INOCENTE|120226712980660081\",\"utm_campaign\":\"06\\\/06 CTV 17 CAXOTE  ESCALUDO PAGINA NOVA \\u2014 C\\u00f3pia|120226712981240081\",\"utm_content\":\"001|120226712981110081\",\"utm_term\":\"Instagram_Feed\"},\"commission\":{\"totalPriceInCents\":5573,\"gatewayFeeInCents\":0,\"userCommissionInCents\":5573},\"isTest\":false}"
+}
+----------------------------------------
+[2025-06-08 21:08:56] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "85ac4cd1-3893-4b5e-85df-c53200ffccd6",
+    "platform": "MinhaPlataforma",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-08 18:08:56",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Valentina Fernandes Vieira",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "36921987361",
+        "country": "BR",
+        "ip": "177.142.218.142"
+    },
+    "products": [
+        {
+            "id": "PROD_6845fbe81802b",
+            "name": "Doa\u00e7\u00e3o",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 5573
+        }
+    ],
+    "trackingParameters": {
+        "utm_source": "FBjLj6845f9493be1650d412170e9",
+        "utm_medium": "PDDIDY E INOCENTE|120226712980660081",
+        "utm_campaign": "06\/06 CTV 17 CAXOTE  ESCALUDO PAGINA NOVA \u2014 C\u00f3pia|120226712981240081",
+        "utm_content": "001|120226712981110081",
+        "utm_term": "Instagram_Feed"
+    },
+    "commission": {
+        "totalPriceInCents": 5573,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 5573
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-08 21:08:56] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "85ac4cd1-3893-4b5e-85df-c53200ffccd6",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-08 21:08:56",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Valentina Fernandes Vieira",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "36921987361",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_6845fbe81802b",
+            "name": "Doa\u00e7\u00e3o",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 5573
+        }
+    ],
+    "trackingParameters": {
+        "src": null,
+        "sck": null,
+        "utm_source": "FBjLj6845f9493be1650d412170e9",
+        "utm_campaign": "06\/06 CTV 17 CAXOTE  ESCALUDO PAGINA NOVA \u2014 C\u00f3pia|120226712981240081",
+        "utm_medium": "PDDIDY E INOCENTE|120226712980660081",
+        "utm_content": "001|120226712981110081",
+        "utm_term": "Instagram_Feed",
+        "xcod": null,
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": 5573,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 5573
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-08 21:08:56] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-06-08 21:08:56] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-06-08 21:30:13] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"ac70d8bb-a4bb-4b6a-a465-b534b244e3e1\",\"platform\":\"MinhaPlataforma\",\"paymentMethod\":\"pix\",\"status\":\"waiting_payment\",\"createdAt\":\"2025-06-08 18:30:13\",\"approvedDate\":null,\"refundedAt\":null,\"customer\":{\"name\":\"Matheus Almeida Fernandes\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":\"48117865130\",\"country\":\"BR\",\"ip\":\"45.172.102.201\"},\"products\":[{\"id\":\"PROD_684600e563421\",\"name\":\"Doa\\u00e7\\u00e3o\",\"planId\":null,\"planName\":null,\"quantity\":1,\"priceInCents\":5573}],\"trackingParameters\":{\"utm_source\":\"FBjLj6845fbdf91493f157d4a2b2b\",\"utm_medium\":\"PDIDDY|120225766061720470\",\"utm_campaign\":\"08\\\/06 ESCALA CTV 17 VALIDADO MEIODIA \\u2014 C\\u00f3pia|120225766062270470\",\"utm_content\":\"017|120225766061240470\",\"utm_term\":\"Facebook_Mobile_Feed\"},\"commission\":{\"totalPriceInCents\":5573,\"gatewayFeeInCents\":0,\"userCommissionInCents\":5573},\"isTest\":false}"
+}
+----------------------------------------
+[2025-06-08 21:30:13] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "ac70d8bb-a4bb-4b6a-a465-b534b244e3e1",
+    "platform": "MinhaPlataforma",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-08 18:30:13",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Matheus Almeida Fernandes",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "48117865130",
+        "country": "BR",
+        "ip": "45.172.102.201"
+    },
+    "products": [
+        {
+            "id": "PROD_684600e563421",
+            "name": "Doa\u00e7\u00e3o",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 5573
+        }
+    ],
+    "trackingParameters": {
+        "utm_source": "FBjLj6845fbdf91493f157d4a2b2b",
+        "utm_medium": "PDIDDY|120225766061720470",
+        "utm_campaign": "08\/06 ESCALA CTV 17 VALIDADO MEIODIA \u2014 C\u00f3pia|120225766062270470",
+        "utm_content": "017|120225766061240470",
+        "utm_term": "Facebook_Mobile_Feed"
+    },
+    "commission": {
+        "totalPriceInCents": 5573,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 5573
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-08 21:30:13] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "ac70d8bb-a4bb-4b6a-a465-b534b244e3e1",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-08 21:30:13",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Matheus Almeida Fernandes",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "48117865130",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_684600e563421",
+            "name": "Doa\u00e7\u00e3o",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 5573
+        }
+    ],
+    "trackingParameters": {
+        "src": null,
+        "sck": null,
+        "utm_source": "FBjLj6845fbdf91493f157d4a2b2b",
+        "utm_campaign": "08\/06 ESCALA CTV 17 VALIDADO MEIODIA \u2014 C\u00f3pia|120225766062270470",
+        "utm_medium": "PDIDDY|120225766061720470",
+        "utm_content": "017|120225766061240470",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": null,
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": 5573,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 5573
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-08 21:30:13] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-06-08 21:30:13] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-06-08 21:31:27] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"0b097938-e5b3-4bbc-b095-465f4c1f7d36\",\"platform\":\"MinhaPlataforma\",\"paymentMethod\":\"pix\",\"status\":\"waiting_payment\",\"createdAt\":\"2025-06-08 18:31:27\",\"approvedDate\":null,\"refundedAt\":null,\"customer\":{\"name\":\"Sophia Vieira Alves\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":\"08625909655\",\"country\":\"BR\",\"ip\":\"177.137.226.147\"},\"products\":[{\"id\":\"PROD_6846012f03ebb\",\"name\":\"Doa\\u00e7\\u00e3o\",\"planId\":null,\"planName\":null,\"quantity\":1,\"priceInCents\":5573}],\"trackingParameters\":{\"utm_source\":\"FBjLj6845fe08e8a5feda16dbd72b\",\"utm_medium\":\"PDIDDY|120225766061520470\",\"utm_campaign\":\"08\\\/06 ESCALA CTV 17 VALIDADO MEIODIA \\u2014 C\\u00f3pia|120225766062070470\",\"utm_content\":\"017|120225766061030470\",\"utm_term\":\"Facebook_Mobile_Feed\"},\"commission\":{\"totalPriceInCents\":5573,\"gatewayFeeInCents\":0,\"userCommissionInCents\":5573},\"isTest\":false}"
+}
+----------------------------------------
+[2025-06-08 21:31:27] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "0b097938-e5b3-4bbc-b095-465f4c1f7d36",
+    "platform": "MinhaPlataforma",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-08 18:31:27",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Sophia Vieira Alves",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "08625909655",
+        "country": "BR",
+        "ip": "177.137.226.147"
+    },
+    "products": [
+        {
+            "id": "PROD_6846012f03ebb",
+            "name": "Doa\u00e7\u00e3o",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 5573
+        }
+    ],
+    "trackingParameters": {
+        "utm_source": "FBjLj6845fe08e8a5feda16dbd72b",
+        "utm_medium": "PDIDDY|120225766061520470",
+        "utm_campaign": "08\/06 ESCALA CTV 17 VALIDADO MEIODIA \u2014 C\u00f3pia|120225766062070470",
+        "utm_content": "017|120225766061030470",
+        "utm_term": "Facebook_Mobile_Feed"
+    },
+    "commission": {
+        "totalPriceInCents": 5573,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 5573
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-08 21:31:27] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "0b097938-e5b3-4bbc-b095-465f4c1f7d36",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-08 21:31:27",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Sophia Vieira Alves",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "08625909655",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_6846012f03ebb",
+            "name": "Doa\u00e7\u00e3o",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 5573
+        }
+    ],
+    "trackingParameters": {
+        "src": null,
+        "sck": null,
+        "utm_source": "FBjLj6845fe08e8a5feda16dbd72b",
+        "utm_campaign": "08\/06 ESCALA CTV 17 VALIDADO MEIODIA \u2014 C\u00f3pia|120225766062070470",
+        "utm_medium": "PDIDDY|120225766061520470",
+        "utm_content": "017|120225766061030470",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": null,
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": 5573,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 5573
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-08 21:31:27] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-06-08 21:31:27] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-06-08 21:31:54] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"eecb85d8-6d00-4310-97e2-6b7692000bd5\",\"platform\":\"MinhaPlataforma\",\"paymentMethod\":\"pix\",\"status\":\"waiting_payment\",\"createdAt\":\"2025-06-08 18:31:54\",\"approvedDate\":null,\"refundedAt\":null,\"customer\":{\"name\":\"Mariana Costa Oliveira\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":\"73604434823\",\"country\":\"BR\",\"ip\":\"177.155.221.208\"},\"products\":[{\"id\":\"PROD_6846014ae5f16\",\"name\":\"Doa\\u00e7\\u00e3o\",\"planId\":null,\"planName\":null,\"quantity\":1,\"priceInCents\":5573}],\"trackingParameters\":{\"utm_source\":\"FBjLj6845fa90fb7c84f8b25f73ad\",\"utm_medium\":\"PDIDDY|120225766061540470\",\"utm_campaign\":\"08\\\/06 ESCALA CTV 17 VALIDADO MEIODIA \\u2014 C\\u00f3pia|120225766062020470\",\"utm_content\":\"017|120225766061050470\",\"utm_term\":\"Facebook_Mobile_Feed\"},\"commission\":{\"totalPriceInCents\":5573,\"gatewayFeeInCents\":0,\"userCommissionInCents\":5573},\"isTest\":false}"
+}
+----------------------------------------
+[2025-06-08 21:31:54] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "eecb85d8-6d00-4310-97e2-6b7692000bd5",
+    "platform": "MinhaPlataforma",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-08 18:31:54",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Mariana Costa Oliveira",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "73604434823",
+        "country": "BR",
+        "ip": "177.155.221.208"
+    },
+    "products": [
+        {
+            "id": "PROD_6846014ae5f16",
+            "name": "Doa\u00e7\u00e3o",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 5573
+        }
+    ],
+    "trackingParameters": {
+        "utm_source": "FBjLj6845fa90fb7c84f8b25f73ad",
+        "utm_medium": "PDIDDY|120225766061540470",
+        "utm_campaign": "08\/06 ESCALA CTV 17 VALIDADO MEIODIA \u2014 C\u00f3pia|120225766062020470",
+        "utm_content": "017|120225766061050470",
+        "utm_term": "Facebook_Mobile_Feed"
+    },
+    "commission": {
+        "totalPriceInCents": 5573,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 5573
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-08 21:31:54] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "eecb85d8-6d00-4310-97e2-6b7692000bd5",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-08 21:31:54",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Mariana Costa Oliveira",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "73604434823",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_6846014ae5f16",
+            "name": "Doa\u00e7\u00e3o",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 5573
+        }
+    ],
+    "trackingParameters": {
+        "src": null,
+        "sck": null,
+        "utm_source": "FBjLj6845fa90fb7c84f8b25f73ad",
+        "utm_campaign": "08\/06 ESCALA CTV 17 VALIDADO MEIODIA \u2014 C\u00f3pia|120225766062020470",
+        "utm_medium": "PDIDDY|120225766061540470",
+        "utm_content": "017|120225766061050470",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": null,
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": 5573,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 5573
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-08 21:31:54] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-06-08 21:31:55] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-06-08 21:39:08] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"cfb4b164-13e1-4e3a-b0be-d068168ff280\",\"platform\":\"MinhaPlataforma\",\"paymentMethod\":\"pix\",\"status\":\"waiting_payment\",\"createdAt\":\"2025-06-08 18:39:08\",\"approvedDate\":null,\"refundedAt\":null,\"customer\":{\"name\":\"Luiza Soares Costa\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":\"70486023761\",\"country\":\"BR\",\"ip\":\"201.131.166.14\"},\"products\":[{\"id\":\"PROD_684602fc63001\",\"name\":\"Doa\\u00e7\\u00e3o\",\"planId\":null,\"planName\":null,\"quantity\":1,\"priceInCents\":5573}],\"trackingParameters\":{\"utm_source\":\"FBjLj684600363bd2f610af55e80e\",\"utm_medium\":\"PDIDDY|120225766061540470\",\"utm_campaign\":\"08\\\/06 ESCALA CTV 17 VALIDADO MEIODIA \\u2014 C\\u00f3pia|120225766062020470\",\"utm_content\":\"017|120225766061050470\",\"utm_term\":\"Facebook_Mobile_Feed\"},\"commission\":{\"totalPriceInCents\":5573,\"gatewayFeeInCents\":0,\"userCommissionInCents\":5573},\"isTest\":false}"
+}
+----------------------------------------
+[2025-06-08 21:39:08] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "cfb4b164-13e1-4e3a-b0be-d068168ff280",
+    "platform": "MinhaPlataforma",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-08 18:39:08",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Luiza Soares Costa",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "70486023761",
+        "country": "BR",
+        "ip": "201.131.166.14"
+    },
+    "products": [
+        {
+            "id": "PROD_684602fc63001",
+            "name": "Doa\u00e7\u00e3o",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 5573
+        }
+    ],
+    "trackingParameters": {
+        "utm_source": "FBjLj684600363bd2f610af55e80e",
+        "utm_medium": "PDIDDY|120225766061540470",
+        "utm_campaign": "08\/06 ESCALA CTV 17 VALIDADO MEIODIA \u2014 C\u00f3pia|120225766062020470",
+        "utm_content": "017|120225766061050470",
+        "utm_term": "Facebook_Mobile_Feed"
+    },
+    "commission": {
+        "totalPriceInCents": 5573,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 5573
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-08 21:39:08] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "cfb4b164-13e1-4e3a-b0be-d068168ff280",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-08 21:39:08",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Luiza Soares Costa",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "70486023761",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_684602fc63001",
+            "name": "Doa\u00e7\u00e3o",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 5573
+        }
+    ],
+    "trackingParameters": {
+        "src": null,
+        "sck": null,
+        "utm_source": "FBjLj684600363bd2f610af55e80e",
+        "utm_campaign": "08\/06 ESCALA CTV 17 VALIDADO MEIODIA \u2014 C\u00f3pia|120225766062020470",
+        "utm_medium": "PDIDDY|120225766061540470",
+        "utm_content": "017|120225766061050470",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": null,
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": 5573,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 5573
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-08 21:39:08] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-06-08 21:39:08] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-06-08 21:52:07] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"c4b81c9f-71d0-43a4-8eea-c594d7986481\",\"platform\":\"MinhaPlataforma\",\"paymentMethod\":\"pix\",\"status\":\"waiting_payment\",\"createdAt\":\"2025-06-08 18:52:07\",\"approvedDate\":null,\"refundedAt\":null,\"customer\":{\"name\":\"Jo\\u00e3o Martins Rodrigues\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":\"95050319048\",\"country\":\"BR\",\"ip\":\"179.189.111.103\"},\"products\":[{\"id\":\"PROD_68460607e37aa\",\"name\":\"Doa\\u00e7\\u00e3o\",\"planId\":null,\"planName\":null,\"quantity\":1,\"priceInCents\":5573}],\"trackingParameters\":{\"utm_source\":\"FBjLj6846040097e918876776588c\",\"utm_medium\":\"PDIDDY|120225766061600470\",\"utm_campaign\":\"08\\\/06 ESCALA CTV 17 VALIDADO MEIODIA \\u2014 C\\u00f3pia|120225766062310470\",\"utm_content\":\"017|120225766061110470\",\"utm_term\":\"Facebook_Mobile_Feed\"},\"commission\":{\"totalPriceInCents\":5573,\"gatewayFeeInCents\":0,\"userCommissionInCents\":5573},\"isTest\":false}"
+}
+----------------------------------------
+[2025-06-08 21:52:07] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "c4b81c9f-71d0-43a4-8eea-c594d7986481",
+    "platform": "MinhaPlataforma",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-08 18:52:07",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Jo\u00e3o Martins Rodrigues",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "95050319048",
+        "country": "BR",
+        "ip": "179.189.111.103"
+    },
+    "products": [
+        {
+            "id": "PROD_68460607e37aa",
+            "name": "Doa\u00e7\u00e3o",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 5573
+        }
+    ],
+    "trackingParameters": {
+        "utm_source": "FBjLj6846040097e918876776588c",
+        "utm_medium": "PDIDDY|120225766061600470",
+        "utm_campaign": "08\/06 ESCALA CTV 17 VALIDADO MEIODIA \u2014 C\u00f3pia|120225766062310470",
+        "utm_content": "017|120225766061110470",
+        "utm_term": "Facebook_Mobile_Feed"
+    },
+    "commission": {
+        "totalPriceInCents": 5573,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 5573
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-08 21:52:07] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "c4b81c9f-71d0-43a4-8eea-c594d7986481",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-08 21:52:07",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Jo\u00e3o Martins Rodrigues",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "95050319048",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_68460607e37aa",
+            "name": "Doa\u00e7\u00e3o",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 5573
+        }
+    ],
+    "trackingParameters": {
+        "src": null,
+        "sck": null,
+        "utm_source": "FBjLj6846040097e918876776588c",
+        "utm_campaign": "08\/06 ESCALA CTV 17 VALIDADO MEIODIA \u2014 C\u00f3pia|120225766062310470",
+        "utm_medium": "PDIDDY|120225766061600470",
+        "utm_content": "017|120225766061110470",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": null,
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": 5573,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 5573
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-08 21:52:07] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-06-08 21:52:07] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-06-08 22:40:18] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"3629c604-7e48-42c7-a937-979698fd2fb2\",\"platform\":\"MinhaPlataforma\",\"paymentMethod\":\"pix\",\"status\":\"waiting_payment\",\"createdAt\":\"2025-06-08 19:40:18\",\"approvedDate\":null,\"refundedAt\":null,\"customer\":{\"name\":\"Gabriel Carvalho Rodrigues\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":\"58978287506\",\"country\":\"BR\",\"ip\":\"177.34.252.167\"},\"products\":[{\"id\":\"PROD_6846115210b7a\",\"name\":\"Doa\\u00e7\\u00e3o\",\"planId\":null,\"planName\":null,\"quantity\":1,\"priceInCents\":5573}],\"trackingParameters\":{\"utm_source\":\"FBjLj6845c47ecefe67fb6b8e5893\",\"utm_medium\":\"PDIDDY|120225766061950470\",\"utm_campaign\":\"08\\\/06 ESCALA CTV 17 VALIDADO MEIODIA \\u2014 C\\u00f3pia|120225766062110470\",\"utm_content\":\"017|120225766061460470\",\"utm_term\":\"Facebook_Mobile_Feed\"},\"commission\":{\"totalPriceInCents\":5573,\"gatewayFeeInCents\":0,\"userCommissionInCents\":5573},\"isTest\":false}"
+}
+----------------------------------------
+[2025-06-08 22:40:18] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "3629c604-7e48-42c7-a937-979698fd2fb2",
+    "platform": "MinhaPlataforma",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-08 19:40:18",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Gabriel Carvalho Rodrigues",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "58978287506",
+        "country": "BR",
+        "ip": "177.34.252.167"
+    },
+    "products": [
+        {
+            "id": "PROD_6846115210b7a",
+            "name": "Doa\u00e7\u00e3o",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 5573
+        }
+    ],
+    "trackingParameters": {
+        "utm_source": "FBjLj6845c47ecefe67fb6b8e5893",
+        "utm_medium": "PDIDDY|120225766061950470",
+        "utm_campaign": "08\/06 ESCALA CTV 17 VALIDADO MEIODIA \u2014 C\u00f3pia|120225766062110470",
+        "utm_content": "017|120225766061460470",
+        "utm_term": "Facebook_Mobile_Feed"
+    },
+    "commission": {
+        "totalPriceInCents": 5573,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 5573
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-08 22:40:18] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "3629c604-7e48-42c7-a937-979698fd2fb2",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-08 22:40:18",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Gabriel Carvalho Rodrigues",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "58978287506",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_6846115210b7a",
+            "name": "Doa\u00e7\u00e3o",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 5573
+        }
+    ],
+    "trackingParameters": {
+        "src": null,
+        "sck": null,
+        "utm_source": "FBjLj6845c47ecefe67fb6b8e5893",
+        "utm_campaign": "08\/06 ESCALA CTV 17 VALIDADO MEIODIA \u2014 C\u00f3pia|120225766062110470",
+        "utm_medium": "PDIDDY|120225766061950470",
+        "utm_content": "017|120225766061460470",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": null,
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": 5573,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 5573
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-08 22:40:18] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-06-08 22:40:18] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-06-08 22:47:13] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"9f18f100-7d28-4d08-8acb-aa88ad51000f\",\"platform\":\"MinhaPlataforma\",\"paymentMethod\":\"pix\",\"status\":\"waiting_payment\",\"createdAt\":\"2025-06-08 19:47:13\",\"approvedDate\":null,\"refundedAt\":null,\"customer\":{\"name\":\"Pedro Vieira Alves\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":\"32278401700\",\"country\":\"BR\",\"ip\":\"131.100.62.96\"},\"products\":[{\"id\":\"PROD_684612f111937\",\"name\":\"Doa\\u00e7\\u00e3o\",\"planId\":null,\"planName\":null,\"quantity\":1,\"priceInCents\":5573}],\"trackingParameters\":{\"utm_source\":\"FBjLj6845fb2dd9f5958b0e02c1e5\",\"utm_medium\":\"PDIDDY|120225766061540470\",\"utm_campaign\":\"08\\\/06 ESCALA CTV 17 VALIDADO MEIODIA \\u2014 C\\u00f3pia|120225766062020470\",\"utm_content\":\"017|120225766061050470\",\"utm_term\":\"Facebook_Mobile_Feed\"},\"commission\":{\"totalPriceInCents\":5573,\"gatewayFeeInCents\":0,\"userCommissionInCents\":5573},\"isTest\":false}"
+}
+----------------------------------------
+[2025-06-08 22:47:13] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "9f18f100-7d28-4d08-8acb-aa88ad51000f",
+    "platform": "MinhaPlataforma",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-08 19:47:13",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Pedro Vieira Alves",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "32278401700",
+        "country": "BR",
+        "ip": "131.100.62.96"
+    },
+    "products": [
+        {
+            "id": "PROD_684612f111937",
+            "name": "Doa\u00e7\u00e3o",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 5573
+        }
+    ],
+    "trackingParameters": {
+        "utm_source": "FBjLj6845fb2dd9f5958b0e02c1e5",
+        "utm_medium": "PDIDDY|120225766061540470",
+        "utm_campaign": "08\/06 ESCALA CTV 17 VALIDADO MEIODIA \u2014 C\u00f3pia|120225766062020470",
+        "utm_content": "017|120225766061050470",
+        "utm_term": "Facebook_Mobile_Feed"
+    },
+    "commission": {
+        "totalPriceInCents": 5573,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 5573
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-08 22:47:13] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "9f18f100-7d28-4d08-8acb-aa88ad51000f",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-08 22:47:13",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Pedro Vieira Alves",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "32278401700",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_684612f111937",
+            "name": "Doa\u00e7\u00e3o",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 5573
+        }
+    ],
+    "trackingParameters": {
+        "src": null,
+        "sck": null,
+        "utm_source": "FBjLj6845fb2dd9f5958b0e02c1e5",
+        "utm_campaign": "08\/06 ESCALA CTV 17 VALIDADO MEIODIA \u2014 C\u00f3pia|120225766062020470",
+        "utm_medium": "PDIDDY|120225766061540470",
+        "utm_content": "017|120225766061050470",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": null,
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": 5573,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 5573
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-08 22:47:13] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-06-08 22:47:13] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-06-08 22:51:19] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"ffedbffc-a859-4c00-8277-d8e66c3098f3\",\"platform\":\"MinhaPlataforma\",\"paymentMethod\":\"pix\",\"status\":\"waiting_payment\",\"createdAt\":\"2025-06-08 19:51:19\",\"approvedDate\":null,\"refundedAt\":null,\"customer\":{\"name\":\"Manuela Santos Soares\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":\"72272037356\",\"country\":\"BR\",\"ip\":\"45.228.102.171\"},\"products\":[{\"id\":\"PROD_684613e7027de\",\"name\":\"Doa\\u00e7\\u00e3o\",\"planId\":null,\"planName\":null,\"quantity\":1,\"priceInCents\":5573}],\"trackingParameters\":{\"utm_source\":\"FBjLj6846102ea8a549dff732525d\",\"utm_medium\":\"PDIDDY|120225702703850470\",\"utm_campaign\":\"07\\\/06 ESCALA CTV 17 VALIDADO MEIODIA \\u2014 C\\u00f3pia|120225702704040470\",\"utm_content\":\"017|120225702703750470\",\"utm_term\":\"Facebook_Mobile_Reels\"},\"commission\":{\"totalPriceInCents\":5573,\"gatewayFeeInCents\":0,\"userCommissionInCents\":5573},\"isTest\":false}"
+}
+----------------------------------------
+[2025-06-08 22:51:19] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "ffedbffc-a859-4c00-8277-d8e66c3098f3",
+    "platform": "MinhaPlataforma",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-08 19:51:19",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Manuela Santos Soares",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "72272037356",
+        "country": "BR",
+        "ip": "45.228.102.171"
+    },
+    "products": [
+        {
+            "id": "PROD_684613e7027de",
+            "name": "Doa\u00e7\u00e3o",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 5573
+        }
+    ],
+    "trackingParameters": {
+        "utm_source": "FBjLj6846102ea8a549dff732525d",
+        "utm_medium": "PDIDDY|120225702703850470",
+        "utm_campaign": "07\/06 ESCALA CTV 17 VALIDADO MEIODIA \u2014 C\u00f3pia|120225702704040470",
+        "utm_content": "017|120225702703750470",
+        "utm_term": "Facebook_Mobile_Reels"
+    },
+    "commission": {
+        "totalPriceInCents": 5573,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 5573
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-08 22:51:19] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "ffedbffc-a859-4c00-8277-d8e66c3098f3",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-08 22:51:19",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Manuela Santos Soares",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "72272037356",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_684613e7027de",
+            "name": "Doa\u00e7\u00e3o",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 5573
+        }
+    ],
+    "trackingParameters": {
+        "src": null,
+        "sck": null,
+        "utm_source": "FBjLj6846102ea8a549dff732525d",
+        "utm_campaign": "07\/06 ESCALA CTV 17 VALIDADO MEIODIA \u2014 C\u00f3pia|120225702704040470",
+        "utm_medium": "PDIDDY|120225702703850470",
+        "utm_content": "017|120225702703750470",
+        "utm_term": "Facebook_Mobile_Reels",
+        "xcod": null,
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": 5573,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 5573
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-08 22:51:19] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-06-08 22:51:19] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-06-08 23:15:11] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"b9970f65-65e6-4d34-82c0-7564f48d9fd6\",\"platform\":\"MinhaPlataforma\",\"paymentMethod\":\"pix\",\"status\":\"waiting_payment\",\"createdAt\":\"2025-06-08 20:15:11\",\"approvedDate\":null,\"refundedAt\":null,\"customer\":{\"name\":\"Gabriel Pereira Alves\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":\"09851063606\",\"country\":\"BR\",\"ip\":\"170.81.190.64\"},\"products\":[{\"id\":\"PROD_6846197fb3786\",\"name\":\"Doa\\u00e7\\u00e3o\",\"planId\":null,\"planName\":null,\"quantity\":1,\"priceInCents\":5573}],\"trackingParameters\":{\"utm_source\":\"FBjLj6846167a37142f8503b23d5f\",\"utm_medium\":\"PDIDDY|120225766060950470\",\"utm_campaign\":\"08\\\/06 ESCALA CTV 17 VALIDADO MEIODIA \\u2014 C\\u00f3pia|120225766061310470\",\"utm_content\":\"017|120225766061800470\",\"utm_term\":\"Facebook_Mobile_Feed\"},\"commission\":{\"totalPriceInCents\":5573,\"gatewayFeeInCents\":0,\"userCommissionInCents\":5573},\"isTest\":false}"
+}
+----------------------------------------
+[2025-06-08 23:15:11] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "b9970f65-65e6-4d34-82c0-7564f48d9fd6",
+    "platform": "MinhaPlataforma",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-08 20:15:11",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Gabriel Pereira Alves",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "09851063606",
+        "country": "BR",
+        "ip": "170.81.190.64"
+    },
+    "products": [
+        {
+            "id": "PROD_6846197fb3786",
+            "name": "Doa\u00e7\u00e3o",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 5573
+        }
+    ],
+    "trackingParameters": {
+        "utm_source": "FBjLj6846167a37142f8503b23d5f",
+        "utm_medium": "PDIDDY|120225766060950470",
+        "utm_campaign": "08\/06 ESCALA CTV 17 VALIDADO MEIODIA \u2014 C\u00f3pia|120225766061310470",
+        "utm_content": "017|120225766061800470",
+        "utm_term": "Facebook_Mobile_Feed"
+    },
+    "commission": {
+        "totalPriceInCents": 5573,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 5573
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-08 23:15:11] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "b9970f65-65e6-4d34-82c0-7564f48d9fd6",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-08 23:15:11",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Gabriel Pereira Alves",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "09851063606",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_6846197fb3786",
+            "name": "Doa\u00e7\u00e3o",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 5573
+        }
+    ],
+    "trackingParameters": {
+        "src": null,
+        "sck": null,
+        "utm_source": "FBjLj6846167a37142f8503b23d5f",
+        "utm_campaign": "08\/06 ESCALA CTV 17 VALIDADO MEIODIA \u2014 C\u00f3pia|120225766061310470",
+        "utm_medium": "PDIDDY|120225766060950470",
+        "utm_content": "017|120225766061800470",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": null,
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": 5573,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 5573
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-08 23:15:11] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-06-08 23:15:11] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-06-08 23:43:30] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"4b5fd7e4-9794-4be7-9b65-030381f0c85b\",\"platform\":\"MinhaPlataforma\",\"paymentMethod\":\"pix\",\"status\":\"waiting_payment\",\"createdAt\":\"2025-06-08 20:43:30\",\"approvedDate\":null,\"refundedAt\":null,\"customer\":{\"name\":\"Laura Martins Oliveira\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":\"85523841242\",\"country\":\"BR\",\"ip\":\"170.246.197.158\"},\"products\":[{\"id\":\"PROD_6846202265ae3\",\"name\":\"Doa\\u00e7\\u00e3o\",\"planId\":null,\"planName\":null,\"quantity\":1,\"priceInCents\":5573}],\"trackingParameters\":{\"utm_source\":\"FBjLj6845caf6f1a6fc27521994bb\",\"utm_medium\":\"PDIDDY|120225766061630470\",\"utm_campaign\":\"08\\\/06 ESCALA CTV 17 VALIDADO MEIODIA \\u2014 C\\u00f3pia|120225766062050470\",\"utm_content\":\"017|120225766061010470\",\"utm_term\":\"Facebook_Mobile_Feed\"},\"commission\":{\"totalPriceInCents\":5573,\"gatewayFeeInCents\":0,\"userCommissionInCents\":5573},\"isTest\":false}"
+}
+----------------------------------------
+[2025-06-08 23:43:30] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "4b5fd7e4-9794-4be7-9b65-030381f0c85b",
+    "platform": "MinhaPlataforma",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-08 20:43:30",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Laura Martins Oliveira",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "85523841242",
+        "country": "BR",
+        "ip": "170.246.197.158"
+    },
+    "products": [
+        {
+            "id": "PROD_6846202265ae3",
+            "name": "Doa\u00e7\u00e3o",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 5573
+        }
+    ],
+    "trackingParameters": {
+        "utm_source": "FBjLj6845caf6f1a6fc27521994bb",
+        "utm_medium": "PDIDDY|120225766061630470",
+        "utm_campaign": "08\/06 ESCALA CTV 17 VALIDADO MEIODIA \u2014 C\u00f3pia|120225766062050470",
+        "utm_content": "017|120225766061010470",
+        "utm_term": "Facebook_Mobile_Feed"
+    },
+    "commission": {
+        "totalPriceInCents": 5573,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 5573
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-08 23:43:30] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "4b5fd7e4-9794-4be7-9b65-030381f0c85b",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-08 23:43:30",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Laura Martins Oliveira",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "85523841242",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_6846202265ae3",
+            "name": "Doa\u00e7\u00e3o",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 5573
+        }
+    ],
+    "trackingParameters": {
+        "src": null,
+        "sck": null,
+        "utm_source": "FBjLj6845caf6f1a6fc27521994bb",
+        "utm_campaign": "08\/06 ESCALA CTV 17 VALIDADO MEIODIA \u2014 C\u00f3pia|120225766062050470",
+        "utm_medium": "PDIDDY|120225766061630470",
+        "utm_content": "017|120225766061010470",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": null,
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": 5573,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 5573
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-08 23:43:30] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-06-08 23:43:30] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-06-09 01:11:29] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"9053f4fe-1526-49e2-b2c8-3f85485a501e\",\"platform\":\"MinhaPlataforma\",\"paymentMethod\":\"pix\",\"status\":\"waiting_payment\",\"createdAt\":\"2025-06-08 22:11:29\",\"approvedDate\":null,\"refundedAt\":null,\"customer\":{\"name\":\"Sofia Fernandes Almeida\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":\"13781512916\",\"country\":\"BR\",\"ip\":\"45.239.103.107\"},\"products\":[{\"id\":\"PROD_684634c18f946\",\"name\":\"Doa\\u00e7\\u00e3o\",\"planId\":null,\"planName\":null,\"quantity\":1,\"priceInCents\":5573}],\"trackingParameters\":{\"utm_source\":\"FBjLj6846329e91f892ced4afe6fb\",\"utm_medium\":\"PDIDDY|120225766060950470\",\"utm_campaign\":\"08\\\/06 ESCALA CTV 17 VALIDADO MEIODIA \\u2014 C\\u00f3pia|120225766061310470\",\"utm_content\":\"017|120225766061800470\",\"utm_term\":\"Facebook_Stories\"},\"commission\":{\"totalPriceInCents\":5573,\"gatewayFeeInCents\":0,\"userCommissionInCents\":5573},\"isTest\":false}"
+}
+----------------------------------------
+[2025-06-09 01:11:29] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "9053f4fe-1526-49e2-b2c8-3f85485a501e",
+    "platform": "MinhaPlataforma",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-08 22:11:29",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Sofia Fernandes Almeida",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "13781512916",
+        "country": "BR",
+        "ip": "45.239.103.107"
+    },
+    "products": [
+        {
+            "id": "PROD_684634c18f946",
+            "name": "Doa\u00e7\u00e3o",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 5573
+        }
+    ],
+    "trackingParameters": {
+        "utm_source": "FBjLj6846329e91f892ced4afe6fb",
+        "utm_medium": "PDIDDY|120225766060950470",
+        "utm_campaign": "08\/06 ESCALA CTV 17 VALIDADO MEIODIA \u2014 C\u00f3pia|120225766061310470",
+        "utm_content": "017|120225766061800470",
+        "utm_term": "Facebook_Stories"
+    },
+    "commission": {
+        "totalPriceInCents": 5573,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 5573
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-09 01:11:29] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "9053f4fe-1526-49e2-b2c8-3f85485a501e",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-09 01:11:29",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Sofia Fernandes Almeida",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "13781512916",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_684634c18f946",
+            "name": "Doa\u00e7\u00e3o",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 5573
+        }
+    ],
+    "trackingParameters": {
+        "src": null,
+        "sck": null,
+        "utm_source": "FBjLj6846329e91f892ced4afe6fb",
+        "utm_campaign": "08\/06 ESCALA CTV 17 VALIDADO MEIODIA \u2014 C\u00f3pia|120225766061310470",
+        "utm_medium": "PDIDDY|120225766060950470",
+        "utm_content": "017|120225766061800470",
+        "utm_term": "Facebook_Stories",
+        "xcod": null,
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": 5573,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 5573
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-09 01:11:29] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-06-09 01:11:29] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-06-09 02:26:27] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"8556f47f-c949-4c1f-9112-ac2790bb3a60\",\"platform\":\"MinhaPlataforma\",\"paymentMethod\":\"pix\",\"status\":\"waiting_payment\",\"createdAt\":\"2025-06-08 23:26:27\",\"approvedDate\":null,\"refundedAt\":null,\"customer\":{\"name\":\"Isabella Silva Almeida\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":\"82263236902\",\"country\":\"BR\",\"ip\":\"170.244.107.191\"},\"products\":[{\"id\":\"PROD_68464653d9cb6\",\"name\":\"Doa\\u00e7\\u00e3o\",\"planId\":null,\"planName\":null,\"quantity\":1,\"priceInCents\":5573}],\"trackingParameters\":{\"utm_source\":\"FBjLj6845b9b7cae95c4f9150eabd\",\"utm_medium\":\"PDIDDY|120225766061700470\",\"utm_campaign\":\"08\\\/06 ESCALA CTV 17 VALIDADO MEIODIA \\u2014 C\\u00f3pia|120225766062210470\",\"utm_content\":\"017|120225766061210470\",\"utm_term\":\"Facebook_Mobile_Feed\"},\"commission\":{\"totalPriceInCents\":5573,\"gatewayFeeInCents\":0,\"userCommissionInCents\":5573},\"isTest\":false}"
+}
+----------------------------------------
+[2025-06-09 02:26:27] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "8556f47f-c949-4c1f-9112-ac2790bb3a60",
+    "platform": "MinhaPlataforma",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-08 23:26:27",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Isabella Silva Almeida",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "82263236902",
+        "country": "BR",
+        "ip": "170.244.107.191"
+    },
+    "products": [
+        {
+            "id": "PROD_68464653d9cb6",
+            "name": "Doa\u00e7\u00e3o",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 5573
+        }
+    ],
+    "trackingParameters": {
+        "utm_source": "FBjLj6845b9b7cae95c4f9150eabd",
+        "utm_medium": "PDIDDY|120225766061700470",
+        "utm_campaign": "08\/06 ESCALA CTV 17 VALIDADO MEIODIA \u2014 C\u00f3pia|120225766062210470",
+        "utm_content": "017|120225766061210470",
+        "utm_term": "Facebook_Mobile_Feed"
+    },
+    "commission": {
+        "totalPriceInCents": 5573,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 5573
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-09 02:26:27] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "8556f47f-c949-4c1f-9112-ac2790bb3a60",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-09 02:26:27",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Isabella Silva Almeida",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "82263236902",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_68464653d9cb6",
+            "name": "Doa\u00e7\u00e3o",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 5573
+        }
+    ],
+    "trackingParameters": {
+        "src": null,
+        "sck": null,
+        "utm_source": "FBjLj6845b9b7cae95c4f9150eabd",
+        "utm_campaign": "08\/06 ESCALA CTV 17 VALIDADO MEIODIA \u2014 C\u00f3pia|120225766062210470",
+        "utm_medium": "PDIDDY|120225766061700470",
+        "utm_content": "017|120225766061210470",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": null,
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": 5573,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 5573
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-09 02:26:27] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-06-09 02:26:27] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------

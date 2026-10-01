@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="60" cy="60" r="58" fill="#005CA9" fill-opacity="0.1" stroke="#005CA9" stroke-width="4"/>
+  <circle cx="60" cy="60" r="45" fill="white" stroke="#005CA9" stroke-width="2"/>
+  <path d="M40 60L55 75L80 50" stroke="#00A651" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M60 30C60 30 45 40 30 40C30 40 30 65 60 80C90 65 90 40 90 40C75 40 60 30 60 30Z" fill="#F39200" fill-opacity="0.2" stroke="#F39200" stroke-width="2"/>
+  <text x="60" y="95" text-anchor="middle" fill="#005CA9" font-family="Arial" font-weight="bold" font-size="8">DOCUMENTO OFICIAL</text>
+  <text x="60" y="105" text-anchor="middle" fill="#005CA9" font-family="Arial" font-weight="bold" font-size="8">CAIXA ECONÔMICA FEDERAL</text>
+</svg> 

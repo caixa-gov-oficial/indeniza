@@ -1,0 +1,224 @@
+[2025-05-08 10:03:52] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"891214d8-d004-48ab-903a-3cdc8062d76c\",\"platform\":\"PayHubr\",\"paymentMethod\":\"pix\",\"status\":\"paid\",\"createdAt\":\"2025-05-08T10:03:00+00:00\",\"approvedDate\":\"2025-05-08 10:03:52\",\"paidAt\":\"2025-05-08 10:03:52\",\"refundedAt\":null,\"customer\":{\"name\":\"Maria Rodrigues Almeida\",\"email\":\"maria.rodrigues.almeida@email.com\",\"phone\":null,\"document\":{\"number\":\"80144110130\",\"type\":\"CPF\"},\"country\":\"BR\",\"ip\":\"64.23.135.43\"},\"items\":[{\"id\":\"PROD_681c8188cbbbf\",\"title\":\"Upsell 1\",\"quantity\":1,\"unitPrice\":3990}],\"amount\":3990,\"fee\":{\"fixedAmount\":0,\"netAmount\":3990},\"trackingParameters\":{\"utm_content\":\"Novo an\\u00fancio de Vendas|120229033194140001\"},\"isTest\":false}"
+}
+----------------------------------------
+[2025-05-08 10:03:52] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "891214d8-d004-48ab-903a-3cdc8062d76c",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "paid",
+    "createdAt": "2025-05-08T10:03:00+00:00",
+    "approvedDate": "2025-05-08 10:03:52",
+    "paidAt": "2025-05-08 10:03:52",
+    "refundedAt": null,
+    "customer": {
+        "name": "Maria Rodrigues Almeida",
+        "email": "maria.rodrigues.almeida@email.com",
+        "phone": null,
+        "document": {
+            "number": "80144110130",
+            "type": "CPF"
+        },
+        "country": "BR",
+        "ip": "64.23.135.43"
+    },
+    "items": [
+        {
+            "id": "PROD_681c8188cbbbf",
+            "title": "Upsell 1",
+            "quantity": 1,
+            "unitPrice": 3990
+        }
+    ],
+    "amount": 3990,
+    "fee": {
+        "fixedAmount": 0,
+        "netAmount": 3990
+    },
+    "trackingParameters": {
+        "utm_content": "Novo an\u00fancio de Vendas|120229033194140001"
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-05-08 10:03:52] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "891214d8-d004-48ab-903a-3cdc8062d76c",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "paid",
+    "createdAt": "2025-05-08 10:03:00",
+    "approvedDate": "2025-05-08 10:03:52",
+    "refundedAt": null,
+    "customer": {
+        "name": "Maria Rodrigues Almeida",
+        "email": "maria.rodrigues.almeida@email.com",
+        "phone": null,
+        "document": "80144110130",
+        "country": "BR",
+        "ip": "2a02:4780:13:1234::99"
+    },
+    "products": [
+        {
+            "id": "PROD_681c8188cbbbf",
+            "name": "Upsell 1",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 3990
+        }
+    ],
+    "trackingParameters": {
+        "src": null,
+        "sck": null,
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null,
+        "utm_content": "Novo an\u00fancio de Vendas|120229033194140001",
+        "utm_term": null,
+        "xcod": null,
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": 3990,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 3990
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-05-08 10:03:52] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-05-08 10:03:52] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-05-08 11:00:49] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"3b2e1b72-6490-4384-829d-fbe73529a1ea\",\"platform\":\"PayHubr\",\"paymentMethod\":\"pix\",\"status\":\"paid\",\"createdAt\":\"2025-05-08T10:59:38+00:00\",\"approvedDate\":\"2025-05-08 11:00:49\",\"paidAt\":\"2025-05-08 11:00:49\",\"refundedAt\":null,\"customer\":{\"name\":\"Isabella Almeida Lopes\",\"email\":\"isabella.almeida.lopes@email.com\",\"phone\":null,\"document\":{\"number\":\"88027846471\",\"type\":\"CPF\"},\"country\":\"BR\",\"ip\":\"64.23.135.43\"},\"items\":[{\"id\":\"PROD_681c8ee183775\",\"title\":\"Upsell 1\",\"quantity\":1,\"unitPrice\":3990}],\"amount\":3990,\"fee\":{\"fixedAmount\":0,\"netAmount\":3990},\"trackingParameters\":{\"utm_content\":\"Novo an\\u00fancio de Vendas|120229033018320001\"},\"isTest\":false}"
+}
+----------------------------------------
+[2025-05-08 11:00:49] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "3b2e1b72-6490-4384-829d-fbe73529a1ea",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "paid",
+    "createdAt": "2025-05-08T10:59:38+00:00",
+    "approvedDate": "2025-05-08 11:00:49",
+    "paidAt": "2025-05-08 11:00:49",
+    "refundedAt": null,
+    "customer": {
+        "name": "Isabella Almeida Lopes",
+        "email": "isabella.almeida.lopes@email.com",
+        "phone": null,
+        "document": {
+            "number": "88027846471",
+            "type": "CPF"
+        },
+        "country": "BR",
+        "ip": "64.23.135.43"
+    },
+    "items": [
+        {
+            "id": "PROD_681c8ee183775",
+            "title": "Upsell 1",
+            "quantity": 1,
+            "unitPrice": 3990
+        }
+    ],
+    "amount": 3990,
+    "fee": {
+        "fixedAmount": 0,
+        "netAmount": 3990
+    },
+    "trackingParameters": {
+        "utm_content": "Novo an\u00fancio de Vendas|120229033018320001"
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-05-08 11:00:49] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "3b2e1b72-6490-4384-829d-fbe73529a1ea",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "paid",
+    "createdAt": "2025-05-08 10:59:38",
+    "approvedDate": "2025-05-08 11:00:49",
+    "refundedAt": null,
+    "customer": {
+        "name": "Isabella Almeida Lopes",
+        "email": "isabella.almeida.lopes@email.com",
+        "phone": null,
+        "document": "88027846471",
+        "country": "BR",
+        "ip": "2a02:4780:13:1234::99"
+    },
+    "products": [
+        {
+            "id": "PROD_681c8ee183775",
+            "name": "Upsell 1",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 3990
+        }
+    ],
+    "trackingParameters": {
+        "src": null,
+        "sck": null,
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null,
+        "utm_content": "Novo an\u00fancio de Vendas|120229033018320001",
+        "utm_term": null,
+        "xcod": null,
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": 3990,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 3990
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-05-08 11:00:49] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-05-08 11:00:49] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------

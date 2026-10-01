@@ -1,0 +1,687 @@
+[2025-06-25 14:00:31] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"3137adf9-817c-4aba-91d8-d7bb8edc57d1\",\"platform\":\"PayHubr\",\"paymentMethod\":\"pix\",\"status\":\"paid\",\"createdAt\":\"2025-06-25T13:48:28-03:00\",\"approvedDate\":\"2025-06-25 14:00:31\",\"paidAt\":\"2025-06-25 14:00:31\",\"refundedAt\":null,\"customer\":{\"name\":\"Manuela Santos Carvalho\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":{\"number\":\"34024910361\",\"type\":\"CPF\"},\"country\":\"BR\",\"ip\":\"64.23.135.43\"},\"items\":[{\"id\":\"PROD_685c2b2fc6633\",\"title\":\"Produto 55.73\",\"quantity\":1,\"unitPrice\":\"5573\"}],\"amount\":\"5573\",\"fee\":{\"fixedAmount\":0,\"netAmount\":\"5573\"},\"trackingParameters\":[],\"isTest\":false}"
+}
+----------------------------------------
+[2025-06-25 14:00:31] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "3137adf9-817c-4aba-91d8-d7bb8edc57d1",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "paid",
+    "createdAt": "2025-06-25T13:48:28-03:00",
+    "approvedDate": "2025-06-25 14:00:31",
+    "paidAt": "2025-06-25 14:00:31",
+    "refundedAt": null,
+    "customer": {
+        "name": "Manuela Santos Carvalho",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": {
+            "number": "34024910361",
+            "type": "CPF"
+        },
+        "country": "BR",
+        "ip": "64.23.135.43"
+    },
+    "items": [
+        {
+            "id": "PROD_685c2b2fc6633",
+            "title": "Produto 55.73",
+            "quantity": 1,
+            "unitPrice": "5573"
+        }
+    ],
+    "amount": "5573",
+    "fee": {
+        "fixedAmount": 0,
+        "netAmount": "5573"
+    },
+    "trackingParameters": [],
+    "isTest": false
+}
+----------------------------------------
+[2025-06-25 14:00:31] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "3137adf9-817c-4aba-91d8-d7bb8edc57d1",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "paid",
+    "createdAt": "2025-06-25 16:48:28",
+    "approvedDate": "2025-06-25 17:00:31",
+    "refundedAt": null,
+    "customer": {
+        "name": "Manuela Santos Carvalho",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "34024910361",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_685c2b2fc6633",
+            "name": "Produto 55.73",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": "5573"
+        }
+    ],
+    "trackingParameters": {
+        "src": null,
+        "sck": null,
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null,
+        "utm_content": null,
+        "utm_term": null,
+        "xcod": null,
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": "5573",
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": "5573"
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-25 14:00:31] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-06-25 14:00:31] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-06-25 14:02:12] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"d94570e9-072d-4d18-a812-e80610ccae51\",\"platform\":\"PayHubr\",\"paymentMethod\":\"pix\",\"status\":\"paid\",\"createdAt\":\"2025-06-25T14:01:19-03:00\",\"approvedDate\":\"2025-06-25 14:02:12\",\"paidAt\":\"2025-06-25 14:02:12\",\"refundedAt\":null,\"customer\":{\"name\":\"Sophia Costa Barbosa\",\"email\":\"sophia.costa.barbosa@email.com\",\"phone\":null,\"document\":{\"number\":\"38580117976\",\"type\":\"CPF\"},\"country\":\"BR\",\"ip\":\"64.23.135.43\"},\"items\":[{\"id\":\"PROD_685c2b9405a1e\",\"title\":\"Produto 35\",\"quantity\":1,\"unitPrice\":\"3500\"}],\"amount\":\"3500\",\"fee\":{\"fixedAmount\":0,\"netAmount\":\"3500\"},\"trackingParameters\":[],\"isTest\":false}"
+}
+----------------------------------------
+[2025-06-25 14:02:12] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "d94570e9-072d-4d18-a812-e80610ccae51",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "paid",
+    "createdAt": "2025-06-25T14:01:19-03:00",
+    "approvedDate": "2025-06-25 14:02:12",
+    "paidAt": "2025-06-25 14:02:12",
+    "refundedAt": null,
+    "customer": {
+        "name": "Sophia Costa Barbosa",
+        "email": "sophia.costa.barbosa@email.com",
+        "phone": null,
+        "document": {
+            "number": "38580117976",
+            "type": "CPF"
+        },
+        "country": "BR",
+        "ip": "64.23.135.43"
+    },
+    "items": [
+        {
+            "id": "PROD_685c2b9405a1e",
+            "title": "Produto 35",
+            "quantity": 1,
+            "unitPrice": "3500"
+        }
+    ],
+    "amount": "3500",
+    "fee": {
+        "fixedAmount": 0,
+        "netAmount": "3500"
+    },
+    "trackingParameters": [],
+    "isTest": false
+}
+----------------------------------------
+[2025-06-25 14:02:12] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "d94570e9-072d-4d18-a812-e80610ccae51",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "paid",
+    "createdAt": "2025-06-25 17:01:19",
+    "approvedDate": "2025-06-25 17:02:12",
+    "refundedAt": null,
+    "customer": {
+        "name": "Sophia Costa Barbosa",
+        "email": "sophia.costa.barbosa@email.com",
+        "phone": null,
+        "document": "38580117976",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_685c2b9405a1e",
+            "name": "Produto 35",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": "3500"
+        }
+    ],
+    "trackingParameters": {
+        "src": null,
+        "sck": null,
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null,
+        "utm_content": null,
+        "utm_term": null,
+        "xcod": null,
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": "3500",
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": "3500"
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-25 14:02:12] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-06-25 14:02:12] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-06-25 14:05:50] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"97ff084f-f2bb-4c5b-b46c-fd7382bee7d3\",\"platform\":\"PayHubr\",\"paymentMethod\":\"pix\",\"status\":\"paid\",\"createdAt\":\"2025-06-25T14:03:00-03:00\",\"approvedDate\":\"2025-06-25 14:05:50\",\"paidAt\":\"2025-06-25 14:05:50\",\"refundedAt\":null,\"customer\":{\"name\":\"Felipe Carvalho Silva\",\"email\":\"felipe.carvalho.silva@email.com\",\"phone\":null,\"document\":{\"number\":\"94073073281\",\"type\":\"CPF\"},\"country\":\"BR\",\"ip\":\"64.23.135.43\"},\"items\":[{\"id\":\"PROD_685c2c6e811db\",\"title\":\"Upsell 4\",\"quantity\":1,\"unitPrice\":\"2490\"}],\"amount\":\"2490\",\"fee\":{\"fixedAmount\":0,\"netAmount\":\"2490\"},\"trackingParameters\":[],\"isTest\":false}"
+}
+----------------------------------------
+[2025-06-25 14:05:50] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "97ff084f-f2bb-4c5b-b46c-fd7382bee7d3",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "paid",
+    "createdAt": "2025-06-25T14:03:00-03:00",
+    "approvedDate": "2025-06-25 14:05:50",
+    "paidAt": "2025-06-25 14:05:50",
+    "refundedAt": null,
+    "customer": {
+        "name": "Felipe Carvalho Silva",
+        "email": "felipe.carvalho.silva@email.com",
+        "phone": null,
+        "document": {
+            "number": "94073073281",
+            "type": "CPF"
+        },
+        "country": "BR",
+        "ip": "64.23.135.43"
+    },
+    "items": [
+        {
+            "id": "PROD_685c2c6e811db",
+            "title": "Upsell 4",
+            "quantity": 1,
+            "unitPrice": "2490"
+        }
+    ],
+    "amount": "2490",
+    "fee": {
+        "fixedAmount": 0,
+        "netAmount": "2490"
+    },
+    "trackingParameters": [],
+    "isTest": false
+}
+----------------------------------------
+[2025-06-25 14:05:50] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "97ff084f-f2bb-4c5b-b46c-fd7382bee7d3",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "paid",
+    "createdAt": "2025-06-25 17:03:00",
+    "approvedDate": "2025-06-25 17:05:50",
+    "refundedAt": null,
+    "customer": {
+        "name": "Felipe Carvalho Silva",
+        "email": "felipe.carvalho.silva@email.com",
+        "phone": null,
+        "document": "94073073281",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_685c2c6e811db",
+            "name": "Upsell 4",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": "2490"
+        }
+    ],
+    "trackingParameters": {
+        "src": null,
+        "sck": null,
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null,
+        "utm_content": null,
+        "utm_term": null,
+        "xcod": null,
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": "2490",
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": "2490"
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-25 14:05:50] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-06-25 14:05:51] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-06-25 16:35:16] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"e3555dd2-2531-46b4-8c4a-ba91714ec24a\",\"platform\":\"PayHubr\",\"paymentMethod\":\"pix\",\"status\":\"paid\",\"createdAt\":\"2025-06-25T16:23:20-03:00\",\"approvedDate\":\"2025-06-25 16:35:16\",\"paidAt\":\"2025-06-25 16:35:16\",\"refundedAt\":null,\"customer\":{\"name\":\"Jo\\u00e3o Alves Alves\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":{\"number\":\"31015788769\",\"type\":\"CPF\"},\"country\":\"BR\",\"ip\":\"64.23.135.43\"},\"items\":[{\"id\":\"PROD_685c4f7438569\",\"title\":\"Produto 55.73\",\"quantity\":1,\"unitPrice\":\"5573\"}],\"amount\":\"5573\",\"fee\":{\"fixedAmount\":0,\"netAmount\":\"5573\"},\"trackingParameters\":{\"src\":\"FBjLj685c4ab35a2e7fe1d83e7409\",\"sck\":\"FBjLj685c4ab35a2e7fe1d83e7409hQwK21wXxR25-06 CTV 14 DARK \\u2014 C\\u00f3pia|120227066283470470hQwK21wXxREU S\\u00d3 TENHO 13 ANINHOS PAPAI|120227066283320470hQwK21wXxR14|120227066283360470hQwK21wXxRFacebook_Mobile_Feed\",\"utm_source\":\"FBjLj685c4ab35a2e7fe1d83e7409\",\"utm_campaign\":\"25-06 CTV 14 DARK \\u2014 C\\u00f3pia|120227066283470470\",\"utm_medium\":\"EU S\\u00d3 TENHO 13 ANINHOS PAPAI|120227066283320470\",\"utm_content\":\"14|120227066283360470\",\"utm_term\":\"Facebook_Mobile_Feed\",\"xcod\":\"FBjLj685c4ab35a2e7fe1d83e7409hQwK21wXxR25-06 CTV 14 DARK \\u2014 C\\u00f3pia|120227066283470470hQwK21wXxREU S\\u00d3 TENHO 13 ANINHOS PAPAI|120227066283320470hQwK21wXxR14|120227066283360470hQwK21wXxRFacebook_Mobile_Feed\"},\"isTest\":false}"
+}
+----------------------------------------
+[2025-06-25 16:35:16] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "e3555dd2-2531-46b4-8c4a-ba91714ec24a",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "paid",
+    "createdAt": "2025-06-25T16:23:20-03:00",
+    "approvedDate": "2025-06-25 16:35:16",
+    "paidAt": "2025-06-25 16:35:16",
+    "refundedAt": null,
+    "customer": {
+        "name": "Jo\u00e3o Alves Alves",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": {
+            "number": "31015788769",
+            "type": "CPF"
+        },
+        "country": "BR",
+        "ip": "64.23.135.43"
+    },
+    "items": [
+        {
+            "id": "PROD_685c4f7438569",
+            "title": "Produto 55.73",
+            "quantity": 1,
+            "unitPrice": "5573"
+        }
+    ],
+    "amount": "5573",
+    "fee": {
+        "fixedAmount": 0,
+        "netAmount": "5573"
+    },
+    "trackingParameters": {
+        "src": "FBjLj685c4ab35a2e7fe1d83e7409",
+        "sck": "FBjLj685c4ab35a2e7fe1d83e7409hQwK21wXxR25-06 CTV 14 DARK \u2014 C\u00f3pia|120227066283470470hQwK21wXxREU S\u00d3 TENHO 13 ANINHOS PAPAI|120227066283320470hQwK21wXxR14|120227066283360470hQwK21wXxRFacebook_Mobile_Feed",
+        "utm_source": "FBjLj685c4ab35a2e7fe1d83e7409",
+        "utm_campaign": "25-06 CTV 14 DARK \u2014 C\u00f3pia|120227066283470470",
+        "utm_medium": "EU S\u00d3 TENHO 13 ANINHOS PAPAI|120227066283320470",
+        "utm_content": "14|120227066283360470",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": "FBjLj685c4ab35a2e7fe1d83e7409hQwK21wXxR25-06 CTV 14 DARK \u2014 C\u00f3pia|120227066283470470hQwK21wXxREU S\u00d3 TENHO 13 ANINHOS PAPAI|120227066283320470hQwK21wXxR14|120227066283360470hQwK21wXxRFacebook_Mobile_Feed"
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-25 16:35:16] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "e3555dd2-2531-46b4-8c4a-ba91714ec24a",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "paid",
+    "createdAt": "2025-06-25 19:23:20",
+    "approvedDate": "2025-06-25 19:35:16",
+    "refundedAt": null,
+    "customer": {
+        "name": "Jo\u00e3o Alves Alves",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "31015788769",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_685c4f7438569",
+            "name": "Produto 55.73",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": "5573"
+        }
+    ],
+    "trackingParameters": {
+        "src": "FBjLj685c4ab35a2e7fe1d83e7409",
+        "sck": "FBjLj685c4ab35a2e7fe1d83e7409hQwK21wXxR25-06 CTV 14 DARK \u2014 C\u00f3pia|120227066283470470hQwK21wXxREU S\u00d3 TENHO 13 ANINHOS PAPAI|120227066283320470hQwK21wXxR14|120227066283360470hQwK21wXxRFacebook_Mobile_Feed",
+        "utm_source": "FBjLj685c4ab35a2e7fe1d83e7409",
+        "utm_campaign": "25-06 CTV 14 DARK \u2014 C\u00f3pia|120227066283470470",
+        "utm_medium": "EU S\u00d3 TENHO 13 ANINHOS PAPAI|120227066283320470",
+        "utm_content": "14|120227066283360470",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": "FBjLj685c4ab35a2e7fe1d83e7409hQwK21wXxR25-06 CTV 14 DARK \u2014 C\u00f3pia|120227066283470470hQwK21wXxREU S\u00d3 TENHO 13 ANINHOS PAPAI|120227066283320470hQwK21wXxR14|120227066283360470hQwK21wXxRFacebook_Mobile_Feed",
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": "5573",
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": "5573"
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-25 16:35:16] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-06-25 16:35:16] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-06-25 16:40:13] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"72ab5cf1-ff57-4841-a859-c611a1c475ca\",\"platform\":\"PayHubr\",\"paymentMethod\":\"pix\",\"status\":\"paid\",\"createdAt\":\"2025-06-25T16:31:58-03:00\",\"approvedDate\":\"2025-06-25 16:40:13\",\"paidAt\":\"2025-06-25 16:40:13\",\"refundedAt\":null,\"customer\":{\"name\":\"Daniel Vieira Santos\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":{\"number\":\"95444700778\",\"type\":\"CPF\"},\"country\":\"BR\",\"ip\":\"64.23.135.43\"},\"items\":[{\"id\":\"PROD_685c509d825dd\",\"title\":\"Produto 55.73\",\"quantity\":1,\"unitPrice\":\"5573\"}],\"amount\":\"5573\",\"fee\":{\"fixedAmount\":0,\"netAmount\":\"5573\"},\"trackingParameters\":{\"src\":\"FBjLj685c4bd399b331927dc2ce3a\",\"sck\":\"FBjLj685c4bd399b331927dc2ce3ahQwK21wXxR25-06 CTV 06 DARK \\u2014 C\\u00f3pia|120227066283250470hQwK21wXxREU S\\u00d3 TENHO 13 ANINHOS PAPAI|120227066283310470hQwK21wXxR06|120227066283450470hQwK21wXxRFacebook_Mobile_Feed\",\"utm_source\":\"FBjLj685c4bd399b331927dc2ce3a\",\"utm_campaign\":\"25-06 CTV 06 DARK \\u2014 C\\u00f3pia|120227066283250470\",\"utm_medium\":\"EU S\\u00d3 TENHO 13 ANINHOS PAPAI|120227066283310470\",\"utm_content\":\"06|120227066283450470\",\"utm_term\":\"Facebook_Mobile_Feed\",\"xcod\":\"FBjLj685c4bd399b331927dc2ce3ahQwK21wXxR25-06 CTV 06 DARK \\u2014 C\\u00f3pia|120227066283250470hQwK21wXxREU S\\u00d3 TENHO 13 ANINHOS PAPAI|120227066283310470hQwK21wXxR06|120227066283450470hQwK21wXxRFacebook_Mobile_Feed\"},\"isTest\":false}"
+}
+----------------------------------------
+[2025-06-25 16:40:13] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "72ab5cf1-ff57-4841-a859-c611a1c475ca",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "paid",
+    "createdAt": "2025-06-25T16:31:58-03:00",
+    "approvedDate": "2025-06-25 16:40:13",
+    "paidAt": "2025-06-25 16:40:13",
+    "refundedAt": null,
+    "customer": {
+        "name": "Daniel Vieira Santos",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": {
+            "number": "95444700778",
+            "type": "CPF"
+        },
+        "country": "BR",
+        "ip": "64.23.135.43"
+    },
+    "items": [
+        {
+            "id": "PROD_685c509d825dd",
+            "title": "Produto 55.73",
+            "quantity": 1,
+            "unitPrice": "5573"
+        }
+    ],
+    "amount": "5573",
+    "fee": {
+        "fixedAmount": 0,
+        "netAmount": "5573"
+    },
+    "trackingParameters": {
+        "src": "FBjLj685c4bd399b331927dc2ce3a",
+        "sck": "FBjLj685c4bd399b331927dc2ce3ahQwK21wXxR25-06 CTV 06 DARK \u2014 C\u00f3pia|120227066283250470hQwK21wXxREU S\u00d3 TENHO 13 ANINHOS PAPAI|120227066283310470hQwK21wXxR06|120227066283450470hQwK21wXxRFacebook_Mobile_Feed",
+        "utm_source": "FBjLj685c4bd399b331927dc2ce3a",
+        "utm_campaign": "25-06 CTV 06 DARK \u2014 C\u00f3pia|120227066283250470",
+        "utm_medium": "EU S\u00d3 TENHO 13 ANINHOS PAPAI|120227066283310470",
+        "utm_content": "06|120227066283450470",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": "FBjLj685c4bd399b331927dc2ce3ahQwK21wXxR25-06 CTV 06 DARK \u2014 C\u00f3pia|120227066283250470hQwK21wXxREU S\u00d3 TENHO 13 ANINHOS PAPAI|120227066283310470hQwK21wXxR06|120227066283450470hQwK21wXxRFacebook_Mobile_Feed"
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-25 16:40:13] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "72ab5cf1-ff57-4841-a859-c611a1c475ca",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "paid",
+    "createdAt": "2025-06-25 19:31:58",
+    "approvedDate": "2025-06-25 19:40:13",
+    "refundedAt": null,
+    "customer": {
+        "name": "Daniel Vieira Santos",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "95444700778",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_685c509d825dd",
+            "name": "Produto 55.73",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": "5573"
+        }
+    ],
+    "trackingParameters": {
+        "src": "FBjLj685c4bd399b331927dc2ce3a",
+        "sck": "FBjLj685c4bd399b331927dc2ce3ahQwK21wXxR25-06 CTV 06 DARK \u2014 C\u00f3pia|120227066283250470hQwK21wXxREU S\u00d3 TENHO 13 ANINHOS PAPAI|120227066283310470hQwK21wXxR06|120227066283450470hQwK21wXxRFacebook_Mobile_Feed",
+        "utm_source": "FBjLj685c4bd399b331927dc2ce3a",
+        "utm_campaign": "25-06 CTV 06 DARK \u2014 C\u00f3pia|120227066283250470",
+        "utm_medium": "EU S\u00d3 TENHO 13 ANINHOS PAPAI|120227066283310470",
+        "utm_content": "06|120227066283450470",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": "FBjLj685c4bd399b331927dc2ce3ahQwK21wXxR25-06 CTV 06 DARK \u2014 C\u00f3pia|120227066283250470hQwK21wXxREU S\u00d3 TENHO 13 ANINHOS PAPAI|120227066283310470hQwK21wXxR06|120227066283450470hQwK21wXxRFacebook_Mobile_Feed",
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": "5573",
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": "5573"
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-25 16:40:13] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-06-25 16:40:13] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-06-25 17:00:12] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"7904f55d-10ff-4732-a3c4-de670a5d12da\",\"platform\":\"PayHubr\",\"paymentMethod\":\"pix\",\"status\":\"paid\",\"createdAt\":\"2025-06-25T16:58:43-03:00\",\"approvedDate\":\"2025-06-25 17:00:12\",\"paidAt\":\"2025-06-25 17:00:12\",\"refundedAt\":null,\"customer\":{\"name\":\"Sophia Santos Barbosa\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":{\"number\":\"59177758269\",\"type\":\"CPF\"},\"country\":\"BR\",\"ip\":\"64.23.135.43\"},\"items\":[{\"id\":\"PROD_685c554c30cea\",\"title\":\"Produto 55.73\",\"quantity\":1,\"unitPrice\":\"5573\"}],\"amount\":\"5573\",\"fee\":{\"fixedAmount\":0,\"netAmount\":\"5573\"},\"trackingParameters\":{\"src\":\"FBjLj685c527a4035314379bffbc7\",\"sck\":\"FBjLj685c527a4035314379bffbc7hQwK21wXxR25-06 CTV 06 DARK \\u2014 C\\u00f3pia|120227066283250470hQwK21wXxREU S\\u00d3 TENHO 13 ANINHOS PAPAI|120227066283310470hQwK21wXxR06|120227066283450470hQwK21wXxRFacebook_Mobile_Feed\",\"utm_source\":\"FBjLj685c527a4035314379bffbc7\",\"utm_campaign\":\"25-06 CTV 06 DARK \\u2014 C\\u00f3pia|120227066283250470\",\"utm_medium\":\"EU S\\u00d3 TENHO 13 ANINHOS PAPAI|120227066283310470\",\"utm_content\":\"06|120227066283450470\",\"utm_term\":\"Facebook_Mobile_Feed\",\"xcod\":\"FBjLj685c527a4035314379bffbc7hQwK21wXxR25-06 CTV 06 DARK \\u2014 C\\u00f3pia|120227066283250470hQwK21wXxREU S\\u00d3 TENHO 13 ANINHOS PAPAI|120227066283310470hQwK21wXxR06|120227066283450470hQwK21wXxRFacebook_Mobile_Feed\"},\"isTest\":false}"
+}
+----------------------------------------
+[2025-06-25 17:00:12] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "7904f55d-10ff-4732-a3c4-de670a5d12da",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "paid",
+    "createdAt": "2025-06-25T16:58:43-03:00",
+    "approvedDate": "2025-06-25 17:00:12",
+    "paidAt": "2025-06-25 17:00:12",
+    "refundedAt": null,
+    "customer": {
+        "name": "Sophia Santos Barbosa",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": {
+            "number": "59177758269",
+            "type": "CPF"
+        },
+        "country": "BR",
+        "ip": "64.23.135.43"
+    },
+    "items": [
+        {
+            "id": "PROD_685c554c30cea",
+            "title": "Produto 55.73",
+            "quantity": 1,
+            "unitPrice": "5573"
+        }
+    ],
+    "amount": "5573",
+    "fee": {
+        "fixedAmount": 0,
+        "netAmount": "5573"
+    },
+    "trackingParameters": {
+        "src": "FBjLj685c527a4035314379bffbc7",
+        "sck": "FBjLj685c527a4035314379bffbc7hQwK21wXxR25-06 CTV 06 DARK \u2014 C\u00f3pia|120227066283250470hQwK21wXxREU S\u00d3 TENHO 13 ANINHOS PAPAI|120227066283310470hQwK21wXxR06|120227066283450470hQwK21wXxRFacebook_Mobile_Feed",
+        "utm_source": "FBjLj685c527a4035314379bffbc7",
+        "utm_campaign": "25-06 CTV 06 DARK \u2014 C\u00f3pia|120227066283250470",
+        "utm_medium": "EU S\u00d3 TENHO 13 ANINHOS PAPAI|120227066283310470",
+        "utm_content": "06|120227066283450470",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": "FBjLj685c527a4035314379bffbc7hQwK21wXxR25-06 CTV 06 DARK \u2014 C\u00f3pia|120227066283250470hQwK21wXxREU S\u00d3 TENHO 13 ANINHOS PAPAI|120227066283310470hQwK21wXxR06|120227066283450470hQwK21wXxRFacebook_Mobile_Feed"
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-25 17:00:12] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "7904f55d-10ff-4732-a3c4-de670a5d12da",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "paid",
+    "createdAt": "2025-06-25 19:58:43",
+    "approvedDate": "2025-06-25 20:00:12",
+    "refundedAt": null,
+    "customer": {
+        "name": "Sophia Santos Barbosa",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "59177758269",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_685c554c30cea",
+            "name": "Produto 55.73",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": "5573"
+        }
+    ],
+    "trackingParameters": {
+        "src": "FBjLj685c527a4035314379bffbc7",
+        "sck": "FBjLj685c527a4035314379bffbc7hQwK21wXxR25-06 CTV 06 DARK \u2014 C\u00f3pia|120227066283250470hQwK21wXxREU S\u00d3 TENHO 13 ANINHOS PAPAI|120227066283310470hQwK21wXxR06|120227066283450470hQwK21wXxRFacebook_Mobile_Feed",
+        "utm_source": "FBjLj685c527a4035314379bffbc7",
+        "utm_campaign": "25-06 CTV 06 DARK \u2014 C\u00f3pia|120227066283250470",
+        "utm_medium": "EU S\u00d3 TENHO 13 ANINHOS PAPAI|120227066283310470",
+        "utm_content": "06|120227066283450470",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": "FBjLj685c527a4035314379bffbc7hQwK21wXxR25-06 CTV 06 DARK \u2014 C\u00f3pia|120227066283250470hQwK21wXxREU S\u00d3 TENHO 13 ANINHOS PAPAI|120227066283310470hQwK21wXxR06|120227066283450470hQwK21wXxRFacebook_Mobile_Feed",
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": "5573",
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": "5573"
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-25 17:00:12] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-06-25 17:00:12] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------

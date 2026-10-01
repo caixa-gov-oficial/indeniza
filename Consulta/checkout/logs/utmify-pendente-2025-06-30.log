@@ -1,0 +1,220 @@
+[2025-06-30 18:20:49] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"5a42cec3-093a-4d6c-8382-8316e8488838\",\"platform\":\"MinhaPlataforma\",\"paymentMethod\":\"pix\",\"status\":\"waiting_payment\",\"createdAt\":\"2025-06-30 15:20:49\",\"approvedDate\":null,\"refundedAt\":null,\"customer\":{\"name\":\"Matheus Alves Martins\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":\"47922804350\",\"country\":\"BR\",\"ip\":\"172.225.100.71\"},\"products\":[{\"id\":\"PROD_6862d581ca65b\",\"name\":\"Doa\\u00e7\\u00e3o\",\"planId\":null,\"planName\":null,\"quantity\":1,\"priceInCents\":5573}],\"trackingParameters\":{\"utm_source\":\"organic\",\"xcod\":\"jLj68617f97b32099625371ce82hQwK21wXxRhQwK21wXxRhQwK21wXxRhQwK21wXxR\",\"sck\":\"jLj68617f97b32099625371ce82hQwK21wXxRhQwK21wXxRhQwK21wXxRhQwK21wXxR\"},\"commission\":{\"totalPriceInCents\":5573,\"gatewayFeeInCents\":0,\"userCommissionInCents\":5573},\"isTest\":false}"
+}
+----------------------------------------
+[2025-06-30 18:20:49] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "5a42cec3-093a-4d6c-8382-8316e8488838",
+    "platform": "MinhaPlataforma",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-30 15:20:49",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Matheus Alves Martins",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "47922804350",
+        "country": "BR",
+        "ip": "172.225.100.71"
+    },
+    "products": [
+        {
+            "id": "PROD_6862d581ca65b",
+            "name": "Doa\u00e7\u00e3o",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 5573
+        }
+    ],
+    "trackingParameters": {
+        "utm_source": "organic",
+        "xcod": "jLj68617f97b32099625371ce82hQwK21wXxRhQwK21wXxRhQwK21wXxRhQwK21wXxR",
+        "sck": "jLj68617f97b32099625371ce82hQwK21wXxRhQwK21wXxRhQwK21wXxRhQwK21wXxR"
+    },
+    "commission": {
+        "totalPriceInCents": 5573,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 5573
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-30 18:20:49] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "5a42cec3-093a-4d6c-8382-8316e8488838",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-30 18:20:49",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Matheus Alves Martins",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "47922804350",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_6862d581ca65b",
+            "name": "Doa\u00e7\u00e3o",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 5573
+        }
+    ],
+    "trackingParameters": {
+        "src": null,
+        "sck": "jLj68617f97b32099625371ce82hQwK21wXxRhQwK21wXxRhQwK21wXxRhQwK21wXxR",
+        "utm_source": "organic",
+        "utm_campaign": null,
+        "utm_medium": null,
+        "utm_content": null,
+        "utm_term": null,
+        "xcod": "jLj68617f97b32099625371ce82hQwK21wXxRhQwK21wXxRhQwK21wXxRhQwK21wXxR",
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": 5573,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 5573
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-30 18:20:49] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-06-30 18:20:49] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-07-01 02:11:07] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"cae3be76-b90d-4245-ac69-8b3440aba769\",\"platform\":\"MinhaPlataforma\",\"paymentMethod\":\"pix\",\"status\":\"waiting_payment\",\"createdAt\":\"2025-06-30 23:11:07\",\"approvedDate\":null,\"refundedAt\":null,\"customer\":{\"name\":\"Pedro Alves Lopes\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":\"14157171098\",\"country\":\"BR\",\"ip\":\"177.102.93.242\"},\"products\":[{\"id\":\"PROD_686343bbe993d\",\"name\":\"Doa\\u00e7\\u00e3o\",\"planId\":null,\"planName\":null,\"quantity\":1,\"priceInCents\":5573}],\"trackingParameters\":[],\"commission\":{\"totalPriceInCents\":5573,\"gatewayFeeInCents\":0,\"userCommissionInCents\":5573},\"isTest\":false}"
+}
+----------------------------------------
+[2025-07-01 02:11:07] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "cae3be76-b90d-4245-ac69-8b3440aba769",
+    "platform": "MinhaPlataforma",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-30 23:11:07",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Pedro Alves Lopes",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "14157171098",
+        "country": "BR",
+        "ip": "177.102.93.242"
+    },
+    "products": [
+        {
+            "id": "PROD_686343bbe993d",
+            "name": "Doa\u00e7\u00e3o",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 5573
+        }
+    ],
+    "trackingParameters": [],
+    "commission": {
+        "totalPriceInCents": 5573,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 5573
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-07-01 02:11:07] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "cae3be76-b90d-4245-ac69-8b3440aba769",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-07-01 02:11:07",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Pedro Alves Lopes",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "14157171098",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_686343bbe993d",
+            "name": "Doa\u00e7\u00e3o",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 5573
+        }
+    ],
+    "trackingParameters": {
+        "src": null,
+        "sck": null,
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null,
+        "utm_content": null,
+        "utm_term": null,
+        "xcod": null,
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": 5573,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 5573
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-07-01 02:11:07] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-07-01 02:11:08] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------

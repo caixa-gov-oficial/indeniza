@@ -1,0 +1,1527 @@
+[2025-06-28 09:44:01] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"be48f64c-5dbf-4174-a3dc-900f913777ff\",\"platform\":\"PayHubr\",\"paymentMethod\":\"pix\",\"status\":\"paid\",\"createdAt\":\"2025-06-28T09:42:06-03:00\",\"approvedDate\":\"2025-06-28 09:44:01\",\"paidAt\":\"2025-06-28 09:44:01\",\"refundedAt\":null,\"customer\":{\"name\":\"Julia Silva Carvalho\",\"email\":\"julia.silva.carvalho@email.com\",\"phone\":null,\"document\":{\"number\":\"54117420801\",\"type\":\"CPF\"},\"country\":\"BR\",\"ip\":\"64.23.135.43\"},\"items\":[{\"id\":\"PROD_685fe391933a9\",\"title\":\"Produto 35\",\"quantity\":1,\"unitPrice\":\"3500\"}],\"amount\":\"3500\",\"fee\":{\"fixedAmount\":0,\"netAmount\":\"3500\"},\"trackingParameters\":{\"sck\":\"FBjLj685fdf8f91636a22858b940chQwK21wXxR28-06 CTV 6 \\u2014 C\\u00f3pia|120227203746860470hQwK21wXxRAIFONUUU|120227203747080470hQwK21wXxR6|120227203747780470hQwK21wXxRFacebook_Mobile_Feed\",\"utm_campaign\":\"28-06 CTV 6 \\u2014 C\\u00f3pia|120227203746860470\",\"utm_medium\":\"AIFONUUU|120227203747080470\",\"utm_content\":\"6|120227203747780470\",\"utm_term\":\"Facebook_Mobile_Feed\",\"xcod\":\"FBjLj685fdf8f91636a22858b940chQwK21wXxR28-06 CTV 6 \\u2014 C\\u00f3pia|120227203746860470hQwK21wXxRAIFONUUU|120227203747080470hQwK21wXxR6|120227203747780470hQwK21wXxRFacebook_Mobile_Feed\"},\"isTest\":false}"
+}
+----------------------------------------
+[2025-06-28 09:44:01] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "be48f64c-5dbf-4174-a3dc-900f913777ff",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "paid",
+    "createdAt": "2025-06-28T09:42:06-03:00",
+    "approvedDate": "2025-06-28 09:44:01",
+    "paidAt": "2025-06-28 09:44:01",
+    "refundedAt": null,
+    "customer": {
+        "name": "Julia Silva Carvalho",
+        "email": "julia.silva.carvalho@email.com",
+        "phone": null,
+        "document": {
+            "number": "54117420801",
+            "type": "CPF"
+        },
+        "country": "BR",
+        "ip": "64.23.135.43"
+    },
+    "items": [
+        {
+            "id": "PROD_685fe391933a9",
+            "title": "Produto 35",
+            "quantity": 1,
+            "unitPrice": "3500"
+        }
+    ],
+    "amount": "3500",
+    "fee": {
+        "fixedAmount": 0,
+        "netAmount": "3500"
+    },
+    "trackingParameters": {
+        "sck": "FBjLj685fdf8f91636a22858b940chQwK21wXxR28-06 CTV 6 \u2014 C\u00f3pia|120227203746860470hQwK21wXxRAIFONUUU|120227203747080470hQwK21wXxR6|120227203747780470hQwK21wXxRFacebook_Mobile_Feed",
+        "utm_campaign": "28-06 CTV 6 \u2014 C\u00f3pia|120227203746860470",
+        "utm_medium": "AIFONUUU|120227203747080470",
+        "utm_content": "6|120227203747780470",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": "FBjLj685fdf8f91636a22858b940chQwK21wXxR28-06 CTV 6 \u2014 C\u00f3pia|120227203746860470hQwK21wXxRAIFONUUU|120227203747080470hQwK21wXxR6|120227203747780470hQwK21wXxRFacebook_Mobile_Feed"
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-28 09:44:01] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "be48f64c-5dbf-4174-a3dc-900f913777ff",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "paid",
+    "createdAt": "2025-06-28 12:42:06",
+    "approvedDate": "2025-06-28 12:44:01",
+    "refundedAt": null,
+    "customer": {
+        "name": "Julia Silva Carvalho",
+        "email": "julia.silva.carvalho@email.com",
+        "phone": null,
+        "document": "54117420801",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_685fe391933a9",
+            "name": "Produto 35",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": "3500"
+        }
+    ],
+    "trackingParameters": {
+        "src": null,
+        "sck": "FBjLj685fdf8f91636a22858b940chQwK21wXxR28-06 CTV 6 \u2014 C\u00f3pia|120227203746860470hQwK21wXxRAIFONUUU|120227203747080470hQwK21wXxR6|120227203747780470hQwK21wXxRFacebook_Mobile_Feed",
+        "utm_source": null,
+        "utm_campaign": "28-06 CTV 6 \u2014 C\u00f3pia|120227203746860470",
+        "utm_medium": "AIFONUUU|120227203747080470",
+        "utm_content": "6|120227203747780470",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": "FBjLj685fdf8f91636a22858b940chQwK21wXxR28-06 CTV 6 \u2014 C\u00f3pia|120227203746860470hQwK21wXxRAIFONUUU|120227203747080470hQwK21wXxR6|120227203747780470hQwK21wXxRFacebook_Mobile_Feed",
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": "3500",
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": "3500"
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-28 09:44:01] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-06-28 09:44:01] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-06-28 14:39:33] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"fdb111bb-25f5-406a-8e43-7a170c51b442\",\"platform\":\"PayHubr\",\"paymentMethod\":\"pix\",\"status\":\"paid\",\"createdAt\":\"2025-06-28T14:37:54-03:00\",\"approvedDate\":\"2025-06-28 14:39:33\",\"paidAt\":\"2025-06-28 14:39:33\",\"refundedAt\":null,\"customer\":{\"name\":\"Beatriz Barbosa Ferreira\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":{\"number\":\"81175308480\",\"type\":\"CPF\"},\"country\":\"BR\",\"ip\":\"64.23.135.43\"},\"items\":[{\"id\":\"PROD_686028d57b379\",\"title\":\"Produto 55.73\",\"quantity\":1,\"unitPrice\":\"5573\"}],\"amount\":\"5573\",\"fee\":{\"fixedAmount\":0,\"netAmount\":\"5573\"},\"trackingParameters\":{\"src\":\"FBjLj68602665ca714b2f38bc10b5\",\"sck\":\"FBjLj68602665ca714b2f38bc10b5hQwK21wXxR28-06 CTV 06 SEM ALERTA|120227231155230470hQwK21wXxRME DE MEU ROI SAFADO|120227231155240470hQwK21wXxR06|120227231155220470hQwK21wXxRFacebook_Mobile_Feed\",\"utm_source\":\"FBjLj68602665ca714b2f38bc10b5\",\"utm_campaign\":\"28-06 CTV 06 SEM ALERTA|120227231155230470\",\"utm_medium\":\"ME DE MEU ROI SAFADO|120227231155240470\",\"utm_content\":\"06|120227231155220470\",\"utm_term\":\"Facebook_Mobile_Feed\",\"xcod\":\"FBjLj68602665ca714b2f38bc10b5hQwK21wXxR28-06 CTV 06 SEM ALERTA|120227231155230470hQwK21wXxRME DE MEU ROI SAFADO|120227231155240470hQwK21wXxR06|120227231155220470hQwK21wXxRFacebook_Mobile_Feed\"},\"isTest\":false}"
+}
+----------------------------------------
+[2025-06-28 14:39:33] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "fdb111bb-25f5-406a-8e43-7a170c51b442",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "paid",
+    "createdAt": "2025-06-28T14:37:54-03:00",
+    "approvedDate": "2025-06-28 14:39:33",
+    "paidAt": "2025-06-28 14:39:33",
+    "refundedAt": null,
+    "customer": {
+        "name": "Beatriz Barbosa Ferreira",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": {
+            "number": "81175308480",
+            "type": "CPF"
+        },
+        "country": "BR",
+        "ip": "64.23.135.43"
+    },
+    "items": [
+        {
+            "id": "PROD_686028d57b379",
+            "title": "Produto 55.73",
+            "quantity": 1,
+            "unitPrice": "5573"
+        }
+    ],
+    "amount": "5573",
+    "fee": {
+        "fixedAmount": 0,
+        "netAmount": "5573"
+    },
+    "trackingParameters": {
+        "src": "FBjLj68602665ca714b2f38bc10b5",
+        "sck": "FBjLj68602665ca714b2f38bc10b5hQwK21wXxR28-06 CTV 06 SEM ALERTA|120227231155230470hQwK21wXxRME DE MEU ROI SAFADO|120227231155240470hQwK21wXxR06|120227231155220470hQwK21wXxRFacebook_Mobile_Feed",
+        "utm_source": "FBjLj68602665ca714b2f38bc10b5",
+        "utm_campaign": "28-06 CTV 06 SEM ALERTA|120227231155230470",
+        "utm_medium": "ME DE MEU ROI SAFADO|120227231155240470",
+        "utm_content": "06|120227231155220470",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": "FBjLj68602665ca714b2f38bc10b5hQwK21wXxR28-06 CTV 06 SEM ALERTA|120227231155230470hQwK21wXxRME DE MEU ROI SAFADO|120227231155240470hQwK21wXxR06|120227231155220470hQwK21wXxRFacebook_Mobile_Feed"
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-28 14:39:33] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "fdb111bb-25f5-406a-8e43-7a170c51b442",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "paid",
+    "createdAt": "2025-06-28 17:37:54",
+    "approvedDate": "2025-06-28 17:39:33",
+    "refundedAt": null,
+    "customer": {
+        "name": "Beatriz Barbosa Ferreira",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "81175308480",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_686028d57b379",
+            "name": "Produto 55.73",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": "5573"
+        }
+    ],
+    "trackingParameters": {
+        "src": "FBjLj68602665ca714b2f38bc10b5",
+        "sck": "FBjLj68602665ca714b2f38bc10b5hQwK21wXxR28-06 CTV 06 SEM ALERTA|120227231155230470hQwK21wXxRME DE MEU ROI SAFADO|120227231155240470hQwK21wXxR06|120227231155220470hQwK21wXxRFacebook_Mobile_Feed",
+        "utm_source": "FBjLj68602665ca714b2f38bc10b5",
+        "utm_campaign": "28-06 CTV 06 SEM ALERTA|120227231155230470",
+        "utm_medium": "ME DE MEU ROI SAFADO|120227231155240470",
+        "utm_content": "06|120227231155220470",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": "FBjLj68602665ca714b2f38bc10b5hQwK21wXxR28-06 CTV 06 SEM ALERTA|120227231155230470hQwK21wXxRME DE MEU ROI SAFADO|120227231155240470hQwK21wXxR06|120227231155220470hQwK21wXxRFacebook_Mobile_Feed",
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": "5573",
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": "5573"
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-28 14:39:33] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-06-28 14:39:33] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-06-28 14:41:40] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"b4b5fcb9-b03d-42d8-a184-dfa336df7e0e\",\"platform\":\"PayHubr\",\"paymentMethod\":\"pix\",\"status\":\"paid\",\"createdAt\":\"2025-06-28T14:40:37-03:00\",\"approvedDate\":\"2025-06-28 14:41:40\",\"paidAt\":\"2025-06-28 14:41:40\",\"refundedAt\":null,\"customer\":{\"name\":\"Alice Gomes Carvalho\",\"email\":\"alice.gomes.carvalho@email.com\",\"phone\":null,\"document\":{\"number\":\"04581557216\",\"type\":\"CPF\"},\"country\":\"BR\",\"ip\":\"64.23.135.43\"},\"items\":[{\"id\":\"PROD_686029540c10c\",\"title\":\"Produto 35\",\"quantity\":1,\"unitPrice\":\"3500\"}],\"amount\":\"3500\",\"fee\":{\"fixedAmount\":0,\"netAmount\":\"3500\"},\"trackingParameters\":{\"src\":\"FBjLj68602665ca714b2f38bc10b5\",\"sck\":\"FBjLj68602665ca714b2f38bc10b5hQwK21wXxR28-06 CTV 06 SEM ALERTA|120227231155230470hQwK21wXxRME DE MEU ROI SAFADO|120227231155240470hQwK21wXxR06|120227231155220470hQwK21wXxRFacebook_Mobile_Feed\",\"utm_source\":\"FBjLj68602665ca714b2f38bc10b5\",\"utm_campaign\":\"28-06 CTV 06 SEM ALERTA|120227231155230470\",\"utm_medium\":\"ME DE MEU ROI SAFADO|120227231155240470\",\"utm_content\":\"06|120227231155220470\",\"utm_term\":\"Facebook_Mobile_Feed\",\"xcod\":\"FBjLj68602665ca714b2f38bc10b5hQwK21wXxR28-06 CTV 06 SEM ALERTA|120227231155230470hQwK21wXxRME DE MEU ROI SAFADO|120227231155240470hQwK21wXxR06|120227231155220470hQwK21wXxRFacebook_Mobile_Feed\"},\"isTest\":false}"
+}
+----------------------------------------
+[2025-06-28 14:41:40] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "b4b5fcb9-b03d-42d8-a184-dfa336df7e0e",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "paid",
+    "createdAt": "2025-06-28T14:40:37-03:00",
+    "approvedDate": "2025-06-28 14:41:40",
+    "paidAt": "2025-06-28 14:41:40",
+    "refundedAt": null,
+    "customer": {
+        "name": "Alice Gomes Carvalho",
+        "email": "alice.gomes.carvalho@email.com",
+        "phone": null,
+        "document": {
+            "number": "04581557216",
+            "type": "CPF"
+        },
+        "country": "BR",
+        "ip": "64.23.135.43"
+    },
+    "items": [
+        {
+            "id": "PROD_686029540c10c",
+            "title": "Produto 35",
+            "quantity": 1,
+            "unitPrice": "3500"
+        }
+    ],
+    "amount": "3500",
+    "fee": {
+        "fixedAmount": 0,
+        "netAmount": "3500"
+    },
+    "trackingParameters": {
+        "src": "FBjLj68602665ca714b2f38bc10b5",
+        "sck": "FBjLj68602665ca714b2f38bc10b5hQwK21wXxR28-06 CTV 06 SEM ALERTA|120227231155230470hQwK21wXxRME DE MEU ROI SAFADO|120227231155240470hQwK21wXxR06|120227231155220470hQwK21wXxRFacebook_Mobile_Feed",
+        "utm_source": "FBjLj68602665ca714b2f38bc10b5",
+        "utm_campaign": "28-06 CTV 06 SEM ALERTA|120227231155230470",
+        "utm_medium": "ME DE MEU ROI SAFADO|120227231155240470",
+        "utm_content": "06|120227231155220470",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": "FBjLj68602665ca714b2f38bc10b5hQwK21wXxR28-06 CTV 06 SEM ALERTA|120227231155230470hQwK21wXxRME DE MEU ROI SAFADO|120227231155240470hQwK21wXxR06|120227231155220470hQwK21wXxRFacebook_Mobile_Feed"
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-28 14:41:40] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "b4b5fcb9-b03d-42d8-a184-dfa336df7e0e",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "paid",
+    "createdAt": "2025-06-28 17:40:37",
+    "approvedDate": "2025-06-28 17:41:40",
+    "refundedAt": null,
+    "customer": {
+        "name": "Alice Gomes Carvalho",
+        "email": "alice.gomes.carvalho@email.com",
+        "phone": null,
+        "document": "04581557216",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_686029540c10c",
+            "name": "Produto 35",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": "3500"
+        }
+    ],
+    "trackingParameters": {
+        "src": "FBjLj68602665ca714b2f38bc10b5",
+        "sck": "FBjLj68602665ca714b2f38bc10b5hQwK21wXxR28-06 CTV 06 SEM ALERTA|120227231155230470hQwK21wXxRME DE MEU ROI SAFADO|120227231155240470hQwK21wXxR06|120227231155220470hQwK21wXxRFacebook_Mobile_Feed",
+        "utm_source": "FBjLj68602665ca714b2f38bc10b5",
+        "utm_campaign": "28-06 CTV 06 SEM ALERTA|120227231155230470",
+        "utm_medium": "ME DE MEU ROI SAFADO|120227231155240470",
+        "utm_content": "06|120227231155220470",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": "FBjLj68602665ca714b2f38bc10b5hQwK21wXxR28-06 CTV 06 SEM ALERTA|120227231155230470hQwK21wXxRME DE MEU ROI SAFADO|120227231155240470hQwK21wXxR06|120227231155220470hQwK21wXxRFacebook_Mobile_Feed",
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": "3500",
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": "3500"
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-28 14:41:40] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-06-28 14:41:40] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-06-28 14:55:54] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"105630e1-1df9-4108-b43c-649dbef86ad9\",\"platform\":\"PayHubr\",\"paymentMethod\":\"pix\",\"status\":\"paid\",\"createdAt\":\"2025-06-28T14:54:34-03:00\",\"approvedDate\":\"2025-06-28 14:55:54\",\"paidAt\":\"2025-06-28 14:55:54\",\"refundedAt\":null,\"customer\":{\"name\":\"Bruno Santos Oliveira\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":{\"number\":\"53618567111\",\"type\":\"CPF\"},\"country\":\"BR\",\"ip\":\"64.23.135.43\"},\"items\":[{\"id\":\"PROD_68602caacb0bf\",\"title\":\"Produto 55.73\",\"quantity\":1,\"unitPrice\":\"5573\"}],\"amount\":\"5573\",\"fee\":{\"fixedAmount\":0,\"netAmount\":\"5573\"},\"trackingParameters\":[],\"isTest\":false}"
+}
+----------------------------------------
+[2025-06-28 14:55:54] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "105630e1-1df9-4108-b43c-649dbef86ad9",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "paid",
+    "createdAt": "2025-06-28T14:54:34-03:00",
+    "approvedDate": "2025-06-28 14:55:54",
+    "paidAt": "2025-06-28 14:55:54",
+    "refundedAt": null,
+    "customer": {
+        "name": "Bruno Santos Oliveira",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": {
+            "number": "53618567111",
+            "type": "CPF"
+        },
+        "country": "BR",
+        "ip": "64.23.135.43"
+    },
+    "items": [
+        {
+            "id": "PROD_68602caacb0bf",
+            "title": "Produto 55.73",
+            "quantity": 1,
+            "unitPrice": "5573"
+        }
+    ],
+    "amount": "5573",
+    "fee": {
+        "fixedAmount": 0,
+        "netAmount": "5573"
+    },
+    "trackingParameters": [],
+    "isTest": false
+}
+----------------------------------------
+[2025-06-28 14:55:54] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "105630e1-1df9-4108-b43c-649dbef86ad9",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "paid",
+    "createdAt": "2025-06-28 17:54:34",
+    "approvedDate": "2025-06-28 17:55:54",
+    "refundedAt": null,
+    "customer": {
+        "name": "Bruno Santos Oliveira",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "53618567111",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_68602caacb0bf",
+            "name": "Produto 55.73",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": "5573"
+        }
+    ],
+    "trackingParameters": {
+        "src": null,
+        "sck": null,
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null,
+        "utm_content": null,
+        "utm_term": null,
+        "xcod": null,
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": "5573",
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": "5573"
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-28 14:55:54] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-06-28 14:55:54] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-06-28 14:57:39] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"b986a725-63ec-4cf3-9845-d886dc0ab5e2\",\"platform\":\"PayHubr\",\"paymentMethod\":\"pix\",\"status\":\"paid\",\"createdAt\":\"2025-06-28T14:54:35-03:00\",\"approvedDate\":\"2025-06-28 14:57:39\",\"paidAt\":\"2025-06-28 14:57:39\",\"refundedAt\":null,\"customer\":{\"name\":\"Pedro Santos Rodrigues\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":{\"number\":\"44258107751\",\"type\":\"CPF\"},\"country\":\"BR\",\"ip\":\"64.23.135.43\"},\"items\":[{\"id\":\"PROD_68602d13de39d\",\"title\":\"Produto 55.73\",\"quantity\":1,\"unitPrice\":\"5573\"}],\"amount\":\"5573\",\"fee\":{\"fixedAmount\":0,\"netAmount\":\"5573\"},\"trackingParameters\":{\"src\":\"FBjLj68602a8e48c0eca429dda609\",\"sck\":\"FBjLj68602a8e48c0eca429dda609hQwK21wXxR28-06 CTV 14 SEM ALERTA \\u2014 C\\u00f3pia|120227231372810470hQwK21wXxRME DE MEU ROI SAFADO|120227231372620470hQwK21wXxR14|120227231372390470hQwK21wXxRFacebook_Mobile_Feed\",\"utm_source\":\"FBjLj68602a8e48c0eca429dda609\",\"utm_campaign\":\"28-06 CTV 14 SEM ALERTA \\u2014 C\\u00f3pia|120227231372810470\",\"utm_medium\":\"ME DE MEU ROI SAFADO|120227231372620470\",\"utm_content\":\"14|120227231372390470\",\"utm_term\":\"Facebook_Mobile_Feed\",\"xcod\":\"FBjLj68602a8e48c0eca429dda609hQwK21wXxR28-06 CTV 14 SEM ALERTA \\u2014 C\\u00f3pia|120227231372810470hQwK21wXxRME DE MEU ROI SAFADO|120227231372620470hQwK21wXxR14|120227231372390470hQwK21wXxRFacebook_Mobile_Feed\"},\"isTest\":false}"
+}
+----------------------------------------
+[2025-06-28 14:57:39] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "b986a725-63ec-4cf3-9845-d886dc0ab5e2",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "paid",
+    "createdAt": "2025-06-28T14:54:35-03:00",
+    "approvedDate": "2025-06-28 14:57:39",
+    "paidAt": "2025-06-28 14:57:39",
+    "refundedAt": null,
+    "customer": {
+        "name": "Pedro Santos Rodrigues",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": {
+            "number": "44258107751",
+            "type": "CPF"
+        },
+        "country": "BR",
+        "ip": "64.23.135.43"
+    },
+    "items": [
+        {
+            "id": "PROD_68602d13de39d",
+            "title": "Produto 55.73",
+            "quantity": 1,
+            "unitPrice": "5573"
+        }
+    ],
+    "amount": "5573",
+    "fee": {
+        "fixedAmount": 0,
+        "netAmount": "5573"
+    },
+    "trackingParameters": {
+        "src": "FBjLj68602a8e48c0eca429dda609",
+        "sck": "FBjLj68602a8e48c0eca429dda609hQwK21wXxR28-06 CTV 14 SEM ALERTA \u2014 C\u00f3pia|120227231372810470hQwK21wXxRME DE MEU ROI SAFADO|120227231372620470hQwK21wXxR14|120227231372390470hQwK21wXxRFacebook_Mobile_Feed",
+        "utm_source": "FBjLj68602a8e48c0eca429dda609",
+        "utm_campaign": "28-06 CTV 14 SEM ALERTA \u2014 C\u00f3pia|120227231372810470",
+        "utm_medium": "ME DE MEU ROI SAFADO|120227231372620470",
+        "utm_content": "14|120227231372390470",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": "FBjLj68602a8e48c0eca429dda609hQwK21wXxR28-06 CTV 14 SEM ALERTA \u2014 C\u00f3pia|120227231372810470hQwK21wXxRME DE MEU ROI SAFADO|120227231372620470hQwK21wXxR14|120227231372390470hQwK21wXxRFacebook_Mobile_Feed"
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-28 14:57:39] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "b986a725-63ec-4cf3-9845-d886dc0ab5e2",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "paid",
+    "createdAt": "2025-06-28 17:54:35",
+    "approvedDate": "2025-06-28 17:57:39",
+    "refundedAt": null,
+    "customer": {
+        "name": "Pedro Santos Rodrigues",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "44258107751",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_68602d13de39d",
+            "name": "Produto 55.73",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": "5573"
+        }
+    ],
+    "trackingParameters": {
+        "src": "FBjLj68602a8e48c0eca429dda609",
+        "sck": "FBjLj68602a8e48c0eca429dda609hQwK21wXxR28-06 CTV 14 SEM ALERTA \u2014 C\u00f3pia|120227231372810470hQwK21wXxRME DE MEU ROI SAFADO|120227231372620470hQwK21wXxR14|120227231372390470hQwK21wXxRFacebook_Mobile_Feed",
+        "utm_source": "FBjLj68602a8e48c0eca429dda609",
+        "utm_campaign": "28-06 CTV 14 SEM ALERTA \u2014 C\u00f3pia|120227231372810470",
+        "utm_medium": "ME DE MEU ROI SAFADO|120227231372620470",
+        "utm_content": "14|120227231372390470",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": "FBjLj68602a8e48c0eca429dda609hQwK21wXxR28-06 CTV 14 SEM ALERTA \u2014 C\u00f3pia|120227231372810470hQwK21wXxRME DE MEU ROI SAFADO|120227231372620470hQwK21wXxR14|120227231372390470hQwK21wXxRFacebook_Mobile_Feed",
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": "5573",
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": "5573"
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-28 14:57:39] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-06-28 14:57:39] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-06-28 15:03:26] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"a6a6fa9f-58a9-499c-be82-aa647d92d3f0\",\"platform\":\"PayHubr\",\"paymentMethod\":\"pix\",\"status\":\"paid\",\"createdAt\":\"2025-06-28T15:01:15-03:00\",\"approvedDate\":\"2025-06-28 15:03:26\",\"paidAt\":\"2025-06-28 15:03:26\",\"refundedAt\":null,\"customer\":{\"name\":\"Jo\\u00e3o Alves Carvalho\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":{\"number\":\"35742111711\",\"type\":\"CPF\"},\"country\":\"BR\",\"ip\":\"64.23.135.43\"},\"items\":[{\"id\":\"PROD_68602e6eb77b8\",\"title\":\"Produto 55.73\",\"quantity\":1,\"unitPrice\":\"5573\"}],\"amount\":\"5573\",\"fee\":{\"fixedAmount\":0,\"netAmount\":\"5573\"},\"trackingParameters\":{\"src\":\"FBjLj686029c0a916a8b4c2a07ed5\",\"sck\":\"FBjLj686029c0a916a8b4c2a07ed5hQwK21wXxR28-06 CTV 14 SEM ALERTA \\u2014 C\\u00f3pia|120227231372780470hQwK21wXxRME DE MEU ROI SAFADO|120227231372590470hQwK21wXxR14|120227231372360470hQwK21wXxRFacebook_Mobile_Feed\",\"utm_source\":\"FBjLj686029c0a916a8b4c2a07ed5\",\"utm_campaign\":\"28-06 CTV 14 SEM ALERTA \\u2014 C\\u00f3pia|120227231372780470\",\"utm_medium\":\"ME DE MEU ROI SAFADO|120227231372590470\",\"utm_content\":\"14|120227231372360470\",\"utm_term\":\"Facebook_Mobile_Feed\",\"xcod\":\"FBjLj686029c0a916a8b4c2a07ed5hQwK21wXxR28-06 CTV 14 SEM ALERTA \\u2014 C\\u00f3pia|120227231372780470hQwK21wXxRME DE MEU ROI SAFADO|120227231372590470hQwK21wXxR14|120227231372360470hQwK21wXxRFacebook_Mobile_Feed\"},\"isTest\":false}"
+}
+----------------------------------------
+[2025-06-28 15:03:26] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "a6a6fa9f-58a9-499c-be82-aa647d92d3f0",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "paid",
+    "createdAt": "2025-06-28T15:01:15-03:00",
+    "approvedDate": "2025-06-28 15:03:26",
+    "paidAt": "2025-06-28 15:03:26",
+    "refundedAt": null,
+    "customer": {
+        "name": "Jo\u00e3o Alves Carvalho",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": {
+            "number": "35742111711",
+            "type": "CPF"
+        },
+        "country": "BR",
+        "ip": "64.23.135.43"
+    },
+    "items": [
+        {
+            "id": "PROD_68602e6eb77b8",
+            "title": "Produto 55.73",
+            "quantity": 1,
+            "unitPrice": "5573"
+        }
+    ],
+    "amount": "5573",
+    "fee": {
+        "fixedAmount": 0,
+        "netAmount": "5573"
+    },
+    "trackingParameters": {
+        "src": "FBjLj686029c0a916a8b4c2a07ed5",
+        "sck": "FBjLj686029c0a916a8b4c2a07ed5hQwK21wXxR28-06 CTV 14 SEM ALERTA \u2014 C\u00f3pia|120227231372780470hQwK21wXxRME DE MEU ROI SAFADO|120227231372590470hQwK21wXxR14|120227231372360470hQwK21wXxRFacebook_Mobile_Feed",
+        "utm_source": "FBjLj686029c0a916a8b4c2a07ed5",
+        "utm_campaign": "28-06 CTV 14 SEM ALERTA \u2014 C\u00f3pia|120227231372780470",
+        "utm_medium": "ME DE MEU ROI SAFADO|120227231372590470",
+        "utm_content": "14|120227231372360470",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": "FBjLj686029c0a916a8b4c2a07ed5hQwK21wXxR28-06 CTV 14 SEM ALERTA \u2014 C\u00f3pia|120227231372780470hQwK21wXxRME DE MEU ROI SAFADO|120227231372590470hQwK21wXxR14|120227231372360470hQwK21wXxRFacebook_Mobile_Feed"
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-28 15:03:26] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "a6a6fa9f-58a9-499c-be82-aa647d92d3f0",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "paid",
+    "createdAt": "2025-06-28 18:01:15",
+    "approvedDate": "2025-06-28 18:03:26",
+    "refundedAt": null,
+    "customer": {
+        "name": "Jo\u00e3o Alves Carvalho",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "35742111711",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_68602e6eb77b8",
+            "name": "Produto 55.73",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": "5573"
+        }
+    ],
+    "trackingParameters": {
+        "src": "FBjLj686029c0a916a8b4c2a07ed5",
+        "sck": "FBjLj686029c0a916a8b4c2a07ed5hQwK21wXxR28-06 CTV 14 SEM ALERTA \u2014 C\u00f3pia|120227231372780470hQwK21wXxRME DE MEU ROI SAFADO|120227231372590470hQwK21wXxR14|120227231372360470hQwK21wXxRFacebook_Mobile_Feed",
+        "utm_source": "FBjLj686029c0a916a8b4c2a07ed5",
+        "utm_campaign": "28-06 CTV 14 SEM ALERTA \u2014 C\u00f3pia|120227231372780470",
+        "utm_medium": "ME DE MEU ROI SAFADO|120227231372590470",
+        "utm_content": "14|120227231372360470",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": "FBjLj686029c0a916a8b4c2a07ed5hQwK21wXxR28-06 CTV 14 SEM ALERTA \u2014 C\u00f3pia|120227231372780470hQwK21wXxRME DE MEU ROI SAFADO|120227231372590470hQwK21wXxR14|120227231372360470hQwK21wXxRFacebook_Mobile_Feed",
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": "5573",
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": "5573"
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-28 15:03:26] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-06-28 15:03:27] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-06-28 15:06:40] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"42b56271-1fa6-4412-b4ba-f3560c96906c\",\"platform\":\"PayHubr\",\"paymentMethod\":\"pix\",\"status\":\"paid\",\"createdAt\":\"2025-06-28T15:02:06-03:00\",\"approvedDate\":\"2025-06-28 15:06:40\",\"paidAt\":\"2025-06-28 15:06:40\",\"refundedAt\":null,\"customer\":{\"name\":\"Pedro Silva Silva\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":{\"number\":\"44881812955\",\"type\":\"CPF\"},\"country\":\"BR\",\"ip\":\"64.23.135.43\"},\"items\":[{\"id\":\"PROD_68602f30a5533\",\"title\":\"Produto 55.73\",\"quantity\":1,\"unitPrice\":\"5573\"}],\"amount\":\"5573\",\"fee\":{\"fixedAmount\":0,\"netAmount\":\"5573\"},\"trackingParameters\":{\"src\":\"FBjLj68602b07a916a8b4c2a112a2\",\"sck\":\"FBjLj68602b07a916a8b4c2a112a2hQwK21wXxR28-06 CTV 06 SEM ALERTA|120227231155230470hQwK21wXxRME DE MEU ROI SAFADO|120227231155240470hQwK21wXxR06|120227231155220470hQwK21wXxRFacebook_Mobile_Feed\",\"utm_source\":\"FBjLj68602b07a916a8b4c2a112a2\",\"utm_campaign\":\"28-06 CTV 06 SEM ALERTA|120227231155230470\",\"utm_medium\":\"ME DE MEU ROI SAFADO|120227231155240470\",\"utm_content\":\"06|120227231155220470\",\"utm_term\":\"Facebook_Mobile_Feed\",\"xcod\":\"FBjLj68602b07a916a8b4c2a112a2hQwK21wXxR28-06 CTV 06 SEM ALERTA|120227231155230470hQwK21wXxRME DE MEU ROI SAFADO|120227231155240470hQwK21wXxR06|120227231155220470hQwK21wXxRFacebook_Mobile_Feed\"},\"isTest\":false}"
+}
+----------------------------------------
+[2025-06-28 15:06:40] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "42b56271-1fa6-4412-b4ba-f3560c96906c",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "paid",
+    "createdAt": "2025-06-28T15:02:06-03:00",
+    "approvedDate": "2025-06-28 15:06:40",
+    "paidAt": "2025-06-28 15:06:40",
+    "refundedAt": null,
+    "customer": {
+        "name": "Pedro Silva Silva",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": {
+            "number": "44881812955",
+            "type": "CPF"
+        },
+        "country": "BR",
+        "ip": "64.23.135.43"
+    },
+    "items": [
+        {
+            "id": "PROD_68602f30a5533",
+            "title": "Produto 55.73",
+            "quantity": 1,
+            "unitPrice": "5573"
+        }
+    ],
+    "amount": "5573",
+    "fee": {
+        "fixedAmount": 0,
+        "netAmount": "5573"
+    },
+    "trackingParameters": {
+        "src": "FBjLj68602b07a916a8b4c2a112a2",
+        "sck": "FBjLj68602b07a916a8b4c2a112a2hQwK21wXxR28-06 CTV 06 SEM ALERTA|120227231155230470hQwK21wXxRME DE MEU ROI SAFADO|120227231155240470hQwK21wXxR06|120227231155220470hQwK21wXxRFacebook_Mobile_Feed",
+        "utm_source": "FBjLj68602b07a916a8b4c2a112a2",
+        "utm_campaign": "28-06 CTV 06 SEM ALERTA|120227231155230470",
+        "utm_medium": "ME DE MEU ROI SAFADO|120227231155240470",
+        "utm_content": "06|120227231155220470",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": "FBjLj68602b07a916a8b4c2a112a2hQwK21wXxR28-06 CTV 06 SEM ALERTA|120227231155230470hQwK21wXxRME DE MEU ROI SAFADO|120227231155240470hQwK21wXxR06|120227231155220470hQwK21wXxRFacebook_Mobile_Feed"
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-28 15:06:40] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "42b56271-1fa6-4412-b4ba-f3560c96906c",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "paid",
+    "createdAt": "2025-06-28 18:02:06",
+    "approvedDate": "2025-06-28 18:06:40",
+    "refundedAt": null,
+    "customer": {
+        "name": "Pedro Silva Silva",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "44881812955",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_68602f30a5533",
+            "name": "Produto 55.73",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": "5573"
+        }
+    ],
+    "trackingParameters": {
+        "src": "FBjLj68602b07a916a8b4c2a112a2",
+        "sck": "FBjLj68602b07a916a8b4c2a112a2hQwK21wXxR28-06 CTV 06 SEM ALERTA|120227231155230470hQwK21wXxRME DE MEU ROI SAFADO|120227231155240470hQwK21wXxR06|120227231155220470hQwK21wXxRFacebook_Mobile_Feed",
+        "utm_source": "FBjLj68602b07a916a8b4c2a112a2",
+        "utm_campaign": "28-06 CTV 06 SEM ALERTA|120227231155230470",
+        "utm_medium": "ME DE MEU ROI SAFADO|120227231155240470",
+        "utm_content": "06|120227231155220470",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": "FBjLj68602b07a916a8b4c2a112a2hQwK21wXxR28-06 CTV 06 SEM ALERTA|120227231155230470hQwK21wXxRME DE MEU ROI SAFADO|120227231155240470hQwK21wXxR06|120227231155220470hQwK21wXxRFacebook_Mobile_Feed",
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": "5573",
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": "5573"
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-28 15:06:40] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-06-28 15:06:40] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-06-28 15:09:28] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"535794b7-50f7-43b1-92cd-c03c9d44cf12\",\"platform\":\"PayHubr\",\"paymentMethod\":\"pix\",\"status\":\"paid\",\"createdAt\":\"2025-06-28T15:05:55-03:00\",\"approvedDate\":\"2025-06-28 15:09:28\",\"paidAt\":\"2025-06-28 15:09:28\",\"refundedAt\":null,\"customer\":{\"name\":\"Lucas Ferreira Lima\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":{\"number\":\"45639917083\",\"type\":\"CPF\"},\"country\":\"BR\",\"ip\":\"64.23.135.43\"},\"items\":[{\"id\":\"PROD_68602fd8b7136\",\"title\":\"Produto 55.73\",\"quantity\":1,\"unitPrice\":\"5573\"}],\"amount\":\"5573\",\"fee\":{\"fixedAmount\":0,\"netAmount\":\"5573\"},\"trackingParameters\":{\"src\":\"FBjLj68602beca1e7fd892a0f4aa9\",\"sck\":\"FBjLj68602beca1e7fd892a0f4aa9hQwK21wXxR28-06 CTV 14 SEM ALERTA \\u2014 C\\u00f3pia|120227231372820470hQwK21wXxRME DE MEU ROI SAFADO|120227231372630470hQwK21wXxR14|120227231372400470hQwK21wXxRFacebook_Mobile_Feed\",\"utm_source\":\"FBjLj68602beca1e7fd892a0f4aa9\",\"utm_campaign\":\"28-06 CTV 14 SEM ALERTA \\u2014 C\\u00f3pia|120227231372820470\",\"utm_medium\":\"ME DE MEU ROI SAFADO|120227231372630470\",\"utm_content\":\"14|120227231372400470\",\"utm_term\":\"Facebook_Mobile_Feed\",\"xcod\":\"FBjLj68602beca1e7fd892a0f4aa9hQwK21wXxR28-06 CTV 14 SEM ALERTA \\u2014 C\\u00f3pia|120227231372820470hQwK21wXxRME DE MEU ROI SAFADO|120227231372630470hQwK21wXxR14|120227231372400470hQwK21wXxRFacebook_Mobile_Feed\"},\"isTest\":false}"
+}
+----------------------------------------
+[2025-06-28 15:09:28] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "535794b7-50f7-43b1-92cd-c03c9d44cf12",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "paid",
+    "createdAt": "2025-06-28T15:05:55-03:00",
+    "approvedDate": "2025-06-28 15:09:28",
+    "paidAt": "2025-06-28 15:09:28",
+    "refundedAt": null,
+    "customer": {
+        "name": "Lucas Ferreira Lima",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": {
+            "number": "45639917083",
+            "type": "CPF"
+        },
+        "country": "BR",
+        "ip": "64.23.135.43"
+    },
+    "items": [
+        {
+            "id": "PROD_68602fd8b7136",
+            "title": "Produto 55.73",
+            "quantity": 1,
+            "unitPrice": "5573"
+        }
+    ],
+    "amount": "5573",
+    "fee": {
+        "fixedAmount": 0,
+        "netAmount": "5573"
+    },
+    "trackingParameters": {
+        "src": "FBjLj68602beca1e7fd892a0f4aa9",
+        "sck": "FBjLj68602beca1e7fd892a0f4aa9hQwK21wXxR28-06 CTV 14 SEM ALERTA \u2014 C\u00f3pia|120227231372820470hQwK21wXxRME DE MEU ROI SAFADO|120227231372630470hQwK21wXxR14|120227231372400470hQwK21wXxRFacebook_Mobile_Feed",
+        "utm_source": "FBjLj68602beca1e7fd892a0f4aa9",
+        "utm_campaign": "28-06 CTV 14 SEM ALERTA \u2014 C\u00f3pia|120227231372820470",
+        "utm_medium": "ME DE MEU ROI SAFADO|120227231372630470",
+        "utm_content": "14|120227231372400470",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": "FBjLj68602beca1e7fd892a0f4aa9hQwK21wXxR28-06 CTV 14 SEM ALERTA \u2014 C\u00f3pia|120227231372820470hQwK21wXxRME DE MEU ROI SAFADO|120227231372630470hQwK21wXxR14|120227231372400470hQwK21wXxRFacebook_Mobile_Feed"
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-28 15:09:28] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "535794b7-50f7-43b1-92cd-c03c9d44cf12",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "paid",
+    "createdAt": "2025-06-28 18:05:55",
+    "approvedDate": "2025-06-28 18:09:28",
+    "refundedAt": null,
+    "customer": {
+        "name": "Lucas Ferreira Lima",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "45639917083",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_68602fd8b7136",
+            "name": "Produto 55.73",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": "5573"
+        }
+    ],
+    "trackingParameters": {
+        "src": "FBjLj68602beca1e7fd892a0f4aa9",
+        "sck": "FBjLj68602beca1e7fd892a0f4aa9hQwK21wXxR28-06 CTV 14 SEM ALERTA \u2014 C\u00f3pia|120227231372820470hQwK21wXxRME DE MEU ROI SAFADO|120227231372630470hQwK21wXxR14|120227231372400470hQwK21wXxRFacebook_Mobile_Feed",
+        "utm_source": "FBjLj68602beca1e7fd892a0f4aa9",
+        "utm_campaign": "28-06 CTV 14 SEM ALERTA \u2014 C\u00f3pia|120227231372820470",
+        "utm_medium": "ME DE MEU ROI SAFADO|120227231372630470",
+        "utm_content": "14|120227231372400470",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": "FBjLj68602beca1e7fd892a0f4aa9hQwK21wXxR28-06 CTV 14 SEM ALERTA \u2014 C\u00f3pia|120227231372820470hQwK21wXxRME DE MEU ROI SAFADO|120227231372630470hQwK21wXxR14|120227231372400470hQwK21wXxRFacebook_Mobile_Feed",
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": "5573",
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": "5573"
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-28 15:09:28] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-06-28 15:09:28] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-06-28 15:10:19] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"8fe317f1-c609-496b-afe7-67ac26f48bbb\",\"platform\":\"PayHubr\",\"paymentMethod\":\"pix\",\"status\":\"paid\",\"createdAt\":\"2025-06-28T15:03:29-03:00\",\"approvedDate\":\"2025-06-28 15:10:19\",\"paidAt\":\"2025-06-28 15:10:19\",\"refundedAt\":null,\"customer\":{\"name\":\"Rafael Carvalho Ferreira\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":{\"number\":\"83000836500\",\"type\":\"CPF\"},\"country\":\"BR\",\"ip\":\"64.23.135.43\"},\"items\":[{\"id\":\"PROD_6860300b76704\",\"title\":\"Produto 55.73\",\"quantity\":1,\"unitPrice\":\"5573\"}],\"amount\":\"5573\",\"fee\":{\"fixedAmount\":0,\"netAmount\":\"5573\"},\"trackingParameters\":[],\"isTest\":false}"
+}
+----------------------------------------
+[2025-06-28 15:10:19] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "8fe317f1-c609-496b-afe7-67ac26f48bbb",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "paid",
+    "createdAt": "2025-06-28T15:03:29-03:00",
+    "approvedDate": "2025-06-28 15:10:19",
+    "paidAt": "2025-06-28 15:10:19",
+    "refundedAt": null,
+    "customer": {
+        "name": "Rafael Carvalho Ferreira",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": {
+            "number": "83000836500",
+            "type": "CPF"
+        },
+        "country": "BR",
+        "ip": "64.23.135.43"
+    },
+    "items": [
+        {
+            "id": "PROD_6860300b76704",
+            "title": "Produto 55.73",
+            "quantity": 1,
+            "unitPrice": "5573"
+        }
+    ],
+    "amount": "5573",
+    "fee": {
+        "fixedAmount": 0,
+        "netAmount": "5573"
+    },
+    "trackingParameters": [],
+    "isTest": false
+}
+----------------------------------------
+[2025-06-28 15:10:19] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "8fe317f1-c609-496b-afe7-67ac26f48bbb",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "paid",
+    "createdAt": "2025-06-28 18:03:29",
+    "approvedDate": "2025-06-28 18:10:19",
+    "refundedAt": null,
+    "customer": {
+        "name": "Rafael Carvalho Ferreira",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "83000836500",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_6860300b76704",
+            "name": "Produto 55.73",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": "5573"
+        }
+    ],
+    "trackingParameters": {
+        "src": null,
+        "sck": null,
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null,
+        "utm_content": null,
+        "utm_term": null,
+        "xcod": null,
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": "5573",
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": "5573"
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-28 15:10:19] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-06-28 15:10:19] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-06-28 15:12:14] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"6fb79ced-5715-4956-a28c-6c4cbadfdae6\",\"platform\":\"PayHubr\",\"paymentMethod\":\"pix\",\"status\":\"paid\",\"createdAt\":\"2025-06-28T15:10:58-03:00\",\"approvedDate\":\"2025-06-28 15:12:14\",\"paidAt\":\"2025-06-28 15:12:14\",\"refundedAt\":null,\"customer\":{\"name\":\"Felipe Ribeiro Souza\",\"email\":\"felipe.ribeiro.souza@email.com\",\"phone\":null,\"document\":{\"number\":\"82216146021\",\"type\":\"CPF\"},\"country\":\"BR\",\"ip\":\"64.23.135.43\"},\"items\":[{\"id\":\"PROD_6860307e510ae\",\"title\":\"Produto 35\",\"quantity\":1,\"unitPrice\":\"3500\"}],\"amount\":\"3500\",\"fee\":{\"fixedAmount\":0,\"netAmount\":\"3500\"},\"trackingParameters\":{\"src\":\"FBjLj68602beca1e7fd892a0f4aa9\",\"sck\":\"FBjLj68602beca1e7fd892a0f4aa9hQwK21wXxR28-06 CTV 14 SEM ALERTA \\u2014 C\\u00f3pia|120227231372820470hQwK21wXxRME DE MEU ROI SAFADO|120227231372630470hQwK21wXxR14|120227231372400470hQwK21wXxRFacebook_Mobile_Feed\",\"utm_source\":\"FBjLj68602beca1e7fd892a0f4aa9\",\"utm_campaign\":\"28-06 CTV 14 SEM ALERTA \\u2014 C\\u00f3pia|120227231372820470\",\"utm_medium\":\"ME DE MEU ROI SAFADO|120227231372630470\",\"utm_content\":\"14|120227231372400470\",\"utm_term\":\"Facebook_Mobile_Feed\",\"xcod\":\"FBjLj68602beca1e7fd892a0f4aa9hQwK21wXxR28-06 CTV 14 SEM ALERTA \\u2014 C\\u00f3pia|120227231372820470hQwK21wXxRME DE MEU ROI SAFADO|120227231372630470hQwK21wXxR14|120227231372400470hQwK21wXxRFacebook_Mobile_Feed\"},\"isTest\":false}"
+}
+----------------------------------------
+[2025-06-28 15:12:14] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "6fb79ced-5715-4956-a28c-6c4cbadfdae6",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "paid",
+    "createdAt": "2025-06-28T15:10:58-03:00",
+    "approvedDate": "2025-06-28 15:12:14",
+    "paidAt": "2025-06-28 15:12:14",
+    "refundedAt": null,
+    "customer": {
+        "name": "Felipe Ribeiro Souza",
+        "email": "felipe.ribeiro.souza@email.com",
+        "phone": null,
+        "document": {
+            "number": "82216146021",
+            "type": "CPF"
+        },
+        "country": "BR",
+        "ip": "64.23.135.43"
+    },
+    "items": [
+        {
+            "id": "PROD_6860307e510ae",
+            "title": "Produto 35",
+            "quantity": 1,
+            "unitPrice": "3500"
+        }
+    ],
+    "amount": "3500",
+    "fee": {
+        "fixedAmount": 0,
+        "netAmount": "3500"
+    },
+    "trackingParameters": {
+        "src": "FBjLj68602beca1e7fd892a0f4aa9",
+        "sck": "FBjLj68602beca1e7fd892a0f4aa9hQwK21wXxR28-06 CTV 14 SEM ALERTA \u2014 C\u00f3pia|120227231372820470hQwK21wXxRME DE MEU ROI SAFADO|120227231372630470hQwK21wXxR14|120227231372400470hQwK21wXxRFacebook_Mobile_Feed",
+        "utm_source": "FBjLj68602beca1e7fd892a0f4aa9",
+        "utm_campaign": "28-06 CTV 14 SEM ALERTA \u2014 C\u00f3pia|120227231372820470",
+        "utm_medium": "ME DE MEU ROI SAFADO|120227231372630470",
+        "utm_content": "14|120227231372400470",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": "FBjLj68602beca1e7fd892a0f4aa9hQwK21wXxR28-06 CTV 14 SEM ALERTA \u2014 C\u00f3pia|120227231372820470hQwK21wXxRME DE MEU ROI SAFADO|120227231372630470hQwK21wXxR14|120227231372400470hQwK21wXxRFacebook_Mobile_Feed"
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-28 15:12:14] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "6fb79ced-5715-4956-a28c-6c4cbadfdae6",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "paid",
+    "createdAt": "2025-06-28 18:10:58",
+    "approvedDate": "2025-06-28 18:12:14",
+    "refundedAt": null,
+    "customer": {
+        "name": "Felipe Ribeiro Souza",
+        "email": "felipe.ribeiro.souza@email.com",
+        "phone": null,
+        "document": "82216146021",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_6860307e510ae",
+            "name": "Produto 35",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": "3500"
+        }
+    ],
+    "trackingParameters": {
+        "src": "FBjLj68602beca1e7fd892a0f4aa9",
+        "sck": "FBjLj68602beca1e7fd892a0f4aa9hQwK21wXxR28-06 CTV 14 SEM ALERTA \u2014 C\u00f3pia|120227231372820470hQwK21wXxRME DE MEU ROI SAFADO|120227231372630470hQwK21wXxR14|120227231372400470hQwK21wXxRFacebook_Mobile_Feed",
+        "utm_source": "FBjLj68602beca1e7fd892a0f4aa9",
+        "utm_campaign": "28-06 CTV 14 SEM ALERTA \u2014 C\u00f3pia|120227231372820470",
+        "utm_medium": "ME DE MEU ROI SAFADO|120227231372630470",
+        "utm_content": "14|120227231372400470",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": "FBjLj68602beca1e7fd892a0f4aa9hQwK21wXxR28-06 CTV 14 SEM ALERTA \u2014 C\u00f3pia|120227231372820470hQwK21wXxRME DE MEU ROI SAFADO|120227231372630470hQwK21wXxR14|120227231372400470hQwK21wXxRFacebook_Mobile_Feed",
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": "3500",
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": "3500"
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-28 15:12:14] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-06-28 15:12:14] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-06-28 15:21:12] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"7375c155-ad8b-4e76-93c1-db6cadbf8bb3\",\"platform\":\"PayHubr\",\"paymentMethod\":\"pix\",\"status\":\"paid\",\"createdAt\":\"2025-06-28T15:15:46-03:00\",\"approvedDate\":\"2025-06-28 15:21:12\",\"paidAt\":\"2025-06-28 15:21:12\",\"refundedAt\":null,\"customer\":{\"name\":\"Alice Gomes Ferreira\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":{\"number\":\"11182790933\",\"type\":\"CPF\"},\"country\":\"BR\",\"ip\":\"64.23.135.43\"},\"items\":[{\"id\":\"PROD_68603298dd08f\",\"title\":\"Produto 55.73\",\"quantity\":1,\"unitPrice\":\"5573\"}],\"amount\":\"5573\",\"fee\":{\"fixedAmount\":0,\"netAmount\":\"5573\"},\"trackingParameters\":{\"src\":\"FBjLj68602c6f36b1693a4c62315a\",\"sck\":\"FBjLj68602c6f36b1693a4c62315ahQwK21wXxR28-06 CTV 06 SEM ALERTA \\u2014 C\\u00f3pia|120227231372250470hQwK21wXxRME DE MEU ROI SAFADO|120227231372920470hQwK21wXxR06|120227231373060470hQwK21wXxRFacebook_Mobile_Feed\",\"utm_source\":\"FBjLj68602c6f36b1693a4c62315a\",\"utm_campaign\":\"28-06 CTV 06 SEM ALERTA \\u2014 C\\u00f3pia|120227231372250470\",\"utm_medium\":\"ME DE MEU ROI SAFADO|120227231372920470\",\"utm_content\":\"06|120227231373060470\",\"utm_term\":\"Facebook_Mobile_Feed\",\"xcod\":\"FBjLj68602c6f36b1693a4c62315ahQwK21wXxR28-06 CTV 06 SEM ALERTA \\u2014 C\\u00f3pia|120227231372250470hQwK21wXxRME DE MEU ROI SAFADO|120227231372920470hQwK21wXxR06|120227231373060470hQwK21wXxRFacebook_Mobile_Feed\"},\"isTest\":false}"
+}
+----------------------------------------
+[2025-06-28 15:21:12] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "7375c155-ad8b-4e76-93c1-db6cadbf8bb3",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "paid",
+    "createdAt": "2025-06-28T15:15:46-03:00",
+    "approvedDate": "2025-06-28 15:21:12",
+    "paidAt": "2025-06-28 15:21:12",
+    "refundedAt": null,
+    "customer": {
+        "name": "Alice Gomes Ferreira",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": {
+            "number": "11182790933",
+            "type": "CPF"
+        },
+        "country": "BR",
+        "ip": "64.23.135.43"
+    },
+    "items": [
+        {
+            "id": "PROD_68603298dd08f",
+            "title": "Produto 55.73",
+            "quantity": 1,
+            "unitPrice": "5573"
+        }
+    ],
+    "amount": "5573",
+    "fee": {
+        "fixedAmount": 0,
+        "netAmount": "5573"
+    },
+    "trackingParameters": {
+        "src": "FBjLj68602c6f36b1693a4c62315a",
+        "sck": "FBjLj68602c6f36b1693a4c62315ahQwK21wXxR28-06 CTV 06 SEM ALERTA \u2014 C\u00f3pia|120227231372250470hQwK21wXxRME DE MEU ROI SAFADO|120227231372920470hQwK21wXxR06|120227231373060470hQwK21wXxRFacebook_Mobile_Feed",
+        "utm_source": "FBjLj68602c6f36b1693a4c62315a",
+        "utm_campaign": "28-06 CTV 06 SEM ALERTA \u2014 C\u00f3pia|120227231372250470",
+        "utm_medium": "ME DE MEU ROI SAFADO|120227231372920470",
+        "utm_content": "06|120227231373060470",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": "FBjLj68602c6f36b1693a4c62315ahQwK21wXxR28-06 CTV 06 SEM ALERTA \u2014 C\u00f3pia|120227231372250470hQwK21wXxRME DE MEU ROI SAFADO|120227231372920470hQwK21wXxR06|120227231373060470hQwK21wXxRFacebook_Mobile_Feed"
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-28 15:21:12] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "7375c155-ad8b-4e76-93c1-db6cadbf8bb3",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "paid",
+    "createdAt": "2025-06-28 18:15:46",
+    "approvedDate": "2025-06-28 18:21:12",
+    "refundedAt": null,
+    "customer": {
+        "name": "Alice Gomes Ferreira",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "11182790933",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_68603298dd08f",
+            "name": "Produto 55.73",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": "5573"
+        }
+    ],
+    "trackingParameters": {
+        "src": "FBjLj68602c6f36b1693a4c62315a",
+        "sck": "FBjLj68602c6f36b1693a4c62315ahQwK21wXxR28-06 CTV 06 SEM ALERTA \u2014 C\u00f3pia|120227231372250470hQwK21wXxRME DE MEU ROI SAFADO|120227231372920470hQwK21wXxR06|120227231373060470hQwK21wXxRFacebook_Mobile_Feed",
+        "utm_source": "FBjLj68602c6f36b1693a4c62315a",
+        "utm_campaign": "28-06 CTV 06 SEM ALERTA \u2014 C\u00f3pia|120227231372250470",
+        "utm_medium": "ME DE MEU ROI SAFADO|120227231372920470",
+        "utm_content": "06|120227231373060470",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": "FBjLj68602c6f36b1693a4c62315ahQwK21wXxR28-06 CTV 06 SEM ALERTA \u2014 C\u00f3pia|120227231372250470hQwK21wXxRME DE MEU ROI SAFADO|120227231372920470hQwK21wXxR06|120227231373060470hQwK21wXxRFacebook_Mobile_Feed",
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": "5573",
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": "5573"
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-28 15:21:12] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-06-28 15:21:12] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-06-28 15:58:08] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"45cc4617-acbf-4390-9227-b169d7ca8603\",\"platform\":\"PayHubr\",\"paymentMethod\":\"pix\",\"status\":\"paid\",\"createdAt\":\"2025-06-28T15:55:01-03:00\",\"approvedDate\":\"2025-06-28 15:58:08\",\"paidAt\":\"2025-06-28 15:58:08\",\"refundedAt\":null,\"customer\":{\"name\":\"Helena Silva Carvalho\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":{\"number\":\"77545367065\",\"type\":\"CPF\"},\"country\":\"BR\",\"ip\":\"64.23.135.43\"},\"items\":[{\"id\":\"PROD_68603b40d56a8\",\"title\":\"Produto 55.73\",\"quantity\":1,\"unitPrice\":\"5573\"}],\"amount\":\"5573\",\"fee\":{\"fixedAmount\":0,\"netAmount\":\"5573\"},\"trackingParameters\":{\"src\":\"FBjLj6860378758f138e40eda42f0\",\"sck\":\"FBjLj6860378758f138e40eda42f0hQwK21wXxR28-06 CTV 06 SEM ALERTA \\u2014 C\\u00f3pia|120227231372280470hQwK21wXxRME DE MEU ROI SAFADO|120227231372900470hQwK21wXxR06|120227231373040470hQwK21wXxRFacebook_Mobile_Feed\",\"utm_source\":\"FBjLj6860378758f138e40eda42f0\",\"utm_campaign\":\"28-06 CTV 06 SEM ALERTA \\u2014 C\\u00f3pia|120227231372280470\",\"utm_medium\":\"ME DE MEU ROI SAFADO|120227231372900470\",\"utm_content\":\"06|120227231373040470\",\"utm_term\":\"Facebook_Mobile_Feed\",\"xcod\":\"FBjLj6860378758f138e40eda42f0hQwK21wXxR28-06 CTV 06 SEM ALERTA \\u2014 C\\u00f3pia|120227231372280470hQwK21wXxRME DE MEU ROI SAFADO|120227231372900470hQwK21wXxR06|120227231373040470hQwK21wXxRFacebook_Mobile_Feed\"},\"isTest\":false}"
+}
+----------------------------------------
+[2025-06-28 15:58:08] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "45cc4617-acbf-4390-9227-b169d7ca8603",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "paid",
+    "createdAt": "2025-06-28T15:55:01-03:00",
+    "approvedDate": "2025-06-28 15:58:08",
+    "paidAt": "2025-06-28 15:58:08",
+    "refundedAt": null,
+    "customer": {
+        "name": "Helena Silva Carvalho",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": {
+            "number": "77545367065",
+            "type": "CPF"
+        },
+        "country": "BR",
+        "ip": "64.23.135.43"
+    },
+    "items": [
+        {
+            "id": "PROD_68603b40d56a8",
+            "title": "Produto 55.73",
+            "quantity": 1,
+            "unitPrice": "5573"
+        }
+    ],
+    "amount": "5573",
+    "fee": {
+        "fixedAmount": 0,
+        "netAmount": "5573"
+    },
+    "trackingParameters": {
+        "src": "FBjLj6860378758f138e40eda42f0",
+        "sck": "FBjLj6860378758f138e40eda42f0hQwK21wXxR28-06 CTV 06 SEM ALERTA \u2014 C\u00f3pia|120227231372280470hQwK21wXxRME DE MEU ROI SAFADO|120227231372900470hQwK21wXxR06|120227231373040470hQwK21wXxRFacebook_Mobile_Feed",
+        "utm_source": "FBjLj6860378758f138e40eda42f0",
+        "utm_campaign": "28-06 CTV 06 SEM ALERTA \u2014 C\u00f3pia|120227231372280470",
+        "utm_medium": "ME DE MEU ROI SAFADO|120227231372900470",
+        "utm_content": "06|120227231373040470",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": "FBjLj6860378758f138e40eda42f0hQwK21wXxR28-06 CTV 06 SEM ALERTA \u2014 C\u00f3pia|120227231372280470hQwK21wXxRME DE MEU ROI SAFADO|120227231372900470hQwK21wXxR06|120227231373040470hQwK21wXxRFacebook_Mobile_Feed"
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-28 15:58:08] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "45cc4617-acbf-4390-9227-b169d7ca8603",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "paid",
+    "createdAt": "2025-06-28 18:55:01",
+    "approvedDate": "2025-06-28 18:58:08",
+    "refundedAt": null,
+    "customer": {
+        "name": "Helena Silva Carvalho",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "77545367065",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_68603b40d56a8",
+            "name": "Produto 55.73",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": "5573"
+        }
+    ],
+    "trackingParameters": {
+        "src": "FBjLj6860378758f138e40eda42f0",
+        "sck": "FBjLj6860378758f138e40eda42f0hQwK21wXxR28-06 CTV 06 SEM ALERTA \u2014 C\u00f3pia|120227231372280470hQwK21wXxRME DE MEU ROI SAFADO|120227231372900470hQwK21wXxR06|120227231373040470hQwK21wXxRFacebook_Mobile_Feed",
+        "utm_source": "FBjLj6860378758f138e40eda42f0",
+        "utm_campaign": "28-06 CTV 06 SEM ALERTA \u2014 C\u00f3pia|120227231372280470",
+        "utm_medium": "ME DE MEU ROI SAFADO|120227231372900470",
+        "utm_content": "06|120227231373040470",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": "FBjLj6860378758f138e40eda42f0hQwK21wXxR28-06 CTV 06 SEM ALERTA \u2014 C\u00f3pia|120227231372280470hQwK21wXxRME DE MEU ROI SAFADO|120227231372900470hQwK21wXxR06|120227231373040470hQwK21wXxRFacebook_Mobile_Feed",
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": "5573",
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": "5573"
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-28 15:58:08] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-06-28 15:58:08] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-06-28 16:53:48] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"e5d934af-5927-4061-b3f5-5910905dc10b\",\"platform\":\"PayHubr\",\"paymentMethod\":\"pix\",\"status\":\"paid\",\"createdAt\":\"2025-06-28T16:51:55-03:00\",\"approvedDate\":\"2025-06-28 16:53:48\",\"paidAt\":\"2025-06-28 16:53:48\",\"refundedAt\":null,\"customer\":{\"name\":\"Carlos Barbosa Oliveira\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":{\"number\":\"33990417649\",\"type\":\"CPF\"},\"country\":\"BR\",\"ip\":\"64.23.135.43\"},\"items\":[{\"id\":\"PROD_6860484c1eba9\",\"title\":\"Produto 55.73\",\"quantity\":1,\"unitPrice\":\"5573\"}],\"amount\":\"5573\",\"fee\":{\"fixedAmount\":0,\"netAmount\":\"5573\"},\"trackingParameters\":{\"src\":\"FBjLj68602ac2bc9e41983bb9e0f7\",\"sck\":\"FBjLj68602ac2bc9e41983bb9e0f7hQwK21wXxR28-06 CTV 14 SEM ALERTA \\u2014 C\\u00f3pia|120227231372810470hQwK21wXxRME DE MEU ROI SAFADO|120227231372620470hQwK21wXxR14|120227231372390470hQwK21wXxRFacebook_Mobile_Feed\",\"utm_source\":\"FBjLj68602ac2bc9e41983bb9e0f7\",\"utm_campaign\":\"28-06 CTV 14 SEM ALERTA \\u2014 C\\u00f3pia|120227231372810470\",\"utm_medium\":\"ME DE MEU ROI SAFADO|120227231372620470\",\"utm_content\":\"14|120227231372390470\",\"utm_term\":\"Facebook_Mobile_Feed\",\"xcod\":\"FBjLj68602ac2bc9e41983bb9e0f7hQwK21wXxR28-06 CTV 14 SEM ALERTA \\u2014 C\\u00f3pia|120227231372810470hQwK21wXxRME DE MEU ROI SAFADO|120227231372620470hQwK21wXxR14|120227231372390470hQwK21wXxRFacebook_Mobile_Feed\"},\"isTest\":false}"
+}
+----------------------------------------
+[2025-06-28 16:53:48] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "e5d934af-5927-4061-b3f5-5910905dc10b",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "paid",
+    "createdAt": "2025-06-28T16:51:55-03:00",
+    "approvedDate": "2025-06-28 16:53:48",
+    "paidAt": "2025-06-28 16:53:48",
+    "refundedAt": null,
+    "customer": {
+        "name": "Carlos Barbosa Oliveira",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": {
+            "number": "33990417649",
+            "type": "CPF"
+        },
+        "country": "BR",
+        "ip": "64.23.135.43"
+    },
+    "items": [
+        {
+            "id": "PROD_6860484c1eba9",
+            "title": "Produto 55.73",
+            "quantity": 1,
+            "unitPrice": "5573"
+        }
+    ],
+    "amount": "5573",
+    "fee": {
+        "fixedAmount": 0,
+        "netAmount": "5573"
+    },
+    "trackingParameters": {
+        "src": "FBjLj68602ac2bc9e41983bb9e0f7",
+        "sck": "FBjLj68602ac2bc9e41983bb9e0f7hQwK21wXxR28-06 CTV 14 SEM ALERTA \u2014 C\u00f3pia|120227231372810470hQwK21wXxRME DE MEU ROI SAFADO|120227231372620470hQwK21wXxR14|120227231372390470hQwK21wXxRFacebook_Mobile_Feed",
+        "utm_source": "FBjLj68602ac2bc9e41983bb9e0f7",
+        "utm_campaign": "28-06 CTV 14 SEM ALERTA \u2014 C\u00f3pia|120227231372810470",
+        "utm_medium": "ME DE MEU ROI SAFADO|120227231372620470",
+        "utm_content": "14|120227231372390470",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": "FBjLj68602ac2bc9e41983bb9e0f7hQwK21wXxR28-06 CTV 14 SEM ALERTA \u2014 C\u00f3pia|120227231372810470hQwK21wXxRME DE MEU ROI SAFADO|120227231372620470hQwK21wXxR14|120227231372390470hQwK21wXxRFacebook_Mobile_Feed"
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-28 16:53:48] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "e5d934af-5927-4061-b3f5-5910905dc10b",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "paid",
+    "createdAt": "2025-06-28 19:51:55",
+    "approvedDate": "2025-06-28 19:53:48",
+    "refundedAt": null,
+    "customer": {
+        "name": "Carlos Barbosa Oliveira",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "33990417649",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_6860484c1eba9",
+            "name": "Produto 55.73",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": "5573"
+        }
+    ],
+    "trackingParameters": {
+        "src": "FBjLj68602ac2bc9e41983bb9e0f7",
+        "sck": "FBjLj68602ac2bc9e41983bb9e0f7hQwK21wXxR28-06 CTV 14 SEM ALERTA \u2014 C\u00f3pia|120227231372810470hQwK21wXxRME DE MEU ROI SAFADO|120227231372620470hQwK21wXxR14|120227231372390470hQwK21wXxRFacebook_Mobile_Feed",
+        "utm_source": "FBjLj68602ac2bc9e41983bb9e0f7",
+        "utm_campaign": "28-06 CTV 14 SEM ALERTA \u2014 C\u00f3pia|120227231372810470",
+        "utm_medium": "ME DE MEU ROI SAFADO|120227231372620470",
+        "utm_content": "14|120227231372390470",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": "FBjLj68602ac2bc9e41983bb9e0f7hQwK21wXxR28-06 CTV 14 SEM ALERTA \u2014 C\u00f3pia|120227231372810470hQwK21wXxRME DE MEU ROI SAFADO|120227231372620470hQwK21wXxR14|120227231372390470hQwK21wXxRFacebook_Mobile_Feed",
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": "5573",
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": "5573"
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-28 16:53:48] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-06-28 16:53:48] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------

@@ -1,0 +1,693 @@
+[2025-06-22 10:02:20] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"a8bc95bb-fabd-462e-9cbe-bb05a35ef2c9\",\"platform\":\"MinhaPlataforma\",\"paymentMethod\":\"pix\",\"status\":\"waiting_payment\",\"createdAt\":\"2025-06-22 07:02:20\",\"approvedDate\":null,\"refundedAt\":null,\"customer\":{\"name\":\"Valentina Rodrigues Fernandes\",\"email\":\"valentina.rodrigues.fernandes@email.com\",\"phone\":null,\"document\":\"50216615828\",\"country\":\"BR\",\"ip\":\"177.74.198.41\"},\"products\":[{\"id\":\"PROD_6857d4ac77432\",\"name\":\"Produto 35\",\"planId\":null,\"planName\":null,\"quantity\":1,\"priceInCents\":3500}],\"trackingParameters\":{\"utm_source\":\"FBjLj6857d15208390990ac4f1f36\",\"utm_medium\":\"CX|120226840990150470\",\"utm_campaign\":\"22-06 14 VALIDADIN DARK \\u2014 C\\u00f3pia|120226840991160470\",\"utm_content\":\"14|120226840991440470\",\"utm_term\":\"Facebook_Mobile_Feed\",\"xcod\":\"FBjLj6857d15208390990ac4f1f36hQwK21wXxR22-06 14 VALIDADIN DARK \\u2014 C\\u00f3pia|120226840991160470hQwK21wXxRCX|120226840990150470hQwK21wXxR14|120226840991440470hQwK21wXxRFacebook_Mobile_Feed\",\"sck\":\"FBjLj6857d15208390990ac4f1f36hQwK21wXxR22-06 14 VALIDADIN DARK \\u2014 C\\u00f3pia|120226840991160470hQwK21wXxRCX|120226840990150470hQwK21wXxR14|120226840991440470hQwK21wXxRFacebook_Mobile_Feed\"},\"commission\":{\"totalPriceInCents\":3500,\"gatewayFeeInCents\":0,\"userCommissionInCents\":3500},\"isTest\":false}"
+}
+----------------------------------------
+[2025-06-22 10:02:20] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "a8bc95bb-fabd-462e-9cbe-bb05a35ef2c9",
+    "platform": "MinhaPlataforma",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-22 07:02:20",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Valentina Rodrigues Fernandes",
+        "email": "valentina.rodrigues.fernandes@email.com",
+        "phone": null,
+        "document": "50216615828",
+        "country": "BR",
+        "ip": "177.74.198.41"
+    },
+    "products": [
+        {
+            "id": "PROD_6857d4ac77432",
+            "name": "Produto 35",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 3500
+        }
+    ],
+    "trackingParameters": {
+        "utm_source": "FBjLj6857d15208390990ac4f1f36",
+        "utm_medium": "CX|120226840990150470",
+        "utm_campaign": "22-06 14 VALIDADIN DARK \u2014 C\u00f3pia|120226840991160470",
+        "utm_content": "14|120226840991440470",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": "FBjLj6857d15208390990ac4f1f36hQwK21wXxR22-06 14 VALIDADIN DARK \u2014 C\u00f3pia|120226840991160470hQwK21wXxRCX|120226840990150470hQwK21wXxR14|120226840991440470hQwK21wXxRFacebook_Mobile_Feed",
+        "sck": "FBjLj6857d15208390990ac4f1f36hQwK21wXxR22-06 14 VALIDADIN DARK \u2014 C\u00f3pia|120226840991160470hQwK21wXxRCX|120226840990150470hQwK21wXxR14|120226840991440470hQwK21wXxRFacebook_Mobile_Feed"
+    },
+    "commission": {
+        "totalPriceInCents": 3500,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 3500
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-22 10:02:20] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "a8bc95bb-fabd-462e-9cbe-bb05a35ef2c9",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-22 10:02:20",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Valentina Rodrigues Fernandes",
+        "email": "valentina.rodrigues.fernandes@email.com",
+        "phone": null,
+        "document": "50216615828",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_6857d4ac77432",
+            "name": "Produto 35",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 3500
+        }
+    ],
+    "trackingParameters": {
+        "src": null,
+        "sck": "FBjLj6857d15208390990ac4f1f36hQwK21wXxR22-06 14 VALIDADIN DARK \u2014 C\u00f3pia|120226840991160470hQwK21wXxRCX|120226840990150470hQwK21wXxR14|120226840991440470hQwK21wXxRFacebook_Mobile_Feed",
+        "utm_source": "FBjLj6857d15208390990ac4f1f36",
+        "utm_campaign": "22-06 14 VALIDADIN DARK \u2014 C\u00f3pia|120226840991160470",
+        "utm_medium": "CX|120226840990150470",
+        "utm_content": "14|120226840991440470",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": "FBjLj6857d15208390990ac4f1f36hQwK21wXxR22-06 14 VALIDADIN DARK \u2014 C\u00f3pia|120226840991160470hQwK21wXxRCX|120226840990150470hQwK21wXxR14|120226840991440470hQwK21wXxRFacebook_Mobile_Feed",
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": 3500,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 3500
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-22 10:02:20] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-06-22 10:02:20] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-06-22 10:04:49] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"b10ce52e-ed8e-45b5-b1a6-e4ac8bfcab31\",\"platform\":\"MinhaPlataforma\",\"paymentMethod\":\"pix\",\"status\":\"waiting_payment\",\"createdAt\":\"2025-06-22 07:04:49\",\"approvedDate\":null,\"refundedAt\":null,\"customer\":{\"name\":\"Daniel Soares Santos\",\"email\":\"daniel.soares.santos@email.com\",\"phone\":null,\"document\":\"10819915939\",\"country\":\"BR\",\"ip\":\"177.74.198.41\"},\"products\":[{\"id\":\"PROD_6857d541f1bec\",\"name\":\"Upsell 4\",\"planId\":null,\"planName\":null,\"quantity\":1,\"priceInCents\":2490}],\"trackingParameters\":{\"utm_source\":\"FBjLj6857d15208390990ac4f1f36\",\"utm_medium\":\"CX|120226840990150470\",\"utm_campaign\":\"22-06 14 VALIDADIN DARK \\u2014 C\\u00f3pia|120226840991160470\",\"utm_content\":\"14|120226840991440470\",\"utm_term\":\"Facebook_Mobile_Feed\",\"xcod\":\"FBjLj6857d15208390990ac4f1f36hQwK21wXxR22-06 14 VALIDADIN DARK \\u2014 C\\u00f3pia|120226840991160470hQwK21wXxRCX|120226840990150470hQwK21wXxR14|120226840991440470hQwK21wXxRFacebook_Mobile_Feed\",\"sck\":\"FBjLj6857d15208390990ac4f1f36hQwK21wXxR22-06 14 VALIDADIN DARK \\u2014 C\\u00f3pia|120226840991160470hQwK21wXxRCX|120226840990150470hQwK21wXxR14|120226840991440470hQwK21wXxRFacebook_Mobile_Feed\"},\"commission\":{\"totalPriceInCents\":2490,\"gatewayFeeInCents\":0,\"userCommissionInCents\":2490},\"isTest\":false}"
+}
+----------------------------------------
+[2025-06-22 10:04:49] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "b10ce52e-ed8e-45b5-b1a6-e4ac8bfcab31",
+    "platform": "MinhaPlataforma",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-22 07:04:49",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Daniel Soares Santos",
+        "email": "daniel.soares.santos@email.com",
+        "phone": null,
+        "document": "10819915939",
+        "country": "BR",
+        "ip": "177.74.198.41"
+    },
+    "products": [
+        {
+            "id": "PROD_6857d541f1bec",
+            "name": "Upsell 4",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 2490
+        }
+    ],
+    "trackingParameters": {
+        "utm_source": "FBjLj6857d15208390990ac4f1f36",
+        "utm_medium": "CX|120226840990150470",
+        "utm_campaign": "22-06 14 VALIDADIN DARK \u2014 C\u00f3pia|120226840991160470",
+        "utm_content": "14|120226840991440470",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": "FBjLj6857d15208390990ac4f1f36hQwK21wXxR22-06 14 VALIDADIN DARK \u2014 C\u00f3pia|120226840991160470hQwK21wXxRCX|120226840990150470hQwK21wXxR14|120226840991440470hQwK21wXxRFacebook_Mobile_Feed",
+        "sck": "FBjLj6857d15208390990ac4f1f36hQwK21wXxR22-06 14 VALIDADIN DARK \u2014 C\u00f3pia|120226840991160470hQwK21wXxRCX|120226840990150470hQwK21wXxR14|120226840991440470hQwK21wXxRFacebook_Mobile_Feed"
+    },
+    "commission": {
+        "totalPriceInCents": 2490,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 2490
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-22 10:04:49] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "b10ce52e-ed8e-45b5-b1a6-e4ac8bfcab31",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-22 10:04:49",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Daniel Soares Santos",
+        "email": "daniel.soares.santos@email.com",
+        "phone": null,
+        "document": "10819915939",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_6857d541f1bec",
+            "name": "Upsell 4",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 2490
+        }
+    ],
+    "trackingParameters": {
+        "src": null,
+        "sck": "FBjLj6857d15208390990ac4f1f36hQwK21wXxR22-06 14 VALIDADIN DARK \u2014 C\u00f3pia|120226840991160470hQwK21wXxRCX|120226840990150470hQwK21wXxR14|120226840991440470hQwK21wXxRFacebook_Mobile_Feed",
+        "utm_source": "FBjLj6857d15208390990ac4f1f36",
+        "utm_campaign": "22-06 14 VALIDADIN DARK \u2014 C\u00f3pia|120226840991160470",
+        "utm_medium": "CX|120226840990150470",
+        "utm_content": "14|120226840991440470",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": "FBjLj6857d15208390990ac4f1f36hQwK21wXxR22-06 14 VALIDADIN DARK \u2014 C\u00f3pia|120226840991160470hQwK21wXxRCX|120226840990150470hQwK21wXxR14|120226840991440470hQwK21wXxRFacebook_Mobile_Feed",
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": 2490,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 2490
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-22 10:04:49] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-06-22 10:04:50] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-06-22 10:06:17] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"022e2b78-0d3c-4d52-b8e8-fe76e651318f\",\"platform\":\"MinhaPlataforma\",\"paymentMethod\":\"pix\",\"status\":\"waiting_payment\",\"createdAt\":\"2025-06-22 07:06:17\",\"approvedDate\":null,\"refundedAt\":null,\"customer\":{\"name\":\"Helena Rodrigues Almeida\",\"email\":\"helena.rodrigues.almeida@email.com\",\"phone\":null,\"document\":\"56485772065\",\"country\":\"BR\",\"ip\":\"191.58.132.162\"},\"products\":[{\"id\":\"PROD_6857d5999b284\",\"name\":\"Produto 19.9\",\"planId\":null,\"planName\":null,\"quantity\":1,\"priceInCents\":1990}],\"trackingParameters\":{\"utm_medium\":\"CX|120226840990150470\",\"utm_campaign\":\"22-06 14 VALIDADIN DARK \\u2014 C\\u00f3pia|120226840991160470\",\"utm_content\":\"14|120226840991440470\",\"utm_term\":\"Facebook_Mobile_Feed\",\"xcod\":\"FBjLj6857d15208390990ac4f1f36hQwK21wXxR22-06 14 VALIDADIN DARK \\u2014 C\\u00f3pia|120226840991160470hQwK21wXxRCX|120226840990150470hQwK21wXxR14|120226840991440470hQwK21wXxRFacebook_Mobile_Feed\",\"sck\":\"FBjLj6857d15208390990ac4f1f36hQwK21wXxR22-06 14 VALIDADIN DARK \\u2014 C\\u00f3pia|120226840991160470hQwK21wXxRCX|120226840990150470hQwK21wXxR14|120226840991440470hQwK21wXxRFacebook_Mobile_Feed\"},\"commission\":{\"totalPriceInCents\":1990,\"gatewayFeeInCents\":0,\"userCommissionInCents\":1990},\"isTest\":false}"
+}
+----------------------------------------
+[2025-06-22 10:06:17] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "022e2b78-0d3c-4d52-b8e8-fe76e651318f",
+    "platform": "MinhaPlataforma",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-22 07:06:17",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Helena Rodrigues Almeida",
+        "email": "helena.rodrigues.almeida@email.com",
+        "phone": null,
+        "document": "56485772065",
+        "country": "BR",
+        "ip": "191.58.132.162"
+    },
+    "products": [
+        {
+            "id": "PROD_6857d5999b284",
+            "name": "Produto 19.9",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 1990
+        }
+    ],
+    "trackingParameters": {
+        "utm_medium": "CX|120226840990150470",
+        "utm_campaign": "22-06 14 VALIDADIN DARK \u2014 C\u00f3pia|120226840991160470",
+        "utm_content": "14|120226840991440470",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": "FBjLj6857d15208390990ac4f1f36hQwK21wXxR22-06 14 VALIDADIN DARK \u2014 C\u00f3pia|120226840991160470hQwK21wXxRCX|120226840990150470hQwK21wXxR14|120226840991440470hQwK21wXxRFacebook_Mobile_Feed",
+        "sck": "FBjLj6857d15208390990ac4f1f36hQwK21wXxR22-06 14 VALIDADIN DARK \u2014 C\u00f3pia|120226840991160470hQwK21wXxRCX|120226840990150470hQwK21wXxR14|120226840991440470hQwK21wXxRFacebook_Mobile_Feed"
+    },
+    "commission": {
+        "totalPriceInCents": 1990,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 1990
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-22 10:06:17] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "022e2b78-0d3c-4d52-b8e8-fe76e651318f",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-22 10:06:17",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Helena Rodrigues Almeida",
+        "email": "helena.rodrigues.almeida@email.com",
+        "phone": null,
+        "document": "56485772065",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_6857d5999b284",
+            "name": "Produto 19.9",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 1990
+        }
+    ],
+    "trackingParameters": {
+        "src": null,
+        "sck": "FBjLj6857d15208390990ac4f1f36hQwK21wXxR22-06 14 VALIDADIN DARK \u2014 C\u00f3pia|120226840991160470hQwK21wXxRCX|120226840990150470hQwK21wXxR14|120226840991440470hQwK21wXxRFacebook_Mobile_Feed",
+        "utm_source": null,
+        "utm_campaign": "22-06 14 VALIDADIN DARK \u2014 C\u00f3pia|120226840991160470",
+        "utm_medium": "CX|120226840990150470",
+        "utm_content": "14|120226840991440470",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": "FBjLj6857d15208390990ac4f1f36hQwK21wXxR22-06 14 VALIDADIN DARK \u2014 C\u00f3pia|120226840991160470hQwK21wXxRCX|120226840990150470hQwK21wXxR14|120226840991440470hQwK21wXxRFacebook_Mobile_Feed",
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": 1990,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 1990
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-22 10:06:17] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-06-22 10:06:17] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-06-22 10:07:47] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"0ba9668e-0897-45b1-b8b9-1987aea6c2a2\",\"platform\":\"MinhaPlataforma\",\"paymentMethod\":\"pix\",\"status\":\"waiting_payment\",\"createdAt\":\"2025-06-22 07:07:47\",\"approvedDate\":null,\"refundedAt\":null,\"customer\":{\"name\":\"Daniel Silva Martins\",\"email\":\"daniel.silva.martins@email.com\",\"phone\":null,\"document\":\"80448374005\",\"country\":\"BR\",\"ip\":\"191.58.132.162\"},\"products\":[{\"id\":\"PROD_6857d5f3c49a8\",\"name\":\"Upsell 3\",\"planId\":null,\"planName\":null,\"quantity\":1,\"priceInCents\":1790}],\"trackingParameters\":{\"utm_medium\":\"CX|120226840990150470\",\"utm_campaign\":\"22-06 14 VALIDADIN DARK \\u2014 C\\u00f3pia|120226840991160470\",\"utm_content\":\"14|120226840991440470\",\"utm_term\":\"Facebook_Mobile_Feed\",\"xcod\":\"FBjLj6857d15208390990ac4f1f36hQwK21wXxR22-06 14 VALIDADIN DARK \\u2014 C\\u00f3pia|120226840991160470hQwK21wXxRCX|120226840990150470hQwK21wXxR14|120226840991440470hQwK21wXxRFacebook_Mobile_Feed\",\"sck\":\"FBjLj6857d15208390990ac4f1f36hQwK21wXxR22-06 14 VALIDADIN DARK \\u2014 C\\u00f3pia|120226840991160470hQwK21wXxRCX|120226840990150470hQwK21wXxR14|120226840991440470hQwK21wXxRFacebook_Mobile_Feed\"},\"commission\":{\"totalPriceInCents\":1790,\"gatewayFeeInCents\":0,\"userCommissionInCents\":1790},\"isTest\":false}"
+}
+----------------------------------------
+[2025-06-22 10:07:47] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "0ba9668e-0897-45b1-b8b9-1987aea6c2a2",
+    "platform": "MinhaPlataforma",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-22 07:07:47",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Daniel Silva Martins",
+        "email": "daniel.silva.martins@email.com",
+        "phone": null,
+        "document": "80448374005",
+        "country": "BR",
+        "ip": "191.58.132.162"
+    },
+    "products": [
+        {
+            "id": "PROD_6857d5f3c49a8",
+            "name": "Upsell 3",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 1790
+        }
+    ],
+    "trackingParameters": {
+        "utm_medium": "CX|120226840990150470",
+        "utm_campaign": "22-06 14 VALIDADIN DARK \u2014 C\u00f3pia|120226840991160470",
+        "utm_content": "14|120226840991440470",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": "FBjLj6857d15208390990ac4f1f36hQwK21wXxR22-06 14 VALIDADIN DARK \u2014 C\u00f3pia|120226840991160470hQwK21wXxRCX|120226840990150470hQwK21wXxR14|120226840991440470hQwK21wXxRFacebook_Mobile_Feed",
+        "sck": "FBjLj6857d15208390990ac4f1f36hQwK21wXxR22-06 14 VALIDADIN DARK \u2014 C\u00f3pia|120226840991160470hQwK21wXxRCX|120226840990150470hQwK21wXxR14|120226840991440470hQwK21wXxRFacebook_Mobile_Feed"
+    },
+    "commission": {
+        "totalPriceInCents": 1790,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 1790
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-22 10:07:47] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "0ba9668e-0897-45b1-b8b9-1987aea6c2a2",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-22 10:07:47",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Daniel Silva Martins",
+        "email": "daniel.silva.martins@email.com",
+        "phone": null,
+        "document": "80448374005",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_6857d5f3c49a8",
+            "name": "Upsell 3",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 1790
+        }
+    ],
+    "trackingParameters": {
+        "src": null,
+        "sck": "FBjLj6857d15208390990ac4f1f36hQwK21wXxR22-06 14 VALIDADIN DARK \u2014 C\u00f3pia|120226840991160470hQwK21wXxRCX|120226840990150470hQwK21wXxR14|120226840991440470hQwK21wXxRFacebook_Mobile_Feed",
+        "utm_source": null,
+        "utm_campaign": "22-06 14 VALIDADIN DARK \u2014 C\u00f3pia|120226840991160470",
+        "utm_medium": "CX|120226840990150470",
+        "utm_content": "14|120226840991440470",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": "FBjLj6857d15208390990ac4f1f36hQwK21wXxR22-06 14 VALIDADIN DARK \u2014 C\u00f3pia|120226840991160470hQwK21wXxRCX|120226840990150470hQwK21wXxR14|120226840991440470hQwK21wXxRFacebook_Mobile_Feed",
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": 1790,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 1790
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-22 10:07:47] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-06-22 10:07:47] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-06-22 10:10:45] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"9e266e92-77e6-462c-b2fe-14bf8723677a\",\"platform\":\"MinhaPlataforma\",\"paymentMethod\":\"pix\",\"status\":\"waiting_payment\",\"createdAt\":\"2025-06-22 07:10:45\",\"approvedDate\":null,\"refundedAt\":null,\"customer\":{\"name\":\"Bruno Santos Fernandes\",\"email\":\"bruno.santos.fernandes@email.com\",\"phone\":null,\"document\":\"88366321304\",\"country\":\"BR\",\"ip\":\"191.58.132.162\"},\"products\":[{\"id\":\"PROD_6857d6a5a65f6\",\"name\":\"Upsell 4\",\"planId\":null,\"planName\":null,\"quantity\":1,\"priceInCents\":2490}],\"trackingParameters\":{\"utm_medium\":\"CX|120226840990150470\",\"utm_campaign\":\"22-06 14 VALIDADIN DARK \\u2014 C\\u00f3pia|120226840991160470\",\"utm_content\":\"14|120226840991440470\",\"utm_term\":\"Facebook_Mobile_Feed\",\"xcod\":\"FBjLj6857d15208390990ac4f1f36hQwK21wXxR22-06 14 VALIDADIN DARK \\u2014 C\\u00f3pia|120226840991160470hQwK21wXxRCX|120226840990150470hQwK21wXxR14|120226840991440470hQwK21wXxRFacebook_Mobile_Feed\",\"sck\":\"FBjLj6857d15208390990ac4f1f36hQwK21wXxR22-06 14 VALIDADIN DARK \\u2014 C\\u00f3pia|120226840991160470hQwK21wXxRCX|120226840990150470hQwK21wXxR14|120226840991440470hQwK21wXxRFacebook_Mobile_Feed\"},\"commission\":{\"totalPriceInCents\":2490,\"gatewayFeeInCents\":0,\"userCommissionInCents\":2490},\"isTest\":false}"
+}
+----------------------------------------
+[2025-06-22 10:10:45] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "9e266e92-77e6-462c-b2fe-14bf8723677a",
+    "platform": "MinhaPlataforma",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-22 07:10:45",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Bruno Santos Fernandes",
+        "email": "bruno.santos.fernandes@email.com",
+        "phone": null,
+        "document": "88366321304",
+        "country": "BR",
+        "ip": "191.58.132.162"
+    },
+    "products": [
+        {
+            "id": "PROD_6857d6a5a65f6",
+            "name": "Upsell 4",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 2490
+        }
+    ],
+    "trackingParameters": {
+        "utm_medium": "CX|120226840990150470",
+        "utm_campaign": "22-06 14 VALIDADIN DARK \u2014 C\u00f3pia|120226840991160470",
+        "utm_content": "14|120226840991440470",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": "FBjLj6857d15208390990ac4f1f36hQwK21wXxR22-06 14 VALIDADIN DARK \u2014 C\u00f3pia|120226840991160470hQwK21wXxRCX|120226840990150470hQwK21wXxR14|120226840991440470hQwK21wXxRFacebook_Mobile_Feed",
+        "sck": "FBjLj6857d15208390990ac4f1f36hQwK21wXxR22-06 14 VALIDADIN DARK \u2014 C\u00f3pia|120226840991160470hQwK21wXxRCX|120226840990150470hQwK21wXxR14|120226840991440470hQwK21wXxRFacebook_Mobile_Feed"
+    },
+    "commission": {
+        "totalPriceInCents": 2490,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 2490
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-22 10:10:45] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "9e266e92-77e6-462c-b2fe-14bf8723677a",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-22 10:10:45",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Bruno Santos Fernandes",
+        "email": "bruno.santos.fernandes@email.com",
+        "phone": null,
+        "document": "88366321304",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_6857d6a5a65f6",
+            "name": "Upsell 4",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 2490
+        }
+    ],
+    "trackingParameters": {
+        "src": null,
+        "sck": "FBjLj6857d15208390990ac4f1f36hQwK21wXxR22-06 14 VALIDADIN DARK \u2014 C\u00f3pia|120226840991160470hQwK21wXxRCX|120226840990150470hQwK21wXxR14|120226840991440470hQwK21wXxRFacebook_Mobile_Feed",
+        "utm_source": null,
+        "utm_campaign": "22-06 14 VALIDADIN DARK \u2014 C\u00f3pia|120226840991160470",
+        "utm_medium": "CX|120226840990150470",
+        "utm_content": "14|120226840991440470",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": "FBjLj6857d15208390990ac4f1f36hQwK21wXxR22-06 14 VALIDADIN DARK \u2014 C\u00f3pia|120226840991160470hQwK21wXxRCX|120226840990150470hQwK21wXxR14|120226840991440470hQwK21wXxRFacebook_Mobile_Feed",
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": 2490,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 2490
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-22 10:10:45] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-06-22 10:10:45] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-06-22 10:24:29] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"ad07c89a-7a0e-4cd6-8f35-cc798810f58e\",\"platform\":\"MinhaPlataforma\",\"paymentMethod\":\"pix\",\"status\":\"waiting_payment\",\"createdAt\":\"2025-06-22 07:24:29\",\"approvedDate\":null,\"refundedAt\":null,\"customer\":{\"name\":\"Manuela Almeida Fernandes\",\"email\":\"manuela.almeida.fernandes@email.com\",\"phone\":null,\"document\":\"45485618898\",\"country\":\"BR\",\"ip\":\"177.26.85.84\"},\"products\":[{\"id\":\"PROD_6857d9dd87596\",\"name\":\"Produto 35\",\"planId\":null,\"planName\":null,\"quantity\":1,\"priceInCents\":3500}],\"trackingParameters\":{\"utm_source\":\"FBjLj6857d5eb9ff7cd41a44ff8a0\",\"utm_medium\":\"CX|120226840990750470\",\"utm_campaign\":\"22-06 06 VALIDADIN DARK \\u2014 C\\u00f3pia|120226840990240470\",\"utm_content\":\"06|120226840990510470\",\"utm_term\":\"Facebook_Mobile_Feed\",\"xcod\":\"FBjLj6857d5eb9ff7cd41a44ff8a0hQwK21wXxR22-06 06 VALIDADIN DARK \\u2014 C\\u00f3pia|120226840990240470hQwK21wXxRCX|120226840990750470hQwK21wXxR06|120226840990510470hQwK21wXxRFacebook_Mobile_Feed\",\"sck\":\"FBjLj6857d5eb9ff7cd41a44ff8a0hQwK21wXxR22-06 06 VALIDADIN DARK \\u2014 C\\u00f3pia|120226840990240470hQwK21wXxRCX|120226840990750470hQwK21wXxR06|120226840990510470hQwK21wXxRFacebook_Mobile_Feed\"},\"commission\":{\"totalPriceInCents\":3500,\"gatewayFeeInCents\":0,\"userCommissionInCents\":3500},\"isTest\":false}"
+}
+----------------------------------------
+[2025-06-22 10:24:29] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "ad07c89a-7a0e-4cd6-8f35-cc798810f58e",
+    "platform": "MinhaPlataforma",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-22 07:24:29",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Manuela Almeida Fernandes",
+        "email": "manuela.almeida.fernandes@email.com",
+        "phone": null,
+        "document": "45485618898",
+        "country": "BR",
+        "ip": "177.26.85.84"
+    },
+    "products": [
+        {
+            "id": "PROD_6857d9dd87596",
+            "name": "Produto 35",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 3500
+        }
+    ],
+    "trackingParameters": {
+        "utm_source": "FBjLj6857d5eb9ff7cd41a44ff8a0",
+        "utm_medium": "CX|120226840990750470",
+        "utm_campaign": "22-06 06 VALIDADIN DARK \u2014 C\u00f3pia|120226840990240470",
+        "utm_content": "06|120226840990510470",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": "FBjLj6857d5eb9ff7cd41a44ff8a0hQwK21wXxR22-06 06 VALIDADIN DARK \u2014 C\u00f3pia|120226840990240470hQwK21wXxRCX|120226840990750470hQwK21wXxR06|120226840990510470hQwK21wXxRFacebook_Mobile_Feed",
+        "sck": "FBjLj6857d5eb9ff7cd41a44ff8a0hQwK21wXxR22-06 06 VALIDADIN DARK \u2014 C\u00f3pia|120226840990240470hQwK21wXxRCX|120226840990750470hQwK21wXxR06|120226840990510470hQwK21wXxRFacebook_Mobile_Feed"
+    },
+    "commission": {
+        "totalPriceInCents": 3500,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 3500
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-22 10:24:29] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "ad07c89a-7a0e-4cd6-8f35-cc798810f58e",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-22 10:24:29",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Manuela Almeida Fernandes",
+        "email": "manuela.almeida.fernandes@email.com",
+        "phone": null,
+        "document": "45485618898",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_6857d9dd87596",
+            "name": "Produto 35",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 3500
+        }
+    ],
+    "trackingParameters": {
+        "src": null,
+        "sck": "FBjLj6857d5eb9ff7cd41a44ff8a0hQwK21wXxR22-06 06 VALIDADIN DARK \u2014 C\u00f3pia|120226840990240470hQwK21wXxRCX|120226840990750470hQwK21wXxR06|120226840990510470hQwK21wXxRFacebook_Mobile_Feed",
+        "utm_source": "FBjLj6857d5eb9ff7cd41a44ff8a0",
+        "utm_campaign": "22-06 06 VALIDADIN DARK \u2014 C\u00f3pia|120226840990240470",
+        "utm_medium": "CX|120226840990750470",
+        "utm_content": "06|120226840990510470",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": "FBjLj6857d5eb9ff7cd41a44ff8a0hQwK21wXxR22-06 06 VALIDADIN DARK \u2014 C\u00f3pia|120226840990240470hQwK21wXxRCX|120226840990750470hQwK21wXxR06|120226840990510470hQwK21wXxRFacebook_Mobile_Feed",
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": 3500,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 3500
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-22 10:24:29] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-06-22 10:24:29] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------

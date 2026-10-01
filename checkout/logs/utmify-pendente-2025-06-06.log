@@ -1,0 +1,2148 @@
+[2025-06-06 16:04:14] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"d9e8d66f-592b-462d-9d11-c3a920c54556\",\"platform\":\"MinhaPlataforma\",\"paymentMethod\":\"pix\",\"status\":\"waiting_payment\",\"createdAt\":\"2025-06-06 13:04:14\",\"approvedDate\":null,\"refundedAt\":null,\"customer\":{\"name\":\"Gabriel Alves Fernandes\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":\"12233168828\",\"country\":\"BR\",\"ip\":\"170.238.113.117\"},\"products\":[{\"id\":\"PROD_6843117e5c159\",\"name\":\"Doa\\u00e7\\u00e3o\",\"planId\":null,\"planName\":null,\"quantity\":1,\"priceInCents\":5573}],\"trackingParameters\":{\"utm_source\":\"FBjLj68430ee858c383887a438e59\",\"utm_medium\":\"PDDIDY E INOCENTE|120226712980660081\",\"utm_campaign\":\"06\\\/06 CTV 17 CAXOTE  ESCALUDO PAGINA NOVA \\u2014 C\\u00f3pia|120226712981240081\",\"utm_content\":\"001|120226712981110081\",\"utm_term\":\"Facebook_Stories\"},\"commission\":{\"totalPriceInCents\":5573,\"gatewayFeeInCents\":0,\"userCommissionInCents\":5573},\"isTest\":false}"
+}
+----------------------------------------
+[2025-06-06 16:04:14] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "d9e8d66f-592b-462d-9d11-c3a920c54556",
+    "platform": "MinhaPlataforma",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-06 13:04:14",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Gabriel Alves Fernandes",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "12233168828",
+        "country": "BR",
+        "ip": "170.238.113.117"
+    },
+    "products": [
+        {
+            "id": "PROD_6843117e5c159",
+            "name": "Doa\u00e7\u00e3o",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 5573
+        }
+    ],
+    "trackingParameters": {
+        "utm_source": "FBjLj68430ee858c383887a438e59",
+        "utm_medium": "PDDIDY E INOCENTE|120226712980660081",
+        "utm_campaign": "06\/06 CTV 17 CAXOTE  ESCALUDO PAGINA NOVA \u2014 C\u00f3pia|120226712981240081",
+        "utm_content": "001|120226712981110081",
+        "utm_term": "Facebook_Stories"
+    },
+    "commission": {
+        "totalPriceInCents": 5573,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 5573
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-06 16:04:14] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "d9e8d66f-592b-462d-9d11-c3a920c54556",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-06 16:04:14",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Gabriel Alves Fernandes",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "12233168828",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_6843117e5c159",
+            "name": "Doa\u00e7\u00e3o",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 5573
+        }
+    ],
+    "trackingParameters": {
+        "src": null,
+        "sck": null,
+        "utm_source": "FBjLj68430ee858c383887a438e59",
+        "utm_campaign": "06\/06 CTV 17 CAXOTE  ESCALUDO PAGINA NOVA \u2014 C\u00f3pia|120226712981240081",
+        "utm_medium": "PDDIDY E INOCENTE|120226712980660081",
+        "utm_content": "001|120226712981110081",
+        "utm_term": "Facebook_Stories",
+        "xcod": null,
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": 5573,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 5573
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-06 16:04:14] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-06-06 16:04:14] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-06-06 16:04:57] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"663fd564-c126-4a48-9738-f271723fe8eb\",\"platform\":\"MinhaPlataforma\",\"paymentMethod\":\"pix\",\"status\":\"waiting_payment\",\"createdAt\":\"2025-06-06 13:04:57\",\"approvedDate\":null,\"refundedAt\":null,\"customer\":{\"name\":\"Manuela Souza Alves\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":\"61965855504\",\"country\":\"BR\",\"ip\":\"187.19.227.155\"},\"products\":[{\"id\":\"PROD_684311a944510\",\"name\":\"Doa\\u00e7\\u00e3o\",\"planId\":null,\"planName\":null,\"quantity\":1,\"priceInCents\":5573}],\"trackingParameters\":{\"utm_source\":\"FBjLj68430ef30062d54ef977d359\",\"utm_medium\":\"PDDIDY E INOCENTE|120226712980660081\",\"utm_campaign\":\"06\\\/06 CTV 17 CAXOTE  ESCALUDO PAGINA NOVA \\u2014 C\\u00f3pia|120226712981240081\",\"utm_content\":\"001|120226712981110081\",\"utm_term\":\"Instagram_Feed\"},\"commission\":{\"totalPriceInCents\":5573,\"gatewayFeeInCents\":0,\"userCommissionInCents\":5573},\"isTest\":false}"
+}
+----------------------------------------
+[2025-06-06 16:04:57] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "663fd564-c126-4a48-9738-f271723fe8eb",
+    "platform": "MinhaPlataforma",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-06 13:04:57",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Manuela Souza Alves",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "61965855504",
+        "country": "BR",
+        "ip": "187.19.227.155"
+    },
+    "products": [
+        {
+            "id": "PROD_684311a944510",
+            "name": "Doa\u00e7\u00e3o",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 5573
+        }
+    ],
+    "trackingParameters": {
+        "utm_source": "FBjLj68430ef30062d54ef977d359",
+        "utm_medium": "PDDIDY E INOCENTE|120226712980660081",
+        "utm_campaign": "06\/06 CTV 17 CAXOTE  ESCALUDO PAGINA NOVA \u2014 C\u00f3pia|120226712981240081",
+        "utm_content": "001|120226712981110081",
+        "utm_term": "Instagram_Feed"
+    },
+    "commission": {
+        "totalPriceInCents": 5573,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 5573
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-06 16:04:57] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "663fd564-c126-4a48-9738-f271723fe8eb",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-06 16:04:57",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Manuela Souza Alves",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "61965855504",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_684311a944510",
+            "name": "Doa\u00e7\u00e3o",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 5573
+        }
+    ],
+    "trackingParameters": {
+        "src": null,
+        "sck": null,
+        "utm_source": "FBjLj68430ef30062d54ef977d359",
+        "utm_campaign": "06\/06 CTV 17 CAXOTE  ESCALUDO PAGINA NOVA \u2014 C\u00f3pia|120226712981240081",
+        "utm_medium": "PDDIDY E INOCENTE|120226712980660081",
+        "utm_content": "001|120226712981110081",
+        "utm_term": "Instagram_Feed",
+        "xcod": null,
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": 5573,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 5573
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-06 16:04:57] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-06-06 16:04:57] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-06-06 16:05:04] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"cf312292-b7dc-4332-87a6-b919033984e8\",\"platform\":\"MinhaPlataforma\",\"paymentMethod\":\"pix\",\"status\":\"waiting_payment\",\"createdAt\":\"2025-06-06 13:05:04\",\"approvedDate\":null,\"refundedAt\":null,\"customer\":{\"name\":\"Jo\\u00e3o Rodrigues Santos\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":\"31408808633\",\"country\":\"BR\",\"ip\":\"155.2.219.194\"},\"products\":[{\"id\":\"PROD_684311b0376cc\",\"name\":\"Doa\\u00e7\\u00e3o\",\"planId\":null,\"planName\":null,\"quantity\":1,\"priceInCents\":5573}],\"trackingParameters\":[],\"commission\":{\"totalPriceInCents\":5573,\"gatewayFeeInCents\":0,\"userCommissionInCents\":5573},\"isTest\":false}"
+}
+----------------------------------------
+[2025-06-06 16:05:04] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "cf312292-b7dc-4332-87a6-b919033984e8",
+    "platform": "MinhaPlataforma",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-06 13:05:04",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Jo\u00e3o Rodrigues Santos",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "31408808633",
+        "country": "BR",
+        "ip": "155.2.219.194"
+    },
+    "products": [
+        {
+            "id": "PROD_684311b0376cc",
+            "name": "Doa\u00e7\u00e3o",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 5573
+        }
+    ],
+    "trackingParameters": [],
+    "commission": {
+        "totalPriceInCents": 5573,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 5573
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-06 16:05:04] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "cf312292-b7dc-4332-87a6-b919033984e8",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-06 16:05:04",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Jo\u00e3o Rodrigues Santos",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "31408808633",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_684311b0376cc",
+            "name": "Doa\u00e7\u00e3o",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 5573
+        }
+    ],
+    "trackingParameters": {
+        "src": null,
+        "sck": null,
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null,
+        "utm_content": null,
+        "utm_term": null,
+        "xcod": null,
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": 5573,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 5573
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-06 16:05:04] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-06-06 16:05:04] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-06-06 16:11:02] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"84b1255b-5d84-4c66-99d6-5735cb675c06\",\"platform\":\"MinhaPlataforma\",\"paymentMethod\":\"pix\",\"status\":\"waiting_payment\",\"createdAt\":\"2025-06-06 13:11:02\",\"approvedDate\":null,\"refundedAt\":null,\"customer\":{\"name\":\"Maria Lopes Fernandes\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":\"48928091527\",\"country\":\"BR\",\"ip\":\"170.0.73.111\"},\"products\":[{\"id\":\"PROD_6843131653764\",\"name\":\"Doa\\u00e7\\u00e3o\",\"planId\":null,\"planName\":null,\"quantity\":1,\"priceInCents\":5573}],\"trackingParameters\":{\"utm_source\":\"FBjLj684309a1c8d1f165f250abf0\",\"utm_medium\":\"PDDIDY E INOCENTE|120226712980660081\",\"utm_campaign\":\"06\\\/06 CTV 17 CAXOTE  ESCALUDO PAGINA NOVA \\u2014 C\\u00f3pia|120226712981240081\",\"utm_content\":\"001|120226712981110081\",\"utm_term\":\"Instagram_Feed\"},\"commission\":{\"totalPriceInCents\":5573,\"gatewayFeeInCents\":0,\"userCommissionInCents\":5573},\"isTest\":false}"
+}
+----------------------------------------
+[2025-06-06 16:11:02] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "84b1255b-5d84-4c66-99d6-5735cb675c06",
+    "platform": "MinhaPlataforma",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-06 13:11:02",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Maria Lopes Fernandes",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "48928091527",
+        "country": "BR",
+        "ip": "170.0.73.111"
+    },
+    "products": [
+        {
+            "id": "PROD_6843131653764",
+            "name": "Doa\u00e7\u00e3o",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 5573
+        }
+    ],
+    "trackingParameters": {
+        "utm_source": "FBjLj684309a1c8d1f165f250abf0",
+        "utm_medium": "PDDIDY E INOCENTE|120226712980660081",
+        "utm_campaign": "06\/06 CTV 17 CAXOTE  ESCALUDO PAGINA NOVA \u2014 C\u00f3pia|120226712981240081",
+        "utm_content": "001|120226712981110081",
+        "utm_term": "Instagram_Feed"
+    },
+    "commission": {
+        "totalPriceInCents": 5573,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 5573
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-06 16:11:02] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "84b1255b-5d84-4c66-99d6-5735cb675c06",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-06 16:11:02",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Maria Lopes Fernandes",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "48928091527",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_6843131653764",
+            "name": "Doa\u00e7\u00e3o",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 5573
+        }
+    ],
+    "trackingParameters": {
+        "src": null,
+        "sck": null,
+        "utm_source": "FBjLj684309a1c8d1f165f250abf0",
+        "utm_campaign": "06\/06 CTV 17 CAXOTE  ESCALUDO PAGINA NOVA \u2014 C\u00f3pia|120226712981240081",
+        "utm_medium": "PDDIDY E INOCENTE|120226712980660081",
+        "utm_content": "001|120226712981110081",
+        "utm_term": "Instagram_Feed",
+        "xcod": null,
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": 5573,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 5573
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-06 16:11:02] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-06-06 16:11:02] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-06-06 16:13:00] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"bf20f6e9-8606-4791-ba61-ed66f0940dc2\",\"platform\":\"MinhaPlataforma\",\"paymentMethod\":\"pix\",\"status\":\"waiting_payment\",\"createdAt\":\"2025-06-06 13:13:00\",\"approvedDate\":null,\"refundedAt\":null,\"customer\":{\"name\":\"Julia Almeida Gomes\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":\"57910609205\",\"country\":\"BR\",\"ip\":\"131.161.46.87\"},\"products\":[{\"id\":\"PROD_6843138c166fd\",\"name\":\"Doa\\u00e7\\u00e3o\",\"planId\":null,\"planName\":null,\"quantity\":1,\"priceInCents\":5573}],\"trackingParameters\":{\"utm_source\":\"FBjLj68430c77d9cec33b1522e088\",\"utm_medium\":\"PDDIDY E INOCENTE|120226712980660081\",\"utm_campaign\":\"06\\\/06 CTV 17 CAXOTE  ESCALUDO PAGINA NOVA \\u2014 C\\u00f3pia|120226712981240081\",\"utm_content\":\"001|120226712981110081\",\"utm_term\":\"Instagram_Feed\"},\"commission\":{\"totalPriceInCents\":5573,\"gatewayFeeInCents\":0,\"userCommissionInCents\":5573},\"isTest\":false}"
+}
+----------------------------------------
+[2025-06-06 16:13:00] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "bf20f6e9-8606-4791-ba61-ed66f0940dc2",
+    "platform": "MinhaPlataforma",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-06 13:13:00",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Julia Almeida Gomes",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "57910609205",
+        "country": "BR",
+        "ip": "131.161.46.87"
+    },
+    "products": [
+        {
+            "id": "PROD_6843138c166fd",
+            "name": "Doa\u00e7\u00e3o",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 5573
+        }
+    ],
+    "trackingParameters": {
+        "utm_source": "FBjLj68430c77d9cec33b1522e088",
+        "utm_medium": "PDDIDY E INOCENTE|120226712980660081",
+        "utm_campaign": "06\/06 CTV 17 CAXOTE  ESCALUDO PAGINA NOVA \u2014 C\u00f3pia|120226712981240081",
+        "utm_content": "001|120226712981110081",
+        "utm_term": "Instagram_Feed"
+    },
+    "commission": {
+        "totalPriceInCents": 5573,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 5573
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-06 16:13:00] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "bf20f6e9-8606-4791-ba61-ed66f0940dc2",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-06 16:13:00",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Julia Almeida Gomes",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "57910609205",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_6843138c166fd",
+            "name": "Doa\u00e7\u00e3o",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 5573
+        }
+    ],
+    "trackingParameters": {
+        "src": null,
+        "sck": null,
+        "utm_source": "FBjLj68430c77d9cec33b1522e088",
+        "utm_campaign": "06\/06 CTV 17 CAXOTE  ESCALUDO PAGINA NOVA \u2014 C\u00f3pia|120226712981240081",
+        "utm_medium": "PDDIDY E INOCENTE|120226712980660081",
+        "utm_content": "001|120226712981110081",
+        "utm_term": "Instagram_Feed",
+        "xcod": null,
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": 5573,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 5573
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-06 16:13:00] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-06-06 16:13:00] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-06-06 16:16:21] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"d3ff8332-e484-4d41-a820-438262f624bf\",\"platform\":\"MinhaPlataforma\",\"paymentMethod\":\"pix\",\"status\":\"waiting_payment\",\"createdAt\":\"2025-06-06 13:16:21\",\"approvedDate\":null,\"refundedAt\":null,\"customer\":{\"name\":\"Bernardo Soares Barbosa\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":\"23571372662\",\"country\":\"BR\",\"ip\":\"152.237.74.35\"},\"products\":[{\"id\":\"PROD_68431455c1a22\",\"name\":\"Doa\\u00e7\\u00e3o\",\"planId\":null,\"planName\":null,\"quantity\":1,\"priceInCents\":5573}],\"trackingParameters\":{\"utm_source\":\"FBjLj68431205a9d915cc2cf4bd5c\",\"utm_medium\":\"PDDIDY E INOCENTE|120226712980660081\",\"utm_campaign\":\"06\\\/06 CTV 17 CAXOTE  ESCALUDO PAGINA NOVA \\u2014 C\\u00f3pia|120226712981240081\",\"utm_content\":\"001|120226712981110081\",\"utm_term\":\"Instagram_Reels\"},\"commission\":{\"totalPriceInCents\":5573,\"gatewayFeeInCents\":0,\"userCommissionInCents\":5573},\"isTest\":false}"
+}
+----------------------------------------
+[2025-06-06 16:16:21] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "d3ff8332-e484-4d41-a820-438262f624bf",
+    "platform": "MinhaPlataforma",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-06 13:16:21",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Bernardo Soares Barbosa",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "23571372662",
+        "country": "BR",
+        "ip": "152.237.74.35"
+    },
+    "products": [
+        {
+            "id": "PROD_68431455c1a22",
+            "name": "Doa\u00e7\u00e3o",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 5573
+        }
+    ],
+    "trackingParameters": {
+        "utm_source": "FBjLj68431205a9d915cc2cf4bd5c",
+        "utm_medium": "PDDIDY E INOCENTE|120226712980660081",
+        "utm_campaign": "06\/06 CTV 17 CAXOTE  ESCALUDO PAGINA NOVA \u2014 C\u00f3pia|120226712981240081",
+        "utm_content": "001|120226712981110081",
+        "utm_term": "Instagram_Reels"
+    },
+    "commission": {
+        "totalPriceInCents": 5573,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 5573
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-06 16:16:21] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "d3ff8332-e484-4d41-a820-438262f624bf",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-06 16:16:21",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Bernardo Soares Barbosa",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "23571372662",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_68431455c1a22",
+            "name": "Doa\u00e7\u00e3o",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 5573
+        }
+    ],
+    "trackingParameters": {
+        "src": null,
+        "sck": null,
+        "utm_source": "FBjLj68431205a9d915cc2cf4bd5c",
+        "utm_campaign": "06\/06 CTV 17 CAXOTE  ESCALUDO PAGINA NOVA \u2014 C\u00f3pia|120226712981240081",
+        "utm_medium": "PDDIDY E INOCENTE|120226712980660081",
+        "utm_content": "001|120226712981110081",
+        "utm_term": "Instagram_Reels",
+        "xcod": null,
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": 5573,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 5573
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-06 16:16:21] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-06-06 16:16:21] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-06-06 16:18:42] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"ee6f236a-6ef5-441c-ac71-9bcf542bba06\",\"platform\":\"MinhaPlataforma\",\"paymentMethod\":\"pix\",\"status\":\"waiting_payment\",\"createdAt\":\"2025-06-06 13:18:42\",\"approvedDate\":null,\"refundedAt\":null,\"customer\":{\"name\":\"Gabriel Carvalho Costa\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":\"68361155686\",\"country\":\"BR\",\"ip\":\"177.71.24.72\"},\"products\":[{\"id\":\"PROD_684314e2eb3e8\",\"name\":\"Doa\\u00e7\\u00e3o\",\"planId\":null,\"planName\":null,\"quantity\":1,\"priceInCents\":5573}],\"trackingParameters\":{\"utm_source\":\"FBjLj6843121858c383887a44f75f\",\"utm_medium\":\"PDDIDY E INOCENTE|120226712980660081\",\"utm_campaign\":\"06\\\/06 CTV 17 CAXOTE  ESCALUDO PAGINA NOVA \\u2014 C\\u00f3pia|120226712981240081\",\"utm_content\":\"001|120226712981110081\",\"utm_term\":\"Facebook_Mobile_Reels\"},\"commission\":{\"totalPriceInCents\":5573,\"gatewayFeeInCents\":0,\"userCommissionInCents\":5573},\"isTest\":false}"
+}
+----------------------------------------
+[2025-06-06 16:18:42] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "ee6f236a-6ef5-441c-ac71-9bcf542bba06",
+    "platform": "MinhaPlataforma",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-06 13:18:42",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Gabriel Carvalho Costa",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "68361155686",
+        "country": "BR",
+        "ip": "177.71.24.72"
+    },
+    "products": [
+        {
+            "id": "PROD_684314e2eb3e8",
+            "name": "Doa\u00e7\u00e3o",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 5573
+        }
+    ],
+    "trackingParameters": {
+        "utm_source": "FBjLj6843121858c383887a44f75f",
+        "utm_medium": "PDDIDY E INOCENTE|120226712980660081",
+        "utm_campaign": "06\/06 CTV 17 CAXOTE  ESCALUDO PAGINA NOVA \u2014 C\u00f3pia|120226712981240081",
+        "utm_content": "001|120226712981110081",
+        "utm_term": "Facebook_Mobile_Reels"
+    },
+    "commission": {
+        "totalPriceInCents": 5573,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 5573
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-06 16:18:42] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "ee6f236a-6ef5-441c-ac71-9bcf542bba06",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-06 16:18:42",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Gabriel Carvalho Costa",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "68361155686",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_684314e2eb3e8",
+            "name": "Doa\u00e7\u00e3o",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 5573
+        }
+    ],
+    "trackingParameters": {
+        "src": null,
+        "sck": null,
+        "utm_source": "FBjLj6843121858c383887a44f75f",
+        "utm_campaign": "06\/06 CTV 17 CAXOTE  ESCALUDO PAGINA NOVA \u2014 C\u00f3pia|120226712981240081",
+        "utm_medium": "PDDIDY E INOCENTE|120226712980660081",
+        "utm_content": "001|120226712981110081",
+        "utm_term": "Facebook_Mobile_Reels",
+        "xcod": null,
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": 5573,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 5573
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-06 16:18:42] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-06-06 16:18:43] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-06-06 16:35:35] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"9bc49535-89dd-4c0d-8d76-ef48350588b6\",\"platform\":\"MinhaPlataforma\",\"paymentMethod\":\"pix\",\"status\":\"waiting_payment\",\"createdAt\":\"2025-06-06 13:35:35\",\"approvedDate\":null,\"refundedAt\":null,\"customer\":{\"name\":\"Rafael Vieira Carvalho\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":\"69353672040\",\"country\":\"BR\",\"ip\":\"45.169.118.204\"},\"products\":[{\"id\":\"PROD_684318d757cb3\",\"name\":\"Doa\\u00e7\\u00e3o\",\"planId\":null,\"planName\":null,\"quantity\":1,\"priceInCents\":5573}],\"trackingParameters\":[],\"commission\":{\"totalPriceInCents\":5573,\"gatewayFeeInCents\":0,\"userCommissionInCents\":5573},\"isTest\":false}"
+}
+----------------------------------------
+[2025-06-06 16:35:35] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "9bc49535-89dd-4c0d-8d76-ef48350588b6",
+    "platform": "MinhaPlataforma",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-06 13:35:35",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Rafael Vieira Carvalho",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "69353672040",
+        "country": "BR",
+        "ip": "45.169.118.204"
+    },
+    "products": [
+        {
+            "id": "PROD_684318d757cb3",
+            "name": "Doa\u00e7\u00e3o",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 5573
+        }
+    ],
+    "trackingParameters": [],
+    "commission": {
+        "totalPriceInCents": 5573,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 5573
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-06 16:35:35] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "9bc49535-89dd-4c0d-8d76-ef48350588b6",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-06 16:35:35",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Rafael Vieira Carvalho",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "69353672040",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_684318d757cb3",
+            "name": "Doa\u00e7\u00e3o",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 5573
+        }
+    ],
+    "trackingParameters": {
+        "src": null,
+        "sck": null,
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null,
+        "utm_content": null,
+        "utm_term": null,
+        "xcod": null,
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": 5573,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 5573
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-06 16:35:35] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-06-06 16:35:35] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-06-06 16:55:11] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"2a8f3981-9ed6-4bfc-9bea-284d77dc685c\",\"platform\":\"MinhaPlataforma\",\"paymentMethod\":\"pix\",\"status\":\"waiting_payment\",\"createdAt\":\"2025-06-06 13:55:11\",\"approvedDate\":null,\"refundedAt\":null,\"customer\":{\"name\":\"Maria Oliveira Soares\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":\"99641512684\",\"country\":\"BR\",\"ip\":\"131.161.45.185\"},\"products\":[{\"id\":\"PROD_68431d6f21780\",\"name\":\"Doa\\u00e7\\u00e3o\",\"planId\":null,\"planName\":null,\"quantity\":1,\"priceInCents\":5573}],\"trackingParameters\":{\"utm_source\":\"FBjLj68431b19d767869bfdc177af\",\"utm_medium\":\"PDDIDY E INOCENTE|120226712980620081\",\"utm_campaign\":\"06\\\/06 CTV 17 CAXOTE  ESCALUDO PAGINA NOVA \\u2014 C\\u00f3pia|120226712981210081\",\"utm_content\":\"001|120226712980970081\",\"utm_term\":\"Facebook_Mobile_Feed\"},\"commission\":{\"totalPriceInCents\":5573,\"gatewayFeeInCents\":0,\"userCommissionInCents\":5573},\"isTest\":false}"
+}
+----------------------------------------
+[2025-06-06 16:55:11] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "2a8f3981-9ed6-4bfc-9bea-284d77dc685c",
+    "platform": "MinhaPlataforma",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-06 13:55:11",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Maria Oliveira Soares",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "99641512684",
+        "country": "BR",
+        "ip": "131.161.45.185"
+    },
+    "products": [
+        {
+            "id": "PROD_68431d6f21780",
+            "name": "Doa\u00e7\u00e3o",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 5573
+        }
+    ],
+    "trackingParameters": {
+        "utm_source": "FBjLj68431b19d767869bfdc177af",
+        "utm_medium": "PDDIDY E INOCENTE|120226712980620081",
+        "utm_campaign": "06\/06 CTV 17 CAXOTE  ESCALUDO PAGINA NOVA \u2014 C\u00f3pia|120226712981210081",
+        "utm_content": "001|120226712980970081",
+        "utm_term": "Facebook_Mobile_Feed"
+    },
+    "commission": {
+        "totalPriceInCents": 5573,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 5573
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-06 16:55:11] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "2a8f3981-9ed6-4bfc-9bea-284d77dc685c",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-06 16:55:11",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Maria Oliveira Soares",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "99641512684",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_68431d6f21780",
+            "name": "Doa\u00e7\u00e3o",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 5573
+        }
+    ],
+    "trackingParameters": {
+        "src": null,
+        "sck": null,
+        "utm_source": "FBjLj68431b19d767869bfdc177af",
+        "utm_campaign": "06\/06 CTV 17 CAXOTE  ESCALUDO PAGINA NOVA \u2014 C\u00f3pia|120226712981210081",
+        "utm_medium": "PDDIDY E INOCENTE|120226712980620081",
+        "utm_content": "001|120226712980970081",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": null,
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": 5573,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 5573
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-06 16:55:11] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-06-06 16:55:11] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-06-06 17:33:57] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"3059f971-0301-4570-b95c-77d55fea5097\",\"platform\":\"MinhaPlataforma\",\"paymentMethod\":\"pix\",\"status\":\"waiting_payment\",\"createdAt\":\"2025-06-06 14:33:57\",\"approvedDate\":null,\"refundedAt\":null,\"customer\":{\"name\":\"Bruno Vieira Santos\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":\"39602130342\",\"country\":\"BR\",\"ip\":\"191.58.99.48\"},\"products\":[{\"id\":\"PROD_68432685047c7\",\"name\":\"Doa\\u00e7\\u00e3o\",\"planId\":null,\"planName\":null,\"quantity\":1,\"priceInCents\":5573}],\"trackingParameters\":{\"utm_source\":\"FBjLj684324d557d2ca4e6e3b92e3\",\"utm_medium\":\"PDDIDY E INOCENTE|120226712981360081\",\"utm_campaign\":\"06\\\/06 CTV 17 CAXOTE  ESCALUDO PAGINA NOVA \\u2014 C\\u00f3pia|120226712980530081\",\"utm_content\":\"001|120226712980720081\",\"utm_term\":\"Facebook_Mobile_Feed\"},\"commission\":{\"totalPriceInCents\":5573,\"gatewayFeeInCents\":0,\"userCommissionInCents\":5573},\"isTest\":false}"
+}
+----------------------------------------
+[2025-06-06 17:33:57] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "3059f971-0301-4570-b95c-77d55fea5097",
+    "platform": "MinhaPlataforma",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-06 14:33:57",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Bruno Vieira Santos",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "39602130342",
+        "country": "BR",
+        "ip": "191.58.99.48"
+    },
+    "products": [
+        {
+            "id": "PROD_68432685047c7",
+            "name": "Doa\u00e7\u00e3o",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 5573
+        }
+    ],
+    "trackingParameters": {
+        "utm_source": "FBjLj684324d557d2ca4e6e3b92e3",
+        "utm_medium": "PDDIDY E INOCENTE|120226712981360081",
+        "utm_campaign": "06\/06 CTV 17 CAXOTE  ESCALUDO PAGINA NOVA \u2014 C\u00f3pia|120226712980530081",
+        "utm_content": "001|120226712980720081",
+        "utm_term": "Facebook_Mobile_Feed"
+    },
+    "commission": {
+        "totalPriceInCents": 5573,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 5573
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-06 17:33:57] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "3059f971-0301-4570-b95c-77d55fea5097",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-06 17:33:57",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Bruno Vieira Santos",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "39602130342",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_68432685047c7",
+            "name": "Doa\u00e7\u00e3o",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 5573
+        }
+    ],
+    "trackingParameters": {
+        "src": null,
+        "sck": null,
+        "utm_source": "FBjLj684324d557d2ca4e6e3b92e3",
+        "utm_campaign": "06\/06 CTV 17 CAXOTE  ESCALUDO PAGINA NOVA \u2014 C\u00f3pia|120226712980530081",
+        "utm_medium": "PDDIDY E INOCENTE|120226712981360081",
+        "utm_content": "001|120226712980720081",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": null,
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": 5573,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 5573
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-06 17:33:57] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-06-06 17:33:57] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-06-06 17:33:57] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"b9b6bf0e-3a0e-44c5-9182-e7ea50e00a36\",\"platform\":\"MinhaPlataforma\",\"paymentMethod\":\"pix\",\"status\":\"waiting_payment\",\"createdAt\":\"2025-06-06 14:33:57\",\"approvedDate\":null,\"refundedAt\":null,\"customer\":{\"name\":\"Arthur Barbosa Carvalho\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":\"72127263626\",\"country\":\"BR\",\"ip\":\"191.58.99.48\"},\"products\":[{\"id\":\"PROD_684326857bbfe\",\"name\":\"Doa\\u00e7\\u00e3o\",\"planId\":null,\"planName\":null,\"quantity\":1,\"priceInCents\":5573}],\"trackingParameters\":[],\"commission\":{\"totalPriceInCents\":5573,\"gatewayFeeInCents\":0,\"userCommissionInCents\":5573},\"isTest\":false}"
+}
+----------------------------------------
+[2025-06-06 17:33:57] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "b9b6bf0e-3a0e-44c5-9182-e7ea50e00a36",
+    "platform": "MinhaPlataforma",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-06 14:33:57",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Arthur Barbosa Carvalho",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "72127263626",
+        "country": "BR",
+        "ip": "191.58.99.48"
+    },
+    "products": [
+        {
+            "id": "PROD_684326857bbfe",
+            "name": "Doa\u00e7\u00e3o",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 5573
+        }
+    ],
+    "trackingParameters": [],
+    "commission": {
+        "totalPriceInCents": 5573,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 5573
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-06 17:33:57] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "b9b6bf0e-3a0e-44c5-9182-e7ea50e00a36",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-06 17:33:57",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Arthur Barbosa Carvalho",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "72127263626",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_684326857bbfe",
+            "name": "Doa\u00e7\u00e3o",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 5573
+        }
+    ],
+    "trackingParameters": {
+        "src": null,
+        "sck": null,
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null,
+        "utm_content": null,
+        "utm_term": null,
+        "xcod": null,
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": 5573,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 5573
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-06 17:33:57] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-06-06 17:33:57] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-06-06 17:52:16] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"5a8d396e-1321-44d4-81b4-5d197a5c5da5\",\"platform\":\"MinhaPlataforma\",\"paymentMethod\":\"pix\",\"status\":\"waiting_payment\",\"createdAt\":\"2025-06-06 14:52:16\",\"approvedDate\":null,\"refundedAt\":null,\"customer\":{\"name\":\"Manuela Fernandes Soares\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":\"61750476053\",\"country\":\"BR\",\"ip\":\"177.137.4.249\"},\"products\":[{\"id\":\"PROD_68432ad0748a2\",\"name\":\"Doa\\u00e7\\u00e3o\",\"planId\":null,\"planName\":null,\"quantity\":1,\"priceInCents\":5573}],\"trackingParameters\":{\"utm_source\":\"FBjLj6843090b4a6b0cfef1679567\",\"utm_medium\":\"PDDIDY E INOCENTE|120226712980660081\",\"utm_campaign\":\"06\\\/06 CTV 17 CAXOTE  ESCALUDO PAGINA NOVA \\u2014 C\\u00f3pia|120226712981240081\",\"utm_content\":\"001|120226712981110081\",\"utm_term\":\"Facebook_Mobile_Reels\"},\"commission\":{\"totalPriceInCents\":5573,\"gatewayFeeInCents\":0,\"userCommissionInCents\":5573},\"isTest\":false}"
+}
+----------------------------------------
+[2025-06-06 17:52:16] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "5a8d396e-1321-44d4-81b4-5d197a5c5da5",
+    "platform": "MinhaPlataforma",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-06 14:52:16",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Manuela Fernandes Soares",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "61750476053",
+        "country": "BR",
+        "ip": "177.137.4.249"
+    },
+    "products": [
+        {
+            "id": "PROD_68432ad0748a2",
+            "name": "Doa\u00e7\u00e3o",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 5573
+        }
+    ],
+    "trackingParameters": {
+        "utm_source": "FBjLj6843090b4a6b0cfef1679567",
+        "utm_medium": "PDDIDY E INOCENTE|120226712980660081",
+        "utm_campaign": "06\/06 CTV 17 CAXOTE  ESCALUDO PAGINA NOVA \u2014 C\u00f3pia|120226712981240081",
+        "utm_content": "001|120226712981110081",
+        "utm_term": "Facebook_Mobile_Reels"
+    },
+    "commission": {
+        "totalPriceInCents": 5573,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 5573
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-06 17:52:16] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "5a8d396e-1321-44d4-81b4-5d197a5c5da5",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-06 17:52:16",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Manuela Fernandes Soares",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "61750476053",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_68432ad0748a2",
+            "name": "Doa\u00e7\u00e3o",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 5573
+        }
+    ],
+    "trackingParameters": {
+        "src": null,
+        "sck": null,
+        "utm_source": "FBjLj6843090b4a6b0cfef1679567",
+        "utm_campaign": "06\/06 CTV 17 CAXOTE  ESCALUDO PAGINA NOVA \u2014 C\u00f3pia|120226712981240081",
+        "utm_medium": "PDDIDY E INOCENTE|120226712980660081",
+        "utm_content": "001|120226712981110081",
+        "utm_term": "Facebook_Mobile_Reels",
+        "xcod": null,
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": 5573,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 5573
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-06 17:52:16] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-06-06 17:52:16] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-06-06 18:53:50] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"b28073fc-c8ab-4ac3-8f12-be149e779bb0\",\"platform\":\"MinhaPlataforma\",\"paymentMethod\":\"pix\",\"status\":\"waiting_payment\",\"createdAt\":\"2025-06-06 15:53:50\",\"approvedDate\":null,\"refundedAt\":null,\"customer\":{\"name\":\"Manuela Costa Silva\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":\"55765956025\",\"country\":\"BR\",\"ip\":\"216.234.208.229\"},\"products\":[{\"id\":\"PROD_6843393ee2e29\",\"name\":\"Doa\\u00e7\\u00e3o\",\"planId\":null,\"planName\":null,\"quantity\":1,\"priceInCents\":5573}],\"trackingParameters\":{\"utm_source\":\"FBjLj6843372e840f97f94dd052cc\",\"utm_medium\":\"PDDIDY E INOCENTE|120226659123170081\",\"utm_campaign\":\"05\\\/06 CTV 17 CAXOTE  ESCALUDO PAGINA NOVA MEIDIA \\u2014 C\\u00f3pia|120226659123050081\",\"utm_content\":\"001|120226659123840081\",\"utm_term\":\"Facebook_Mobile_Reels\"},\"commission\":{\"totalPriceInCents\":5573,\"gatewayFeeInCents\":0,\"userCommissionInCents\":5573},\"isTest\":false}"
+}
+----------------------------------------
+[2025-06-06 18:53:50] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "b28073fc-c8ab-4ac3-8f12-be149e779bb0",
+    "platform": "MinhaPlataforma",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-06 15:53:50",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Manuela Costa Silva",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "55765956025",
+        "country": "BR",
+        "ip": "216.234.208.229"
+    },
+    "products": [
+        {
+            "id": "PROD_6843393ee2e29",
+            "name": "Doa\u00e7\u00e3o",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 5573
+        }
+    ],
+    "trackingParameters": {
+        "utm_source": "FBjLj6843372e840f97f94dd052cc",
+        "utm_medium": "PDDIDY E INOCENTE|120226659123170081",
+        "utm_campaign": "05\/06 CTV 17 CAXOTE  ESCALUDO PAGINA NOVA MEIDIA \u2014 C\u00f3pia|120226659123050081",
+        "utm_content": "001|120226659123840081",
+        "utm_term": "Facebook_Mobile_Reels"
+    },
+    "commission": {
+        "totalPriceInCents": 5573,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 5573
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-06 18:53:50] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "b28073fc-c8ab-4ac3-8f12-be149e779bb0",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-06 18:53:50",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Manuela Costa Silva",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "55765956025",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_6843393ee2e29",
+            "name": "Doa\u00e7\u00e3o",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 5573
+        }
+    ],
+    "trackingParameters": {
+        "src": null,
+        "sck": null,
+        "utm_source": "FBjLj6843372e840f97f94dd052cc",
+        "utm_campaign": "05\/06 CTV 17 CAXOTE  ESCALUDO PAGINA NOVA MEIDIA \u2014 C\u00f3pia|120226659123050081",
+        "utm_medium": "PDDIDY E INOCENTE|120226659123170081",
+        "utm_content": "001|120226659123840081",
+        "utm_term": "Facebook_Mobile_Reels",
+        "xcod": null,
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": 5573,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 5573
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-06 18:53:50] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-06-06 18:53:51] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-06-06 18:54:20] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"a66adfa0-6b99-45fd-9822-d1f2503c7a60\",\"platform\":\"MinhaPlataforma\",\"paymentMethod\":\"pix\",\"status\":\"waiting_payment\",\"createdAt\":\"2025-06-06 15:54:20\",\"approvedDate\":null,\"refundedAt\":null,\"customer\":{\"name\":\"Gabriel Barbosa Souza\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":\"00146992148\",\"country\":\"BR\",\"ip\":\"177.51.65.96\"},\"products\":[{\"id\":\"PROD_6843395c0dba4\",\"name\":\"Doa\\u00e7\\u00e3o\",\"planId\":null,\"planName\":null,\"quantity\":1,\"priceInCents\":5573}],\"trackingParameters\":{\"utm_source\":\"FBjLj68430abe53e738bb1bda55a1\",\"utm_medium\":\"PDDIDY E INOCENTE|120226712980660081\",\"utm_campaign\":\"06\\\/06 CTV 17 CAXOTE  ESCALUDO PAGINA NOVA \\u2014 C\\u00f3pia|120226712981240081\",\"utm_content\":\"001|120226712981110081\",\"utm_term\":\"Instagram_Feed\"},\"commission\":{\"totalPriceInCents\":5573,\"gatewayFeeInCents\":0,\"userCommissionInCents\":5573},\"isTest\":false}"
+}
+----------------------------------------
+[2025-06-06 18:54:20] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "a66adfa0-6b99-45fd-9822-d1f2503c7a60",
+    "platform": "MinhaPlataforma",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-06 15:54:20",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Gabriel Barbosa Souza",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "00146992148",
+        "country": "BR",
+        "ip": "177.51.65.96"
+    },
+    "products": [
+        {
+            "id": "PROD_6843395c0dba4",
+            "name": "Doa\u00e7\u00e3o",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 5573
+        }
+    ],
+    "trackingParameters": {
+        "utm_source": "FBjLj68430abe53e738bb1bda55a1",
+        "utm_medium": "PDDIDY E INOCENTE|120226712980660081",
+        "utm_campaign": "06\/06 CTV 17 CAXOTE  ESCALUDO PAGINA NOVA \u2014 C\u00f3pia|120226712981240081",
+        "utm_content": "001|120226712981110081",
+        "utm_term": "Instagram_Feed"
+    },
+    "commission": {
+        "totalPriceInCents": 5573,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 5573
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-06 18:54:20] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "a66adfa0-6b99-45fd-9822-d1f2503c7a60",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-06 18:54:20",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Gabriel Barbosa Souza",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "00146992148",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_6843395c0dba4",
+            "name": "Doa\u00e7\u00e3o",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 5573
+        }
+    ],
+    "trackingParameters": {
+        "src": null,
+        "sck": null,
+        "utm_source": "FBjLj68430abe53e738bb1bda55a1",
+        "utm_campaign": "06\/06 CTV 17 CAXOTE  ESCALUDO PAGINA NOVA \u2014 C\u00f3pia|120226712981240081",
+        "utm_medium": "PDDIDY E INOCENTE|120226712980660081",
+        "utm_content": "001|120226712981110081",
+        "utm_term": "Instagram_Feed",
+        "xcod": null,
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": 5573,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 5573
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-06 18:54:20] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-06-06 18:54:20] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-06-06 20:14:35] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"cdb00625-87f4-4f1b-90e9-7565bc74bb41\",\"platform\":\"MinhaPlataforma\",\"paymentMethod\":\"pix\",\"status\":\"waiting_payment\",\"createdAt\":\"2025-06-06 17:14:35\",\"approvedDate\":null,\"refundedAt\":null,\"customer\":{\"name\":\"Ana Costa Oliveira\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":\"24036205137\",\"country\":\"BR\",\"ip\":\"177.174.206.131\"},\"products\":[{\"id\":\"PROD_68434c2b821c6\",\"name\":\"Doa\\u00e7\\u00e3o\",\"planId\":null,\"planName\":null,\"quantity\":1,\"priceInCents\":5573}],\"trackingParameters\":{\"utm_source\":\"FBjLj684302aded4c1d3307215769\",\"utm_medium\":\"PDDIDY E INOCENTE|120226712980660081\",\"utm_campaign\":\"06\\\/06 CTV 17 CAXOTE  ESCALUDO PAGINA NOVA \\u2014 C\\u00f3pia|120226712981240081\",\"utm_content\":\"001|120226712981110081\",\"utm_term\":\"Facebook_Mobile_Feed\"},\"commission\":{\"totalPriceInCents\":5573,\"gatewayFeeInCents\":0,\"userCommissionInCents\":5573},\"isTest\":false}"
+}
+----------------------------------------
+[2025-06-06 20:14:35] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "cdb00625-87f4-4f1b-90e9-7565bc74bb41",
+    "platform": "MinhaPlataforma",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-06 17:14:35",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Ana Costa Oliveira",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "24036205137",
+        "country": "BR",
+        "ip": "177.174.206.131"
+    },
+    "products": [
+        {
+            "id": "PROD_68434c2b821c6",
+            "name": "Doa\u00e7\u00e3o",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 5573
+        }
+    ],
+    "trackingParameters": {
+        "utm_source": "FBjLj684302aded4c1d3307215769",
+        "utm_medium": "PDDIDY E INOCENTE|120226712980660081",
+        "utm_campaign": "06\/06 CTV 17 CAXOTE  ESCALUDO PAGINA NOVA \u2014 C\u00f3pia|120226712981240081",
+        "utm_content": "001|120226712981110081",
+        "utm_term": "Facebook_Mobile_Feed"
+    },
+    "commission": {
+        "totalPriceInCents": 5573,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 5573
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-06 20:14:35] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "cdb00625-87f4-4f1b-90e9-7565bc74bb41",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-06 20:14:35",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Ana Costa Oliveira",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "24036205137",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_68434c2b821c6",
+            "name": "Doa\u00e7\u00e3o",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 5573
+        }
+    ],
+    "trackingParameters": {
+        "src": null,
+        "sck": null,
+        "utm_source": "FBjLj684302aded4c1d3307215769",
+        "utm_campaign": "06\/06 CTV 17 CAXOTE  ESCALUDO PAGINA NOVA \u2014 C\u00f3pia|120226712981240081",
+        "utm_medium": "PDDIDY E INOCENTE|120226712980660081",
+        "utm_content": "001|120226712981110081",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": null,
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": 5573,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 5573
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-06 20:14:35] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-06-06 20:14:35] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-06-06 20:36:57] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"219922a6-6e2a-4c99-8bf0-242e027fde28\",\"platform\":\"MinhaPlataforma\",\"paymentMethod\":\"pix\",\"status\":\"waiting_payment\",\"createdAt\":\"2025-06-06 17:36:57\",\"approvedDate\":null,\"refundedAt\":null,\"customer\":{\"name\":\"Beatriz Oliveira Rodrigues\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":\"39937768101\",\"country\":\"BR\",\"ip\":\"177.221.172.151\"},\"products\":[{\"id\":\"PROD_68435169a5028\",\"name\":\"Doa\\u00e7\\u00e3o\",\"planId\":null,\"planName\":null,\"quantity\":1,\"priceInCents\":5573}],\"trackingParameters\":{\"utm_source\":\"FBjLj68434f94cabaf15f6b77899f\",\"utm_medium\":\"PDDIDY E INOCENTE|120226712980660081\",\"utm_campaign\":\"06\\\/06 CTV 17 CAXOTE  ESCALUDO PAGINA NOVA \\u2014 C\\u00f3pia|120226712981240081\",\"utm_content\":\"001|120226712981110081\",\"utm_term\":\"Facebook_Mobile_Feed\"},\"commission\":{\"totalPriceInCents\":5573,\"gatewayFeeInCents\":0,\"userCommissionInCents\":5573},\"isTest\":false}"
+}
+----------------------------------------
+[2025-06-06 20:36:57] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "219922a6-6e2a-4c99-8bf0-242e027fde28",
+    "platform": "MinhaPlataforma",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-06 17:36:57",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Beatriz Oliveira Rodrigues",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "39937768101",
+        "country": "BR",
+        "ip": "177.221.172.151"
+    },
+    "products": [
+        {
+            "id": "PROD_68435169a5028",
+            "name": "Doa\u00e7\u00e3o",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 5573
+        }
+    ],
+    "trackingParameters": {
+        "utm_source": "FBjLj68434f94cabaf15f6b77899f",
+        "utm_medium": "PDDIDY E INOCENTE|120226712980660081",
+        "utm_campaign": "06\/06 CTV 17 CAXOTE  ESCALUDO PAGINA NOVA \u2014 C\u00f3pia|120226712981240081",
+        "utm_content": "001|120226712981110081",
+        "utm_term": "Facebook_Mobile_Feed"
+    },
+    "commission": {
+        "totalPriceInCents": 5573,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 5573
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-06 20:36:57] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "219922a6-6e2a-4c99-8bf0-242e027fde28",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-06 20:36:57",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Beatriz Oliveira Rodrigues",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "39937768101",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_68435169a5028",
+            "name": "Doa\u00e7\u00e3o",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 5573
+        }
+    ],
+    "trackingParameters": {
+        "src": null,
+        "sck": null,
+        "utm_source": "FBjLj68434f94cabaf15f6b77899f",
+        "utm_campaign": "06\/06 CTV 17 CAXOTE  ESCALUDO PAGINA NOVA \u2014 C\u00f3pia|120226712981240081",
+        "utm_medium": "PDDIDY E INOCENTE|120226712980660081",
+        "utm_content": "001|120226712981110081",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": null,
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": 5573,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 5573
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-06 20:36:57] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-06-06 20:36:57] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-06-06 21:40:43] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"1b03a158-b326-4dc1-9c7f-21034b126bd3\",\"platform\":\"MinhaPlataforma\",\"paymentMethod\":\"pix\",\"status\":\"waiting_payment\",\"createdAt\":\"2025-06-06 18:40:43\",\"approvedDate\":null,\"refundedAt\":null,\"customer\":{\"name\":\"Julia Costa Almeida\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":\"56607561667\",\"country\":\"BR\",\"ip\":\"179.94.37.89\"},\"products\":[{\"id\":\"PROD_6843605b9e2e6\",\"name\":\"Doa\\u00e7\\u00e3o\",\"planId\":null,\"planName\":null,\"quantity\":1,\"priceInCents\":5573}],\"trackingParameters\":{\"utm_source\":\"FBjLj68435e4ce823b9e0f15492ea\",\"utm_medium\":\"PDDIDY E INOCENTE|120226712980560081\",\"utm_campaign\":\"06\\\/06 CTV 17 CAXOTE  ESCALUDO PAGINA NOVA \\u2014 C\\u00f3pia|120226712981250081\",\"utm_content\":\"001|120226712981120081\",\"utm_term\":\"Facebook_Mobile_Feed\"},\"commission\":{\"totalPriceInCents\":5573,\"gatewayFeeInCents\":0,\"userCommissionInCents\":5573},\"isTest\":false}"
+}
+----------------------------------------
+[2025-06-06 21:40:43] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "1b03a158-b326-4dc1-9c7f-21034b126bd3",
+    "platform": "MinhaPlataforma",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-06 18:40:43",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Julia Costa Almeida",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "56607561667",
+        "country": "BR",
+        "ip": "179.94.37.89"
+    },
+    "products": [
+        {
+            "id": "PROD_6843605b9e2e6",
+            "name": "Doa\u00e7\u00e3o",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 5573
+        }
+    ],
+    "trackingParameters": {
+        "utm_source": "FBjLj68435e4ce823b9e0f15492ea",
+        "utm_medium": "PDDIDY E INOCENTE|120226712980560081",
+        "utm_campaign": "06\/06 CTV 17 CAXOTE  ESCALUDO PAGINA NOVA \u2014 C\u00f3pia|120226712981250081",
+        "utm_content": "001|120226712981120081",
+        "utm_term": "Facebook_Mobile_Feed"
+    },
+    "commission": {
+        "totalPriceInCents": 5573,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 5573
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-06 21:40:43] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "1b03a158-b326-4dc1-9c7f-21034b126bd3",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-06 21:40:43",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Julia Costa Almeida",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "56607561667",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_6843605b9e2e6",
+            "name": "Doa\u00e7\u00e3o",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 5573
+        }
+    ],
+    "trackingParameters": {
+        "src": null,
+        "sck": null,
+        "utm_source": "FBjLj68435e4ce823b9e0f15492ea",
+        "utm_campaign": "06\/06 CTV 17 CAXOTE  ESCALUDO PAGINA NOVA \u2014 C\u00f3pia|120226712981250081",
+        "utm_medium": "PDDIDY E INOCENTE|120226712980560081",
+        "utm_content": "001|120226712981120081",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": null,
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": 5573,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 5573
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-06 21:40:43] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-06-06 21:40:43] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-06-07 00:32:41] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"9b44e103-ed76-46fc-ae59-4389a8bf9300\",\"platform\":\"MinhaPlataforma\",\"paymentMethod\":\"pix\",\"status\":\"waiting_payment\",\"createdAt\":\"2025-06-06 21:32:40\",\"approvedDate\":null,\"refundedAt\":null,\"customer\":{\"name\":\"Laura Vieira Alves\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":\"41143220277\",\"country\":\"BR\",\"ip\":\"177.75.168.175\"},\"products\":[{\"id\":\"PROD_684388a8eded0\",\"name\":\"Doa\\u00e7\\u00e3o\",\"planId\":null,\"planName\":null,\"quantity\":1,\"priceInCents\":5573}],\"trackingParameters\":{\"utm_source\":\"FBjLj6842da3508ce8fcfef1dab07\",\"utm_medium\":\"PDDIDY E INOCENTE|120226703271230081\",\"utm_campaign\":\"06\\\/06 CTV 17 CAXOTE  ESCALUDO PAGINA NOVA|120226703271240081\",\"utm_content\":\"001|120226703271250081\",\"utm_term\":\"Facebook_Mobile_Feed\"},\"commission\":{\"totalPriceInCents\":5573,\"gatewayFeeInCents\":0,\"userCommissionInCents\":5573},\"isTest\":false}"
+}
+----------------------------------------
+[2025-06-07 00:32:41] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "9b44e103-ed76-46fc-ae59-4389a8bf9300",
+    "platform": "MinhaPlataforma",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-06 21:32:40",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Laura Vieira Alves",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "41143220277",
+        "country": "BR",
+        "ip": "177.75.168.175"
+    },
+    "products": [
+        {
+            "id": "PROD_684388a8eded0",
+            "name": "Doa\u00e7\u00e3o",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 5573
+        }
+    ],
+    "trackingParameters": {
+        "utm_source": "FBjLj6842da3508ce8fcfef1dab07",
+        "utm_medium": "PDDIDY E INOCENTE|120226703271230081",
+        "utm_campaign": "06\/06 CTV 17 CAXOTE  ESCALUDO PAGINA NOVA|120226703271240081",
+        "utm_content": "001|120226703271250081",
+        "utm_term": "Facebook_Mobile_Feed"
+    },
+    "commission": {
+        "totalPriceInCents": 5573,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 5573
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-07 00:32:41] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "9b44e103-ed76-46fc-ae59-4389a8bf9300",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-07 00:32:41",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Laura Vieira Alves",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "41143220277",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_684388a8eded0",
+            "name": "Doa\u00e7\u00e3o",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 5573
+        }
+    ],
+    "trackingParameters": {
+        "src": null,
+        "sck": null,
+        "utm_source": "FBjLj6842da3508ce8fcfef1dab07",
+        "utm_campaign": "06\/06 CTV 17 CAXOTE  ESCALUDO PAGINA NOVA|120226703271240081",
+        "utm_medium": "PDDIDY E INOCENTE|120226703271230081",
+        "utm_content": "001|120226703271250081",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": null,
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": 5573,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 5573
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-07 00:32:41] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-06-07 00:32:41] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-06-07 01:10:01] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"d6b444f9-ac92-4ae0-be52-b54a3d4d322e\",\"platform\":\"MinhaPlataforma\",\"paymentMethod\":\"pix\",\"status\":\"waiting_payment\",\"createdAt\":\"2025-06-06 22:10:01\",\"approvedDate\":null,\"refundedAt\":null,\"customer\":{\"name\":\"Pedro Lopes Ferreira\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":\"49773532429\",\"country\":\"BR\",\"ip\":\"143.202.115.36\"},\"products\":[{\"id\":\"PROD_684391691e19e\",\"name\":\"Doa\\u00e7\\u00e3o\",\"planId\":null,\"planName\":null,\"quantity\":1,\"priceInCents\":5573}],\"trackingParameters\":{\"utm_source\":\"FBjLj68438eee52eb810d2c4e1e22\",\"utm_medium\":\"PDDIDY E INOCENTE|120226712980660081\",\"utm_campaign\":\"06\\\/06 CTV 17 CAXOTE  ESCALUDO PAGINA NOVA \\u2014 C\\u00f3pia|120226712981240081\",\"utm_content\":\"001|120226712981110081\",\"utm_term\":\"Facebook_Mobile_Feed\"},\"commission\":{\"totalPriceInCents\":5573,\"gatewayFeeInCents\":0,\"userCommissionInCents\":5573},\"isTest\":false}"
+}
+----------------------------------------
+[2025-06-07 01:10:01] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "d6b444f9-ac92-4ae0-be52-b54a3d4d322e",
+    "platform": "MinhaPlataforma",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-06 22:10:01",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Pedro Lopes Ferreira",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "49773532429",
+        "country": "BR",
+        "ip": "143.202.115.36"
+    },
+    "products": [
+        {
+            "id": "PROD_684391691e19e",
+            "name": "Doa\u00e7\u00e3o",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 5573
+        }
+    ],
+    "trackingParameters": {
+        "utm_source": "FBjLj68438eee52eb810d2c4e1e22",
+        "utm_medium": "PDDIDY E INOCENTE|120226712980660081",
+        "utm_campaign": "06\/06 CTV 17 CAXOTE  ESCALUDO PAGINA NOVA \u2014 C\u00f3pia|120226712981240081",
+        "utm_content": "001|120226712981110081",
+        "utm_term": "Facebook_Mobile_Feed"
+    },
+    "commission": {
+        "totalPriceInCents": 5573,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 5573
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-07 01:10:01] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "d6b444f9-ac92-4ae0-be52-b54a3d4d322e",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-06-07 01:10:01",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Pedro Lopes Ferreira",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "49773532429",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_684391691e19e",
+            "name": "Doa\u00e7\u00e3o",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 5573
+        }
+    ],
+    "trackingParameters": {
+        "src": null,
+        "sck": null,
+        "utm_source": "FBjLj68438eee52eb810d2c4e1e22",
+        "utm_campaign": "06\/06 CTV 17 CAXOTE  ESCALUDO PAGINA NOVA \u2014 C\u00f3pia|120226712981240081",
+        "utm_medium": "PDDIDY E INOCENTE|120226712980660081",
+        "utm_content": "001|120226712981110081",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": null,
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": 5573,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 5573
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-07 01:10:01] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-06-07 01:10:01] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------

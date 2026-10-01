@@ -1,0 +1,119 @@
+[2025-06-24 11:49:15] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"cb9e82c4-dfe7-484d-9776-4b0e54d28e35\",\"platform\":\"PayHubr\",\"paymentMethod\":\"pix\",\"status\":\"paid\",\"createdAt\":\"2025-06-24T11:48:00-03:00\",\"approvedDate\":\"2025-06-24 11:49:15\",\"paidAt\":\"2025-06-24 11:49:15\",\"refundedAt\":null,\"customer\":{\"name\":\"Beatriz Soares Lopes\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":{\"number\":\"89670526698\",\"type\":\"CPF\"},\"country\":\"BR\",\"ip\":\"64.23.135.43\"},\"items\":[{\"id\":\"PROD_685abaebad293\",\"title\":\"Produto 55.73\",\"quantity\":1,\"unitPrice\":\"5573\"}],\"amount\":\"5573\",\"fee\":{\"fixedAmount\":0,\"netAmount\":\"5573\"},\"trackingParameters\":{\"src\":\"FBjLj685ab8d5df6e0429565a73ae\",\"sck\":\"FBjLj685ab8d5df6e0429565a73aehQwK21wXxR24-06 CTV 06 DARK \\u2014 C\\u00f3pia|120227833973830061hQwK21wXxRCAIXINHA|120227833974370061hQwK21wXxR06|120227833974800061hQwK21wXxRFacebook_Mobile_Feed\",\"utm_source\":\"FBjLj685ab8d5df6e0429565a73ae\",\"utm_campaign\":\"24-06 CTV 06 DARK \\u2014 C\\u00f3pia|120227833973830061\",\"utm_medium\":\"CAIXINHA|120227833974370061\",\"utm_content\":\"06|120227833974800061\",\"utm_term\":\"Facebook_Mobile_Feed\",\"xcod\":\"FBjLj685ab8d5df6e0429565a73aehQwK21wXxR24-06 CTV 06 DARK \\u2014 C\\u00f3pia|120227833973830061hQwK21wXxRCAIXINHA|120227833974370061hQwK21wXxR06|120227833974800061hQwK21wXxRFacebook_Mobile_Feed\"},\"isTest\":false}"
+}
+----------------------------------------
+[2025-06-24 11:49:15] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "cb9e82c4-dfe7-484d-9776-4b0e54d28e35",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "paid",
+    "createdAt": "2025-06-24T11:48:00-03:00",
+    "approvedDate": "2025-06-24 11:49:15",
+    "paidAt": "2025-06-24 11:49:15",
+    "refundedAt": null,
+    "customer": {
+        "name": "Beatriz Soares Lopes",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": {
+            "number": "89670526698",
+            "type": "CPF"
+        },
+        "country": "BR",
+        "ip": "64.23.135.43"
+    },
+    "items": [
+        {
+            "id": "PROD_685abaebad293",
+            "title": "Produto 55.73",
+            "quantity": 1,
+            "unitPrice": "5573"
+        }
+    ],
+    "amount": "5573",
+    "fee": {
+        "fixedAmount": 0,
+        "netAmount": "5573"
+    },
+    "trackingParameters": {
+        "src": "FBjLj685ab8d5df6e0429565a73ae",
+        "sck": "FBjLj685ab8d5df6e0429565a73aehQwK21wXxR24-06 CTV 06 DARK \u2014 C\u00f3pia|120227833973830061hQwK21wXxRCAIXINHA|120227833974370061hQwK21wXxR06|120227833974800061hQwK21wXxRFacebook_Mobile_Feed",
+        "utm_source": "FBjLj685ab8d5df6e0429565a73ae",
+        "utm_campaign": "24-06 CTV 06 DARK \u2014 C\u00f3pia|120227833973830061",
+        "utm_medium": "CAIXINHA|120227833974370061",
+        "utm_content": "06|120227833974800061",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": "FBjLj685ab8d5df6e0429565a73aehQwK21wXxR24-06 CTV 06 DARK \u2014 C\u00f3pia|120227833973830061hQwK21wXxRCAIXINHA|120227833974370061hQwK21wXxR06|120227833974800061hQwK21wXxRFacebook_Mobile_Feed"
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-24 11:49:15] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "cb9e82c4-dfe7-484d-9776-4b0e54d28e35",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "paid",
+    "createdAt": "2025-06-24 14:48:00",
+    "approvedDate": "2025-06-24 14:49:15",
+    "refundedAt": null,
+    "customer": {
+        "name": "Beatriz Soares Lopes",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "89670526698",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_685abaebad293",
+            "name": "Produto 55.73",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": "5573"
+        }
+    ],
+    "trackingParameters": {
+        "src": "FBjLj685ab8d5df6e0429565a73ae",
+        "sck": "FBjLj685ab8d5df6e0429565a73aehQwK21wXxR24-06 CTV 06 DARK \u2014 C\u00f3pia|120227833973830061hQwK21wXxRCAIXINHA|120227833974370061hQwK21wXxR06|120227833974800061hQwK21wXxRFacebook_Mobile_Feed",
+        "utm_source": "FBjLj685ab8d5df6e0429565a73ae",
+        "utm_campaign": "24-06 CTV 06 DARK \u2014 C\u00f3pia|120227833973830061",
+        "utm_medium": "CAIXINHA|120227833974370061",
+        "utm_content": "06|120227833974800061",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": "FBjLj685ab8d5df6e0429565a73aehQwK21wXxR24-06 CTV 06 DARK \u2014 C\u00f3pia|120227833973830061hQwK21wXxRCAIXINHA|120227833974370061hQwK21wXxR06|120227833974800061hQwK21wXxRFacebook_Mobile_Feed",
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": "5573",
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": "5573"
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-06-24 11:49:15] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-06-24 11:49:15] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------

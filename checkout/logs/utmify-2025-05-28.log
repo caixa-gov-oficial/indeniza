@@ -1,0 +1,110 @@
+[2025-05-28 06:53:18] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"9590d6a7-d5e0-4866-8f05-faf0d6dc2cf0\",\"platform\":\"PayHubr\",\"paymentMethod\":\"pix\",\"status\":\"paid\",\"createdAt\":\"2025-05-28T06:52:00-03:00\",\"approvedDate\":\"2025-05-28 06:53:18\",\"paidAt\":\"2025-05-28 06:53:18\",\"refundedAt\":null,\"customer\":{\"name\":\"Maria Fernandes Barbosa\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":{\"number\":\"01818461447\",\"type\":\"CPF\"},\"country\":\"BR\",\"ip\":\"64.23.135.43\"},\"items\":[{\"id\":\"PROD_6836dd0e7b3e4\",\"title\":\"Produto 55.73\",\"quantity\":1,\"unitPrice\":\"5573\"}],\"amount\":\"5573\",\"fee\":{\"fixedAmount\":0,\"netAmount\":\"5573\"},\"trackingParameters\":[],\"isTest\":false}"
+}
+----------------------------------------
+[2025-05-28 06:53:18] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "9590d6a7-d5e0-4866-8f05-faf0d6dc2cf0",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "paid",
+    "createdAt": "2025-05-28T06:52:00-03:00",
+    "approvedDate": "2025-05-28 06:53:18",
+    "paidAt": "2025-05-28 06:53:18",
+    "refundedAt": null,
+    "customer": {
+        "name": "Maria Fernandes Barbosa",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": {
+            "number": "01818461447",
+            "type": "CPF"
+        },
+        "country": "BR",
+        "ip": "64.23.135.43"
+    },
+    "items": [
+        {
+            "id": "PROD_6836dd0e7b3e4",
+            "title": "Produto 55.73",
+            "quantity": 1,
+            "unitPrice": "5573"
+        }
+    ],
+    "amount": "5573",
+    "fee": {
+        "fixedAmount": 0,
+        "netAmount": "5573"
+    },
+    "trackingParameters": [],
+    "isTest": false
+}
+----------------------------------------
+[2025-05-28 06:53:18] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "9590d6a7-d5e0-4866-8f05-faf0d6dc2cf0",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "paid",
+    "createdAt": "2025-05-28 09:52:00",
+    "approvedDate": "2025-05-28 09:53:18",
+    "refundedAt": null,
+    "customer": {
+        "name": "Maria Fernandes Barbosa",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "01818461447",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_6836dd0e7b3e4",
+            "name": "Produto 55.73",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": "5573"
+        }
+    ],
+    "trackingParameters": {
+        "src": null,
+        "sck": null,
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null,
+        "utm_content": null,
+        "utm_term": null,
+        "xcod": null,
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": "5573",
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": "5573"
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-05-28 06:53:18] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-05-28 06:53:18] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------

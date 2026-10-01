@@ -1,0 +1,353 @@
+/* modern.css - Estilos modernos para a aplicação */
+
+/* Fontes */
+@font-face {
+  font-family: 'Futura Bold';
+  src: url('../fonts/futuraBold.eot');
+  src: url('../fonts/futuraBold.eot#iefix') format('embedded-opentype'),
+       url('../fonts/futuraBold.woff') format('woff'),
+       url('../fonts/futuraBold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Futura Book';
+  src: url('../fonts/futuraBook.eot');
+  src: url('../fonts/futuraBook.eot#iefix') format('embedded-opentype'),
+       url('../fonts/futuraBook.woff') format('woff'),
+       url('../fonts/futuraBook.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Variáveis */
+:root {
+  --color-primary: #005CA9;
+  --color-secondary: #F39200;
+  --color-tertiary: #FFFFFF;
+  --color-background: #F5F5F5;
+  --color-text: #3A4859;
+  --color-error: #FF0000;
+  --color-success: #00A651;
+  --font-primary: 'Montserrat', 'Futura Bold', sans-serif;
+  --font-secondary: 'Montserrat', 'Futura Book', sans-serif;
+  --border-radius: 8px;
+  --box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+  --transition: all 0.3s ease;
+}
+
+/* Reset e estilos base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-secondary);
+  background: linear-gradient(135deg, #005aa3, #54bbab 100%);
+  color: var(--color-text);
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Container principal */
+#template {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+#template-wrapper {
+  background-color: var(--color-tertiary);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  width: 100%;
+  max-width: 480px;
+  overflow: hidden;
+  transition: var(--transition);
+}
+
+#template-wrapper-content {
+  padding: 30px;
+}
+
+/* Cabeçalho */
+#template-header {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+#template-logo {
+  height: 50px;
+  margin-bottom: 15px;
+}
+
+#template-title {
+  color: var(--color-primary);
+  font-family: var(--font-primary);
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+/* Conteúdo */
+.title {
+  color: var(--color-primary);
+  font-family: var(--font-primary);
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.title i {
+  margin-right: 8px;
+  color: var(--color-secondary);
+}
+
+.description {
+  color: var(--color-text);
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+/* Formulário */
+form {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.float-label-group {
+  margin-bottom: 25px;
+}
+
+.float-label {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.float-label input {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: var(--border-radius);
+  font-size: 1rem;
+  transition: var(--transition);
+  background-color: #fff;
+  color: var(--color-text);
+}
+
+.float-label input:focus {
+  border-color: var(--color-secondary);
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(243, 146, 0, 0.2);
+}
+
+.float-label label {
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  background-color: white;
+  padding: 0 5px;
+  font-size: 0.85rem;
+  color: var(--color-primary);
+  font-weight: 500;
+}
+
+.float-label label i {
+  margin-right: 4px;
+  color: var(--color-secondary);
+}
+
+/* Botões */
+.button-group {
+  margin-top: 20px;
+}
+
+button.button-primary {
+  width: 100%;
+  padding: 15px;
+  background-color: var(--color-secondary);
+  color: white;
+  border: none;
+  border-radius: var(--border-radius);
+  font-family: var(--font-primary);
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: var(--transition);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button.button-primary i {
+  margin-right: 8px;
+}
+
+button.button-primary:hover {
+  background-color: #e08600;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button.button-primary:active {
+  transform: translateY(0);
+}
+
+button.button-primary:disabled {
+  background-color: #f9c880;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+/* Resultados e mensagens */
+#resultado {
+  margin-top: 25px;
+  padding: 20px;
+  border-radius: var(--border-radius);
+  display: none;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+#resultado.sucesso {
+  background-color: rgba(0, 166, 81, 0.1);
+  color: var(--color-success);
+  border-left: 4px solid var(--color-success);
+  display: block;
+}
+
+#resultado.erro {
+  background-color: rgba(255, 0, 0, 0.1);
+  color: var(--color-error);
+  border-left: 4px solid var(--color-error);
+  display: block;
+}
+
+#resultado i {
+  margin-right: 8px;
+}
+
+#resultado strong i {
+  margin-right: 4px;
+  color: var(--color-secondary);
+}
+
+/* Carregamento */
+.loader {
+  display: none;
+  border: 3px solid rgba(0, 92, 169, 0.1);
+  border-top: 3px solid var(--color-primary);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  margin: 25px auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Rodapé */
+#template-info {
+  text-align: center;
+  margin-top: 30px;
+  border-top: 1px solid #eee;
+  padding-top: 20px;
+}
+
+.faq-layout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#template-wrapper-help {
+  margin-right: 10px;
+}
+
+#template-help {
+  width: 20px;
+  height: 20px;
+}
+
+#faq {
+  display: none;
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-radius: var(--border-radius);
+}
+
+/* Animações */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+#resultado {
+  animation: fadeIn 0.3s ease-out;
+}
+
+/* Responsividade */
+@media (max-width: 576px) {
+  #template-wrapper-content {
+    padding: 20px;
+  }
+  
+  .title {
+    font-size: 1.2rem;
+  }
+  
+  .description {
+    font-size: 0.9rem;
+  }
+  
+  .float-label input {
+    padding: 12px;
+  }
+  
+  button.button-primary {
+    padding: 12px;
+  }
+}
+
+@media (max-width: 360px) {
+  #template-wrapper-content {
+    padding: 15px;
+  }
+  
+  .title {
+    font-size: 1.1rem;
+  }
+  
+  .description {
+    font-size: 0.85rem;
+    margin-bottom: 15px;
+  }
+  
+  .float-label input {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+  
+  button.button-primary {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+} 

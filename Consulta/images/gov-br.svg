@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="180" height="60" viewBox="0 0 180 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="180" height="60" fill="#004a87"/>
+  <path d="M40 15H140V45H40V15Z" fill="#ffda08"/>
+  <circle cx="90" cy="30" r="13" fill="#009b3a"/>
+  <path d="M77 30L90 17L103 30L90 43L77 30Z" fill="#ffffff"/>
+  <text x="90" y="22" text-anchor="middle" fill="#004a87" font-family="Arial" font-weight="bold" font-size="5">GOVERNO</text>
+  <text x="90" y="32" text-anchor="middle" fill="#004a87" font-family="Arial" font-weight="bold" font-size="9">FEDERAL</text>
+  <text x="90" y="42" text-anchor="middle" fill="#004a87" font-family="Arial" font-weight="bold" font-size="5">BRASIL</text>
+</svg> 

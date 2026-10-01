@@ -1,0 +1,3790 @@
+[2025-08-08 03:03:23] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"06cb4c7a-fd1f-4f10-ae5a-aab1005b394c\",\"platform\":\"MinhaPlataforma\",\"paymentMethod\":\"pix\",\"status\":\"waiting_payment\",\"createdAt\":\"2025-08-08 00:03:23\",\"approvedDate\":null,\"refundedAt\":null,\"customer\":{\"name\":\"Sofia Gomes Alves\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":\"76689736725\",\"country\":\"BR\",\"ip\":\"155.2.219.244\"},\"products\":[{\"id\":\"PROD_689568fbcb6d6\",\"name\":\"Produto Front\",\"planId\":null,\"planName\":null,\"quantity\":1,\"priceInCents\":8724,\"agendamento\":null}],\"trackingParameters\":[],\"commission\":{\"totalPriceInCents\":8724,\"gatewayFeeInCents\":0,\"userCommissionInCents\":8724},\"isTest\":false}"
+}
+----------------------------------------
+[2025-08-08 03:03:23] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "06cb4c7a-fd1f-4f10-ae5a-aab1005b394c",
+    "platform": "MinhaPlataforma",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-08-08 00:03:23",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Sofia Gomes Alves",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "76689736725",
+        "country": "BR",
+        "ip": "155.2.219.244"
+    },
+    "products": [
+        {
+            "id": "PROD_689568fbcb6d6",
+            "name": "Produto Front",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 8724,
+            "agendamento": null
+        }
+    ],
+    "trackingParameters": [],
+    "commission": {
+        "totalPriceInCents": 8724,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 8724
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-08-08 03:03:23] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "06cb4c7a-fd1f-4f10-ae5a-aab1005b394c",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-08-08 03:03:23",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Sofia Gomes Alves",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "76689736725",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_689568fbcb6d6",
+            "name": "Produto Front",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 8724
+        }
+    ],
+    "trackingParameters": {
+        "src": null,
+        "sck": null,
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null,
+        "utm_content": null,
+        "utm_term": null,
+        "xcod": null,
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": 8724,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 8724
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-08-08 03:03:23] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-08-08 03:03:23] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 404,
+    "response": {
+        "OK": false,
+        "data": {
+            "type": "API_CREDENTIAL"
+        },
+        "result": "ERROR",
+        "statusCode": 404,
+        "message": "API_CREDENTIAL_NOT_FOUND"
+    }
+}
+----------------------------------------
+[2025-08-08 03:03:23] ❌ Erro
+Dados: {
+    "message": "Erro na API Utmify. HTTP Code: 404"
+}
+----------------------------------------
+[2025-08-08 03:06:47] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"e58f38f6-be44-41c5-b7d8-b0967f4b9570\",\"platform\":\"MinhaPlataforma\",\"paymentMethod\":\"pix\",\"status\":\"waiting_payment\",\"createdAt\":\"2025-08-08 00:06:47\",\"approvedDate\":null,\"refundedAt\":null,\"customer\":{\"name\":\"Jo\\u00e3o Alves Lopes\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":\"98401504139\",\"country\":\"BR\",\"ip\":\"155.2.219.244\"},\"products\":[{\"id\":\"PROD_689569c75b589\",\"name\":\"Produto Front\",\"planId\":null,\"planName\":null,\"quantity\":1,\"priceInCents\":8724,\"agendamento\":null}],\"trackingParameters\":[],\"commission\":{\"totalPriceInCents\":8724,\"gatewayFeeInCents\":0,\"userCommissionInCents\":8724},\"isTest\":false}"
+}
+----------------------------------------
+[2025-08-08 03:06:47] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "e58f38f6-be44-41c5-b7d8-b0967f4b9570",
+    "platform": "MinhaPlataforma",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-08-08 00:06:47",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Jo\u00e3o Alves Lopes",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "98401504139",
+        "country": "BR",
+        "ip": "155.2.219.244"
+    },
+    "products": [
+        {
+            "id": "PROD_689569c75b589",
+            "name": "Produto Front",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 8724,
+            "agendamento": null
+        }
+    ],
+    "trackingParameters": [],
+    "commission": {
+        "totalPriceInCents": 8724,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 8724
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-08-08 03:06:47] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "e58f38f6-be44-41c5-b7d8-b0967f4b9570",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-08-08 03:06:47",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Jo\u00e3o Alves Lopes",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "98401504139",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_689569c75b589",
+            "name": "Produto Front",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 8724
+        }
+    ],
+    "trackingParameters": {
+        "src": null,
+        "sck": null,
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null,
+        "utm_content": null,
+        "utm_term": null,
+        "xcod": null,
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": 8724,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 8724
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-08-08 03:06:47] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-08-08 03:06:47] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-08-08 03:18:01] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"a3661c58-a804-4a16-a66d-aa90c265fd7e\",\"platform\":\"MinhaPlataforma\",\"paymentMethod\":\"pix\",\"status\":\"waiting_payment\",\"createdAt\":\"2025-08-08 00:18:01\",\"approvedDate\":null,\"refundedAt\":null,\"customer\":{\"name\":\"Mariana Soares Pereira\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":\"41594280290\",\"country\":\"BR\",\"ip\":\"155.2.219.244\"},\"products\":[{\"id\":\"PROD_68956c69798d3\",\"name\":\"Produto Front\",\"planId\":null,\"planName\":null,\"quantity\":1,\"priceInCents\":8724,\"agendamento\":null}],\"trackingParameters\":[],\"commission\":{\"totalPriceInCents\":8724,\"gatewayFeeInCents\":0,\"userCommissionInCents\":8724},\"isTest\":false}"
+}
+----------------------------------------
+[2025-08-08 03:18:01] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "a3661c58-a804-4a16-a66d-aa90c265fd7e",
+    "platform": "MinhaPlataforma",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-08-08 00:18:01",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Mariana Soares Pereira",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "41594280290",
+        "country": "BR",
+        "ip": "155.2.219.244"
+    },
+    "products": [
+        {
+            "id": "PROD_68956c69798d3",
+            "name": "Produto Front",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 8724,
+            "agendamento": null
+        }
+    ],
+    "trackingParameters": [],
+    "commission": {
+        "totalPriceInCents": 8724,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 8724
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-08-08 03:18:01] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "a3661c58-a804-4a16-a66d-aa90c265fd7e",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-08-08 03:18:01",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Mariana Soares Pereira",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "41594280290",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_68956c69798d3",
+            "name": "Produto Front",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 8724
+        }
+    ],
+    "trackingParameters": {
+        "src": null,
+        "sck": null,
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null,
+        "utm_content": null,
+        "utm_term": null,
+        "xcod": null,
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": 8724,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 8724
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-08-08 03:18:01] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-08-08 03:18:01] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-08-08 04:23:26] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"8e2c0c17-5def-4e8f-bef5-a497bbb9af4a\",\"platform\":\"MinhaPlataforma\",\"paymentMethod\":\"pix\",\"status\":\"waiting_payment\",\"createdAt\":\"2025-08-08 01:23:26\",\"approvedDate\":null,\"refundedAt\":null,\"customer\":{\"name\":\"Daniel Santos Oliveira\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":\"81398013994\",\"country\":\"BR\",\"ip\":\"155.2.219.244\"},\"products\":[{\"id\":\"PROD_68957bbe3cf50\",\"name\":\"Produto Front\",\"planId\":null,\"planName\":null,\"quantity\":1,\"priceInCents\":8724,\"agendamento\":null}],\"trackingParameters\":[],\"commission\":{\"totalPriceInCents\":8724,\"gatewayFeeInCents\":0,\"userCommissionInCents\":8724},\"isTest\":false}"
+}
+----------------------------------------
+[2025-08-08 04:23:26] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "8e2c0c17-5def-4e8f-bef5-a497bbb9af4a",
+    "platform": "MinhaPlataforma",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-08-08 01:23:26",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Daniel Santos Oliveira",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "81398013994",
+        "country": "BR",
+        "ip": "155.2.219.244"
+    },
+    "products": [
+        {
+            "id": "PROD_68957bbe3cf50",
+            "name": "Produto Front",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 8724,
+            "agendamento": null
+        }
+    ],
+    "trackingParameters": [],
+    "commission": {
+        "totalPriceInCents": 8724,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 8724
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-08-08 04:23:26] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "8e2c0c17-5def-4e8f-bef5-a497bbb9af4a",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-08-08 04:23:26",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Daniel Santos Oliveira",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "81398013994",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_68957bbe3cf50",
+            "name": "Produto Front",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 8724
+        }
+    ],
+    "trackingParameters": {
+        "src": null,
+        "sck": null,
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null,
+        "utm_content": null,
+        "utm_term": null,
+        "xcod": null,
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": 8724,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 8724
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-08-08 04:23:26] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-08-08 04:23:26] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-08-08 15:48:28] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"e6ac13a4-0c0e-40a0-9f20-d770f853688e\",\"platform\":\"MinhaPlataforma\",\"paymentMethod\":\"pix\",\"status\":\"waiting_payment\",\"createdAt\":\"2025-08-08 12:48:28\",\"approvedDate\":null,\"refundedAt\":null,\"customer\":{\"name\":\"Rafael Ribeiro Santos\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":\"35294213915\",\"country\":\"BR\",\"ip\":\"177.128.240.24\"},\"products\":[{\"id\":\"PROD_68961c4c72ac4\",\"name\":\"Produto Front\",\"planId\":null,\"planName\":null,\"quantity\":1,\"priceInCents\":8724,\"agendamento\":null}],\"trackingParameters\":{\"utm_source\":\"FBjLj68961a165b2d42921b49b407\",\"utm_medium\":\"ROI ROIZINHO|120229447783800470\",\"utm_campaign\":\"08-08 caxita meiodia GOM \\u2014 C\\u00f3pia|120229447783620470\",\"utm_content\":\"TAXAS|120229447783710470::IwZXh0bgNhZW0BMABhZGlkAaskC7oQcuYBHmjtxRstOMN4GeItvy5mMFcrgv60s-EzpyiGGYupxR0buMIaNtzv814-olzv_aem_AU8MXECFxnDjcvqjLd7Pgg::\",\"utm_term\":\"Facebook_Mobile_Feed?CZejO0D033=YiSPH1MrWk\",\"xcod\":\"FBjLj68961a165b2d42921b49b407hQwK21wXxR08-08 caxita meiodia GOM \\u2014 C\\u00f3pia|120229447783620470hQwK21wXxRROI ROIZINHO|120229447783800470hQwK21wXxRTAXAS|120229447783710470hQwK21wXxRFacebook_Mobile_Feed?CZejO0D033=YiSPH1MrWk\",\"sck\":\"FBjLj68961a165b2d42921b49b407hQwK21wXxR08-08 caxita meiodia GOM \\u2014 C\\u00f3pia|120229447783620470hQwK21wXxRROI ROIZINHO|120229447783800470hQwK21wXxRTAXAS|120229447783710470hQwK21wXxRFacebook_Mobile_Feed?CZejO0D033=YiSPH1MrWk\"},\"commission\":{\"totalPriceInCents\":8724,\"gatewayFeeInCents\":0,\"userCommissionInCents\":8724},\"isTest\":false}"
+}
+----------------------------------------
+[2025-08-08 15:48:28] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "e6ac13a4-0c0e-40a0-9f20-d770f853688e",
+    "platform": "MinhaPlataforma",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-08-08 12:48:28",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Rafael Ribeiro Santos",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "35294213915",
+        "country": "BR",
+        "ip": "177.128.240.24"
+    },
+    "products": [
+        {
+            "id": "PROD_68961c4c72ac4",
+            "name": "Produto Front",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 8724,
+            "agendamento": null
+        }
+    ],
+    "trackingParameters": {
+        "utm_source": "FBjLj68961a165b2d42921b49b407",
+        "utm_medium": "ROI ROIZINHO|120229447783800470",
+        "utm_campaign": "08-08 caxita meiodia GOM \u2014 C\u00f3pia|120229447783620470",
+        "utm_content": "TAXAS|120229447783710470::IwZXh0bgNhZW0BMABhZGlkAaskC7oQcuYBHmjtxRstOMN4GeItvy5mMFcrgv60s-EzpyiGGYupxR0buMIaNtzv814-olzv_aem_AU8MXECFxnDjcvqjLd7Pgg::",
+        "utm_term": "Facebook_Mobile_Feed?CZejO0D033=YiSPH1MrWk",
+        "xcod": "FBjLj68961a165b2d42921b49b407hQwK21wXxR08-08 caxita meiodia GOM \u2014 C\u00f3pia|120229447783620470hQwK21wXxRROI ROIZINHO|120229447783800470hQwK21wXxRTAXAS|120229447783710470hQwK21wXxRFacebook_Mobile_Feed?CZejO0D033=YiSPH1MrWk",
+        "sck": "FBjLj68961a165b2d42921b49b407hQwK21wXxR08-08 caxita meiodia GOM \u2014 C\u00f3pia|120229447783620470hQwK21wXxRROI ROIZINHO|120229447783800470hQwK21wXxRTAXAS|120229447783710470hQwK21wXxRFacebook_Mobile_Feed?CZejO0D033=YiSPH1MrWk"
+    },
+    "commission": {
+        "totalPriceInCents": 8724,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 8724
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-08-08 15:48:28] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "e6ac13a4-0c0e-40a0-9f20-d770f853688e",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-08-08 15:48:28",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Rafael Ribeiro Santos",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "35294213915",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_68961c4c72ac4",
+            "name": "Produto Front",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 8724
+        }
+    ],
+    "trackingParameters": {
+        "src": null,
+        "sck": "FBjLj68961a165b2d42921b49b407hQwK21wXxR08-08 caxita meiodia GOM \u2014 C\u00f3pia|120229447783620470hQwK21wXxRROI ROIZINHO|120229447783800470hQwK21wXxRTAXAS|120229447783710470hQwK21wXxRFacebook_Mobile_Feed?CZejO0D033=YiSPH1MrWk",
+        "utm_source": "FBjLj68961a165b2d42921b49b407",
+        "utm_campaign": "08-08 caxita meiodia GOM \u2014 C\u00f3pia|120229447783620470",
+        "utm_medium": "ROI ROIZINHO|120229447783800470",
+        "utm_content": "TAXAS|120229447783710470::IwZXh0bgNhZW0BMABhZGlkAaskC7oQcuYBHmjtxRstOMN4GeItvy5mMFcrgv60s-EzpyiGGYupxR0buMIaNtzv814-olzv_aem_AU8MXECFxnDjcvqjLd7Pgg::",
+        "utm_term": "Facebook_Mobile_Feed?CZejO0D033=YiSPH1MrWk",
+        "xcod": "FBjLj68961a165b2d42921b49b407hQwK21wXxR08-08 caxita meiodia GOM \u2014 C\u00f3pia|120229447783620470hQwK21wXxRROI ROIZINHO|120229447783800470hQwK21wXxRTAXAS|120229447783710470hQwK21wXxRFacebook_Mobile_Feed?CZejO0D033=YiSPH1MrWk",
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": 8724,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 8724
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-08-08 15:48:28] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-08-08 15:48:28] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-08-08 15:49:02] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"49ba97c7-623e-46b3-906f-7f02470ecfb0\",\"platform\":\"MinhaPlataforma\",\"paymentMethod\":\"pix\",\"status\":\"waiting_payment\",\"createdAt\":\"2025-08-08 12:49:02\",\"approvedDate\":null,\"refundedAt\":null,\"customer\":{\"name\":\"Miguel Barbosa Fernandes\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":\"53926948531\",\"country\":\"BR\",\"ip\":\"189.40.78.68\"},\"products\":[{\"id\":\"PROD_68961c6e29c2b\",\"name\":\"Produto Front\",\"planId\":null,\"planName\":null,\"quantity\":1,\"priceInCents\":8724,\"agendamento\":null}],\"trackingParameters\":{\"utm_source\":\"FBjLj689619ed5b2d42921b499f18\",\"utm_medium\":\"ROI ROIZINHO|120229447783800470\",\"utm_campaign\":\"08-08 caxita meiodia GOM \\u2014 C\\u00f3pia|120229447783620470\",\"utm_content\":\"TAXAS|120229447783710470::IwZXh0bgNhZW0BMABhZGlkAaskC7oQcuYBHk5G_Llyq4LXkrfbb15GD2aVCGjU3txBkW6jxU8pKB81NWblMC80qZmGGwZZ_aem_sRea4SCDHrAqQrlhDOWs5w::\",\"utm_term\":\"Facebook_Mobile_Feed?CZejO0D033=YiSPH1MrWk\",\"xcod\":\"FBjLj689619ed5b2d42921b499f18hQwK21wXxR08-08 caxita meiodia GOM \\u2014 C\\u00f3pia|120229447783620470hQwK21wXxRROI ROIZINHO|120229447783800470hQwK21wXxRTAXAS|120229447783710470hQwK21wXxRFacebook_Mobile_Feed?CZejO0D033=YiSPH1MrWk\",\"sck\":\"FBjLj689619ed5b2d42921b499f18hQwK21wXxR08-08 caxita meiodia GOM \\u2014 C\\u00f3pia|120229447783620470hQwK21wXxRROI ROIZINHO|120229447783800470hQwK21wXxRTAXAS|120229447783710470hQwK21wXxRFacebook_Mobile_Feed?CZejO0D033=YiSPH1MrWk\"},\"commission\":{\"totalPriceInCents\":8724,\"gatewayFeeInCents\":0,\"userCommissionInCents\":8724},\"isTest\":false}"
+}
+----------------------------------------
+[2025-08-08 15:49:02] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "49ba97c7-623e-46b3-906f-7f02470ecfb0",
+    "platform": "MinhaPlataforma",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-08-08 12:49:02",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Miguel Barbosa Fernandes",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "53926948531",
+        "country": "BR",
+        "ip": "189.40.78.68"
+    },
+    "products": [
+        {
+            "id": "PROD_68961c6e29c2b",
+            "name": "Produto Front",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 8724,
+            "agendamento": null
+        }
+    ],
+    "trackingParameters": {
+        "utm_source": "FBjLj689619ed5b2d42921b499f18",
+        "utm_medium": "ROI ROIZINHO|120229447783800470",
+        "utm_campaign": "08-08 caxita meiodia GOM \u2014 C\u00f3pia|120229447783620470",
+        "utm_content": "TAXAS|120229447783710470::IwZXh0bgNhZW0BMABhZGlkAaskC7oQcuYBHk5G_Llyq4LXkrfbb15GD2aVCGjU3txBkW6jxU8pKB81NWblMC80qZmGGwZZ_aem_sRea4SCDHrAqQrlhDOWs5w::",
+        "utm_term": "Facebook_Mobile_Feed?CZejO0D033=YiSPH1MrWk",
+        "xcod": "FBjLj689619ed5b2d42921b499f18hQwK21wXxR08-08 caxita meiodia GOM \u2014 C\u00f3pia|120229447783620470hQwK21wXxRROI ROIZINHO|120229447783800470hQwK21wXxRTAXAS|120229447783710470hQwK21wXxRFacebook_Mobile_Feed?CZejO0D033=YiSPH1MrWk",
+        "sck": "FBjLj689619ed5b2d42921b499f18hQwK21wXxR08-08 caxita meiodia GOM \u2014 C\u00f3pia|120229447783620470hQwK21wXxRROI ROIZINHO|120229447783800470hQwK21wXxRTAXAS|120229447783710470hQwK21wXxRFacebook_Mobile_Feed?CZejO0D033=YiSPH1MrWk"
+    },
+    "commission": {
+        "totalPriceInCents": 8724,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 8724
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-08-08 15:49:02] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "49ba97c7-623e-46b3-906f-7f02470ecfb0",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-08-08 15:49:02",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Miguel Barbosa Fernandes",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "53926948531",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_68961c6e29c2b",
+            "name": "Produto Front",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 8724
+        }
+    ],
+    "trackingParameters": {
+        "src": null,
+        "sck": "FBjLj689619ed5b2d42921b499f18hQwK21wXxR08-08 caxita meiodia GOM \u2014 C\u00f3pia|120229447783620470hQwK21wXxRROI ROIZINHO|120229447783800470hQwK21wXxRTAXAS|120229447783710470hQwK21wXxRFacebook_Mobile_Feed?CZejO0D033=YiSPH1MrWk",
+        "utm_source": "FBjLj689619ed5b2d42921b499f18",
+        "utm_campaign": "08-08 caxita meiodia GOM \u2014 C\u00f3pia|120229447783620470",
+        "utm_medium": "ROI ROIZINHO|120229447783800470",
+        "utm_content": "TAXAS|120229447783710470::IwZXh0bgNhZW0BMABhZGlkAaskC7oQcuYBHk5G_Llyq4LXkrfbb15GD2aVCGjU3txBkW6jxU8pKB81NWblMC80qZmGGwZZ_aem_sRea4SCDHrAqQrlhDOWs5w::",
+        "utm_term": "Facebook_Mobile_Feed?CZejO0D033=YiSPH1MrWk",
+        "xcod": "FBjLj689619ed5b2d42921b499f18hQwK21wXxR08-08 caxita meiodia GOM \u2014 C\u00f3pia|120229447783620470hQwK21wXxRROI ROIZINHO|120229447783800470hQwK21wXxRTAXAS|120229447783710470hQwK21wXxRFacebook_Mobile_Feed?CZejO0D033=YiSPH1MrWk",
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": 8724,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 8724
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-08-08 15:49:02] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-08-08 15:49:02] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-08-08 15:50:30] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"e21342a5-0e19-48ac-80d2-252d86d0b332\",\"platform\":\"MinhaPlataforma\",\"paymentMethod\":\"pix\",\"status\":\"waiting_payment\",\"createdAt\":\"2025-08-08 12:50:30\",\"approvedDate\":null,\"refundedAt\":null,\"customer\":{\"name\":\"Bruno Soares Martins\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":\"09898738898\",\"country\":\"BR\",\"ip\":\"189.96.226.237\"},\"products\":[{\"id\":\"PROD_68961cc6663d0\",\"name\":\"Produto Front\",\"planId\":null,\"planName\":null,\"quantity\":1,\"priceInCents\":8724,\"agendamento\":null}],\"trackingParameters\":{\"utm_source\":\"FBjLj68961aab0e2bf6265244640d\",\"utm_medium\":\"ROI ROIZINHO|120229447783800470\",\"utm_campaign\":\"08-08 caxita meiodia GOM \\u2014 C\\u00f3pia|120229447783620470\",\"utm_content\":\"TAXAS|120229447783710470::IwZXh0bgNhZW0BMABhZGlkAaskC7oQcuYBHkNe3Ralz-yGWzpHpREB2CzTAnXbldMKHwHCtCpS4cdUVCQGM9kKCyh-Fn6C_aem_bPnH0te7gJDbHwPK9_MAKA::\",\"utm_term\":\"Facebook_Mobile_Feed?CZejO0D033=YiSPH1MrWk\",\"xcod\":\"FBjLj68961aab0e2bf6265244640dhQwK21wXxR08-08 caxita meiodia GOM \\u2014 C\\u00f3pia|120229447783620470hQwK21wXxRROI ROIZINHO|120229447783800470hQwK21wXxRTAXAS|120229447783710470hQwK21wXxRFacebook_Mobile_Feed?CZejO0D033=YiSPH1MrWk\",\"sck\":\"FBjLj68961aab0e2bf6265244640dhQwK21wXxR08-08 caxita meiodia GOM \\u2014 C\\u00f3pia|120229447783620470hQwK21wXxRROI ROIZINHO|120229447783800470hQwK21wXxRTAXAS|120229447783710470hQwK21wXxRFacebook_Mobile_Feed?CZejO0D033=YiSPH1MrWk\"},\"commission\":{\"totalPriceInCents\":8724,\"gatewayFeeInCents\":0,\"userCommissionInCents\":8724},\"isTest\":false}"
+}
+----------------------------------------
+[2025-08-08 15:50:30] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "e21342a5-0e19-48ac-80d2-252d86d0b332",
+    "platform": "MinhaPlataforma",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-08-08 12:50:30",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Bruno Soares Martins",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "09898738898",
+        "country": "BR",
+        "ip": "189.96.226.237"
+    },
+    "products": [
+        {
+            "id": "PROD_68961cc6663d0",
+            "name": "Produto Front",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 8724,
+            "agendamento": null
+        }
+    ],
+    "trackingParameters": {
+        "utm_source": "FBjLj68961aab0e2bf6265244640d",
+        "utm_medium": "ROI ROIZINHO|120229447783800470",
+        "utm_campaign": "08-08 caxita meiodia GOM \u2014 C\u00f3pia|120229447783620470",
+        "utm_content": "TAXAS|120229447783710470::IwZXh0bgNhZW0BMABhZGlkAaskC7oQcuYBHkNe3Ralz-yGWzpHpREB2CzTAnXbldMKHwHCtCpS4cdUVCQGM9kKCyh-Fn6C_aem_bPnH0te7gJDbHwPK9_MAKA::",
+        "utm_term": "Facebook_Mobile_Feed?CZejO0D033=YiSPH1MrWk",
+        "xcod": "FBjLj68961aab0e2bf6265244640dhQwK21wXxR08-08 caxita meiodia GOM \u2014 C\u00f3pia|120229447783620470hQwK21wXxRROI ROIZINHO|120229447783800470hQwK21wXxRTAXAS|120229447783710470hQwK21wXxRFacebook_Mobile_Feed?CZejO0D033=YiSPH1MrWk",
+        "sck": "FBjLj68961aab0e2bf6265244640dhQwK21wXxR08-08 caxita meiodia GOM \u2014 C\u00f3pia|120229447783620470hQwK21wXxRROI ROIZINHO|120229447783800470hQwK21wXxRTAXAS|120229447783710470hQwK21wXxRFacebook_Mobile_Feed?CZejO0D033=YiSPH1MrWk"
+    },
+    "commission": {
+        "totalPriceInCents": 8724,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 8724
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-08-08 15:50:30] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "e21342a5-0e19-48ac-80d2-252d86d0b332",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-08-08 15:50:30",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Bruno Soares Martins",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "09898738898",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_68961cc6663d0",
+            "name": "Produto Front",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 8724
+        }
+    ],
+    "trackingParameters": {
+        "src": null,
+        "sck": "FBjLj68961aab0e2bf6265244640dhQwK21wXxR08-08 caxita meiodia GOM \u2014 C\u00f3pia|120229447783620470hQwK21wXxRROI ROIZINHO|120229447783800470hQwK21wXxRTAXAS|120229447783710470hQwK21wXxRFacebook_Mobile_Feed?CZejO0D033=YiSPH1MrWk",
+        "utm_source": "FBjLj68961aab0e2bf6265244640d",
+        "utm_campaign": "08-08 caxita meiodia GOM \u2014 C\u00f3pia|120229447783620470",
+        "utm_medium": "ROI ROIZINHO|120229447783800470",
+        "utm_content": "TAXAS|120229447783710470::IwZXh0bgNhZW0BMABhZGlkAaskC7oQcuYBHkNe3Ralz-yGWzpHpREB2CzTAnXbldMKHwHCtCpS4cdUVCQGM9kKCyh-Fn6C_aem_bPnH0te7gJDbHwPK9_MAKA::",
+        "utm_term": "Facebook_Mobile_Feed?CZejO0D033=YiSPH1MrWk",
+        "xcod": "FBjLj68961aab0e2bf6265244640dhQwK21wXxR08-08 caxita meiodia GOM \u2014 C\u00f3pia|120229447783620470hQwK21wXxRROI ROIZINHO|120229447783800470hQwK21wXxRTAXAS|120229447783710470hQwK21wXxRFacebook_Mobile_Feed?CZejO0D033=YiSPH1MrWk",
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": 8724,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 8724
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-08-08 15:50:30] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-08-08 15:50:30] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-08-08 15:51:10] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"fea8218a-8a5c-4b28-9d31-008d878082d3\",\"platform\":\"MinhaPlataforma\",\"paymentMethod\":\"pix\",\"status\":\"waiting_payment\",\"createdAt\":\"2025-08-08 12:51:10\",\"approvedDate\":null,\"refundedAt\":null,\"customer\":{\"name\":\"Gabriel Souza Barbosa\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":\"26936337104\",\"country\":\"BR\",\"ip\":\"177.26.65.229\"},\"products\":[{\"id\":\"PROD_68961cee5546b\",\"name\":\"Produto Front\",\"planId\":null,\"planName\":null,\"quantity\":1,\"priceInCents\":8724,\"agendamento\":null}],\"trackingParameters\":{\"utm_source\":\"FBjLj68961ac5c8512037c20cf11f\",\"utm_medium\":\"ROI ROIZINHO|120229447783800470\",\"utm_campaign\":\"08-08 caxita meiodia GOM \\u2014 C\\u00f3pia|120229447783620470\",\"utm_content\":\"TAXAS|120229447783710470::IwZXh0bgNhZW0BMABhZGlkAaskC7oQcuYBHmruRvyEnowgSHtW9l_dCSaas4joy_rqiaeBDfOIY2RN3CBrp3NsgmvwZbi__aem_xmJakFu3C0m09Zns7UEsVA::\",\"utm_term\":\"Facebook_Mobile_Feed?CZejO0D033=YiSPH1MrWk\",\"xcod\":\"FBjLj68961ac5c8512037c20cf11fhQwK21wXxR08-08 caxita meiodia GOM \\u2014 C\\u00f3pia|120229447783620470hQwK21wXxRROI ROIZINHO|120229447783800470hQwK21wXxRTAXAS|120229447783710470hQwK21wXxRFacebook_Mobile_Feed?CZejO0D033=YiSPH1MrWk\",\"sck\":\"FBjLj68961ac5c8512037c20cf11fhQwK21wXxR08-08 caxita meiodia GOM \\u2014 C\\u00f3pia|120229447783620470hQwK21wXxRROI ROIZINHO|120229447783800470hQwK21wXxRTAXAS|120229447783710470hQwK21wXxRFacebook_Mobile_Feed?CZejO0D033=YiSPH1MrWk\"},\"commission\":{\"totalPriceInCents\":8724,\"gatewayFeeInCents\":0,\"userCommissionInCents\":8724},\"isTest\":false}"
+}
+----------------------------------------
+[2025-08-08 15:51:10] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "fea8218a-8a5c-4b28-9d31-008d878082d3",
+    "platform": "MinhaPlataforma",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-08-08 12:51:10",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Gabriel Souza Barbosa",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "26936337104",
+        "country": "BR",
+        "ip": "177.26.65.229"
+    },
+    "products": [
+        {
+            "id": "PROD_68961cee5546b",
+            "name": "Produto Front",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 8724,
+            "agendamento": null
+        }
+    ],
+    "trackingParameters": {
+        "utm_source": "FBjLj68961ac5c8512037c20cf11f",
+        "utm_medium": "ROI ROIZINHO|120229447783800470",
+        "utm_campaign": "08-08 caxita meiodia GOM \u2014 C\u00f3pia|120229447783620470",
+        "utm_content": "TAXAS|120229447783710470::IwZXh0bgNhZW0BMABhZGlkAaskC7oQcuYBHmruRvyEnowgSHtW9l_dCSaas4joy_rqiaeBDfOIY2RN3CBrp3NsgmvwZbi__aem_xmJakFu3C0m09Zns7UEsVA::",
+        "utm_term": "Facebook_Mobile_Feed?CZejO0D033=YiSPH1MrWk",
+        "xcod": "FBjLj68961ac5c8512037c20cf11fhQwK21wXxR08-08 caxita meiodia GOM \u2014 C\u00f3pia|120229447783620470hQwK21wXxRROI ROIZINHO|120229447783800470hQwK21wXxRTAXAS|120229447783710470hQwK21wXxRFacebook_Mobile_Feed?CZejO0D033=YiSPH1MrWk",
+        "sck": "FBjLj68961ac5c8512037c20cf11fhQwK21wXxR08-08 caxita meiodia GOM \u2014 C\u00f3pia|120229447783620470hQwK21wXxRROI ROIZINHO|120229447783800470hQwK21wXxRTAXAS|120229447783710470hQwK21wXxRFacebook_Mobile_Feed?CZejO0D033=YiSPH1MrWk"
+    },
+    "commission": {
+        "totalPriceInCents": 8724,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 8724
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-08-08 15:51:10] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "fea8218a-8a5c-4b28-9d31-008d878082d3",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-08-08 15:51:10",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Gabriel Souza Barbosa",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "26936337104",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_68961cee5546b",
+            "name": "Produto Front",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 8724
+        }
+    ],
+    "trackingParameters": {
+        "src": null,
+        "sck": "FBjLj68961ac5c8512037c20cf11fhQwK21wXxR08-08 caxita meiodia GOM \u2014 C\u00f3pia|120229447783620470hQwK21wXxRROI ROIZINHO|120229447783800470hQwK21wXxRTAXAS|120229447783710470hQwK21wXxRFacebook_Mobile_Feed?CZejO0D033=YiSPH1MrWk",
+        "utm_source": "FBjLj68961ac5c8512037c20cf11f",
+        "utm_campaign": "08-08 caxita meiodia GOM \u2014 C\u00f3pia|120229447783620470",
+        "utm_medium": "ROI ROIZINHO|120229447783800470",
+        "utm_content": "TAXAS|120229447783710470::IwZXh0bgNhZW0BMABhZGlkAaskC7oQcuYBHmruRvyEnowgSHtW9l_dCSaas4joy_rqiaeBDfOIY2RN3CBrp3NsgmvwZbi__aem_xmJakFu3C0m09Zns7UEsVA::",
+        "utm_term": "Facebook_Mobile_Feed?CZejO0D033=YiSPH1MrWk",
+        "xcod": "FBjLj68961ac5c8512037c20cf11fhQwK21wXxR08-08 caxita meiodia GOM \u2014 C\u00f3pia|120229447783620470hQwK21wXxRROI ROIZINHO|120229447783800470hQwK21wXxRTAXAS|120229447783710470hQwK21wXxRFacebook_Mobile_Feed?CZejO0D033=YiSPH1MrWk",
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": 8724,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 8724
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-08-08 15:51:10] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-08-08 15:51:10] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-08-08 15:57:11] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"a5b3187a-cc4e-462f-9a5d-84d542f0c660\",\"platform\":\"MinhaPlataforma\",\"paymentMethod\":\"pix\",\"status\":\"waiting_payment\",\"createdAt\":\"2025-08-08 12:57:11\",\"approvedDate\":null,\"refundedAt\":null,\"customer\":{\"name\":\"Laura Souza Costa\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":\"87764183750\",\"country\":\"BR\",\"ip\":\"131.108.196.240\"},\"products\":[{\"id\":\"PROD_68961e57d0e14\",\"name\":\"Produto Front\",\"planId\":null,\"planName\":null,\"quantity\":1,\"priceInCents\":8724,\"agendamento\":null}],\"trackingParameters\":{\"utm_source\":\"FBjLj68961b3e56baf676d8348305\",\"utm_medium\":\"ROI ROIZINHO|120229447783800470\",\"utm_campaign\":\"08-08 caxita meiodia GOM \\u2014 C\\u00f3pia|120229447783620470\",\"utm_content\":\"TAXAS|120229447783710470::IwZXh0bgNhZW0BMABhZGlkAaskC7oQcuYBHlFmNWSMrMu2RuyRf5KNBPgL3Jl4BJ1dDy5HbDhWOdVULunZCPUUXib1pUnx_aem_0TPJ7gZ61XSLM8hvpQywgA::\",\"utm_term\":\"Facebook_Mobile_Feed?CZejO0D033=YiSPH1MrWk\",\"xcod\":\"FBjLj68961b3e56baf676d8348305hQwK21wXxR08-08 caxita meiodia GOM \\u2014 C\\u00f3pia|120229447783620470hQwK21wXxRROI ROIZINHO|120229447783800470hQwK21wXxRTAXAS|120229447783710470hQwK21wXxRFacebook_Mobile_Feed?CZejO0D033=YiSPH1MrWk\",\"sck\":\"FBjLj68961b3e56baf676d8348305hQwK21wXxR08-08 caxita meiodia GOM \\u2014 C\\u00f3pia|120229447783620470hQwK21wXxRROI ROIZINHO|120229447783800470hQwK21wXxRTAXAS|120229447783710470hQwK21wXxRFacebook_Mobile_Feed?CZejO0D033=YiSPH1MrWk\"},\"commission\":{\"totalPriceInCents\":8724,\"gatewayFeeInCents\":0,\"userCommissionInCents\":8724},\"isTest\":false}"
+}
+----------------------------------------
+[2025-08-08 15:57:11] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "a5b3187a-cc4e-462f-9a5d-84d542f0c660",
+    "platform": "MinhaPlataforma",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-08-08 12:57:11",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Laura Souza Costa",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "87764183750",
+        "country": "BR",
+        "ip": "131.108.196.240"
+    },
+    "products": [
+        {
+            "id": "PROD_68961e57d0e14",
+            "name": "Produto Front",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 8724,
+            "agendamento": null
+        }
+    ],
+    "trackingParameters": {
+        "utm_source": "FBjLj68961b3e56baf676d8348305",
+        "utm_medium": "ROI ROIZINHO|120229447783800470",
+        "utm_campaign": "08-08 caxita meiodia GOM \u2014 C\u00f3pia|120229447783620470",
+        "utm_content": "TAXAS|120229447783710470::IwZXh0bgNhZW0BMABhZGlkAaskC7oQcuYBHlFmNWSMrMu2RuyRf5KNBPgL3Jl4BJ1dDy5HbDhWOdVULunZCPUUXib1pUnx_aem_0TPJ7gZ61XSLM8hvpQywgA::",
+        "utm_term": "Facebook_Mobile_Feed?CZejO0D033=YiSPH1MrWk",
+        "xcod": "FBjLj68961b3e56baf676d8348305hQwK21wXxR08-08 caxita meiodia GOM \u2014 C\u00f3pia|120229447783620470hQwK21wXxRROI ROIZINHO|120229447783800470hQwK21wXxRTAXAS|120229447783710470hQwK21wXxRFacebook_Mobile_Feed?CZejO0D033=YiSPH1MrWk",
+        "sck": "FBjLj68961b3e56baf676d8348305hQwK21wXxR08-08 caxita meiodia GOM \u2014 C\u00f3pia|120229447783620470hQwK21wXxRROI ROIZINHO|120229447783800470hQwK21wXxRTAXAS|120229447783710470hQwK21wXxRFacebook_Mobile_Feed?CZejO0D033=YiSPH1MrWk"
+    },
+    "commission": {
+        "totalPriceInCents": 8724,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 8724
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-08-08 15:57:11] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "a5b3187a-cc4e-462f-9a5d-84d542f0c660",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-08-08 15:57:11",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Laura Souza Costa",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "87764183750",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_68961e57d0e14",
+            "name": "Produto Front",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 8724
+        }
+    ],
+    "trackingParameters": {
+        "src": null,
+        "sck": "FBjLj68961b3e56baf676d8348305hQwK21wXxR08-08 caxita meiodia GOM \u2014 C\u00f3pia|120229447783620470hQwK21wXxRROI ROIZINHO|120229447783800470hQwK21wXxRTAXAS|120229447783710470hQwK21wXxRFacebook_Mobile_Feed?CZejO0D033=YiSPH1MrWk",
+        "utm_source": "FBjLj68961b3e56baf676d8348305",
+        "utm_campaign": "08-08 caxita meiodia GOM \u2014 C\u00f3pia|120229447783620470",
+        "utm_medium": "ROI ROIZINHO|120229447783800470",
+        "utm_content": "TAXAS|120229447783710470::IwZXh0bgNhZW0BMABhZGlkAaskC7oQcuYBHlFmNWSMrMu2RuyRf5KNBPgL3Jl4BJ1dDy5HbDhWOdVULunZCPUUXib1pUnx_aem_0TPJ7gZ61XSLM8hvpQywgA::",
+        "utm_term": "Facebook_Mobile_Feed?CZejO0D033=YiSPH1MrWk",
+        "xcod": "FBjLj68961b3e56baf676d8348305hQwK21wXxR08-08 caxita meiodia GOM \u2014 C\u00f3pia|120229447783620470hQwK21wXxRROI ROIZINHO|120229447783800470hQwK21wXxRTAXAS|120229447783710470hQwK21wXxRFacebook_Mobile_Feed?CZejO0D033=YiSPH1MrWk",
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": 8724,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 8724
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-08-08 15:57:11] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-08-08 15:57:11] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-08-08 16:28:26] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"f3d5e80f-b58a-4a0a-b9a0-832b68097822\",\"platform\":\"MinhaPlataforma\",\"paymentMethod\":\"pix\",\"status\":\"waiting_payment\",\"createdAt\":\"2025-08-08 13:28:26\",\"approvedDate\":null,\"refundedAt\":null,\"customer\":{\"name\":\"Alice Alves Gomes\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":\"46696479627\",\"country\":\"BR\",\"ip\":\"181.215.48.42\"},\"products\":[{\"id\":\"PROD_689625aa38c95\",\"name\":\"Produto Front\",\"planId\":null,\"planName\":null,\"quantity\":1,\"priceInCents\":8724,\"agendamento\":null}],\"trackingParameters\":[],\"commission\":{\"totalPriceInCents\":8724,\"gatewayFeeInCents\":0,\"userCommissionInCents\":8724},\"isTest\":false}"
+}
+----------------------------------------
+[2025-08-08 16:28:26] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "f3d5e80f-b58a-4a0a-b9a0-832b68097822",
+    "platform": "MinhaPlataforma",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-08-08 13:28:26",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Alice Alves Gomes",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "46696479627",
+        "country": "BR",
+        "ip": "181.215.48.42"
+    },
+    "products": [
+        {
+            "id": "PROD_689625aa38c95",
+            "name": "Produto Front",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 8724,
+            "agendamento": null
+        }
+    ],
+    "trackingParameters": [],
+    "commission": {
+        "totalPriceInCents": 8724,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 8724
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-08-08 16:28:26] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "f3d5e80f-b58a-4a0a-b9a0-832b68097822",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-08-08 16:28:26",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Alice Alves Gomes",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "46696479627",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_689625aa38c95",
+            "name": "Produto Front",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 8724
+        }
+    ],
+    "trackingParameters": {
+        "src": null,
+        "sck": null,
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null,
+        "utm_content": null,
+        "utm_term": null,
+        "xcod": null,
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": 8724,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 8724
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-08-08 16:28:26] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-08-08 16:28:26] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-08-08 16:30:12] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"4e9b04ae-9f13-4a6e-9ee2-4d10028d848b\",\"platform\":\"MinhaPlataforma\",\"paymentMethod\":\"pix\",\"status\":\"waiting_payment\",\"createdAt\":\"2025-08-08 13:30:12\",\"approvedDate\":null,\"refundedAt\":null,\"customer\":{\"name\":\"Bruno Lopes Martins\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":\"95267824100\",\"country\":\"BR\",\"ip\":\"179.193.101.105\"},\"products\":[{\"id\":\"PROD_689626143091a\",\"name\":\"Produto Front\",\"planId\":null,\"planName\":null,\"quantity\":1,\"priceInCents\":8724,\"agendamento\":null}],\"trackingParameters\":[],\"commission\":{\"totalPriceInCents\":8724,\"gatewayFeeInCents\":0,\"userCommissionInCents\":8724},\"isTest\":false}"
+}
+----------------------------------------
+[2025-08-08 16:30:12] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "4e9b04ae-9f13-4a6e-9ee2-4d10028d848b",
+    "platform": "MinhaPlataforma",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-08-08 13:30:12",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Bruno Lopes Martins",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "95267824100",
+        "country": "BR",
+        "ip": "179.193.101.105"
+    },
+    "products": [
+        {
+            "id": "PROD_689626143091a",
+            "name": "Produto Front",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 8724,
+            "agendamento": null
+        }
+    ],
+    "trackingParameters": [],
+    "commission": {
+        "totalPriceInCents": 8724,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 8724
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-08-08 16:30:12] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "4e9b04ae-9f13-4a6e-9ee2-4d10028d848b",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-08-08 16:30:12",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Bruno Lopes Martins",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "95267824100",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_689626143091a",
+            "name": "Produto Front",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 8724
+        }
+    ],
+    "trackingParameters": {
+        "src": null,
+        "sck": null,
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null,
+        "utm_content": null,
+        "utm_term": null,
+        "xcod": null,
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": 8724,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 8724
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-08-08 16:30:12] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-08-08 16:30:12] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-08-08 16:30:52] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"154bef1a-9379-4b89-9c3f-503795b18f7d\",\"platform\":\"MinhaPlataforma\",\"paymentMethod\":\"pix\",\"status\":\"waiting_payment\",\"createdAt\":\"2025-08-08 13:30:52\",\"approvedDate\":null,\"refundedAt\":null,\"customer\":{\"name\":\"Bruno Souza Santos\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":\"63959957904\",\"country\":\"BR\",\"ip\":\"155.2.219.244\"},\"products\":[{\"id\":\"PROD_6896263cc0902\",\"name\":\"Produto Front\",\"planId\":null,\"planName\":null,\"quantity\":1,\"priceInCents\":8724,\"agendamento\":null}],\"trackingParameters\":[],\"commission\":{\"totalPriceInCents\":8724,\"gatewayFeeInCents\":0,\"userCommissionInCents\":8724},\"isTest\":false}"
+}
+----------------------------------------
+[2025-08-08 16:30:52] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "154bef1a-9379-4b89-9c3f-503795b18f7d",
+    "platform": "MinhaPlataforma",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-08-08 13:30:52",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Bruno Souza Santos",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "63959957904",
+        "country": "BR",
+        "ip": "155.2.219.244"
+    },
+    "products": [
+        {
+            "id": "PROD_6896263cc0902",
+            "name": "Produto Front",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 8724,
+            "agendamento": null
+        }
+    ],
+    "trackingParameters": [],
+    "commission": {
+        "totalPriceInCents": 8724,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 8724
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-08-08 16:30:52] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "154bef1a-9379-4b89-9c3f-503795b18f7d",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-08-08 16:30:52",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Bruno Souza Santos",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "63959957904",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_6896263cc0902",
+            "name": "Produto Front",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 8724
+        }
+    ],
+    "trackingParameters": {
+        "src": null,
+        "sck": null,
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null,
+        "utm_content": null,
+        "utm_term": null,
+        "xcod": null,
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": 8724,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 8724
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-08-08 16:30:52] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-08-08 16:30:52] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-08-08 16:49:43] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"82f96216-7867-4d90-9bb0-faa4df4d6324\",\"platform\":\"MinhaPlataforma\",\"paymentMethod\":\"pix\",\"status\":\"waiting_payment\",\"createdAt\":\"2025-08-08 13:49:43\",\"approvedDate\":null,\"refundedAt\":null,\"customer\":{\"name\":\"Thiago Alves Ribeiro\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":\"67332520745\",\"country\":\"BR\",\"ip\":\"155.2.219.244\"},\"products\":[{\"id\":\"PROD_68962aa730d61\",\"name\":\"Produto Front\",\"planId\":null,\"planName\":null,\"quantity\":1,\"priceInCents\":8724,\"agendamento\":null}],\"trackingParameters\":[],\"commission\":{\"totalPriceInCents\":8724,\"gatewayFeeInCents\":0,\"userCommissionInCents\":8724},\"isTest\":false}"
+}
+----------------------------------------
+[2025-08-08 16:49:43] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "82f96216-7867-4d90-9bb0-faa4df4d6324",
+    "platform": "MinhaPlataforma",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-08-08 13:49:43",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Thiago Alves Ribeiro",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "67332520745",
+        "country": "BR",
+        "ip": "155.2.219.244"
+    },
+    "products": [
+        {
+            "id": "PROD_68962aa730d61",
+            "name": "Produto Front",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 8724,
+            "agendamento": null
+        }
+    ],
+    "trackingParameters": [],
+    "commission": {
+        "totalPriceInCents": 8724,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 8724
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-08-08 16:49:43] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "82f96216-7867-4d90-9bb0-faa4df4d6324",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-08-08 16:49:43",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Thiago Alves Ribeiro",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "67332520745",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_68962aa730d61",
+            "name": "Produto Front",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 8724
+        }
+    ],
+    "trackingParameters": {
+        "src": null,
+        "sck": null,
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null,
+        "utm_content": null,
+        "utm_term": null,
+        "xcod": null,
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": 8724,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 8724
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-08-08 16:49:43] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-08-08 16:49:43] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-08-08 16:50:02] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"cd085e2e-4271-4801-9cc9-71fd354e76eb\",\"platform\":\"MinhaPlataforma\",\"paymentMethod\":\"pix\",\"status\":\"waiting_payment\",\"createdAt\":\"2025-08-08 13:50:02\",\"approvedDate\":null,\"refundedAt\":null,\"customer\":{\"name\":\"Sofia Oliveira Ferreira\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":\"43837981878\",\"country\":\"BR\",\"ip\":\"177.95.44.225\"},\"products\":[{\"id\":\"PROD_68962ababdaa5\",\"name\":\"Produto Front\",\"planId\":null,\"planName\":null,\"quantity\":1,\"priceInCents\":8724,\"agendamento\":null}],\"trackingParameters\":[],\"commission\":{\"totalPriceInCents\":8724,\"gatewayFeeInCents\":0,\"userCommissionInCents\":8724},\"isTest\":false}"
+}
+----------------------------------------
+[2025-08-08 16:50:02] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "cd085e2e-4271-4801-9cc9-71fd354e76eb",
+    "platform": "MinhaPlataforma",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-08-08 13:50:02",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Sofia Oliveira Ferreira",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "43837981878",
+        "country": "BR",
+        "ip": "177.95.44.225"
+    },
+    "products": [
+        {
+            "id": "PROD_68962ababdaa5",
+            "name": "Produto Front",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 8724,
+            "agendamento": null
+        }
+    ],
+    "trackingParameters": [],
+    "commission": {
+        "totalPriceInCents": 8724,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 8724
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-08-08 16:50:02] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "cd085e2e-4271-4801-9cc9-71fd354e76eb",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-08-08 16:50:02",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Sofia Oliveira Ferreira",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "43837981878",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_68962ababdaa5",
+            "name": "Produto Front",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 8724
+        }
+    ],
+    "trackingParameters": {
+        "src": null,
+        "sck": null,
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null,
+        "utm_content": null,
+        "utm_term": null,
+        "xcod": null,
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": 8724,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 8724
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-08-08 16:50:02] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-08-08 16:50:02] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-08-08 16:54:50] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"48ee76a8-efcb-4de2-acbf-72998697c3e4\",\"platform\":\"MinhaPlataforma\",\"paymentMethod\":\"pix\",\"status\":\"waiting_payment\",\"createdAt\":\"2025-08-08 13:54:50\",\"approvedDate\":null,\"refundedAt\":null,\"customer\":{\"name\":\"Bernardo Soares Soares\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":\"52240436972\",\"country\":\"BR\",\"ip\":\"177.124.159.200\"},\"products\":[{\"id\":\"PROD_68962bda77376\",\"name\":\"Produto Front\",\"planId\":null,\"planName\":null,\"quantity\":1,\"priceInCents\":8724,\"agendamento\":null}],\"trackingParameters\":{\"utm_source\":\"FBjLj68962979c5bf0719c8e7f54a\",\"utm_medium\":\"ROI MAX|120232126594840081\",\"utm_campaign\":\"08-08 CTV CALVOMES MIEODIA \\u2014 C\\u00f3pia|120232126594880081\",\"utm_content\":\"02|120232126594920081::IwZXh0bgNhZW0BMABhZGlkAasme2ychVEBHlATjZi6tRi-5nyWqwkyX0bG_XIvEPHi-5kYDV6tsGSn243T_EI-3ujjsokV_aem_Yu03-1kBdGcsMRFIj5_hdg::\",\"utm_term\":\"Facebook_Mobile_Feed\",\"xcod\":\"FBjLj68962979c5bf0719c8e7f54ahQwK21wXxR08-08 CTV CALVOMES MIEODIA \\u2014 C\\u00f3pia|120232126594880081hQwK21wXxRROI MAX|120232126594840081hQwK21wXxR02|120232126594920081hQwK21wXxRFacebook_Mobile_Feed\",\"sck\":\"FBjLj68962979c5bf0719c8e7f54ahQwK21wXxR08-08 CTV CALVOMES MIEODIA \\u2014 C\\u00f3pia|120232126594880081hQwK21wXxRROI MAX|120232126594840081hQwK21wXxR02|120232126594920081hQwK21wXxRFacebook_Mobile_Feed\"},\"commission\":{\"totalPriceInCents\":8724,\"gatewayFeeInCents\":0,\"userCommissionInCents\":8724},\"isTest\":false}"
+}
+----------------------------------------
+[2025-08-08 16:54:50] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "48ee76a8-efcb-4de2-acbf-72998697c3e4",
+    "platform": "MinhaPlataforma",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-08-08 13:54:50",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Bernardo Soares Soares",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "52240436972",
+        "country": "BR",
+        "ip": "177.124.159.200"
+    },
+    "products": [
+        {
+            "id": "PROD_68962bda77376",
+            "name": "Produto Front",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 8724,
+            "agendamento": null
+        }
+    ],
+    "trackingParameters": {
+        "utm_source": "FBjLj68962979c5bf0719c8e7f54a",
+        "utm_medium": "ROI MAX|120232126594840081",
+        "utm_campaign": "08-08 CTV CALVOMES MIEODIA \u2014 C\u00f3pia|120232126594880081",
+        "utm_content": "02|120232126594920081::IwZXh0bgNhZW0BMABhZGlkAasme2ychVEBHlATjZi6tRi-5nyWqwkyX0bG_XIvEPHi-5kYDV6tsGSn243T_EI-3ujjsokV_aem_Yu03-1kBdGcsMRFIj5_hdg::",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": "FBjLj68962979c5bf0719c8e7f54ahQwK21wXxR08-08 CTV CALVOMES MIEODIA \u2014 C\u00f3pia|120232126594880081hQwK21wXxRROI MAX|120232126594840081hQwK21wXxR02|120232126594920081hQwK21wXxRFacebook_Mobile_Feed",
+        "sck": "FBjLj68962979c5bf0719c8e7f54ahQwK21wXxR08-08 CTV CALVOMES MIEODIA \u2014 C\u00f3pia|120232126594880081hQwK21wXxRROI MAX|120232126594840081hQwK21wXxR02|120232126594920081hQwK21wXxRFacebook_Mobile_Feed"
+    },
+    "commission": {
+        "totalPriceInCents": 8724,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 8724
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-08-08 16:54:50] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "48ee76a8-efcb-4de2-acbf-72998697c3e4",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-08-08 16:54:50",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Bernardo Soares Soares",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "52240436972",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_68962bda77376",
+            "name": "Produto Front",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 8724
+        }
+    ],
+    "trackingParameters": {
+        "src": null,
+        "sck": "FBjLj68962979c5bf0719c8e7f54ahQwK21wXxR08-08 CTV CALVOMES MIEODIA \u2014 C\u00f3pia|120232126594880081hQwK21wXxRROI MAX|120232126594840081hQwK21wXxR02|120232126594920081hQwK21wXxRFacebook_Mobile_Feed",
+        "utm_source": "FBjLj68962979c5bf0719c8e7f54a",
+        "utm_campaign": "08-08 CTV CALVOMES MIEODIA \u2014 C\u00f3pia|120232126594880081",
+        "utm_medium": "ROI MAX|120232126594840081",
+        "utm_content": "02|120232126594920081::IwZXh0bgNhZW0BMABhZGlkAasme2ychVEBHlATjZi6tRi-5nyWqwkyX0bG_XIvEPHi-5kYDV6tsGSn243T_EI-3ujjsokV_aem_Yu03-1kBdGcsMRFIj5_hdg::",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": "FBjLj68962979c5bf0719c8e7f54ahQwK21wXxR08-08 CTV CALVOMES MIEODIA \u2014 C\u00f3pia|120232126594880081hQwK21wXxRROI MAX|120232126594840081hQwK21wXxR02|120232126594920081hQwK21wXxRFacebook_Mobile_Feed",
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": 8724,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 8724
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-08-08 16:54:50] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-08-08 16:54:50] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-08-08 16:56:16] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"ed5b289f-d00b-4062-af1a-77123080e830\",\"platform\":\"MinhaPlataforma\",\"paymentMethod\":\"pix\",\"status\":\"waiting_payment\",\"createdAt\":\"2025-08-08 13:56:16\",\"approvedDate\":null,\"refundedAt\":null,\"customer\":{\"name\":\"Manuela Silva Lopes\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":\"01384415025\",\"country\":\"BR\",\"ip\":\"191.39.135.205\"},\"products\":[{\"id\":\"PROD_68962c304aa5f\",\"name\":\"Produto Front\",\"planId\":null,\"planName\":null,\"quantity\":1,\"priceInCents\":8724,\"agendamento\":null}],\"trackingParameters\":{\"utm_source\":\"FBjLj689629fc0cd665d8cfa9f310\",\"utm_medium\":\"ROI MAX|120232126594840081\",\"utm_campaign\":\"08-08 CTV CALVOMES MIEODIA \\u2014 C\\u00f3pia|120232126594880081\",\"utm_content\":\"02|120232126594920081::IwZXh0bgNhZW0BMABhZGlkAasme2ychVEBHos9UhG0PCANlSi0sKT5fkgXq5b_3y0ov4GKfNJU2_vkLCwmxJMDMUb4jI4N_aem_-laillSfUtCgzeuRHJ9qqQ::\",\"utm_term\":\"Facebook_Mobile_Feed\",\"xcod\":\"FBjLj689629fc0cd665d8cfa9f310hQwK21wXxR08-08 CTV CALVOMES MIEODIA \\u2014 C\\u00f3pia|120232126594880081hQwK21wXxRROI MAX|120232126594840081hQwK21wXxR02|120232126594920081hQwK21wXxRFacebook_Mobile_Feed\",\"sck\":\"FBjLj689629fc0cd665d8cfa9f310hQwK21wXxR08-08 CTV CALVOMES MIEODIA \\u2014 C\\u00f3pia|120232126594880081hQwK21wXxRROI MAX|120232126594840081hQwK21wXxR02|120232126594920081hQwK21wXxRFacebook_Mobile_Feed\"},\"commission\":{\"totalPriceInCents\":8724,\"gatewayFeeInCents\":0,\"userCommissionInCents\":8724},\"isTest\":false}"
+}
+----------------------------------------
+[2025-08-08 16:56:16] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "ed5b289f-d00b-4062-af1a-77123080e830",
+    "platform": "MinhaPlataforma",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-08-08 13:56:16",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Manuela Silva Lopes",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "01384415025",
+        "country": "BR",
+        "ip": "191.39.135.205"
+    },
+    "products": [
+        {
+            "id": "PROD_68962c304aa5f",
+            "name": "Produto Front",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 8724,
+            "agendamento": null
+        }
+    ],
+    "trackingParameters": {
+        "utm_source": "FBjLj689629fc0cd665d8cfa9f310",
+        "utm_medium": "ROI MAX|120232126594840081",
+        "utm_campaign": "08-08 CTV CALVOMES MIEODIA \u2014 C\u00f3pia|120232126594880081",
+        "utm_content": "02|120232126594920081::IwZXh0bgNhZW0BMABhZGlkAasme2ychVEBHos9UhG0PCANlSi0sKT5fkgXq5b_3y0ov4GKfNJU2_vkLCwmxJMDMUb4jI4N_aem_-laillSfUtCgzeuRHJ9qqQ::",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": "FBjLj689629fc0cd665d8cfa9f310hQwK21wXxR08-08 CTV CALVOMES MIEODIA \u2014 C\u00f3pia|120232126594880081hQwK21wXxRROI MAX|120232126594840081hQwK21wXxR02|120232126594920081hQwK21wXxRFacebook_Mobile_Feed",
+        "sck": "FBjLj689629fc0cd665d8cfa9f310hQwK21wXxR08-08 CTV CALVOMES MIEODIA \u2014 C\u00f3pia|120232126594880081hQwK21wXxRROI MAX|120232126594840081hQwK21wXxR02|120232126594920081hQwK21wXxRFacebook_Mobile_Feed"
+    },
+    "commission": {
+        "totalPriceInCents": 8724,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 8724
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-08-08 16:56:16] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "ed5b289f-d00b-4062-af1a-77123080e830",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-08-08 16:56:16",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Manuela Silva Lopes",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "01384415025",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_68962c304aa5f",
+            "name": "Produto Front",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 8724
+        }
+    ],
+    "trackingParameters": {
+        "src": null,
+        "sck": "FBjLj689629fc0cd665d8cfa9f310hQwK21wXxR08-08 CTV CALVOMES MIEODIA \u2014 C\u00f3pia|120232126594880081hQwK21wXxRROI MAX|120232126594840081hQwK21wXxR02|120232126594920081hQwK21wXxRFacebook_Mobile_Feed",
+        "utm_source": "FBjLj689629fc0cd665d8cfa9f310",
+        "utm_campaign": "08-08 CTV CALVOMES MIEODIA \u2014 C\u00f3pia|120232126594880081",
+        "utm_medium": "ROI MAX|120232126594840081",
+        "utm_content": "02|120232126594920081::IwZXh0bgNhZW0BMABhZGlkAasme2ychVEBHos9UhG0PCANlSi0sKT5fkgXq5b_3y0ov4GKfNJU2_vkLCwmxJMDMUb4jI4N_aem_-laillSfUtCgzeuRHJ9qqQ::",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": "FBjLj689629fc0cd665d8cfa9f310hQwK21wXxR08-08 CTV CALVOMES MIEODIA \u2014 C\u00f3pia|120232126594880081hQwK21wXxRROI MAX|120232126594840081hQwK21wXxR02|120232126594920081hQwK21wXxRFacebook_Mobile_Feed",
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": 8724,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 8724
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-08-08 16:56:16] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-08-08 16:56:16] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-08-08 16:56:27] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"3d6f51e7-241a-4202-ab07-dfb776fc2cef\",\"platform\":\"MinhaPlataforma\",\"paymentMethod\":\"pix\",\"status\":\"waiting_payment\",\"createdAt\":\"2025-08-08 13:56:27\",\"approvedDate\":null,\"refundedAt\":null,\"customer\":{\"name\":\"Julia Soares Ribeiro\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":\"27645675292\",\"country\":\"BR\",\"ip\":\"187.91.214.250\"},\"products\":[{\"id\":\"PROD_68962c3b0f602\",\"name\":\"Produto Front\",\"planId\":null,\"planName\":null,\"quantity\":1,\"priceInCents\":8724,\"agendamento\":null}],\"trackingParameters\":{\"utm_source\":\"FBjLj68962a137c008410f98d3437\",\"utm_medium\":\"ROI MAX|120232126594950081\",\"utm_campaign\":\"08-08 CTV CALVOMES MIEODIA \\u2014 C\\u00f3pia|120232126594870081\",\"utm_content\":\"02|120232126594910081::IwZXh0bgNhZW0BMABhZGlkAasme2yh3IEBHh6yPCGWRmnnPrasRpRUYuVS19DvywW8zq3nKryP-aOWITX9qgWZUFCroYLD_aem_Vej7GsbnemklM0nOx3wcvA::\",\"utm_term\":\"Facebook_Mobile_Feed\",\"xcod\":\"FBjLj68962a137c008410f98d3437hQwK21wXxR08-08 CTV CALVOMES MIEODIA \\u2014 C\\u00f3pia|120232126594870081hQwK21wXxRROI MAX|120232126594950081hQwK21wXxR02|120232126594910081hQwK21wXxRFacebook_Mobile_Feed\",\"sck\":\"FBjLj68962a137c008410f98d3437hQwK21wXxR08-08 CTV CALVOMES MIEODIA \\u2014 C\\u00f3pia|120232126594870081hQwK21wXxRROI MAX|120232126594950081hQwK21wXxR02|120232126594910081hQwK21wXxRFacebook_Mobile_Feed\"},\"commission\":{\"totalPriceInCents\":8724,\"gatewayFeeInCents\":0,\"userCommissionInCents\":8724},\"isTest\":false}"
+}
+----------------------------------------
+[2025-08-08 16:56:27] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "3d6f51e7-241a-4202-ab07-dfb776fc2cef",
+    "platform": "MinhaPlataforma",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-08-08 13:56:27",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Julia Soares Ribeiro",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "27645675292",
+        "country": "BR",
+        "ip": "187.91.214.250"
+    },
+    "products": [
+        {
+            "id": "PROD_68962c3b0f602",
+            "name": "Produto Front",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 8724,
+            "agendamento": null
+        }
+    ],
+    "trackingParameters": {
+        "utm_source": "FBjLj68962a137c008410f98d3437",
+        "utm_medium": "ROI MAX|120232126594950081",
+        "utm_campaign": "08-08 CTV CALVOMES MIEODIA \u2014 C\u00f3pia|120232126594870081",
+        "utm_content": "02|120232126594910081::IwZXh0bgNhZW0BMABhZGlkAasme2yh3IEBHh6yPCGWRmnnPrasRpRUYuVS19DvywW8zq3nKryP-aOWITX9qgWZUFCroYLD_aem_Vej7GsbnemklM0nOx3wcvA::",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": "FBjLj68962a137c008410f98d3437hQwK21wXxR08-08 CTV CALVOMES MIEODIA \u2014 C\u00f3pia|120232126594870081hQwK21wXxRROI MAX|120232126594950081hQwK21wXxR02|120232126594910081hQwK21wXxRFacebook_Mobile_Feed",
+        "sck": "FBjLj68962a137c008410f98d3437hQwK21wXxR08-08 CTV CALVOMES MIEODIA \u2014 C\u00f3pia|120232126594870081hQwK21wXxRROI MAX|120232126594950081hQwK21wXxR02|120232126594910081hQwK21wXxRFacebook_Mobile_Feed"
+    },
+    "commission": {
+        "totalPriceInCents": 8724,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 8724
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-08-08 16:56:27] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "3d6f51e7-241a-4202-ab07-dfb776fc2cef",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-08-08 16:56:27",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Julia Soares Ribeiro",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "27645675292",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_68962c3b0f602",
+            "name": "Produto Front",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 8724
+        }
+    ],
+    "trackingParameters": {
+        "src": null,
+        "sck": "FBjLj68962a137c008410f98d3437hQwK21wXxR08-08 CTV CALVOMES MIEODIA \u2014 C\u00f3pia|120232126594870081hQwK21wXxRROI MAX|120232126594950081hQwK21wXxR02|120232126594910081hQwK21wXxRFacebook_Mobile_Feed",
+        "utm_source": "FBjLj68962a137c008410f98d3437",
+        "utm_campaign": "08-08 CTV CALVOMES MIEODIA \u2014 C\u00f3pia|120232126594870081",
+        "utm_medium": "ROI MAX|120232126594950081",
+        "utm_content": "02|120232126594910081::IwZXh0bgNhZW0BMABhZGlkAasme2yh3IEBHh6yPCGWRmnnPrasRpRUYuVS19DvywW8zq3nKryP-aOWITX9qgWZUFCroYLD_aem_Vej7GsbnemklM0nOx3wcvA::",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": "FBjLj68962a137c008410f98d3437hQwK21wXxR08-08 CTV CALVOMES MIEODIA \u2014 C\u00f3pia|120232126594870081hQwK21wXxRROI MAX|120232126594950081hQwK21wXxR02|120232126594910081hQwK21wXxRFacebook_Mobile_Feed",
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": 8724,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 8724
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-08-08 16:56:27] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-08-08 16:56:27] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-08-08 16:56:59] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"caaf0c78-17f4-40f4-a6a5-d7a6b3df827b\",\"platform\":\"MinhaPlataforma\",\"paymentMethod\":\"pix\",\"status\":\"waiting_payment\",\"createdAt\":\"2025-08-08 13:56:59\",\"approvedDate\":null,\"refundedAt\":null,\"customer\":{\"name\":\"Laura Silva Ferreira\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":\"10276136756\",\"country\":\"BR\",\"ip\":\"177.30.135.46\"},\"products\":[{\"id\":\"PROD_68962c5b2b50a\",\"name\":\"Produto Front\",\"planId\":null,\"planName\":null,\"quantity\":1,\"priceInCents\":8724,\"agendamento\":null}],\"trackingParameters\":{\"utm_source\":\"FBjLj689629cb2c1f3bfb4e97c4a0\",\"utm_medium\":\"ROI MAX|120232126594950081\",\"utm_campaign\":\"08-08 CTV CALVOMES MIEODIA \\u2014 C\\u00f3pia|120232126594870081\",\"utm_content\":\"02|120232126594910081::IwZXh0bgNhZW0BMABhZGlkAasme2yh3IEBHr3FJA0IhNk6S7j8Isn5dSeHmZ1zXsyyWlegRVqxUemDO2a8WxAG4aTzUQ-o_aem_h3Iwfgv_Qqbe4TNQpmmcvw::\",\"utm_term\":\"Facebook_Mobile_Feed\",\"xcod\":\"FBjLj689629cb2c1f3bfb4e97c4a0hQwK21wXxR08-08 CTV CALVOMES MIEODIA \\u2014 C\\u00f3pia|120232126594870081hQwK21wXxRROI MAX|120232126594950081hQwK21wXxR02|120232126594910081hQwK21wXxRFacebook_Mobile_Feed\",\"sck\":\"FBjLj689629cb2c1f3bfb4e97c4a0hQwK21wXxR08-08 CTV CALVOMES MIEODIA \\u2014 C\\u00f3pia|120232126594870081hQwK21wXxRROI MAX|120232126594950081hQwK21wXxR02|120232126594910081hQwK21wXxRFacebook_Mobile_Feed\"},\"commission\":{\"totalPriceInCents\":8724,\"gatewayFeeInCents\":0,\"userCommissionInCents\":8724},\"isTest\":false}"
+}
+----------------------------------------
+[2025-08-08 16:56:59] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "caaf0c78-17f4-40f4-a6a5-d7a6b3df827b",
+    "platform": "MinhaPlataforma",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-08-08 13:56:59",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Laura Silva Ferreira",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "10276136756",
+        "country": "BR",
+        "ip": "177.30.135.46"
+    },
+    "products": [
+        {
+            "id": "PROD_68962c5b2b50a",
+            "name": "Produto Front",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 8724,
+            "agendamento": null
+        }
+    ],
+    "trackingParameters": {
+        "utm_source": "FBjLj689629cb2c1f3bfb4e97c4a0",
+        "utm_medium": "ROI MAX|120232126594950081",
+        "utm_campaign": "08-08 CTV CALVOMES MIEODIA \u2014 C\u00f3pia|120232126594870081",
+        "utm_content": "02|120232126594910081::IwZXh0bgNhZW0BMABhZGlkAasme2yh3IEBHr3FJA0IhNk6S7j8Isn5dSeHmZ1zXsyyWlegRVqxUemDO2a8WxAG4aTzUQ-o_aem_h3Iwfgv_Qqbe4TNQpmmcvw::",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": "FBjLj689629cb2c1f3bfb4e97c4a0hQwK21wXxR08-08 CTV CALVOMES MIEODIA \u2014 C\u00f3pia|120232126594870081hQwK21wXxRROI MAX|120232126594950081hQwK21wXxR02|120232126594910081hQwK21wXxRFacebook_Mobile_Feed",
+        "sck": "FBjLj689629cb2c1f3bfb4e97c4a0hQwK21wXxR08-08 CTV CALVOMES MIEODIA \u2014 C\u00f3pia|120232126594870081hQwK21wXxRROI MAX|120232126594950081hQwK21wXxR02|120232126594910081hQwK21wXxRFacebook_Mobile_Feed"
+    },
+    "commission": {
+        "totalPriceInCents": 8724,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 8724
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-08-08 16:56:59] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "caaf0c78-17f4-40f4-a6a5-d7a6b3df827b",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-08-08 16:56:59",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Laura Silva Ferreira",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "10276136756",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_68962c5b2b50a",
+            "name": "Produto Front",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 8724
+        }
+    ],
+    "trackingParameters": {
+        "src": null,
+        "sck": "FBjLj689629cb2c1f3bfb4e97c4a0hQwK21wXxR08-08 CTV CALVOMES MIEODIA \u2014 C\u00f3pia|120232126594870081hQwK21wXxRROI MAX|120232126594950081hQwK21wXxR02|120232126594910081hQwK21wXxRFacebook_Mobile_Feed",
+        "utm_source": "FBjLj689629cb2c1f3bfb4e97c4a0",
+        "utm_campaign": "08-08 CTV CALVOMES MIEODIA \u2014 C\u00f3pia|120232126594870081",
+        "utm_medium": "ROI MAX|120232126594950081",
+        "utm_content": "02|120232126594910081::IwZXh0bgNhZW0BMABhZGlkAasme2yh3IEBHr3FJA0IhNk6S7j8Isn5dSeHmZ1zXsyyWlegRVqxUemDO2a8WxAG4aTzUQ-o_aem_h3Iwfgv_Qqbe4TNQpmmcvw::",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": "FBjLj689629cb2c1f3bfb4e97c4a0hQwK21wXxR08-08 CTV CALVOMES MIEODIA \u2014 C\u00f3pia|120232126594870081hQwK21wXxRROI MAX|120232126594950081hQwK21wXxR02|120232126594910081hQwK21wXxRFacebook_Mobile_Feed",
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": 8724,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 8724
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-08-08 16:56:59] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-08-08 16:56:59] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-08-08 16:57:35] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"7104c488-1bcd-40d3-83da-454cd977268c\",\"platform\":\"MinhaPlataforma\",\"paymentMethod\":\"pix\",\"status\":\"waiting_payment\",\"createdAt\":\"2025-08-08 13:57:35\",\"approvedDate\":null,\"refundedAt\":null,\"customer\":{\"name\":\"Arthur Alves Ribeiro\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":\"70797356452\",\"country\":\"BR\",\"ip\":\"177.173.196.245\"},\"products\":[{\"id\":\"PROD_68962c7f456ff\",\"name\":\"Produto Front\",\"planId\":null,\"planName\":null,\"quantity\":1,\"priceInCents\":8724,\"agendamento\":null}],\"trackingParameters\":{\"utm_source\":\"FBjLj689629ca8bad4b2e8ce7d4e0\",\"utm_medium\":\"ROI MAX|120232126594950081\",\"utm_campaign\":\"08-08 CTV CALVOMES MIEODIA \\u2014 C\\u00f3pia|120232126594870081\",\"utm_content\":\"02|120232126594910081::IwZXh0bgNhZW0BMABhZGlkAasme2yh3IEBHmR4P4H45sHv5pkoEP0vgR_CLTn1M4S0dBIGA9hG7gLbhCKu2tyYRZXXW4xz_aem_Xx8BKg1_gjGXKff0W-jDGQ::\",\"utm_term\":\"Facebook_Mobile_Feed\",\"xcod\":\"FBjLj689629ca8bad4b2e8ce7d4e0hQwK21wXxR08-08 CTV CALVOMES MIEODIA \\u2014 C\\u00f3pia|120232126594870081hQwK21wXxRROI MAX|120232126594950081hQwK21wXxR02|120232126594910081hQwK21wXxRFacebook_Mobile_Feed\",\"sck\":\"FBjLj689629ca8bad4b2e8ce7d4e0hQwK21wXxR08-08 CTV CALVOMES MIEODIA \\u2014 C\\u00f3pia|120232126594870081hQwK21wXxRROI MAX|120232126594950081hQwK21wXxR02|120232126594910081hQwK21wXxRFacebook_Mobile_Feed\"},\"commission\":{\"totalPriceInCents\":8724,\"gatewayFeeInCents\":0,\"userCommissionInCents\":8724},\"isTest\":false}"
+}
+----------------------------------------
+[2025-08-08 16:57:35] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "7104c488-1bcd-40d3-83da-454cd977268c",
+    "platform": "MinhaPlataforma",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-08-08 13:57:35",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Arthur Alves Ribeiro",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "70797356452",
+        "country": "BR",
+        "ip": "177.173.196.245"
+    },
+    "products": [
+        {
+            "id": "PROD_68962c7f456ff",
+            "name": "Produto Front",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 8724,
+            "agendamento": null
+        }
+    ],
+    "trackingParameters": {
+        "utm_source": "FBjLj689629ca8bad4b2e8ce7d4e0",
+        "utm_medium": "ROI MAX|120232126594950081",
+        "utm_campaign": "08-08 CTV CALVOMES MIEODIA \u2014 C\u00f3pia|120232126594870081",
+        "utm_content": "02|120232126594910081::IwZXh0bgNhZW0BMABhZGlkAasme2yh3IEBHmR4P4H45sHv5pkoEP0vgR_CLTn1M4S0dBIGA9hG7gLbhCKu2tyYRZXXW4xz_aem_Xx8BKg1_gjGXKff0W-jDGQ::",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": "FBjLj689629ca8bad4b2e8ce7d4e0hQwK21wXxR08-08 CTV CALVOMES MIEODIA \u2014 C\u00f3pia|120232126594870081hQwK21wXxRROI MAX|120232126594950081hQwK21wXxR02|120232126594910081hQwK21wXxRFacebook_Mobile_Feed",
+        "sck": "FBjLj689629ca8bad4b2e8ce7d4e0hQwK21wXxR08-08 CTV CALVOMES MIEODIA \u2014 C\u00f3pia|120232126594870081hQwK21wXxRROI MAX|120232126594950081hQwK21wXxR02|120232126594910081hQwK21wXxRFacebook_Mobile_Feed"
+    },
+    "commission": {
+        "totalPriceInCents": 8724,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 8724
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-08-08 16:57:35] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "7104c488-1bcd-40d3-83da-454cd977268c",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-08-08 16:57:35",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Arthur Alves Ribeiro",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "70797356452",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_68962c7f456ff",
+            "name": "Produto Front",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 8724
+        }
+    ],
+    "trackingParameters": {
+        "src": null,
+        "sck": "FBjLj689629ca8bad4b2e8ce7d4e0hQwK21wXxR08-08 CTV CALVOMES MIEODIA \u2014 C\u00f3pia|120232126594870081hQwK21wXxRROI MAX|120232126594950081hQwK21wXxR02|120232126594910081hQwK21wXxRFacebook_Mobile_Feed",
+        "utm_source": "FBjLj689629ca8bad4b2e8ce7d4e0",
+        "utm_campaign": "08-08 CTV CALVOMES MIEODIA \u2014 C\u00f3pia|120232126594870081",
+        "utm_medium": "ROI MAX|120232126594950081",
+        "utm_content": "02|120232126594910081::IwZXh0bgNhZW0BMABhZGlkAasme2yh3IEBHmR4P4H45sHv5pkoEP0vgR_CLTn1M4S0dBIGA9hG7gLbhCKu2tyYRZXXW4xz_aem_Xx8BKg1_gjGXKff0W-jDGQ::",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": "FBjLj689629ca8bad4b2e8ce7d4e0hQwK21wXxR08-08 CTV CALVOMES MIEODIA \u2014 C\u00f3pia|120232126594870081hQwK21wXxRROI MAX|120232126594950081hQwK21wXxR02|120232126594910081hQwK21wXxRFacebook_Mobile_Feed",
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": 8724,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 8724
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-08-08 16:57:35] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-08-08 16:57:35] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-08-08 16:59:16] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"844029a7-a739-488c-b660-8329436d4641\",\"platform\":\"MinhaPlataforma\",\"paymentMethod\":\"pix\",\"status\":\"waiting_payment\",\"createdAt\":\"2025-08-08 13:59:16\",\"approvedDate\":null,\"refundedAt\":null,\"customer\":{\"name\":\"Helena Gomes Souza\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":\"09715489192\",\"country\":\"BR\",\"ip\":\"170.81.216.201\"},\"products\":[{\"id\":\"PROD_68962ce4ce0c7\",\"name\":\"Produto Front\",\"planId\":null,\"planName\":null,\"quantity\":1,\"priceInCents\":8724,\"agendamento\":null}],\"trackingParameters\":{\"utm_source\":\"FBjLj68962a67790fdcba4806b02a\",\"utm_medium\":\"ROI MAX|120232126594840081\",\"utm_campaign\":\"08-08 CTV CALVOMES MIEODIA \\u2014 C\\u00f3pia|120232126594880081\",\"utm_content\":\"02|120232126594920081::IwZXh0bgNhZW0BMABhZGlkAasme2ychVEBHktGZaTawN4rR9UMMBpDI1rWgmfQIgsP6GWhnYGxEVXfofqgny6JaFWJU4Po_aem_lDgIw9lVI5cE9jjI3TrxsA::\",\"utm_term\":\"Facebook_Mobile_Feed\",\"xcod\":\"FBjLj68962a67790fdcba4806b02ahQwK21wXxR08-08 CTV CALVOMES MIEODIA \\u2014 C\\u00f3pia|120232126594880081hQwK21wXxRROI MAX|120232126594840081hQwK21wXxR02|120232126594920081hQwK21wXxRFacebook_Mobile_Feed\",\"sck\":\"FBjLj68962a67790fdcba4806b02ahQwK21wXxR08-08 CTV CALVOMES MIEODIA \\u2014 C\\u00f3pia|120232126594880081hQwK21wXxRROI MAX|120232126594840081hQwK21wXxR02|120232126594920081hQwK21wXxRFacebook_Mobile_Feed\"},\"commission\":{\"totalPriceInCents\":8724,\"gatewayFeeInCents\":0,\"userCommissionInCents\":8724},\"isTest\":false}"
+}
+----------------------------------------
+[2025-08-08 16:59:16] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "844029a7-a739-488c-b660-8329436d4641",
+    "platform": "MinhaPlataforma",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-08-08 13:59:16",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Helena Gomes Souza",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "09715489192",
+        "country": "BR",
+        "ip": "170.81.216.201"
+    },
+    "products": [
+        {
+            "id": "PROD_68962ce4ce0c7",
+            "name": "Produto Front",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 8724,
+            "agendamento": null
+        }
+    ],
+    "trackingParameters": {
+        "utm_source": "FBjLj68962a67790fdcba4806b02a",
+        "utm_medium": "ROI MAX|120232126594840081",
+        "utm_campaign": "08-08 CTV CALVOMES MIEODIA \u2014 C\u00f3pia|120232126594880081",
+        "utm_content": "02|120232126594920081::IwZXh0bgNhZW0BMABhZGlkAasme2ychVEBHktGZaTawN4rR9UMMBpDI1rWgmfQIgsP6GWhnYGxEVXfofqgny6JaFWJU4Po_aem_lDgIw9lVI5cE9jjI3TrxsA::",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": "FBjLj68962a67790fdcba4806b02ahQwK21wXxR08-08 CTV CALVOMES MIEODIA \u2014 C\u00f3pia|120232126594880081hQwK21wXxRROI MAX|120232126594840081hQwK21wXxR02|120232126594920081hQwK21wXxRFacebook_Mobile_Feed",
+        "sck": "FBjLj68962a67790fdcba4806b02ahQwK21wXxR08-08 CTV CALVOMES MIEODIA \u2014 C\u00f3pia|120232126594880081hQwK21wXxRROI MAX|120232126594840081hQwK21wXxR02|120232126594920081hQwK21wXxRFacebook_Mobile_Feed"
+    },
+    "commission": {
+        "totalPriceInCents": 8724,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 8724
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-08-08 16:59:16] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "844029a7-a739-488c-b660-8329436d4641",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-08-08 16:59:16",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Helena Gomes Souza",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "09715489192",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_68962ce4ce0c7",
+            "name": "Produto Front",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 8724
+        }
+    ],
+    "trackingParameters": {
+        "src": null,
+        "sck": "FBjLj68962a67790fdcba4806b02ahQwK21wXxR08-08 CTV CALVOMES MIEODIA \u2014 C\u00f3pia|120232126594880081hQwK21wXxRROI MAX|120232126594840081hQwK21wXxR02|120232126594920081hQwK21wXxRFacebook_Mobile_Feed",
+        "utm_source": "FBjLj68962a67790fdcba4806b02a",
+        "utm_campaign": "08-08 CTV CALVOMES MIEODIA \u2014 C\u00f3pia|120232126594880081",
+        "utm_medium": "ROI MAX|120232126594840081",
+        "utm_content": "02|120232126594920081::IwZXh0bgNhZW0BMABhZGlkAasme2ychVEBHktGZaTawN4rR9UMMBpDI1rWgmfQIgsP6GWhnYGxEVXfofqgny6JaFWJU4Po_aem_lDgIw9lVI5cE9jjI3TrxsA::",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": "FBjLj68962a67790fdcba4806b02ahQwK21wXxR08-08 CTV CALVOMES MIEODIA \u2014 C\u00f3pia|120232126594880081hQwK21wXxRROI MAX|120232126594840081hQwK21wXxR02|120232126594920081hQwK21wXxRFacebook_Mobile_Feed",
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": 8724,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 8724
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-08-08 16:59:16] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-08-08 16:59:16] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-08-08 17:00:00] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"92f76450-c599-4102-9c62-8c85ab431a94\",\"platform\":\"MinhaPlataforma\",\"paymentMethod\":\"pix\",\"status\":\"waiting_payment\",\"createdAt\":\"2025-08-08 14:00:00\",\"approvedDate\":null,\"refundedAt\":null,\"customer\":{\"name\":\"Bernardo Almeida Vieira\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":\"27020663990\",\"country\":\"BR\",\"ip\":\"189.92.236.89\"},\"products\":[{\"id\":\"PROD_68962d106aeb6\",\"name\":\"Produto Front\",\"planId\":null,\"planName\":null,\"quantity\":1,\"priceInCents\":8724,\"agendamento\":null}],\"trackingParameters\":{\"utm_source\":\"FBjLj68962a2335b6f1c804d06496\",\"utm_medium\":\"ROI MAX|120232123877870081\",\"utm_campaign\":\"08-08 CTV CALVOMES MIEODIA|120232123877860081\",\"utm_content\":\"02|120232123877880081::IwZXh0bgNhZW0BMABhZGlkAasme0xZjHEBHoitOcuQEZnA8Ski7XHlbncLogP7-DHgG9kMcsayCgMq4WtJZzFHRmxFaNIm_aem_-z-0yKXlQQFwBXCCh2BstA::\",\"utm_term\":\"Facebook_Mobile_Feed\",\"xcod\":\"FBjLj68962a2335b6f1c804d06496hQwK21wXxR08-08 CTV CALVOMES MIEODIA|120232123877860081hQwK21wXxRROI MAX|120232123877870081hQwK21wXxR02|120232123877880081hQwK21wXxRFacebook_Mobile_Feed\",\"sck\":\"FBjLj68962a2335b6f1c804d06496hQwK21wXxR08-08 CTV CALVOMES MIEODIA|120232123877860081hQwK21wXxRROI MAX|120232123877870081hQwK21wXxR02|120232123877880081hQwK21wXxRFacebook_Mobile_Feed\"},\"commission\":{\"totalPriceInCents\":8724,\"gatewayFeeInCents\":0,\"userCommissionInCents\":8724},\"isTest\":false}"
+}
+----------------------------------------
+[2025-08-08 17:00:00] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "92f76450-c599-4102-9c62-8c85ab431a94",
+    "platform": "MinhaPlataforma",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-08-08 14:00:00",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Bernardo Almeida Vieira",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "27020663990",
+        "country": "BR",
+        "ip": "189.92.236.89"
+    },
+    "products": [
+        {
+            "id": "PROD_68962d106aeb6",
+            "name": "Produto Front",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 8724,
+            "agendamento": null
+        }
+    ],
+    "trackingParameters": {
+        "utm_source": "FBjLj68962a2335b6f1c804d06496",
+        "utm_medium": "ROI MAX|120232123877870081",
+        "utm_campaign": "08-08 CTV CALVOMES MIEODIA|120232123877860081",
+        "utm_content": "02|120232123877880081::IwZXh0bgNhZW0BMABhZGlkAasme0xZjHEBHoitOcuQEZnA8Ski7XHlbncLogP7-DHgG9kMcsayCgMq4WtJZzFHRmxFaNIm_aem_-z-0yKXlQQFwBXCCh2BstA::",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": "FBjLj68962a2335b6f1c804d06496hQwK21wXxR08-08 CTV CALVOMES MIEODIA|120232123877860081hQwK21wXxRROI MAX|120232123877870081hQwK21wXxR02|120232123877880081hQwK21wXxRFacebook_Mobile_Feed",
+        "sck": "FBjLj68962a2335b6f1c804d06496hQwK21wXxR08-08 CTV CALVOMES MIEODIA|120232123877860081hQwK21wXxRROI MAX|120232123877870081hQwK21wXxR02|120232123877880081hQwK21wXxRFacebook_Mobile_Feed"
+    },
+    "commission": {
+        "totalPriceInCents": 8724,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 8724
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-08-08 17:00:00] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "92f76450-c599-4102-9c62-8c85ab431a94",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-08-08 17:00:00",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Bernardo Almeida Vieira",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "27020663990",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_68962d106aeb6",
+            "name": "Produto Front",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 8724
+        }
+    ],
+    "trackingParameters": {
+        "src": null,
+        "sck": "FBjLj68962a2335b6f1c804d06496hQwK21wXxR08-08 CTV CALVOMES MIEODIA|120232123877860081hQwK21wXxRROI MAX|120232123877870081hQwK21wXxR02|120232123877880081hQwK21wXxRFacebook_Mobile_Feed",
+        "utm_source": "FBjLj68962a2335b6f1c804d06496",
+        "utm_campaign": "08-08 CTV CALVOMES MIEODIA|120232123877860081",
+        "utm_medium": "ROI MAX|120232123877870081",
+        "utm_content": "02|120232123877880081::IwZXh0bgNhZW0BMABhZGlkAasme0xZjHEBHoitOcuQEZnA8Ski7XHlbncLogP7-DHgG9kMcsayCgMq4WtJZzFHRmxFaNIm_aem_-z-0yKXlQQFwBXCCh2BstA::",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": "FBjLj68962a2335b6f1c804d06496hQwK21wXxR08-08 CTV CALVOMES MIEODIA|120232123877860081hQwK21wXxRROI MAX|120232123877870081hQwK21wXxR02|120232123877880081hQwK21wXxRFacebook_Mobile_Feed",
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": 8724,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 8724
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-08-08 17:00:00] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-08-08 17:00:00] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-08-08 17:01:05] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"c5793e19-1c5c-4f1e-8e39-82f8041c5a1c\",\"platform\":\"MinhaPlataforma\",\"paymentMethod\":\"pix\",\"status\":\"waiting_payment\",\"createdAt\":\"2025-08-08 14:01:05\",\"approvedDate\":null,\"refundedAt\":null,\"customer\":{\"name\":\"Gabriel Martins Santos\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":\"55837326871\",\"country\":\"BR\",\"ip\":\"189.0.151.59\"},\"products\":[{\"id\":\"PROD_68962d5179ce7\",\"name\":\"Produto Front\",\"planId\":null,\"planName\":null,\"quantity\":1,\"priceInCents\":8724,\"agendamento\":null}],\"trackingParameters\":{\"utm_source\":\"FBjLj68962ac17c008410f98d861c\",\"utm_medium\":\"ROI MAX|120232123877870081\",\"utm_campaign\":\"08-08 CTV CALVOMES MIEODIA|120232123877860081\",\"utm_content\":\"02|120232123877880081::IwZXh0bgNhZW0BMABhZGlkAasme0xZjHEBHhZSd2gLap8miyTCTkBHihqVXZi_j_S_NkLDfDH1jpY4wfucjTf6UM3w67A9_aem_UWAitiIvPMv12lQ6K9_D-Q::\",\"utm_term\":\"Facebook_Mobile_Feed\",\"xcod\":\"FBjLj68962ac17c008410f98d861chQwK21wXxR08-08 CTV CALVOMES MIEODIA|120232123877860081hQwK21wXxRROI MAX|120232123877870081hQwK21wXxR02|120232123877880081hQwK21wXxRFacebook_Mobile_Feed\",\"sck\":\"FBjLj68962ac17c008410f98d861chQwK21wXxR08-08 CTV CALVOMES MIEODIA|120232123877860081hQwK21wXxRROI MAX|120232123877870081hQwK21wXxR02|120232123877880081hQwK21wXxRFacebook_Mobile_Feed\"},\"commission\":{\"totalPriceInCents\":8724,\"gatewayFeeInCents\":0,\"userCommissionInCents\":8724},\"isTest\":false}"
+}
+----------------------------------------
+[2025-08-08 17:01:05] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "c5793e19-1c5c-4f1e-8e39-82f8041c5a1c",
+    "platform": "MinhaPlataforma",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-08-08 14:01:05",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Gabriel Martins Santos",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "55837326871",
+        "country": "BR",
+        "ip": "189.0.151.59"
+    },
+    "products": [
+        {
+            "id": "PROD_68962d5179ce7",
+            "name": "Produto Front",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 8724,
+            "agendamento": null
+        }
+    ],
+    "trackingParameters": {
+        "utm_source": "FBjLj68962ac17c008410f98d861c",
+        "utm_medium": "ROI MAX|120232123877870081",
+        "utm_campaign": "08-08 CTV CALVOMES MIEODIA|120232123877860081",
+        "utm_content": "02|120232123877880081::IwZXh0bgNhZW0BMABhZGlkAasme0xZjHEBHhZSd2gLap8miyTCTkBHihqVXZi_j_S_NkLDfDH1jpY4wfucjTf6UM3w67A9_aem_UWAitiIvPMv12lQ6K9_D-Q::",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": "FBjLj68962ac17c008410f98d861chQwK21wXxR08-08 CTV CALVOMES MIEODIA|120232123877860081hQwK21wXxRROI MAX|120232123877870081hQwK21wXxR02|120232123877880081hQwK21wXxRFacebook_Mobile_Feed",
+        "sck": "FBjLj68962ac17c008410f98d861chQwK21wXxR08-08 CTV CALVOMES MIEODIA|120232123877860081hQwK21wXxRROI MAX|120232123877870081hQwK21wXxR02|120232123877880081hQwK21wXxRFacebook_Mobile_Feed"
+    },
+    "commission": {
+        "totalPriceInCents": 8724,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 8724
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-08-08 17:01:05] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "c5793e19-1c5c-4f1e-8e39-82f8041c5a1c",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-08-08 17:01:05",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Gabriel Martins Santos",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "55837326871",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_68962d5179ce7",
+            "name": "Produto Front",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 8724
+        }
+    ],
+    "trackingParameters": {
+        "src": null,
+        "sck": "FBjLj68962ac17c008410f98d861chQwK21wXxR08-08 CTV CALVOMES MIEODIA|120232123877860081hQwK21wXxRROI MAX|120232123877870081hQwK21wXxR02|120232123877880081hQwK21wXxRFacebook_Mobile_Feed",
+        "utm_source": "FBjLj68962ac17c008410f98d861c",
+        "utm_campaign": "08-08 CTV CALVOMES MIEODIA|120232123877860081",
+        "utm_medium": "ROI MAX|120232123877870081",
+        "utm_content": "02|120232123877880081::IwZXh0bgNhZW0BMABhZGlkAasme0xZjHEBHhZSd2gLap8miyTCTkBHihqVXZi_j_S_NkLDfDH1jpY4wfucjTf6UM3w67A9_aem_UWAitiIvPMv12lQ6K9_D-Q::",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": "FBjLj68962ac17c008410f98d861chQwK21wXxR08-08 CTV CALVOMES MIEODIA|120232123877860081hQwK21wXxRROI MAX|120232123877870081hQwK21wXxR02|120232123877880081hQwK21wXxRFacebook_Mobile_Feed",
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": 8724,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 8724
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-08-08 17:01:05] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-08-08 17:01:05] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-08-08 17:02:53] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"b1a501bb-3124-4d59-ad7e-535cd3f55a15\",\"platform\":\"MinhaPlataforma\",\"paymentMethod\":\"pix\",\"status\":\"waiting_payment\",\"createdAt\":\"2025-08-08 14:02:53\",\"approvedDate\":null,\"refundedAt\":null,\"customer\":{\"name\":\"Clara Fernandes Vieira\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":\"04677589720\",\"country\":\"BR\",\"ip\":\"138.0.64.28\"},\"products\":[{\"id\":\"PROD_68962dbde16e2\",\"name\":\"Produto Front\",\"planId\":null,\"planName\":null,\"quantity\":1,\"priceInCents\":8724,\"agendamento\":null}],\"trackingParameters\":{\"utm_source\":\"FBjLj68962b5cb8895522e265e63e\",\"utm_medium\":\"ROI MAX|120232126594840081\",\"utm_campaign\":\"08-08 CTV CALVOMES MIEODIA \\u2014 C\\u00f3pia|120232126594880081\",\"utm_content\":\"02|120232126594920081::IwZXh0bgNhZW0BMABhZGlkAasme2ychVEBHr2H-LC0twrSos3zwPTk9ZL2RhBhg9GyKyYO3Q_vtf-ifPkTzasQEhvfkxqd_aem_V6CcratLGgwT7ecTBYSnhA::\",\"utm_term\":\"Facebook_Mobile_Feed\",\"xcod\":\"FBjLj68962b5cb8895522e265e63ehQwK21wXxR08-08 CTV CALVOMES MIEODIA \\u2014 C\\u00f3pia|120232126594880081hQwK21wXxRROI MAX|120232126594840081hQwK21wXxR02|120232126594920081hQwK21wXxRFacebook_Mobile_Feed\",\"sck\":\"FBjLj68962b5cb8895522e265e63ehQwK21wXxR08-08 CTV CALVOMES MIEODIA \\u2014 C\\u00f3pia|120232126594880081hQwK21wXxRROI MAX|120232126594840081hQwK21wXxR02|120232126594920081hQwK21wXxRFacebook_Mobile_Feed\"},\"commission\":{\"totalPriceInCents\":8724,\"gatewayFeeInCents\":0,\"userCommissionInCents\":8724},\"isTest\":false}"
+}
+----------------------------------------
+[2025-08-08 17:02:53] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "b1a501bb-3124-4d59-ad7e-535cd3f55a15",
+    "platform": "MinhaPlataforma",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-08-08 14:02:53",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Clara Fernandes Vieira",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "04677589720",
+        "country": "BR",
+        "ip": "138.0.64.28"
+    },
+    "products": [
+        {
+            "id": "PROD_68962dbde16e2",
+            "name": "Produto Front",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 8724,
+            "agendamento": null
+        }
+    ],
+    "trackingParameters": {
+        "utm_source": "FBjLj68962b5cb8895522e265e63e",
+        "utm_medium": "ROI MAX|120232126594840081",
+        "utm_campaign": "08-08 CTV CALVOMES MIEODIA \u2014 C\u00f3pia|120232126594880081",
+        "utm_content": "02|120232126594920081::IwZXh0bgNhZW0BMABhZGlkAasme2ychVEBHr2H-LC0twrSos3zwPTk9ZL2RhBhg9GyKyYO3Q_vtf-ifPkTzasQEhvfkxqd_aem_V6CcratLGgwT7ecTBYSnhA::",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": "FBjLj68962b5cb8895522e265e63ehQwK21wXxR08-08 CTV CALVOMES MIEODIA \u2014 C\u00f3pia|120232126594880081hQwK21wXxRROI MAX|120232126594840081hQwK21wXxR02|120232126594920081hQwK21wXxRFacebook_Mobile_Feed",
+        "sck": "FBjLj68962b5cb8895522e265e63ehQwK21wXxR08-08 CTV CALVOMES MIEODIA \u2014 C\u00f3pia|120232126594880081hQwK21wXxRROI MAX|120232126594840081hQwK21wXxR02|120232126594920081hQwK21wXxRFacebook_Mobile_Feed"
+    },
+    "commission": {
+        "totalPriceInCents": 8724,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 8724
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-08-08 17:02:53] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "b1a501bb-3124-4d59-ad7e-535cd3f55a15",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-08-08 17:02:53",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Clara Fernandes Vieira",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "04677589720",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_68962dbde16e2",
+            "name": "Produto Front",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 8724
+        }
+    ],
+    "trackingParameters": {
+        "src": null,
+        "sck": "FBjLj68962b5cb8895522e265e63ehQwK21wXxR08-08 CTV CALVOMES MIEODIA \u2014 C\u00f3pia|120232126594880081hQwK21wXxRROI MAX|120232126594840081hQwK21wXxR02|120232126594920081hQwK21wXxRFacebook_Mobile_Feed",
+        "utm_source": "FBjLj68962b5cb8895522e265e63e",
+        "utm_campaign": "08-08 CTV CALVOMES MIEODIA \u2014 C\u00f3pia|120232126594880081",
+        "utm_medium": "ROI MAX|120232126594840081",
+        "utm_content": "02|120232126594920081::IwZXh0bgNhZW0BMABhZGlkAasme2ychVEBHr2H-LC0twrSos3zwPTk9ZL2RhBhg9GyKyYO3Q_vtf-ifPkTzasQEhvfkxqd_aem_V6CcratLGgwT7ecTBYSnhA::",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": "FBjLj68962b5cb8895522e265e63ehQwK21wXxR08-08 CTV CALVOMES MIEODIA \u2014 C\u00f3pia|120232126594880081hQwK21wXxRROI MAX|120232126594840081hQwK21wXxR02|120232126594920081hQwK21wXxRFacebook_Mobile_Feed",
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": 8724,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 8724
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-08-08 17:02:53] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-08-08 17:02:54] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-08-08 17:02:57] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"634673ec-0f8d-4320-9fc8-dc664c6f96e7\",\"platform\":\"MinhaPlataforma\",\"paymentMethod\":\"pix\",\"status\":\"waiting_payment\",\"createdAt\":\"2025-08-08 14:02:57\",\"approvedDate\":null,\"refundedAt\":null,\"customer\":{\"name\":\"Thiago Fernandes Pereira\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":\"86995929144\",\"country\":\"BR\",\"ip\":\"187.62.154.121\"},\"products\":[{\"id\":\"PROD_68962dc164d12\",\"name\":\"Produto Front\",\"planId\":null,\"planName\":null,\"quantity\":1,\"priceInCents\":8724,\"agendamento\":null}],\"trackingParameters\":{\"utm_source\":\"FBjLj68962b89e9eabcd9999f46b5\",\"utm_medium\":\"ROI MAX|120232123877870081\",\"utm_campaign\":\"08-08 CTV CALVOMES MIEODIA|120232123877860081\",\"utm_content\":\"02|120232123877880081::IwZXh0bgNhZW0BMABhZGlkAasme0xZjHEBHnhH44J8bp8ws0RvGCoCkaByrfyjf0E4vAyzJIr5JhnfPlnbgLNZhTOMRh9m_aem_ziUgW7xCxFsmjdwoppkZJQ::\",\"utm_term\":\"Facebook_Mobile_Feed\",\"xcod\":\"FBjLj68962b89e9eabcd9999f46b5hQwK21wXxR08-08 CTV CALVOMES MIEODIA|120232123877860081hQwK21wXxRROI MAX|120232123877870081hQwK21wXxR02|120232123877880081hQwK21wXxRFacebook_Mobile_Feed\",\"sck\":\"FBjLj68962b89e9eabcd9999f46b5hQwK21wXxR08-08 CTV CALVOMES MIEODIA|120232123877860081hQwK21wXxRROI MAX|120232123877870081hQwK21wXxR02|120232123877880081hQwK21wXxRFacebook_Mobile_Feed\"},\"commission\":{\"totalPriceInCents\":8724,\"gatewayFeeInCents\":0,\"userCommissionInCents\":8724},\"isTest\":false}"
+}
+----------------------------------------
+[2025-08-08 17:02:57] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "634673ec-0f8d-4320-9fc8-dc664c6f96e7",
+    "platform": "MinhaPlataforma",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-08-08 14:02:57",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Thiago Fernandes Pereira",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "86995929144",
+        "country": "BR",
+        "ip": "187.62.154.121"
+    },
+    "products": [
+        {
+            "id": "PROD_68962dc164d12",
+            "name": "Produto Front",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 8724,
+            "agendamento": null
+        }
+    ],
+    "trackingParameters": {
+        "utm_source": "FBjLj68962b89e9eabcd9999f46b5",
+        "utm_medium": "ROI MAX|120232123877870081",
+        "utm_campaign": "08-08 CTV CALVOMES MIEODIA|120232123877860081",
+        "utm_content": "02|120232123877880081::IwZXh0bgNhZW0BMABhZGlkAasme0xZjHEBHnhH44J8bp8ws0RvGCoCkaByrfyjf0E4vAyzJIr5JhnfPlnbgLNZhTOMRh9m_aem_ziUgW7xCxFsmjdwoppkZJQ::",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": "FBjLj68962b89e9eabcd9999f46b5hQwK21wXxR08-08 CTV CALVOMES MIEODIA|120232123877860081hQwK21wXxRROI MAX|120232123877870081hQwK21wXxR02|120232123877880081hQwK21wXxRFacebook_Mobile_Feed",
+        "sck": "FBjLj68962b89e9eabcd9999f46b5hQwK21wXxR08-08 CTV CALVOMES MIEODIA|120232123877860081hQwK21wXxRROI MAX|120232123877870081hQwK21wXxR02|120232123877880081hQwK21wXxRFacebook_Mobile_Feed"
+    },
+    "commission": {
+        "totalPriceInCents": 8724,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 8724
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-08-08 17:02:57] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "634673ec-0f8d-4320-9fc8-dc664c6f96e7",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-08-08 17:02:57",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Thiago Fernandes Pereira",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "86995929144",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_68962dc164d12",
+            "name": "Produto Front",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 8724
+        }
+    ],
+    "trackingParameters": {
+        "src": null,
+        "sck": "FBjLj68962b89e9eabcd9999f46b5hQwK21wXxR08-08 CTV CALVOMES MIEODIA|120232123877860081hQwK21wXxRROI MAX|120232123877870081hQwK21wXxR02|120232123877880081hQwK21wXxRFacebook_Mobile_Feed",
+        "utm_source": "FBjLj68962b89e9eabcd9999f46b5",
+        "utm_campaign": "08-08 CTV CALVOMES MIEODIA|120232123877860081",
+        "utm_medium": "ROI MAX|120232123877870081",
+        "utm_content": "02|120232123877880081::IwZXh0bgNhZW0BMABhZGlkAasme0xZjHEBHnhH44J8bp8ws0RvGCoCkaByrfyjf0E4vAyzJIr5JhnfPlnbgLNZhTOMRh9m_aem_ziUgW7xCxFsmjdwoppkZJQ::",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": "FBjLj68962b89e9eabcd9999f46b5hQwK21wXxR08-08 CTV CALVOMES MIEODIA|120232123877860081hQwK21wXxRROI MAX|120232123877870081hQwK21wXxR02|120232123877880081hQwK21wXxRFacebook_Mobile_Feed",
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": 8724,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 8724
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-08-08 17:02:57] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-08-08 17:02:57] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-08-08 17:03:01] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"d7ee1ee5-5f47-4d37-a61f-8edf2c40207d\",\"platform\":\"MinhaPlataforma\",\"paymentMethod\":\"pix\",\"status\":\"waiting_payment\",\"createdAt\":\"2025-08-08 14:03:01\",\"approvedDate\":null,\"refundedAt\":null,\"customer\":{\"name\":\"Laura Ribeiro Fernandes\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":\"02721633767\",\"country\":\"BR\",\"ip\":\"177.87.132.204\"},\"products\":[{\"id\":\"PROD_68962dc517143\",\"name\":\"Produto Front\",\"planId\":null,\"planName\":null,\"quantity\":1,\"priceInCents\":8724,\"agendamento\":null}],\"trackingParameters\":{\"utm_source\":\"FBjLj68962a5c150a7b89114f20ef\",\"utm_medium\":\"ROI MAX|120232126594840081\",\"utm_campaign\":\"08-08 CTV CALVOMES MIEODIA \\u2014 C\\u00f3pia|120232126594880081\",\"utm_content\":\"02|120232126594920081::IwZXh0bgNhZW0BMABhZGlkAasme2ychVEBHlXnRfSUFjzAO20-NJmKamLo0vlXUbJRCX-C5ruGvZZTHhvEE2A0E15K7frc_aem_vsne1gc8F0b0heoBPrMeag::\",\"utm_term\":\"Facebook_Mobile_Feed\",\"xcod\":\"FBjLj68962a5c150a7b89114f20efhQwK21wXxR08-08 CTV CALVOMES MIEODIA \\u2014 C\\u00f3pia|120232126594880081hQwK21wXxRROI MAX|120232126594840081hQwK21wXxR02|120232126594920081hQwK21wXxRFacebook_Mobile_Feed\",\"sck\":\"FBjLj68962a5c150a7b89114f20efhQwK21wXxR08-08 CTV CALVOMES MIEODIA \\u2014 C\\u00f3pia|120232126594880081hQwK21wXxRROI MAX|120232126594840081hQwK21wXxR02|120232126594920081hQwK21wXxRFacebook_Mobile_Feed\"},\"commission\":{\"totalPriceInCents\":8724,\"gatewayFeeInCents\":0,\"userCommissionInCents\":8724},\"isTest\":false}"
+}
+----------------------------------------
+[2025-08-08 17:03:01] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "d7ee1ee5-5f47-4d37-a61f-8edf2c40207d",
+    "platform": "MinhaPlataforma",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-08-08 14:03:01",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Laura Ribeiro Fernandes",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "02721633767",
+        "country": "BR",
+        "ip": "177.87.132.204"
+    },
+    "products": [
+        {
+            "id": "PROD_68962dc517143",
+            "name": "Produto Front",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 8724,
+            "agendamento": null
+        }
+    ],
+    "trackingParameters": {
+        "utm_source": "FBjLj68962a5c150a7b89114f20ef",
+        "utm_medium": "ROI MAX|120232126594840081",
+        "utm_campaign": "08-08 CTV CALVOMES MIEODIA \u2014 C\u00f3pia|120232126594880081",
+        "utm_content": "02|120232126594920081::IwZXh0bgNhZW0BMABhZGlkAasme2ychVEBHlXnRfSUFjzAO20-NJmKamLo0vlXUbJRCX-C5ruGvZZTHhvEE2A0E15K7frc_aem_vsne1gc8F0b0heoBPrMeag::",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": "FBjLj68962a5c150a7b89114f20efhQwK21wXxR08-08 CTV CALVOMES MIEODIA \u2014 C\u00f3pia|120232126594880081hQwK21wXxRROI MAX|120232126594840081hQwK21wXxR02|120232126594920081hQwK21wXxRFacebook_Mobile_Feed",
+        "sck": "FBjLj68962a5c150a7b89114f20efhQwK21wXxR08-08 CTV CALVOMES MIEODIA \u2014 C\u00f3pia|120232126594880081hQwK21wXxRROI MAX|120232126594840081hQwK21wXxR02|120232126594920081hQwK21wXxRFacebook_Mobile_Feed"
+    },
+    "commission": {
+        "totalPriceInCents": 8724,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 8724
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-08-08 17:03:01] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "d7ee1ee5-5f47-4d37-a61f-8edf2c40207d",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-08-08 17:03:01",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Laura Ribeiro Fernandes",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "02721633767",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_68962dc517143",
+            "name": "Produto Front",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 8724
+        }
+    ],
+    "trackingParameters": {
+        "src": null,
+        "sck": "FBjLj68962a5c150a7b89114f20efhQwK21wXxR08-08 CTV CALVOMES MIEODIA \u2014 C\u00f3pia|120232126594880081hQwK21wXxRROI MAX|120232126594840081hQwK21wXxR02|120232126594920081hQwK21wXxRFacebook_Mobile_Feed",
+        "utm_source": "FBjLj68962a5c150a7b89114f20ef",
+        "utm_campaign": "08-08 CTV CALVOMES MIEODIA \u2014 C\u00f3pia|120232126594880081",
+        "utm_medium": "ROI MAX|120232126594840081",
+        "utm_content": "02|120232126594920081::IwZXh0bgNhZW0BMABhZGlkAasme2ychVEBHlXnRfSUFjzAO20-NJmKamLo0vlXUbJRCX-C5ruGvZZTHhvEE2A0E15K7frc_aem_vsne1gc8F0b0heoBPrMeag::",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": "FBjLj68962a5c150a7b89114f20efhQwK21wXxR08-08 CTV CALVOMES MIEODIA \u2014 C\u00f3pia|120232126594880081hQwK21wXxRROI MAX|120232126594840081hQwK21wXxR02|120232126594920081hQwK21wXxRFacebook_Mobile_Feed",
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": 8724,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 8724
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-08-08 17:03:01] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-08-08 17:03:01] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-08-08 17:05:22] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"dc9b3bda-2968-491c-b82b-9532abca897a\",\"platform\":\"MinhaPlataforma\",\"paymentMethod\":\"pix\",\"status\":\"waiting_payment\",\"createdAt\":\"2025-08-08 14:05:22\",\"approvedDate\":null,\"refundedAt\":null,\"customer\":{\"name\":\"Matheus Lima Carvalho\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":\"98333530702\",\"country\":\"BR\",\"ip\":\"45.177.244.9\"},\"products\":[{\"id\":\"PROD_68962e521507b\",\"name\":\"Produto Front\",\"planId\":null,\"planName\":null,\"quantity\":1,\"priceInCents\":8724,\"agendamento\":null}],\"trackingParameters\":{\"utm_source\":\"FBjLj68962c13e2dbc799ece79c12\",\"utm_medium\":\"ROI MAX|120232126594930081\",\"utm_campaign\":\"08-08 CTV CALVOMES MIEODIA \\u2014 C\\u00f3pia|120232126594850081\",\"utm_content\":\"02|120232126594890081::IwZXh0bgNhZW0BMABhZGlkAasme2yQAjEBHsAHnaViHspMZRtxoFcppr6Ya4TAhbPzyTpx0dmW3XNuHyOoUzHNWgvz8rwC_aem_lKWA9kG6N1rXD3caF6s_CA::\",\"utm_term\":\"Facebook_Mobile_Feed\",\"xcod\":\"FBjLj68962c13e2dbc799ece79c12hQwK21wXxR08-08 CTV CALVOMES MIEODIA \\u2014 C\\u00f3pia|120232126594850081hQwK21wXxRROI MAX|120232126594930081hQwK21wXxR02|120232126594890081hQwK21wXxRFacebook_Mobile_Feed\",\"sck\":\"FBjLj68962c13e2dbc799ece79c12hQwK21wXxR08-08 CTV CALVOMES MIEODIA \\u2014 C\\u00f3pia|120232126594850081hQwK21wXxRROI MAX|120232126594930081hQwK21wXxR02|120232126594890081hQwK21wXxRFacebook_Mobile_Feed\"},\"commission\":{\"totalPriceInCents\":8724,\"gatewayFeeInCents\":0,\"userCommissionInCents\":8724},\"isTest\":false}"
+}
+----------------------------------------
+[2025-08-08 17:05:22] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "dc9b3bda-2968-491c-b82b-9532abca897a",
+    "platform": "MinhaPlataforma",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-08-08 14:05:22",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Matheus Lima Carvalho",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "98333530702",
+        "country": "BR",
+        "ip": "45.177.244.9"
+    },
+    "products": [
+        {
+            "id": "PROD_68962e521507b",
+            "name": "Produto Front",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 8724,
+            "agendamento": null
+        }
+    ],
+    "trackingParameters": {
+        "utm_source": "FBjLj68962c13e2dbc799ece79c12",
+        "utm_medium": "ROI MAX|120232126594930081",
+        "utm_campaign": "08-08 CTV CALVOMES MIEODIA \u2014 C\u00f3pia|120232126594850081",
+        "utm_content": "02|120232126594890081::IwZXh0bgNhZW0BMABhZGlkAasme2yQAjEBHsAHnaViHspMZRtxoFcppr6Ya4TAhbPzyTpx0dmW3XNuHyOoUzHNWgvz8rwC_aem_lKWA9kG6N1rXD3caF6s_CA::",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": "FBjLj68962c13e2dbc799ece79c12hQwK21wXxR08-08 CTV CALVOMES MIEODIA \u2014 C\u00f3pia|120232126594850081hQwK21wXxRROI MAX|120232126594930081hQwK21wXxR02|120232126594890081hQwK21wXxRFacebook_Mobile_Feed",
+        "sck": "FBjLj68962c13e2dbc799ece79c12hQwK21wXxR08-08 CTV CALVOMES MIEODIA \u2014 C\u00f3pia|120232126594850081hQwK21wXxRROI MAX|120232126594930081hQwK21wXxR02|120232126594890081hQwK21wXxRFacebook_Mobile_Feed"
+    },
+    "commission": {
+        "totalPriceInCents": 8724,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 8724
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-08-08 17:05:22] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "dc9b3bda-2968-491c-b82b-9532abca897a",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-08-08 17:05:22",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Matheus Lima Carvalho",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "98333530702",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_68962e521507b",
+            "name": "Produto Front",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 8724
+        }
+    ],
+    "trackingParameters": {
+        "src": null,
+        "sck": "FBjLj68962c13e2dbc799ece79c12hQwK21wXxR08-08 CTV CALVOMES MIEODIA \u2014 C\u00f3pia|120232126594850081hQwK21wXxRROI MAX|120232126594930081hQwK21wXxR02|120232126594890081hQwK21wXxRFacebook_Mobile_Feed",
+        "utm_source": "FBjLj68962c13e2dbc799ece79c12",
+        "utm_campaign": "08-08 CTV CALVOMES MIEODIA \u2014 C\u00f3pia|120232126594850081",
+        "utm_medium": "ROI MAX|120232126594930081",
+        "utm_content": "02|120232126594890081::IwZXh0bgNhZW0BMABhZGlkAasme2yQAjEBHsAHnaViHspMZRtxoFcppr6Ya4TAhbPzyTpx0dmW3XNuHyOoUzHNWgvz8rwC_aem_lKWA9kG6N1rXD3caF6s_CA::",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": "FBjLj68962c13e2dbc799ece79c12hQwK21wXxR08-08 CTV CALVOMES MIEODIA \u2014 C\u00f3pia|120232126594850081hQwK21wXxRROI MAX|120232126594930081hQwK21wXxR02|120232126594890081hQwK21wXxRFacebook_Mobile_Feed",
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": 8724,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 8724
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-08-08 17:05:22] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-08-08 17:05:22] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-08-08 17:07:22] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"1a3bae86-c767-4b2b-8608-732f5b17305a\",\"platform\":\"MinhaPlataforma\",\"paymentMethod\":\"pix\",\"status\":\"waiting_payment\",\"createdAt\":\"2025-08-08 14:07:22\",\"approvedDate\":null,\"refundedAt\":null,\"customer\":{\"name\":\"Matheus Pereira Gomes\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":\"95674114250\",\"country\":\"BR\",\"ip\":\"177.95.44.225\"},\"products\":[{\"id\":\"PROD_68962ecae10de\",\"name\":\"Produto Front\",\"planId\":null,\"planName\":null,\"quantity\":1,\"priceInCents\":8724,\"agendamento\":null}],\"trackingParameters\":[],\"commission\":{\"totalPriceInCents\":8724,\"gatewayFeeInCents\":0,\"userCommissionInCents\":8724},\"isTest\":false}"
+}
+----------------------------------------
+[2025-08-08 17:07:22] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "1a3bae86-c767-4b2b-8608-732f5b17305a",
+    "platform": "MinhaPlataforma",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-08-08 14:07:22",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Matheus Pereira Gomes",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "95674114250",
+        "country": "BR",
+        "ip": "177.95.44.225"
+    },
+    "products": [
+        {
+            "id": "PROD_68962ecae10de",
+            "name": "Produto Front",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 8724,
+            "agendamento": null
+        }
+    ],
+    "trackingParameters": [],
+    "commission": {
+        "totalPriceInCents": 8724,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 8724
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-08-08 17:07:22] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "1a3bae86-c767-4b2b-8608-732f5b17305a",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-08-08 17:07:22",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Matheus Pereira Gomes",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "95674114250",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_68962ecae10de",
+            "name": "Produto Front",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 8724
+        }
+    ],
+    "trackingParameters": {
+        "src": null,
+        "sck": null,
+        "utm_source": null,
+        "utm_campaign": null,
+        "utm_medium": null,
+        "utm_content": null,
+        "utm_term": null,
+        "xcod": null,
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": 8724,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 8724
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-08-08 17:07:22] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-08-08 17:07:22] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-08-08 17:11:19] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"9a46ab2a-aaf9-45fe-b501-8c62ef866ec3\",\"platform\":\"MinhaPlataforma\",\"paymentMethod\":\"pix\",\"status\":\"waiting_payment\",\"createdAt\":\"2025-08-08 14:11:19\",\"approvedDate\":null,\"refundedAt\":null,\"customer\":{\"name\":\"Ana Ferreira Pereira\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":\"08963067041\",\"country\":\"BR\",\"ip\":\"201.7.218.78\"},\"products\":[{\"id\":\"PROD_68962fb7defc5\",\"name\":\"Produto Front\",\"planId\":null,\"planName\":null,\"quantity\":1,\"priceInCents\":8724,\"agendamento\":null}],\"trackingParameters\":{\"utm_source\":\"FBjLj68962d3b0cd665d8cfaba8c5\",\"utm_medium\":\"ROI MAX|120232126594950081\",\"utm_campaign\":\"08-08 CTV CALVOMES MIEODIA \\u2014 C\\u00f3pia|120232126594870081\",\"utm_content\":\"02|120232126594910081::IwZXh0bgNhZW0BMABhZGlkAasme2yh3IEBHml-EcSLtdP5et8i0tJfaY-eAsEFbe2dSaXyybmhaWwUYbG0IDo1sMPelHJn_aem_j20hndazp7GqyIhR8H_vLg::\",\"utm_term\":\"Facebook_Mobile_Feed\",\"xcod\":\"FBjLj68962d3b0cd665d8cfaba8c5hQwK21wXxR08-08 CTV CALVOMES MIEODIA \\u2014 C\\u00f3pia|120232126594870081hQwK21wXxRROI MAX|120232126594950081hQwK21wXxR02|120232126594910081hQwK21wXxRFacebook_Mobile_Feed\",\"sck\":\"FBjLj68962d3b0cd665d8cfaba8c5hQwK21wXxR08-08 CTV CALVOMES MIEODIA \\u2014 C\\u00f3pia|120232126594870081hQwK21wXxRROI MAX|120232126594950081hQwK21wXxR02|120232126594910081hQwK21wXxRFacebook_Mobile_Feed\"},\"commission\":{\"totalPriceInCents\":8724,\"gatewayFeeInCents\":0,\"userCommissionInCents\":8724},\"isTest\":false}"
+}
+----------------------------------------
+[2025-08-08 17:11:19] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "9a46ab2a-aaf9-45fe-b501-8c62ef866ec3",
+    "platform": "MinhaPlataforma",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-08-08 14:11:19",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Ana Ferreira Pereira",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "08963067041",
+        "country": "BR",
+        "ip": "201.7.218.78"
+    },
+    "products": [
+        {
+            "id": "PROD_68962fb7defc5",
+            "name": "Produto Front",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 8724,
+            "agendamento": null
+        }
+    ],
+    "trackingParameters": {
+        "utm_source": "FBjLj68962d3b0cd665d8cfaba8c5",
+        "utm_medium": "ROI MAX|120232126594950081",
+        "utm_campaign": "08-08 CTV CALVOMES MIEODIA \u2014 C\u00f3pia|120232126594870081",
+        "utm_content": "02|120232126594910081::IwZXh0bgNhZW0BMABhZGlkAasme2yh3IEBHml-EcSLtdP5et8i0tJfaY-eAsEFbe2dSaXyybmhaWwUYbG0IDo1sMPelHJn_aem_j20hndazp7GqyIhR8H_vLg::",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": "FBjLj68962d3b0cd665d8cfaba8c5hQwK21wXxR08-08 CTV CALVOMES MIEODIA \u2014 C\u00f3pia|120232126594870081hQwK21wXxRROI MAX|120232126594950081hQwK21wXxR02|120232126594910081hQwK21wXxRFacebook_Mobile_Feed",
+        "sck": "FBjLj68962d3b0cd665d8cfaba8c5hQwK21wXxR08-08 CTV CALVOMES MIEODIA \u2014 C\u00f3pia|120232126594870081hQwK21wXxRROI MAX|120232126594950081hQwK21wXxR02|120232126594910081hQwK21wXxRFacebook_Mobile_Feed"
+    },
+    "commission": {
+        "totalPriceInCents": 8724,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 8724
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-08-08 17:11:19] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "9a46ab2a-aaf9-45fe-b501-8c62ef866ec3",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-08-08 17:11:19",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Ana Ferreira Pereira",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "08963067041",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_68962fb7defc5",
+            "name": "Produto Front",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 8724
+        }
+    ],
+    "trackingParameters": {
+        "src": null,
+        "sck": "FBjLj68962d3b0cd665d8cfaba8c5hQwK21wXxR08-08 CTV CALVOMES MIEODIA \u2014 C\u00f3pia|120232126594870081hQwK21wXxRROI MAX|120232126594950081hQwK21wXxR02|120232126594910081hQwK21wXxRFacebook_Mobile_Feed",
+        "utm_source": "FBjLj68962d3b0cd665d8cfaba8c5",
+        "utm_campaign": "08-08 CTV CALVOMES MIEODIA \u2014 C\u00f3pia|120232126594870081",
+        "utm_medium": "ROI MAX|120232126594950081",
+        "utm_content": "02|120232126594910081::IwZXh0bgNhZW0BMABhZGlkAasme2yh3IEBHml-EcSLtdP5et8i0tJfaY-eAsEFbe2dSaXyybmhaWwUYbG0IDo1sMPelHJn_aem_j20hndazp7GqyIhR8H_vLg::",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": "FBjLj68962d3b0cd665d8cfaba8c5hQwK21wXxR08-08 CTV CALVOMES MIEODIA \u2014 C\u00f3pia|120232126594870081hQwK21wXxRROI MAX|120232126594950081hQwK21wXxR02|120232126594910081hQwK21wXxRFacebook_Mobile_Feed",
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": 8724,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 8724
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-08-08 17:11:19] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-08-08 17:11:19] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-08-08 17:16:04] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"b13904e3-d7d1-4c91-83e0-c4f4620df367\",\"platform\":\"MinhaPlataforma\",\"paymentMethod\":\"pix\",\"status\":\"waiting_payment\",\"createdAt\":\"2025-08-08 14:16:04\",\"approvedDate\":null,\"refundedAt\":null,\"customer\":{\"name\":\"Beatriz Soares Vieira\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":\"94744269290\",\"country\":\"BR\",\"ip\":\"177.57.22.220\"},\"products\":[{\"id\":\"PROD_689630d4d58f5\",\"name\":\"Produto Front\",\"planId\":null,\"planName\":null,\"quantity\":1,\"priceInCents\":8724,\"agendamento\":null}],\"trackingParameters\":{\"utm_source\":\"FBjLj68962e9b5b2d42921b53371a\",\"utm_medium\":\"ROI MAX|120232126594930081\",\"utm_campaign\":\"08-08 CTV CALVOMES MIEODIA \\u2014 C\\u00f3pia|120232126594850081\",\"utm_content\":\"02|120232126594890081::IwZXh0bgNhZW0BMABhZGlkAasme2yQAjEBHkBgoNNtfwcDbkzE2HAAoXcLzYt1gh_Hrzs99FXFvB_z9CF6GEY-yLIscnus_aem_5_0BrucUePTGBcsAQD78ug::\",\"utm_term\":\"Facebook_Mobile_Feed\",\"xcod\":\"FBjLj68962e9b5b2d42921b53371ahQwK21wXxR08-08 CTV CALVOMES MIEODIA \\u2014 C\\u00f3pia|120232126594850081hQwK21wXxRROI MAX|120232126594930081hQwK21wXxR02|120232126594890081hQwK21wXxRFacebook_Mobile_Feed\",\"sck\":\"FBjLj68962e9b5b2d42921b53371ahQwK21wXxR08-08 CTV CALVOMES MIEODIA \\u2014 C\\u00f3pia|120232126594850081hQwK21wXxRROI MAX|120232126594930081hQwK21wXxR02|120232126594890081hQwK21wXxRFacebook_Mobile_Feed\"},\"commission\":{\"totalPriceInCents\":8724,\"gatewayFeeInCents\":0,\"userCommissionInCents\":8724},\"isTest\":false}"
+}
+----------------------------------------
+[2025-08-08 17:16:04] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "b13904e3-d7d1-4c91-83e0-c4f4620df367",
+    "platform": "MinhaPlataforma",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-08-08 14:16:04",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Beatriz Soares Vieira",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "94744269290",
+        "country": "BR",
+        "ip": "177.57.22.220"
+    },
+    "products": [
+        {
+            "id": "PROD_689630d4d58f5",
+            "name": "Produto Front",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 8724,
+            "agendamento": null
+        }
+    ],
+    "trackingParameters": {
+        "utm_source": "FBjLj68962e9b5b2d42921b53371a",
+        "utm_medium": "ROI MAX|120232126594930081",
+        "utm_campaign": "08-08 CTV CALVOMES MIEODIA \u2014 C\u00f3pia|120232126594850081",
+        "utm_content": "02|120232126594890081::IwZXh0bgNhZW0BMABhZGlkAasme2yQAjEBHkBgoNNtfwcDbkzE2HAAoXcLzYt1gh_Hrzs99FXFvB_z9CF6GEY-yLIscnus_aem_5_0BrucUePTGBcsAQD78ug::",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": "FBjLj68962e9b5b2d42921b53371ahQwK21wXxR08-08 CTV CALVOMES MIEODIA \u2014 C\u00f3pia|120232126594850081hQwK21wXxRROI MAX|120232126594930081hQwK21wXxR02|120232126594890081hQwK21wXxRFacebook_Mobile_Feed",
+        "sck": "FBjLj68962e9b5b2d42921b53371ahQwK21wXxR08-08 CTV CALVOMES MIEODIA \u2014 C\u00f3pia|120232126594850081hQwK21wXxRROI MAX|120232126594930081hQwK21wXxR02|120232126594890081hQwK21wXxRFacebook_Mobile_Feed"
+    },
+    "commission": {
+        "totalPriceInCents": 8724,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 8724
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-08-08 17:16:04] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "b13904e3-d7d1-4c91-83e0-c4f4620df367",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-08-08 17:16:04",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Beatriz Soares Vieira",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "94744269290",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_689630d4d58f5",
+            "name": "Produto Front",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 8724
+        }
+    ],
+    "trackingParameters": {
+        "src": null,
+        "sck": "FBjLj68962e9b5b2d42921b53371ahQwK21wXxR08-08 CTV CALVOMES MIEODIA \u2014 C\u00f3pia|120232126594850081hQwK21wXxRROI MAX|120232126594930081hQwK21wXxR02|120232126594890081hQwK21wXxRFacebook_Mobile_Feed",
+        "utm_source": "FBjLj68962e9b5b2d42921b53371a",
+        "utm_campaign": "08-08 CTV CALVOMES MIEODIA \u2014 C\u00f3pia|120232126594850081",
+        "utm_medium": "ROI MAX|120232126594930081",
+        "utm_content": "02|120232126594890081::IwZXh0bgNhZW0BMABhZGlkAasme2yQAjEBHkBgoNNtfwcDbkzE2HAAoXcLzYt1gh_Hrzs99FXFvB_z9CF6GEY-yLIscnus_aem_5_0BrucUePTGBcsAQD78ug::",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": "FBjLj68962e9b5b2d42921b53371ahQwK21wXxR08-08 CTV CALVOMES MIEODIA \u2014 C\u00f3pia|120232126594850081hQwK21wXxRROI MAX|120232126594930081hQwK21wXxR02|120232126594890081hQwK21wXxRFacebook_Mobile_Feed",
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": 8724,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 8724
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-08-08 17:16:04] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-08-08 17:16:05] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-08-08 17:17:15] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"52f45333-a0cb-4860-be5a-4aa96e911e82\",\"platform\":\"MinhaPlataforma\",\"paymentMethod\":\"pix\",\"status\":\"waiting_payment\",\"createdAt\":\"2025-08-08 14:17:15\",\"approvedDate\":null,\"refundedAt\":null,\"customer\":{\"name\":\"Alice Ribeiro Santos\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":\"87359504120\",\"country\":\"BR\",\"ip\":\"186.207.144.169\"},\"products\":[{\"id\":\"PROD_6896311b7eff3\",\"name\":\"Produto Front\",\"planId\":null,\"planName\":null,\"quantity\":1,\"priceInCents\":8724,\"agendamento\":null}],\"trackingParameters\":{\"utm_source\":\"FBjLj68962ec335b6f1c804d2ad90\",\"utm_medium\":\"ROI MAX|120232126594840081\",\"utm_campaign\":\"08-08 CTV CALVOMES MIEODIA \\u2014 C\\u00f3pia|120232126594880081\",\"utm_content\":\"02|120232126594920081::IwZXh0bgNhZW0BMABhZGlkAasme2ychVEBHqtIux6WeOf5-E3vI8JjUv8U6gRUqoo8-AbBDkn5-BROq9cxiv2Gi_WuYQjH_aem_bQpJ6rTKh3uFLEggF3zvDg::\",\"utm_term\":\"Facebook_Mobile_Feed\",\"xcod\":\"FBjLj68962ec335b6f1c804d2ad90hQwK21wXxR08-08 CTV CALVOMES MIEODIA \\u2014 C\\u00f3pia|120232126594880081hQwK21wXxRROI MAX|120232126594840081hQwK21wXxR02|120232126594920081hQwK21wXxRFacebook_Mobile_Feed\",\"sck\":\"FBjLj68962ec335b6f1c804d2ad90hQwK21wXxR08-08 CTV CALVOMES MIEODIA \\u2014 C\\u00f3pia|120232126594880081hQwK21wXxRROI MAX|120232126594840081hQwK21wXxR02|120232126594920081hQwK21wXxRFacebook_Mobile_Feed\"},\"commission\":{\"totalPriceInCents\":8724,\"gatewayFeeInCents\":0,\"userCommissionInCents\":8724},\"isTest\":false}"
+}
+----------------------------------------
+[2025-08-08 17:17:15] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "52f45333-a0cb-4860-be5a-4aa96e911e82",
+    "platform": "MinhaPlataforma",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-08-08 14:17:15",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Alice Ribeiro Santos",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "87359504120",
+        "country": "BR",
+        "ip": "186.207.144.169"
+    },
+    "products": [
+        {
+            "id": "PROD_6896311b7eff3",
+            "name": "Produto Front",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 8724,
+            "agendamento": null
+        }
+    ],
+    "trackingParameters": {
+        "utm_source": "FBjLj68962ec335b6f1c804d2ad90",
+        "utm_medium": "ROI MAX|120232126594840081",
+        "utm_campaign": "08-08 CTV CALVOMES MIEODIA \u2014 C\u00f3pia|120232126594880081",
+        "utm_content": "02|120232126594920081::IwZXh0bgNhZW0BMABhZGlkAasme2ychVEBHqtIux6WeOf5-E3vI8JjUv8U6gRUqoo8-AbBDkn5-BROq9cxiv2Gi_WuYQjH_aem_bQpJ6rTKh3uFLEggF3zvDg::",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": "FBjLj68962ec335b6f1c804d2ad90hQwK21wXxR08-08 CTV CALVOMES MIEODIA \u2014 C\u00f3pia|120232126594880081hQwK21wXxRROI MAX|120232126594840081hQwK21wXxR02|120232126594920081hQwK21wXxRFacebook_Mobile_Feed",
+        "sck": "FBjLj68962ec335b6f1c804d2ad90hQwK21wXxR08-08 CTV CALVOMES MIEODIA \u2014 C\u00f3pia|120232126594880081hQwK21wXxRROI MAX|120232126594840081hQwK21wXxR02|120232126594920081hQwK21wXxRFacebook_Mobile_Feed"
+    },
+    "commission": {
+        "totalPriceInCents": 8724,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 8724
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-08-08 17:17:15] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "52f45333-a0cb-4860-be5a-4aa96e911e82",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-08-08 17:17:15",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Alice Ribeiro Santos",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "87359504120",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_6896311b7eff3",
+            "name": "Produto Front",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 8724
+        }
+    ],
+    "trackingParameters": {
+        "src": null,
+        "sck": "FBjLj68962ec335b6f1c804d2ad90hQwK21wXxR08-08 CTV CALVOMES MIEODIA \u2014 C\u00f3pia|120232126594880081hQwK21wXxRROI MAX|120232126594840081hQwK21wXxR02|120232126594920081hQwK21wXxRFacebook_Mobile_Feed",
+        "utm_source": "FBjLj68962ec335b6f1c804d2ad90",
+        "utm_campaign": "08-08 CTV CALVOMES MIEODIA \u2014 C\u00f3pia|120232126594880081",
+        "utm_medium": "ROI MAX|120232126594840081",
+        "utm_content": "02|120232126594920081::IwZXh0bgNhZW0BMABhZGlkAasme2ychVEBHqtIux6WeOf5-E3vI8JjUv8U6gRUqoo8-AbBDkn5-BROq9cxiv2Gi_WuYQjH_aem_bQpJ6rTKh3uFLEggF3zvDg::",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": "FBjLj68962ec335b6f1c804d2ad90hQwK21wXxR08-08 CTV CALVOMES MIEODIA \u2014 C\u00f3pia|120232126594880081hQwK21wXxRROI MAX|120232126594840081hQwK21wXxR02|120232126594920081hQwK21wXxRFacebook_Mobile_Feed",
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": 8724,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 8724
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-08-08 17:17:15] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-08-08 17:17:15] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-08-08 17:17:53] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"704e012d-5c7f-44da-b236-d01370feb64b\",\"platform\":\"MinhaPlataforma\",\"paymentMethod\":\"pix\",\"status\":\"waiting_payment\",\"createdAt\":\"2025-08-08 14:17:53\",\"approvedDate\":null,\"refundedAt\":null,\"customer\":{\"name\":\"Helena Rodrigues Soares\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":\"93175261280\",\"country\":\"BR\",\"ip\":\"177.30.168.6\"},\"products\":[{\"id\":\"PROD_689631414c640\",\"name\":\"Produto Front\",\"planId\":null,\"planName\":null,\"quantity\":1,\"priceInCents\":8724,\"agendamento\":null}],\"trackingParameters\":{\"utm_source\":\"FBjLj68962e544dcc02de602a18db\",\"utm_medium\":\"ROI MAX|120232126594930081\",\"utm_campaign\":\"08-08 CTV CALVOMES MIEODIA \\u2014 C\\u00f3pia|120232126594850081\",\"utm_content\":\"02|120232126594890081::IwZXh0bgNhZW0BMABhZGlkAasme2yQAjEBHgUYsD1GzN-GT1WmFkXwHFN6-K_xL_M7-8qvVkK2L8wu2jn0gXIfZbjWiiRr_aem_M905m0u4W3OO38AQPFaDWw::\",\"utm_term\":\"Facebook_Mobile_Feed\",\"xcod\":\"FBjLj68962e544dcc02de602a18dbhQwK21wXxR08-08 CTV CALVOMES MIEODIA \\u2014 C\\u00f3pia|120232126594850081hQwK21wXxRROI MAX|120232126594930081hQwK21wXxR02|120232126594890081hQwK21wXxRFacebook_Mobile_Feed\",\"sck\":\"FBjLj68962e544dcc02de602a18dbhQwK21wXxR08-08 CTV CALVOMES MIEODIA \\u2014 C\\u00f3pia|120232126594850081hQwK21wXxRROI MAX|120232126594930081hQwK21wXxR02|120232126594890081hQwK21wXxRFacebook_Mobile_Feed\"},\"commission\":{\"totalPriceInCents\":8724,\"gatewayFeeInCents\":0,\"userCommissionInCents\":8724},\"isTest\":false}"
+}
+----------------------------------------
+[2025-08-08 17:17:53] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "704e012d-5c7f-44da-b236-d01370feb64b",
+    "platform": "MinhaPlataforma",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-08-08 14:17:53",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Helena Rodrigues Soares",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "93175261280",
+        "country": "BR",
+        "ip": "177.30.168.6"
+    },
+    "products": [
+        {
+            "id": "PROD_689631414c640",
+            "name": "Produto Front",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 8724,
+            "agendamento": null
+        }
+    ],
+    "trackingParameters": {
+        "utm_source": "FBjLj68962e544dcc02de602a18db",
+        "utm_medium": "ROI MAX|120232126594930081",
+        "utm_campaign": "08-08 CTV CALVOMES MIEODIA \u2014 C\u00f3pia|120232126594850081",
+        "utm_content": "02|120232126594890081::IwZXh0bgNhZW0BMABhZGlkAasme2yQAjEBHgUYsD1GzN-GT1WmFkXwHFN6-K_xL_M7-8qvVkK2L8wu2jn0gXIfZbjWiiRr_aem_M905m0u4W3OO38AQPFaDWw::",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": "FBjLj68962e544dcc02de602a18dbhQwK21wXxR08-08 CTV CALVOMES MIEODIA \u2014 C\u00f3pia|120232126594850081hQwK21wXxRROI MAX|120232126594930081hQwK21wXxR02|120232126594890081hQwK21wXxRFacebook_Mobile_Feed",
+        "sck": "FBjLj68962e544dcc02de602a18dbhQwK21wXxR08-08 CTV CALVOMES MIEODIA \u2014 C\u00f3pia|120232126594850081hQwK21wXxRROI MAX|120232126594930081hQwK21wXxR02|120232126594890081hQwK21wXxRFacebook_Mobile_Feed"
+    },
+    "commission": {
+        "totalPriceInCents": 8724,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 8724
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-08-08 17:17:53] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "704e012d-5c7f-44da-b236-d01370feb64b",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-08-08 17:17:53",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Helena Rodrigues Soares",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "93175261280",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_689631414c640",
+            "name": "Produto Front",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 8724
+        }
+    ],
+    "trackingParameters": {
+        "src": null,
+        "sck": "FBjLj68962e544dcc02de602a18dbhQwK21wXxR08-08 CTV CALVOMES MIEODIA \u2014 C\u00f3pia|120232126594850081hQwK21wXxRROI MAX|120232126594930081hQwK21wXxR02|120232126594890081hQwK21wXxRFacebook_Mobile_Feed",
+        "utm_source": "FBjLj68962e544dcc02de602a18db",
+        "utm_campaign": "08-08 CTV CALVOMES MIEODIA \u2014 C\u00f3pia|120232126594850081",
+        "utm_medium": "ROI MAX|120232126594930081",
+        "utm_content": "02|120232126594890081::IwZXh0bgNhZW0BMABhZGlkAasme2yQAjEBHgUYsD1GzN-GT1WmFkXwHFN6-K_xL_M7-8qvVkK2L8wu2jn0gXIfZbjWiiRr_aem_M905m0u4W3OO38AQPFaDWw::",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": "FBjLj68962e544dcc02de602a18dbhQwK21wXxR08-08 CTV CALVOMES MIEODIA \u2014 C\u00f3pia|120232126594850081hQwK21wXxRROI MAX|120232126594930081hQwK21wXxR02|120232126594890081hQwK21wXxRFacebook_Mobile_Feed",
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": 8724,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 8724
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-08-08 17:17:53] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-08-08 17:17:53] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-08-08 17:23:02] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"873db7aa-6bbe-46ed-943d-38495531c986\",\"platform\":\"MinhaPlataforma\",\"paymentMethod\":\"pix\",\"status\":\"waiting_payment\",\"createdAt\":\"2025-08-08 14:23:02\",\"approvedDate\":null,\"refundedAt\":null,\"customer\":{\"name\":\"Manuela Costa Ribeiro\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":\"48682322668\",\"country\":\"BR\",\"ip\":\"138.122.221.216\"},\"products\":[{\"id\":\"PROD_68963276d6a5d\",\"name\":\"Produto Front\",\"planId\":null,\"planName\":null,\"quantity\":1,\"priceInCents\":8724,\"agendamento\":null}],\"trackingParameters\":{\"utm_source\":\"FBjLj68962fe1f10320b60a1be6aa\",\"utm_medium\":\"ROI MAX|120232123877870081\",\"utm_campaign\":\"08-08 CTV CALVOMES MIEODIA|120232123877860081\",\"utm_content\":\"02|120232123877880081::IwZXh0bgNhZW0BMABhZGlkAasme0xZjHEBHjYYRRgqvNKaT1mmVfOcPTjeFFuDtNYj8YvIg2HZRW7-H780U3Gij1nB1zJN_aem_JPNH7dPIkjYFY1H8i2tWFA::\",\"utm_term\":\"Facebook_Mobile_Feed\",\"xcod\":\"FBjLj68962fe1f10320b60a1be6aahQwK21wXxR08-08 CTV CALVOMES MIEODIA|120232123877860081hQwK21wXxRROI MAX|120232123877870081hQwK21wXxR02|120232123877880081hQwK21wXxRFacebook_Mobile_Feed\",\"sck\":\"FBjLj68962fe1f10320b60a1be6aahQwK21wXxR08-08 CTV CALVOMES MIEODIA|120232123877860081hQwK21wXxRROI MAX|120232123877870081hQwK21wXxR02|120232123877880081hQwK21wXxRFacebook_Mobile_Feed\"},\"commission\":{\"totalPriceInCents\":8724,\"gatewayFeeInCents\":0,\"userCommissionInCents\":8724},\"isTest\":false}"
+}
+----------------------------------------
+[2025-08-08 17:23:02] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "873db7aa-6bbe-46ed-943d-38495531c986",
+    "platform": "MinhaPlataforma",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-08-08 14:23:02",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Manuela Costa Ribeiro",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "48682322668",
+        "country": "BR",
+        "ip": "138.122.221.216"
+    },
+    "products": [
+        {
+            "id": "PROD_68963276d6a5d",
+            "name": "Produto Front",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 8724,
+            "agendamento": null
+        }
+    ],
+    "trackingParameters": {
+        "utm_source": "FBjLj68962fe1f10320b60a1be6aa",
+        "utm_medium": "ROI MAX|120232123877870081",
+        "utm_campaign": "08-08 CTV CALVOMES MIEODIA|120232123877860081",
+        "utm_content": "02|120232123877880081::IwZXh0bgNhZW0BMABhZGlkAasme0xZjHEBHjYYRRgqvNKaT1mmVfOcPTjeFFuDtNYj8YvIg2HZRW7-H780U3Gij1nB1zJN_aem_JPNH7dPIkjYFY1H8i2tWFA::",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": "FBjLj68962fe1f10320b60a1be6aahQwK21wXxR08-08 CTV CALVOMES MIEODIA|120232123877860081hQwK21wXxRROI MAX|120232123877870081hQwK21wXxR02|120232123877880081hQwK21wXxRFacebook_Mobile_Feed",
+        "sck": "FBjLj68962fe1f10320b60a1be6aahQwK21wXxR08-08 CTV CALVOMES MIEODIA|120232123877860081hQwK21wXxRROI MAX|120232123877870081hQwK21wXxR02|120232123877880081hQwK21wXxRFacebook_Mobile_Feed"
+    },
+    "commission": {
+        "totalPriceInCents": 8724,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 8724
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-08-08 17:23:02] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "873db7aa-6bbe-46ed-943d-38495531c986",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-08-08 17:23:02",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Manuela Costa Ribeiro",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "48682322668",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_68963276d6a5d",
+            "name": "Produto Front",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 8724
+        }
+    ],
+    "trackingParameters": {
+        "src": null,
+        "sck": "FBjLj68962fe1f10320b60a1be6aahQwK21wXxR08-08 CTV CALVOMES MIEODIA|120232123877860081hQwK21wXxRROI MAX|120232123877870081hQwK21wXxR02|120232123877880081hQwK21wXxRFacebook_Mobile_Feed",
+        "utm_source": "FBjLj68962fe1f10320b60a1be6aa",
+        "utm_campaign": "08-08 CTV CALVOMES MIEODIA|120232123877860081",
+        "utm_medium": "ROI MAX|120232123877870081",
+        "utm_content": "02|120232123877880081::IwZXh0bgNhZW0BMABhZGlkAasme0xZjHEBHjYYRRgqvNKaT1mmVfOcPTjeFFuDtNYj8YvIg2HZRW7-H780U3Gij1nB1zJN_aem_JPNH7dPIkjYFY1H8i2tWFA::",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": "FBjLj68962fe1f10320b60a1be6aahQwK21wXxR08-08 CTV CALVOMES MIEODIA|120232123877860081hQwK21wXxRROI MAX|120232123877870081hQwK21wXxR02|120232123877880081hQwK21wXxRFacebook_Mobile_Feed",
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": 8724,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 8724
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-08-08 17:23:02] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-08-08 17:23:02] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------
+[2025-08-09 00:54:23] 📥 Dados recebidos do PayHubr
+Dados: {
+    "raw": "{\"orderId\":\"33c5f4e0-feb2-4643-a693-0f66f9d59f1c\",\"platform\":\"MinhaPlataforma\",\"paymentMethod\":\"pix\",\"status\":\"waiting_payment\",\"createdAt\":\"2025-08-08 21:54:23\",\"approvedDate\":null,\"refundedAt\":null,\"customer\":{\"name\":\"Miguel Pereira Ribeiro\",\"email\":\"clienteteste@gmail.com\",\"phone\":null,\"document\":\"09914987397\",\"country\":\"BR\",\"ip\":\"177.191.127.182\"},\"products\":[{\"id\":\"PROD_68969c3f6dc20\",\"name\":\"Produto Front\",\"planId\":null,\"planName\":null,\"quantity\":1,\"priceInCents\":8724,\"agendamento\":null}],\"trackingParameters\":{\"utm_source\":\"FBjLj689698e84dc116406c6d247b\",\"utm_medium\":\"ROI EXTREMOOOOOOOOOOOOOOO|120227893320310470\",\"utm_campaign\":\"11-07 CTV TAXADINHU \\u2014 C\\u00f3pia|120227893320870470\",\"utm_content\":\"TAXAS|120227893321120470::IwZXh0bgNhZW0BMABhZGlkAasioiQsKaYBHnIq6nHpeovwCLjsvcs0u9-a0eY5BBUkZak6NsWJAIuUHGqAT45Zx_iQ5G2w_aem_nuxZ7Ijvp8IHtjhr7G0v2Q::\",\"utm_term\":\"Facebook_Mobile_Feed\",\"xcod\":\"FBjLj689698e84dc116406c6d247bhQwK21wXxR11-07 CTV TAXADINHU \\u2014 C\\u00f3pia|120227893320870470hQwK21wXxRROI EXTREMOOOOOOOOOOOOOOO|120227893320310470hQwK21wXxRTAXAS|120227893321120470hQwK21wXxRFacebook_Mobile_Feed\",\"sck\":\"FBjLj689698e84dc116406c6d247bhQwK21wXxR11-07 CTV TAXADINHU \\u2014 C\\u00f3pia|120227893320870470hQwK21wXxRROI EXTREMOOOOOOOOOOOOOOO|120227893320310470hQwK21wXxRTAXAS|120227893321120470hQwK21wXxRFacebook_Mobile_Feed\"},\"commission\":{\"totalPriceInCents\":8724,\"gatewayFeeInCents\":0,\"userCommissionInCents\":8724},\"isTest\":false}"
+}
+----------------------------------------
+[2025-08-09 00:54:23] 🔄 Processando dados recebidos
+Dados: {
+    "orderId": "33c5f4e0-feb2-4643-a693-0f66f9d59f1c",
+    "platform": "MinhaPlataforma",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-08-08 21:54:23",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Miguel Pereira Ribeiro",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "09914987397",
+        "country": "BR",
+        "ip": "177.191.127.182"
+    },
+    "products": [
+        {
+            "id": "PROD_68969c3f6dc20",
+            "name": "Produto Front",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 8724,
+            "agendamento": null
+        }
+    ],
+    "trackingParameters": {
+        "utm_source": "FBjLj689698e84dc116406c6d247b",
+        "utm_medium": "ROI EXTREMOOOOOOOOOOOOOOO|120227893320310470",
+        "utm_campaign": "11-07 CTV TAXADINHU \u2014 C\u00f3pia|120227893320870470",
+        "utm_content": "TAXAS|120227893321120470::IwZXh0bgNhZW0BMABhZGlkAasioiQsKaYBHnIq6nHpeovwCLjsvcs0u9-a0eY5BBUkZak6NsWJAIuUHGqAT45Zx_iQ5G2w_aem_nuxZ7Ijvp8IHtjhr7G0v2Q::",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": "FBjLj689698e84dc116406c6d247bhQwK21wXxR11-07 CTV TAXADINHU \u2014 C\u00f3pia|120227893320870470hQwK21wXxRROI EXTREMOOOOOOOOOOOOOOO|120227893320310470hQwK21wXxRTAXAS|120227893321120470hQwK21wXxRFacebook_Mobile_Feed",
+        "sck": "FBjLj689698e84dc116406c6d247bhQwK21wXxR11-07 CTV TAXADINHU \u2014 C\u00f3pia|120227893320870470hQwK21wXxRROI EXTREMOOOOOOOOOOOOOOO|120227893320310470hQwK21wXxRTAXAS|120227893321120470hQwK21wXxRFacebook_Mobile_Feed"
+    },
+    "commission": {
+        "totalPriceInCents": 8724,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 8724
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-08-09 00:54:23] 📤 Dados formatados para Utmify
+Dados: {
+    "orderId": "33c5f4e0-feb2-4643-a693-0f66f9d59f1c",
+    "platform": "PayHubr",
+    "paymentMethod": "pix",
+    "status": "waiting_payment",
+    "createdAt": "2025-08-09 00:54:23",
+    "approvedDate": null,
+    "refundedAt": null,
+    "customer": {
+        "name": "Miguel Pereira Ribeiro",
+        "email": "clienteteste@gmail.com",
+        "phone": null,
+        "document": "09914987397",
+        "country": "BR",
+        "ip": "45.148.96.49"
+    },
+    "products": [
+        {
+            "id": "PROD_68969c3f6dc20",
+            "name": "Produto Front",
+            "planId": null,
+            "planName": null,
+            "quantity": 1,
+            "priceInCents": 8724
+        }
+    ],
+    "trackingParameters": {
+        "src": null,
+        "sck": "FBjLj689698e84dc116406c6d247bhQwK21wXxR11-07 CTV TAXADINHU \u2014 C\u00f3pia|120227893320870470hQwK21wXxRROI EXTREMOOOOOOOOOOOOOOO|120227893320310470hQwK21wXxRTAXAS|120227893321120470hQwK21wXxRFacebook_Mobile_Feed",
+        "utm_source": "FBjLj689698e84dc116406c6d247b",
+        "utm_campaign": "11-07 CTV TAXADINHU \u2014 C\u00f3pia|120227893320870470",
+        "utm_medium": "ROI EXTREMOOOOOOOOOOOOOOO|120227893320310470",
+        "utm_content": "TAXAS|120227893321120470::IwZXh0bgNhZW0BMABhZGlkAasioiQsKaYBHnIq6nHpeovwCLjsvcs0u9-a0eY5BBUkZak6NsWJAIuUHGqAT45Zx_iQ5G2w_aem_nuxZ7Ijvp8IHtjhr7G0v2Q::",
+        "utm_term": "Facebook_Mobile_Feed",
+        "xcod": "FBjLj689698e84dc116406c6d247bhQwK21wXxR11-07 CTV TAXADINHU \u2014 C\u00f3pia|120227893320870470hQwK21wXxRROI EXTREMOOOOOOOOOOOOOOO|120227893320310470hQwK21wXxRTAXAS|120227893321120470hQwK21wXxRFacebook_Mobile_Feed",
+        "fbclid": null,
+        "gclid": null,
+        "ttclid": null
+    },
+    "commission": {
+        "totalPriceInCents": 8724,
+        "gatewayFeeInCents": 0,
+        "userCommissionInCents": 8724
+    },
+    "isTest": false
+}
+----------------------------------------
+[2025-08-09 00:54:23] 📡 Enviando requisição para Utmify
+Dados: {
+    "url": "https:\/\/api.utmify.com.br\/api-credentials\/orders",
+    "headers": [
+        "Content-Type: application\/json",
+        "x-api-token: [REDACTED]"
+    ]
+}
+----------------------------------------
+[2025-08-09 00:54:23] ✅ Resposta da API Utmify
+Dados: {
+    "http_code": 200,
+    "response": {
+        "OK": true,
+        "data": [],
+        "result": "SUCCESS"
+    }
+}
+----------------------------------------

